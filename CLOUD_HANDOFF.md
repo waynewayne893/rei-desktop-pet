@@ -2,7 +2,7 @@
 
 > **架构状态**：GitHub-first + Cloud Execution（本地开发迁移、Linux 云端恢复验证与 Windows 基础兼容性预验证均已结项；GitHub 私有仓库为唯一正式工程数据源）  
 > **原生兼容性主控裁定（`REI-P4-COMPAT-MAIN-REVIEW-02`）**：**`BASE_RUNTIME_COMPATIBILITY_PASS`** / **`DETAILED_RUNTIME_VERIFICATION_PARTIAL`**  
-> **版本定位**：`P4-C_ART_ACCEPTANCE_PASS` / `P4-D_FINAL_ASSEMBLY_AUTHORIZED`，尚未正式发布
+> **版本定位**：`P4-D_CANDIDATE_OFFLINE_QA_PASS`，待主控独立验收及 P5 授权（尚未正式发布 `v1.0.0`）
 
 ---
 
@@ -64,7 +64,7 @@
 
 ## 6. 下一阶段任务入口
 
-按 [P4-C 结项与 main 统一方案](07_QA验收/P4-C/human-acceptance/P4C_CLOSEOUT_AND_MAIN_FF_PLAN.md) 获得用户明确授权后将本结项提交 fast-forward 统一至 `main`，随后切出独立分支 `feat/p4d-final-assembly` 完成三套 `1536×2288` v2 扩展图集装配、264 格全量离线 QA、交付打包与 Windows P5 验收指南。
+`main` 已于 `44624e1572894f340e9b334ab339d958e7fb9ba2` 完成 P4-C 结项统一；`feat/p4d-final-assembly` 已完成三套 v2 扩展图集装配、264 格离线 QA（[P4D_QA_REPORT.md](07_QA验收/P4-D/P4D_QA_REPORT.md)）、独立与总交付包（[P4D_DELIVERY_MANIFEST.json](08_正式交付/P4-D-candidate/P4D_DELIVERY_MANIFEST.json)）及 Windows P5 验收指南（[WINDOWS_P5_ACCEPTANCE_GUIDE.md](07_QA验收/P4-D/WINDOWS_P5_ACCEPTANCE_GUIDE.md)）。等待主控对 P4-D 独立验收后授权进入 Windows P5 实机验收。
 
 ---
 

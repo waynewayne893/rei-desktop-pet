@@ -1,0 +1,2533 @@
+{
+  "schema_version": 1,
+  "stage": "REI-PET-P4D-FINAL-ASSEMBLY",
+  "release_status": "P4-D_CANDIDATE_PENDING_MASTER_REVIEW_AND_P5",
+  "not_v1_0_0_release": true,
+  "base_unified_main_commit": "44624e1572894f340e9b334ab339d958e7fb9ba2",
+  "builder": {
+    "script": "06_共用工具/p4d_assemble.py",
+    "validator_core": "06_共用工具/rei_atlas_tools.py",
+    "engine": "unified-stdlib-pillow",
+    "os": "Windows 11",
+    "python": "3.14.6",
+    "pillow": "12.3.0",
+    "libwebp": "1.6.0",
+    "zlib": "1.3.2",
+    "webp_encoding": {
+      "format": "WEBP",
+      "lossless": true,
+      "quality": 100,
+      "method": 6,
+      "exact": true
+    }
+  },
+  "p4b_acceptance_ledger": {
+    "path": "07_QA验收/P4-B/human-acceptance/ACCEPTANCE_LEDGER.json",
+    "sha256": "a1fd10ac458f5ed3b9e5d759929bec41de5549bc81c1ec9a82bc26c18dab13f1"
+  },
+  "p4c_acceptance_ledger": {
+    "path": "07_QA验收/P4-C/human-acceptance/P4C_ACCEPTANCE_LEDGER.json",
+    "sha256": "8c946bc9efc111add116ccbafee77c1dcb1e2e923668c131d18a1408255a2b38"
+  },
+  "offline_qa_json": {
+    "path": "07_QA验收/P4-D/P4D_OFFLINE_QA.json",
+    "bytes": 132704,
+    "sha256": "5e4544263a98e55bbd66ede736f422f1e72905bd2ad7945bedc2c39319628888"
+  },
+  "temporary_compat_assets_excluded": true,
+  "pets": {
+    "rei-school": {
+      "id": "rei-school",
+      "displayName": "绫波丽·校服",
+      "expected_codex_selector_id": "custom:rei-school",
+      "grid": {
+        "columns": 8,
+        "rows": 11,
+        "cell_width": 192,
+        "cell_height": 208,
+        "width": 1536,
+        "height": 2288,
+        "active_cells": 74,
+        "blank_cells": 14
+      },
+      "deliverables": {
+        "form_extended_png": {
+          "path": "03_校服绫波丽/P4-D/delivery/spritesheet-extended.png",
+          "bytes": 1391577,
+          "sha256": "896a803d0d8ca164baf918850458441f3843eeb6cfe379fa947a8ddacfcef862"
+        },
+        "form_spritesheet_webp": {
+          "path": "03_校服绫波丽/P4-D/delivery/spritesheet.webp",
+          "bytes": 1024936,
+          "sha256": "e8564b315953781526b5d3b393c3cefef3632a7a2038fc1a0dabfb2d756e65ec"
+        },
+        "form_pet_json": {
+          "path": "03_校服绫波丽/P4-D/delivery/pet.json",
+          "bytes": 296,
+          "sha256": "15aa8533de1160e2103fe03a4e1e44c23ead4b29948eace77ecd3c2b244214ac"
+        },
+        "package_spritesheet_webp": {
+          "path": "08_正式交付/P4-D-candidate/rei-school/spritesheet.webp",
+          "bytes": 1024936,
+          "sha256": "e8564b315953781526b5d3b393c3cefef3632a7a2038fc1a0dabfb2d756e65ec",
+          "decoded_rgba_pixel_sha256": "957619f07234967da0c6086766d147394d4f12944760b05220cedaaf032ec608"
+        },
+        "package_pet_json": {
+          "path": "08_正式交付/P4-D-candidate/rei-school/pet.json",
+          "bytes": 296,
+          "sha256": "15aa8533de1160e2103fe03a4e1e44c23ead4b29948eace77ecd3c2b244214ac"
+        },
+        "individual_zip": {
+          "path": "08_正式交付/P4-D-candidate/rei-school-codex-pet-v2.zip",
+          "ok": true,
+          "bytes": 1025776,
+          "sha256": "fa28e13747257484b31d6672525c04469542e21769dda216ed06e84236fd8e8a",
+          "entry_count": 2,
+          "entries": [
+            "rei-school/pet.json",
+            "rei-school/spritesheet.webp"
+          ]
+        },
+        "contact_sheet_light": {
+          "path": "07_QA验收/P4-D/contact-sheets/rei-school-extended-contact-light.png",
+          "bytes": 1145479,
+          "sha256": "86a9dfa2407eb15ca4bed4fed2aea826ab054b3ab815a9c84d9143f3aedca695"
+        },
+        "contact_sheet_dark": {
+          "path": "07_QA验收/P4-D/contact-sheets/rei-school-extended-contact-dark.png",
+          "bytes": 1165118,
+          "sha256": "1333dc84859d9ffbc003fc6e45ee93cb5c8b52078bb17f822778baab68c43ad8"
+        }
+      },
+      "neutral_reference_cell_r0c6": {
+        "row": 0,
+        "col": 6,
+        "protocol_basis": "09_项目文档/REI_PROJECT_ROADMAP.md (从验收 idle 提供辅助中性格) & 09_项目文档/CODEX_PETS_COMPATIBILITY.md & hatch-pet --neutral-cell idle/00.png",
+        "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/00.png",
+        "source_sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+        "pixel_sha256": "5fdb3248db4253c6d69fb10c794957a3eaaf5401d660bda16084b4f847524952",
+        "exact_unaltered_copy_of_idle_00": true,
+        "temporary_badge_present": false
+      },
+      "standard_57_frames": [
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/00.png",
+          "source_sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+          "pixel_sha256": "5fdb3248db4253c6d69fb10c794957a3eaaf5401d660bda16084b4f847524952",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/01.png",
+          "source_sha256": "210a1e7955ea7ccb0c74e3d3c069ed3f4959815143f130ddf8cb18f5ebb1c300",
+          "pixel_sha256": "cd6b6b8d095eb9f05d4e0e5bc5b10e63fc1d5052b681c22091a66932e83e2c05",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/02.png",
+          "source_sha256": "481874ee79839dabe2ebae19c55115f16ea4fb1b02df78c176d05717d8bb1416",
+          "pixel_sha256": "aee4a389f5a5b7250104489bfb18fdd6bfe9b07e71d2d4bdfde78f5f26dbcd54",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/03.png",
+          "source_sha256": "df966e8ee3f8e79be77bf38366206869ad43dee8c9ba62f53593e48e81627bd5",
+          "pixel_sha256": "e776573acbc0c3dbdb46dd49e1ab6abbdefd245d0f6f7ebc8aab8cc82d18f5ef",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/04.png",
+          "source_sha256": "0ed679baecc7b0d1870c4a57bd50bea333e7f8d3a3d3e6a20f0c16821ef1a0c3",
+          "pixel_sha256": "75d1e37c52b1337d6b4ef67d79084ac783463421600f79d4151185734d2bf85f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 5,
+          "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/05.png",
+          "source_sha256": "c9443243ef3bd80b4031e6cd324f369017c1e4988916ac373f93d66867d26af4",
+          "pixel_sha256": "aaabf252b47412cfe7edaf7cb1d63b7966fca33e25fc12267fc00bb6a180135c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/00.png",
+          "source_sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00",
+          "pixel_sha256": "6e557160b18a50fa8f77ea2905647a7fcf8f7dd9aa1aca800ab06e5441ffaa52",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/01.png",
+          "source_sha256": "feec8a714f98d079e49695800e3164d1964d12fd7cc49a24e311bdebf35b7e79",
+          "pixel_sha256": "89fa11ec5353154e1b318f1ab08bf48e2370234f398e5d11d27ccebd836ac45e",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/02.png",
+          "source_sha256": "52edaddc6bbb56ee34c497a3ced4abe19817ddee23f8aa624f8ad5fb74b943cd",
+          "pixel_sha256": "098f830fd7258436c9bff0c1e1dcee8b4ab35f008374102989644f8ff02582c1",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/03.png",
+          "source_sha256": "eece125185b95bc8ad4954dd9e1a201cf5d7b2c72b49dc96bbc33b1f93aebd02",
+          "pixel_sha256": "e6a0734a3fd5491ff2de410c3060fc6a8b0f03fa790eb404ad71aeb80342e35e",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/04.png",
+          "source_sha256": "450bf1ca604e126b17d0a4dbff8273c17232190e050a7235e06abfada2150dc7",
+          "pixel_sha256": "d30af357957546285c21cee84aa767f6748ce8754cb81f98a8922b51cebea6b5",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 5,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/05.png",
+          "source_sha256": "2a74819e0d2b1c9c4b29d4b8e8f4906b23dc36165f431e3254b6d89450c2b5d6",
+          "pixel_sha256": "e8bf9dcc404e4c64ce719ae23b800555dfd8acc654fdf3588019eddf57bb9389",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 6,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/06.png",
+          "source_sha256": "651e46cb86062cf8745b915eb9f3a970c4055e574a1cc96dff7b948ad31d7e30",
+          "pixel_sha256": "fa3d78c2b67c5c70f1bbf854562e0c4bdc80d97e42f88041246866c23d0ff5d7",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 7,
+          "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/07.png",
+          "source_sha256": "18ffade9aa9e008fbe409d861a98a9254a173f232c31808936c89745b0a627f2",
+          "pixel_sha256": "0ed2d6d0cd21483ebce35618b2649e84724725e0a54b8bb5f2cc9a824b561065",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/00.png",
+          "source_sha256": "ab4f0f7dfe77ecf3e59f7cb3d64cd9d9ce6464151e0f59dac05dd05f25630539",
+          "pixel_sha256": "54529b4df5db5e5c2750a3867b55b03501dd51b10dcf56aba25f823d693f37d2",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/01.png",
+          "source_sha256": "fddc2daa67fece166f1852d226aa175c76870756208421a7fe93d330515d9bc5",
+          "pixel_sha256": "fb414304968a94d3bd4498cfcf717cf4052c0f09ca7d1e1edff5238abd7c2911",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/02.png",
+          "source_sha256": "e8eef67f65fa9d01409a1d50cdc5560ada402e9fd1f727aad50fe2c5d8921e6d",
+          "pixel_sha256": "a10f75b269e6825d9dbee61afdcf0c99b02182b103a73a7d7da78afe9e28ef5e",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/03.png",
+          "source_sha256": "b2f0c161ab67d26a354cdae59a8ff22622d9e315405b869774df8109255912b2",
+          "pixel_sha256": "47feedf78a69dc360b2d75268660a34c580382b87b8b888fd276c23130267d1b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/04.png",
+          "source_sha256": "ae63f2494431601fd48af69776002cd91afdf69eb373083f9e81bf67f70fb6b2",
+          "pixel_sha256": "1156c6e4345f2b529d9fa2389c67ae2a8a24c843b9410cda40e4305170012ff6",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 5,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/05.png",
+          "source_sha256": "66678fccaec6b4c1827fbd2e7d2a75960d8f1c0f5be61e57e487b7e73abaab2c",
+          "pixel_sha256": "c6372083603ea9858757679a7be7d4374d5a6c80c243342b9362c9d583761dba",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 6,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/06.png",
+          "source_sha256": "39532fe50ea9ac4b789036816624741f7a3fd32fe7b519a756d80b43788c47ef",
+          "pixel_sha256": "e6ef1038a3fe1db5ebe4441f51adf81e4f3011c6d189d52aa3445ddbb05e2505",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 7,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/07.png",
+          "source_sha256": "9b0a1217bea89391d0fb50ae164c469c10ecfde3b30ac720ae0cc090562ba6f8",
+          "pixel_sha256": "40704360ed11808d8c447d6fce42e9a580eb7b26b9805820d75ca1c72dd221a5",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/00.png",
+          "source_sha256": "0618583cc278ff907c2fdf02e1e1ca38749c6638baa61a94ff8bd359302ad225",
+          "pixel_sha256": "d1d7dd97d082314b2ceab854a779e3f93dcce110e68346dc5f6a1f2d6c847516",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/01.png",
+          "source_sha256": "ffc2ed2eecf05d2b3840f8648934a3c1ef4c7f76b358b6f1f6e7281d53f532df",
+          "pixel_sha256": "4a4610116ec37239d5ee7a1fda7f01db4b06c1bc3bc07d70145782d9bc519c0a",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/02.png",
+          "source_sha256": "8cafa87cf922f7b468ef1155a1cdb9e1019121d378e392eabdeb348cfc07dbb8",
+          "pixel_sha256": "31a1d4e21a4f2a2b411b6b37793cd5197bd600dfd1c9cc0597e7041bfd2fc6bd",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/03.png",
+          "source_sha256": "004849ad6501abe1d9b32f832fbf71a6320ef175d08608f44e0e01a26c1880db",
+          "pixel_sha256": "289f061dfe5fcb73374968c4098190344ebf39688c9c5825608c46bd14441773",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/00.png",
+          "source_sha256": "8345534b6ad18683cc924604c22c87e5e52441f1a8da2af52dfd8693698d7879",
+          "pixel_sha256": "155a67c5d072c970f98380191da5ae498027baccf3ca3a81ec7df6ad138b6cf8",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/01.png",
+          "source_sha256": "e4160b549a7d6bb93a9599fd53623063a33242c4d0f23531ef42dc7d72ed8761",
+          "pixel_sha256": "5cbee58c504d4d4bb6fe73a87bf553840e29e4e93b82611387309a384bb23412",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/02.png",
+          "source_sha256": "f97b6c073805399d6e4a60bbaa8069222b671a39f2e8bdbaa2b90477d972c276",
+          "pixel_sha256": "6be05ab5b59d1c556d1edfda39ead20318c67f16db17183980819de05a1cbe01",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/03.png",
+          "source_sha256": "41a34724210135b27c15b90c460024efe2ddc18b1d21d134fbf3bdf9a862c3a6",
+          "pixel_sha256": "474ab838adf3c9ffc1b16e545a31b645f354e887ba3235ef3d00de46a862a81b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/04.png",
+          "source_sha256": "9e2589e9cbd32df5854130ff7343d4d3d40ac95c1bc6248da6017e71259d0794",
+          "pixel_sha256": "c36016da8a8def4926edca5df69dbfa6eaacd07035359818f9292a2d326c10d9",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/00.png",
+          "source_sha256": "647e7dba809095f8372655a4f987042d6bf54f46b4b65d78cd3668759949a887",
+          "pixel_sha256": "6033be205ee9bffbee42542eff26d393d8fcdda0aa0c37fc5893db294230525b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/01.png",
+          "source_sha256": "bd45847583ffe9c8000e1c352858a4a001130485ea9aa26387364de27c404993",
+          "pixel_sha256": "e560e3fb2a138c1b3e98e64a2755d17b386409e135b976d331c26a6557a48aa6",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/02.png",
+          "source_sha256": "1c03c4cc373df156dd9d0368eee95e6728e83091fc3b293f4795ff7f8b918a2b",
+          "pixel_sha256": "3c8dbd2796e5910d0019bbef924ee91093275c2900bf49e536a600a820591ec2",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/03.png",
+          "source_sha256": "b8d99f7a9fc37cd17fcce30c7ac44569a0686d0ef488f5b1f4bddb807a5839d8",
+          "pixel_sha256": "d8eebd4122037dba95275bf880eff524bb61ac01079e790a635ef4b0ef570c6f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/04.png",
+          "source_sha256": "f816aa982b6a24e3b01298b2275d88ee23077911c922584f0d9e7455ec87e8bb",
+          "pixel_sha256": "919d89a16141c0373fb5e953bcea7140e6c0b602b3d96b3ab0f5268da1d03ee1",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 5,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/05.png",
+          "source_sha256": "dcf505ab47de099468bdad059d983a8bda854ccd079ae63888e25bcc0647eead",
+          "pixel_sha256": "25da64d44ad78d963749283cb39f2ad52d4d13b829fe362249ac54f1c6f98128",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 6,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/06.png",
+          "source_sha256": "f83116f9e6377c740b6c8e2b004188562f7079d5635804d3ceee42df80cdaedd",
+          "pixel_sha256": "b3a43c65fe5321c8e4c56a4b90d8d0641b488635afa6c9a897321dc43cabc4ed",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 7,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/07.png",
+          "source_sha256": "be65a3f55bde239bfa91c40fd221708db7c4960cc638fb09085c66003a0e7423",
+          "pixel_sha256": "05954a6bf328a8ab00ef14c2af857ce3ed65c0e2998bfa707875766534d568c1",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/00.png",
+          "source_sha256": "60fae5f8619315c18c9f885fd9665da64fd29f3dca4c475ea1e57571b84333d6",
+          "pixel_sha256": "4efd347d30300dda76c75539dd5c96b8fa2b032aca7a8fb707f2961e06201237",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/01.png",
+          "source_sha256": "6f2e3a27e2566324ee3c6930d35c93a9ca6091f28c5d9db39c7f5dbce2f0a3a7",
+          "pixel_sha256": "590751d68b23a61153baed0eb1b8f02a4b4122a5cb00f864d330a240fcbd0f88",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/02.png",
+          "source_sha256": "c227245353c2ad84fd31e02a78db393fdef34506911cb47f11d410a5fb35921f",
+          "pixel_sha256": "0309a738d9c06d54d4cf08ff1cfe2c967e3e961278066d5cac2e2532131948f2",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/03.png",
+          "source_sha256": "2a28e392ba01d0083a26c8f8901814f8bb8235b76cdfe5c886be9f751378edfe",
+          "pixel_sha256": "a8eb926cebaa18378334b99786b8d40f5e832dac380c80b97531762de5947191",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/04.png",
+          "source_sha256": "422030aa32515f677e2b812d353f49ebed0bad4043879d153783a4840f426db0",
+          "pixel_sha256": "4696689e9c875c04c3fd0898c71f163d0f08a19b334c52dd77b5a242c641e99c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 5,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/05.png",
+          "source_sha256": "0e12bc4093cd99c483963999ec5ed2096ebf051aecd28bbe24b83d819f78a371",
+          "pixel_sha256": "a3f5238df93f7c476a4821104eb5f863b88b1254d57434e283dc382720685f50",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/00.png",
+          "source_sha256": "9f68cc97aacb1ad03183e6924e7603a3f2a62c138aeb1d998822a708a83f53ff",
+          "pixel_sha256": "1c2f220e79b2e040b1db7c970aacb6394941f6214b4634011e4d8dcdeb1a5846",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/01.png",
+          "source_sha256": "a5e9cbe096966b0df538de0fc62f7f39d126bbbe8714c15ceb2e02095bd92066",
+          "pixel_sha256": "164c823f75d1e5fa018d243fb7184229b5a52a591ca11bfad18dd5cf85317036",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/02.png",
+          "source_sha256": "0927a8d52018c171bee9ad9388eca91d1b63f0f3ce61fb81d128a06f56cfadec",
+          "pixel_sha256": "9083e57903874ea3e6ef00590f4a025d50891df692d48845968fbdd2e3432d86",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/03.png",
+          "source_sha256": "14c3fd6fc6c95335a57df0a19e2a65303d1504cf5174ac3b61d87e2558faa662",
+          "pixel_sha256": "9ebecb94bd4a4b83e16634eeae3d7f629e1ddeab3ec4c40acd0634c61fc41ffa",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/04.png",
+          "source_sha256": "44872f11ff115539c962bde1601f648ea6ab92e950b3a8e5c3c3d8409ca869c8",
+          "pixel_sha256": "fa78d403c1e7bcedb8e63ff2451e8e80103accb8fdbbe8b84aff25e10ed2d721",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 5,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/05.png",
+          "source_sha256": "256ff54f8358c520e1637979c802ae717f13120bffdebb7e88bc27909bcda7ce",
+          "pixel_sha256": "7671b2392ab18a1cb6eba7f63363200debde03cb1b59401472b1426d1ab0743f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 0,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/00.png",
+          "source_sha256": "eca5ad735723103f1be5afa59bcc5886860e4c2217b06041722ed399b03e72b2",
+          "pixel_sha256": "30fc6baeec6f36bc779c99ef66de0ad110db81eceec61a1b7e70e163d3ee2f9d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 1,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/01.png",
+          "source_sha256": "d9801b942b5b1749b2019748401b02f489e1632aec4e386d8a9b4dcde59a1434",
+          "pixel_sha256": "3523e4e540db1a41a0cbb56e353a2ccc6fa1811ae2ced92849307dad4e7c832c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 2,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/02.png",
+          "source_sha256": "6db73cecbc4042265267d11d23f037c056dc8aabd309cc6495a9aaf31c2aa5b5",
+          "pixel_sha256": "12e2e9e2dc75889c67afbc976fa41fa2fae23db3d31769b7b9599d492e3c3450",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 3,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/03.png",
+          "source_sha256": "2e1425fb6f6d47876de8437c2284d1b12f653dade6edb4c07d9d3f6751fb595b",
+          "pixel_sha256": "c7d933e5e6c37d682edefbfa8ef3a8854bb1e40496813c502f9c4c97704ce750",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 4,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/04.png",
+          "source_sha256": "25939edfd469b6b04a11a6a30b66b27282a16ed7d429ed49eb3d0d64a4b080ae",
+          "pixel_sha256": "9b60bed02edd3e0542c43032aa7d715c5ba61c5398bb7784c02d97864250547c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 5,
+          "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/05.png",
+          "source_sha256": "5041def737aa3cc647e810a57138eea90f336a28014852ca72371538e05d84a1",
+          "pixel_sha256": "cd5d73510306b71a002e7f587f624edbe053a9d54fd01fa8a65b9dd9a8678bbe",
+          "human_status": "ACCEPTED"
+        }
+      ],
+      "direction_16_frames": [
+        {
+          "angle": "000",
+          "row": 9,
+          "col": 0,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/000.png",
+          "source_sha256": "8e36902a6c7ce63e744e8aa82d981ea23dcc8efcb4bd18a94fa5ad69e9dbf859",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/cardinals-attempt-01.png",
+          "native_raw_sha256": "2af64a1fea8d669ab8275f8ac845dfab7d04e2d979a78505ae7428d47d7b8dfb",
+          "version": "p4c/cardinals-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "1732beb7cda1f6797ba455ad57f76bd6a7b29a4094e9f886dd1627ae7821f86d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "022.5",
+          "row": 9,
+          "col": 1,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/022.5.png",
+          "source_sha256": "67947d18a4dce83e76c71a5259113d1642f75430ac5d53410d00c9807b3885a0",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-ne-attempt-01.png",
+          "native_raw_sha256": "91ce8f0c61d11053afbb501a8a066ff1626b80e7b1cfbcacf2c92bd958343528",
+          "version": "p4c/quad-ne-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "6f8fb51a11cb42dee071b8a3cb417ca8ea74f9fcbf5ea8244a35b23a46acd4d4",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "045",
+          "row": 9,
+          "col": 2,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/045.png",
+          "source_sha256": "d6f38492e942226d7984341de3c66eeff10039a49cdef4ced1f0a4ffea9fde54",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-ne-attempt-01.png",
+          "native_raw_sha256": "91ce8f0c61d11053afbb501a8a066ff1626b80e7b1cfbcacf2c92bd958343528",
+          "version": "p4c/quad-ne-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "e3f744601f299ed49b307f8d7132e3049ec26a0fa876eae9a30727bd9d2b5acc",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "067.5",
+          "row": 9,
+          "col": 3,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/067.5.png",
+          "source_sha256": "882903c8898db698c53780789847f3fd6005e81ea304540ac84c42f7450e0b85",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-ne-attempt-01.png",
+          "native_raw_sha256": "91ce8f0c61d11053afbb501a8a066ff1626b80e7b1cfbcacf2c92bd958343528",
+          "version": "p4c/quad-ne-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "e96385c3932692e16e83f0926ad4ba7af4c86a158e15c8e6920561bc657be3a0",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "090",
+          "row": 9,
+          "col": 4,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/090.png",
+          "source_sha256": "f1e06c1e1bb68ed2e2b14ab141212b46aae630a743ca829a66be36bb8d9eab78",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/cardinals-attempt-01.png",
+          "native_raw_sha256": "2af64a1fea8d669ab8275f8ac845dfab7d04e2d979a78505ae7428d47d7b8dfb",
+          "version": "p4c/cardinals-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "645e904ee29be793521e9c40bdb55fb3711c2df504ff765ac39e1664b7866f3a",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "112.5",
+          "row": 9,
+          "col": 5,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/112.5.png",
+          "source_sha256": "724905805943df9a57fa7f73be57dedb2ed93c6a22389240fae18813d58a0342",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-se-attempt-01.png",
+          "native_raw_sha256": "e6856cd13f58bc3bcc5cddcb355b4b1e43efe4eca17c43fce3be998ca38e7b39",
+          "version": "p4c/quad-se-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "421b414103ed91f1457f88a55df5508c2cfdbe9bc2451be48e78a211ed01a611",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "135",
+          "row": 9,
+          "col": 6,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/135.png",
+          "source_sha256": "c2ddde9ea3644e5fd931071d5a709559761cdff3584cf62849b539e2f533b517",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-se-attempt-01.png",
+          "native_raw_sha256": "e6856cd13f58bc3bcc5cddcb355b4b1e43efe4eca17c43fce3be998ca38e7b39",
+          "version": "p4c/quad-se-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "98efcbdd6166f3b6712f990330a4820618921e404207298be5d844f11b8b0c22",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "157.5",
+          "row": 9,
+          "col": 7,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/157.5.png",
+          "source_sha256": "41642996590ba31466a115be5c5c34c58ad7311a481023931f1b51785c72c42e",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-se-attempt-01.png",
+          "native_raw_sha256": "e6856cd13f58bc3bcc5cddcb355b4b1e43efe4eca17c43fce3be998ca38e7b39",
+          "version": "p4c/quad-se-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "0493df0a4bbf8a2b4ea3309996ee7ac7e3a94b61bb542d8013b4937a1fb11a9a",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "180",
+          "row": 10,
+          "col": 0,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/180.png",
+          "source_sha256": "229a8302d650f7e0a3b75fe07e443441e631b9827e32fe49796ea941dd3c37d1",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/cardinals-attempt-01.png",
+          "native_raw_sha256": "2af64a1fea8d669ab8275f8ac845dfab7d04e2d979a78505ae7428d47d7b8dfb",
+          "version": "p4c/cardinals-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "RAW_JSON_ACCEPTED_GENERATED",
+          "pixel_sha256": "ec5fe8a77daf098ac01148a443a3a40f8c0a002a48d23667173ce430d2ef452e",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "202.5",
+          "row": 10,
+          "col": 1,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/202.5.png",
+          "source_sha256": "018d0834cddf1a1b9ef4adecb36fdca4fc17b2d1246ba745d270da8f786fc054",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-sw-attempt-01.png",
+          "native_raw_sha256": "cabf445c9aaa7a2e320b11006334363ac7890b12ac1ac8ec3a8fb7bbf85e641a",
+          "version": "p4c/quad-sw-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "0589d7d9e7abd760e00412cb8384564441cbff19f7390ac67356192e07e1f7aa",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "225",
+          "row": 10,
+          "col": 2,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/225.png",
+          "source_sha256": "9a19b0bf872cb05dc984549446e89c988c990985d7b32bca86eb383888bf0981",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-sw-attempt-01.png",
+          "native_raw_sha256": "cabf445c9aaa7a2e320b11006334363ac7890b12ac1ac8ec3a8fb7bbf85e641a",
+          "version": "p4c/quad-sw-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "75625bc18c3847f2c143a50a54025db1238db3f3dc4f3ed98d0a2c01b94289c0",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "247.5",
+          "row": 10,
+          "col": 3,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/247.5.png",
+          "source_sha256": "71f7f38acf0640ad73803cc30ea11262168becf3dee8880be1f71287f914560e",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-sw-attempt-01.png",
+          "native_raw_sha256": "cabf445c9aaa7a2e320b11006334363ac7890b12ac1ac8ec3a8fb7bbf85e641a",
+          "version": "p4c/quad-sw-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "eb18167b66f9ce3d51da6b0f5442efd58b34bf531aaeaf198593b07393df40bd",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "270",
+          "row": 10,
+          "col": 4,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/270.png",
+          "source_sha256": "a30e46c6564346a1445ef19361823fa769c3a1f9531c62d529b0445470ff9373",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/cardinals-attempt-01.png",
+          "native_raw_sha256": "2af64a1fea8d669ab8275f8ac845dfab7d04e2d979a78505ae7428d47d7b8dfb",
+          "version": "p4c/cardinals-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "4326f2877d68c6fb4b03ccb76e08ad1d3de78a3f6c44bafedf3ecca1f91e1400",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "292.5",
+          "row": 10,
+          "col": 5,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/292.5.png",
+          "source_sha256": "50e5644e4135f3d1192b466caa42f41b3b9dd25f293c41aec106fddeb68e8c97",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-nw-attempt-01.png",
+          "native_raw_sha256": "10b78cc8dbd0f087faa4ce5b6afc7b4a0a0b0435005aed8efe9b7cf3ceaa3277",
+          "version": "p4c/quad-nw-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "882dfec63a25ee6d3c4287fec2b6065d95721c8334fe530ff91a592ba8d1d139",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "315",
+          "row": 10,
+          "col": 6,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/315.png",
+          "source_sha256": "476b18ea150cf8157a565fdb38f0378e49dfd986084e98cd9ce45000ccf9d2cd",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-nw-attempt-01.png",
+          "native_raw_sha256": "10b78cc8dbd0f087faa4ce5b6afc7b4a0a0b0435005aed8efe9b7cf3ceaa3277",
+          "version": "p4c/quad-nw-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "RAW_JSON_ACCEPTED_GENERATED",
+          "pixel_sha256": "96624ca2f36abe01ab8c5e6dea76d39ed0bf802ab68012bc7634e3f215435e20",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "337.5",
+          "row": 10,
+          "col": 7,
+          "source_path": "07_QA验收/P4-C/rei-school/frames/337.5.png",
+          "source_sha256": "bcfb8bfdc5b3e94662f00f848afbaefbb8a07c184cd8e256b749357d5ce9f279",
+          "native_raw_path": "07_QA验收/P4-C/rei-school/raw/quad-nw-attempt-01.png",
+          "native_raw_sha256": "10b78cc8dbd0f087faa4ce5b6afc7b4a0a0b0435005aed8efe9b7cf3ceaa3277",
+          "version": "p4c/quad-nw-attempt-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "da58bbe17e55ca3e620dcd8fee8e2b70b4c9902b06e72ad5402c03d9ce3a38bd",
+          "human_status": "ACCEPTED"
+        }
+      ]
+    },
+    "rei-white": {
+      "id": "rei-white",
+      "displayName": "绫波丽·白色战斗服00",
+      "expected_codex_selector_id": "custom:rei-white",
+      "grid": {
+        "columns": 8,
+        "rows": 11,
+        "cell_width": 192,
+        "cell_height": 208,
+        "width": 1536,
+        "height": 2288,
+        "active_cells": 74,
+        "blank_cells": 14
+      },
+      "deliverables": {
+        "form_extended_png": {
+          "path": "04_白色战斗服/P4-D/delivery/spritesheet-extended.png",
+          "bytes": 1463189,
+          "sha256": "39fb38436285eb84e0dcbcd8b380bede6815c38abf37f5f66b3d3666cdc5ad44"
+        },
+        "form_spritesheet_webp": {
+          "path": "04_白色战斗服/P4-D/delivery/spritesheet.webp",
+          "bytes": 1048278,
+          "sha256": "182369dbd3d4797f7ca267333882c84fb4b70929db00efe444b9395050dfe61e"
+        },
+        "form_pet_json": {
+          "path": "04_白色战斗服/P4-D/delivery/pet.json",
+          "bytes": 319,
+          "sha256": "53d53583587a75bd9f1496dec08dc729dad00a9049b429c4fdab8db32be16bec"
+        },
+        "package_spritesheet_webp": {
+          "path": "08_正式交付/P4-D-candidate/rei-white/spritesheet.webp",
+          "bytes": 1048278,
+          "sha256": "182369dbd3d4797f7ca267333882c84fb4b70929db00efe444b9395050dfe61e",
+          "decoded_rgba_pixel_sha256": "37a4b3a0d0e2ffc43a59eaccb5ed20c3b323d0f7dd842330c848ce05043a026d"
+        },
+        "package_pet_json": {
+          "path": "08_正式交付/P4-D-candidate/rei-white/pet.json",
+          "bytes": 319,
+          "sha256": "53d53583587a75bd9f1496dec08dc729dad00a9049b429c4fdab8db32be16bec"
+        },
+        "individual_zip": {
+          "path": "08_正式交付/P4-D-candidate/rei-white-codex-pet-v2.zip",
+          "ok": true,
+          "bytes": 1049132,
+          "sha256": "0e4e5ade9886ee2367417e6e85e9cd097bf4bdc782d955c96e679acdc39c79f3",
+          "entry_count": 2,
+          "entries": [
+            "rei-white/pet.json",
+            "rei-white/spritesheet.webp"
+          ]
+        },
+        "contact_sheet_light": {
+          "path": "07_QA验收/P4-D/contact-sheets/rei-white-extended-contact-light.png",
+          "bytes": 1203915,
+          "sha256": "1ddeed50b5a82af7c4965ba0f795fae0b82491164bd952616d83bf1bac649d78"
+        },
+        "contact_sheet_dark": {
+          "path": "07_QA验收/P4-D/contact-sheets/rei-white-extended-contact-dark.png",
+          "bytes": 1219844,
+          "sha256": "dc5ae331cbdc2cf564b46180696af3f1bb366e9b511283ef7ebfce377a51e095"
+        }
+      },
+      "neutral_reference_cell_r0c6": {
+        "row": 0,
+        "col": 6,
+        "protocol_basis": "09_项目文档/REI_PROJECT_ROADMAP.md (从验收 idle 提供辅助中性格) & 09_项目文档/CODEX_PETS_COMPATIBILITY.md & hatch-pet --neutral-cell idle/00.png",
+        "source_path": "04_白色战斗服/P4-A/selected/idle/frames/00.png",
+        "source_sha256": "8ae73126ca709d93ebd4e6d2cca519bbec0b06486905d1fe83117f4e29cd0137",
+        "pixel_sha256": "7d980a830aac9d285f572d7a5ab5d0a2f762ab828274b4d0c1a6f3e42832affa",
+        "exact_unaltered_copy_of_idle_00": true,
+        "temporary_badge_present": false
+      },
+      "standard_57_frames": [
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-A/selected/idle/frames/00.png",
+          "source_sha256": "8ae73126ca709d93ebd4e6d2cca519bbec0b06486905d1fe83117f4e29cd0137",
+          "pixel_sha256": "7d980a830aac9d285f572d7a5ab5d0a2f762ab828274b4d0c1a6f3e42832affa",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-A/selected/idle/frames/01.png",
+          "source_sha256": "40f4d81cfe3aa94b4f27b67bf6ff585b0523433385f9673c97929a5599d6b982",
+          "pixel_sha256": "d37b6f64af01a4c137608e28e2e2222171ee05b6001d37d6d7e38b1a0beba611",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-A/selected/idle/frames/02.png",
+          "source_sha256": "d9abfbe30f1b300f3802f76abf96f08774bdf0a9d798bfcfd59d4ffa0f8df104",
+          "pixel_sha256": "6803e9323ba8f944d21044459815666c6089de0192022211d1812fd9a01911d5",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-A/selected/idle/frames/03.png",
+          "source_sha256": "473eb159adc1b95fa91c53b007fcaeaba540ab815371ae14fbaa246ccedb7729",
+          "pixel_sha256": "7fe68b83565d662900062713874ed847fdc4a8677e53f6b0b879a45c3496d516",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-A/selected/idle/frames/04.png",
+          "source_sha256": "ec86538bffb26271c40627ab36ca32d696d72b1833b73292017d61f5f3bbaaff",
+          "pixel_sha256": "aa999420c504ca9797a82aa7774d9e208b413daca987c6e8d10351144ed3f29c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 5,
+          "source_path": "04_白色战斗服/P4-A/selected/idle/frames/05.png",
+          "source_sha256": "a08f798d4d16470cb73dda7c90699ab43e0eaba98e92ea96eb2955f738d3b13b",
+          "pixel_sha256": "0827839736289ff4a38be0f169878548749350ee091ebed451e3762563dea057",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/00.png",
+          "source_sha256": "863746c4f09ce762f21c86e0d31183da80466b79e41417496b7b4ef84bbfa816",
+          "pixel_sha256": "1b101f836877163c5cdea718052e832c0ffdc3603ea9e2014b3acabd82c57e24",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/01.png",
+          "source_sha256": "6626a4efe1696683e6658bc1477b47c835da3301805247c69bf507d850e0d8d6",
+          "pixel_sha256": "d325d0609f48762aba90c2b040bbf3319b452df80c6987f92919519761bc1ad8",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/02.png",
+          "source_sha256": "29520493b74cc96cfb28690e8c7b8aec5dd6162aa1019c9c6aa0dd6b8c6bb323",
+          "pixel_sha256": "97a05bc32ea6cd8a25d3b5f955bb54d1c8a354bbf194b11b979172ca005930da",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/03.png",
+          "source_sha256": "70a0372ea1dcb8d022f5592d57f4b87b10c0656cbd24220f281c2f1eb3ef8dc8",
+          "pixel_sha256": "94f9186505f632eaa0097b02875b3fce7d5ae48e0a70728b97d32768446b08ad",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/04.png",
+          "source_sha256": "1e9f0395a93fe180b88255fb905ed6f5ca89df9ee8eeb26ff898dfdac27080cc",
+          "pixel_sha256": "21e8a054138e151c1d390762e1d4eff05112f902254d494e9f6908de82d61312",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 5,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/05.png",
+          "source_sha256": "6b08100482181b07513626ee2fdc8656275362c295c9514578e58b63dec837d2",
+          "pixel_sha256": "269b9b65149bfb77be1bdddc103b84c3fc9629e7df477c75b877236504cc6870",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 6,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/06.png",
+          "source_sha256": "44a387c625ea483e22610e5a63be4348be58db5afe9cccfe8c0f41a69435c4a5",
+          "pixel_sha256": "37f3db06f12c2a53cb19e0e188ee073d50e245b8eb3f21c297f57bc086e55852",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 7,
+          "source_path": "04_白色战斗服/P4-A/selected/running-right/frames/07.png",
+          "source_sha256": "9140769f0eded3e3e92d6489a88c86c21f9e15da593d4b2fcd830eef540c42fd",
+          "pixel_sha256": "5043c92b00969b623ff2ff686dfc168412b54e5436e183a614e38927480f2334",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/00.png",
+          "source_sha256": "d244c17c579c69d93198a55d5a6cace508eaa9abf5385b7120fbdc740e96113d",
+          "pixel_sha256": "b5a4c26ab7cca2560f733cfdec2bc558459cecd6375a64b8cb1b5ca5516a867f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/01.png",
+          "source_sha256": "9aa079e8ef9ccd9367122350f3844a27d57233d972677596718c3f9d5a7cc99d",
+          "pixel_sha256": "572e341ec567dcf68e88fbcae7376882929b8c48b8a4accff5ca461af9bb63c7",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/02.png",
+          "source_sha256": "4f3fa1e424e6a9cd19b8dbab51dc058da006cc1e04a268de399ebde12206efb7",
+          "pixel_sha256": "311195d42e771dff4607589daae7287478f0bebc549db5b1d2d9186bccf2c543",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/03.png",
+          "source_sha256": "15a2d96773c1b3dae3f5aa8cd0e168992bd24daa40a3dc09378f0d08e5a4f690",
+          "pixel_sha256": "25618dec7bcd9458f936209dacfaa590b545eaff001bd6ed3936e1c857a0448d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/04.png",
+          "source_sha256": "daa80e194e75943b19a5457cd093e03fd2b3c66f4b01712f3c2173bc0fc6f3ea",
+          "pixel_sha256": "a3c33ab405a1bd4ffb54342b003844282d8dbe0248142d4e81d02c44b24bb71f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 5,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/05.png",
+          "source_sha256": "9933a0dd7d5661e9f1b5d3d80a636c79548b8774ed398ecfb0c7ee382660aff9",
+          "pixel_sha256": "859222eee08492c82455ca7c03fd568196292652f0c631760b708b7e687096a4",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 6,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/06.png",
+          "source_sha256": "e704e1981a6c4d1d174ebeebd5072dcbe2694b228a7f545b2e542627ebbbe84a",
+          "pixel_sha256": "71fbc3ee571139a692a625f36f45fb38b64b874f39279170d62ea362cc172ff9",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 7,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running-left/frames/07.png",
+          "source_sha256": "2c416b6dba8843ddfbe488faebd4b5d42da40fc84ddfe0bb0cdeb4badd487031",
+          "pixel_sha256": "a55214a896e9ba205b5b171e688aba5e19185280400b5075eba25205b9cc4c92",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waving/frames/00.png",
+          "source_sha256": "0206e5e434a670863e9d2ef8994a648fdfdb82ae04e7581a21b5a46ce5b79784",
+          "pixel_sha256": "8a277573f847e487dd67e91b3ef75bd48acbf02ab7d8ece1a943e9ea3507f233",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waving/frames/01.png",
+          "source_sha256": "c5f8e2da657d6d7f0688a4794ba5975d19510dc1455f1de74a57ca3f517eef9b",
+          "pixel_sha256": "34f1c5daf6d2f26cfff3009fd0a6f94802ef87f67ea79a11bc82fee2168f4555",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waving/frames/02.png",
+          "source_sha256": "bd5d3d9265bbfb32cdd4c26cc9ba31cc7dfc35f951d414be13f9e99e851c26c2",
+          "pixel_sha256": "9cd9f40236092d6381b9a3d65d8b2610386dcf4000f669bf6a080f64020b62ff",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waving/frames/03.png",
+          "source_sha256": "f8ea76f4e1f8d3110d9d4251cb3199ebd0eb5c2d43a35ed1b182e102d201ced3",
+          "pixel_sha256": "44db2b0bd07569aba0aa6624fcf5deec6b320529fa31016f23f91440c884735d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/00.png",
+          "source_sha256": "422f2706c693b29c3c55eb5ff79aa421e9a7461cbfe55376412215ee8d7290eb",
+          "pixel_sha256": "1cb19151051f7205aec5e6ab382e98d8272ac34c6b565a491ff8707b840b0c4e",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/01.png",
+          "source_sha256": "144e63806ba5901824cf9cb9531932444925f62eb9de7018523bc81457b4dccd",
+          "pixel_sha256": "dcadebbfd8cd55b2df55a8e5cffae630b797ce08c3e22d65273f131f70e68ed3",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/02.png",
+          "source_sha256": "5dbdcc85e1dd4e1ac357d89a8f28f73d010507f589095206359a22e516fb27c3",
+          "pixel_sha256": "32c715c9cc26b7dd9e01a795bb127a8356ce56d7c549f93cb433685c649d7a79",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/03.png",
+          "source_sha256": "08809d025d6f6fbac90865d6d7db5190807d6b49d55090ea9b3490e2406e54a7",
+          "pixel_sha256": "2cdfa999287a82726c4a6e03417d0c20ca800b4a46e4fe01752657d2b9bbcd63",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/04.png",
+          "source_sha256": "7aeeddc3e8dcc3d92ffc9908350877d12e2fb24ad10293331649f62e64e0900d",
+          "pixel_sha256": "5f1e23c545a6671bd56842a4b3572be7ee3e0a2b6546a0c7890694be4eee3693",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/00.png",
+          "source_sha256": "5cee434ec359b5e0653c6721d92823d41635d5fa343637b107772e869e287fe8",
+          "pixel_sha256": "8a7359a7d3214e37a515b9c54acd96e11fee5c750d9a42e7d17e9f56c307ca15",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/01.png",
+          "source_sha256": "b89ac721e49ad3e173dec392e698f7f0a96936525130361260485e3aa774847f",
+          "pixel_sha256": "c3c5e07488350bc6f229588ef03c22b9ed2c68006de646cbab5a1665856473ea",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/02.png",
+          "source_sha256": "dee573a5665bf635a9bf3a7af3ec4e3f0a01aab6fe9e8fe0c640d97ae8859b56",
+          "pixel_sha256": "3ff028e40eda411fcb9e6d8ce47d2bf44a4d1c9ada83e1c91663816c81d98378",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/03.png",
+          "source_sha256": "03a7d1a8cd4e250c7ee43066435cfd1eb11be691441f867a6577ddc0f2658878",
+          "pixel_sha256": "eb9cf7a4d6be3506756b0223e9d9ccc2a7c4fce22f210efaa4280878fd9d7806",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/04.png",
+          "source_sha256": "c71adecf2b06bffcf4d1912a8d18fadf8a5fb2c7746909838379467120e67431",
+          "pixel_sha256": "ef16cf1e4beba8c07e653d18666ea96c82ade551e1d11939ab5f9b19adfb4f75",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 5,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/05.png",
+          "source_sha256": "eba7b79288024bc8c66093efe921c57ed3d90d77165a7aa16e11822a5333374e",
+          "pixel_sha256": "131d27fdfa17b91b8edb9568bad98dfb705a6396aeb7865233f666ef9054e21f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 6,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/06.png",
+          "source_sha256": "f3b2ceabdad37fc29b3afb93385e6013fe84625780d7f2d6f75fa8cc9c9165f4",
+          "pixel_sha256": "a761b8800efca0559c29a57781c03968b3cee37ea850277b8441fb2d7abf976a",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 7,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/frames/07.png",
+          "source_sha256": "44f9ca9aa52d61986e6190319bd8d1ddf2751b4f431e3bd929acdfaa70f1b77a",
+          "pixel_sha256": "1b6ec86f34557c657949fb44318a0f71c41a5542a063e92ca0b97ad65eba8b0b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/00.png",
+          "source_sha256": "dd2e0c4cf9e6d71049045e8d1fd050a50435cc132fac42acfb1b851a58048319",
+          "pixel_sha256": "3086f8b30017b459021cfdd552826915594f05745572c5bab75f896442d4d59e",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/01.png",
+          "source_sha256": "389996cd8768d16a4be69e3a07d1944436fb2094cd661972872d951823aac6ec",
+          "pixel_sha256": "3595d73dd18b86e73a2ba3b43516ddd31418666e423d0fbb0107813efc186a33",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/02.png",
+          "source_sha256": "646bf286e218b87c0b82ee6556126448f29dd5cab6c3a43f2de739ed37916995",
+          "pixel_sha256": "707528cbc1ff6d2be16172f82689a48f19394e6a5476691f6da80c3f4471c12c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/03.png",
+          "source_sha256": "ff67ee640502a481ad7d0916751d97f2a026dc3cf035a94d9d5dca0b37649bef",
+          "pixel_sha256": "df57953b86975caac55ae90474899c54ced5def232c78cbaddd6479617441d42",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/04.png",
+          "source_sha256": "57918ee2c21cd3c1f2bef52ea93c22405df3ab5c22ec8ac0fc207b0fd532e8c2",
+          "pixel_sha256": "882a1dee3e3e3d6813f972e9434a64aa17336fd4bdf3ecb0cbb527a4f338b5a2",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 5,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/05.png",
+          "source_sha256": "90baf42550ba609e97e27319127b355ad29ac0966b897e642f4ecbf7c256608d",
+          "pixel_sha256": "8e9cf650c00d5763427eac4b7a2ca0b815d3328dc87f84f93d99d08bed130201",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running/frames/00.png",
+          "source_sha256": "097b08b20192520119f4a0927266b6452438ef7147fbed1d9fb4210c9f12de93",
+          "pixel_sha256": "02d9c25e3acbd239aabc5d74b33358610e114b7b0b9ce29eabc2b0ab60462ba7",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running/frames/01.png",
+          "source_sha256": "eec164b0f8dda1fa0007b96abc010da0ccdee796b16446066f2372eeebc5f1f0",
+          "pixel_sha256": "0967ce566ba188f26a19ea3cd5b341591b9981361e108268e1919be54541118f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running/frames/02.png",
+          "source_sha256": "a2b91fc137e93e2f21bdc4d422ff4bb41222e55918ebcbc4babefcefbe8a60b4",
+          "pixel_sha256": "f013eae46519c1f2517d54adfa29199110443908436acf731076b204fdf70c0c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running/frames/03.png",
+          "source_sha256": "38b1ed1576728d34292fdd109805155ba08d354948ce336ebce3e4d6b9d8907b",
+          "pixel_sha256": "6ff8acf3386e0ff044e195ff0bb8d13779759c4f048bf8db3c4543dbae649d90",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running/frames/04.png",
+          "source_sha256": "ab888b3696433632c30c8eab583def49be42efaa7e038d2c9b011ea4e540bbac",
+          "pixel_sha256": "f2a82be89717d7ef8b02a2f75e09974c603210afd685bec35335a5266d3237be",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 5,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/running/frames/05.png",
+          "source_sha256": "ad44969c6767aec43a18e5391f6b07d91129ec127a9fe363251fd93304a78fbe",
+          "pixel_sha256": "6630da13878a170099b3802ce04037682825d1d0ec1cca746c61f3317dab6a68",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 0,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/frames/00.png",
+          "source_sha256": "081546aef0782ff1611ff2a4b3e7a8a2abaf5e4c68bd21d226b7a405e06fbd5b",
+          "pixel_sha256": "4be066ef71724e194306b1b432e4dd6e9cdbd8a17fd4cd1f884757e33de925f9",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 1,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/frames/01.png",
+          "source_sha256": "8a5c68e60618617855f513388d0c4f70f652230addf9a73d9bb3446c4c7b22d1",
+          "pixel_sha256": "93bc39962c47bf670f3932cbd057f8b6136e5fa9e13b8b9774e41d384c2bd336",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 2,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/frames/02.png",
+          "source_sha256": "d6102a9e34cb22013d1f4efaa2da97599b32ef20e2f1225677433404ed81781f",
+          "pixel_sha256": "afc8a96a5c85fe4ab1bb4c92310aea08ad5e1a75c70148bbd37814039ed16047",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 3,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/frames/03.png",
+          "source_sha256": "0405b871331281b0d97f86fc2bdc86f54810283009206fc5a10efb0fb3c1bfb5",
+          "pixel_sha256": "6499c5311f08d0298bba25447a9a29ad693a1a595f89881529cc5cf05deb4418",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 4,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/frames/04.png",
+          "source_sha256": "825a2ae9ab61ef991ef2842aea1647ebf0609eaf99796bf396660ec29d48898f",
+          "pixel_sha256": "83e8a17f3a3ceed3dfa4c630a1838988c9458da33e866cf06c70a657fe60bc50",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 5,
+          "source_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/frames/05.png",
+          "source_sha256": "3ae5d48f4304d989987e58cbfff232612b54f807792f9f49c6a9c5f1a7a51389",
+          "pixel_sha256": "6b1a21747e4164f23d803362d0b946fc9a4e6d43d54834323f43297b5f876ce9",
+          "human_status": "ACCEPTED"
+        }
+      ],
+      "direction_16_frames": [
+        {
+          "angle": "000",
+          "row": 9,
+          "col": 0,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/000.png",
+          "source_sha256": "558e7f79c3f0535efa8949930fc7ba25d35be34ba54dc98eea6a9bf00a9bb93e",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/up-cardinal-03.png",
+          "native_raw_sha256": "1a3a54e9de0a2ce0c78d3d1caa7ae84db65cea767db7a30d5f0ed1736854faa2",
+          "version": "p4c/up-cardinal-03",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "b91bd35bdd15ad931875e811e39f86ad6ff114e37761780e2645a2671a1b3b13",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "022.5",
+          "row": 9,
+          "col": 1,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/022.5.png",
+          "source_sha256": "d7a1aa37f9175b7b4b8fec04dfdf443b5091789be3f7e938fccf672546449db3",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/up-right-01.png",
+          "native_raw_sha256": "2f9010b1f3f26f6c15045dcf89c856dcfca933107fe309ff52145815eb0a2942",
+          "version": "p4c/up-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "20e9609ed9a7c1264f0b778489e994fb9f9dd9ca58887023971ccffb67ce2ddf",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "045",
+          "row": 9,
+          "col": 2,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/045.png",
+          "source_sha256": "c96e69751402d1ff15df15c1a4c38113a7e1e640f2cc013aa275cc19215416a7",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/up-right-01.png",
+          "native_raw_sha256": "2f9010b1f3f26f6c15045dcf89c856dcfca933107fe309ff52145815eb0a2942",
+          "version": "p4c/up-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "4eddaa8a82e5557d43c19effbdf27950639add4eb6905c686de6a047316c3846",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "067.5",
+          "row": 9,
+          "col": 3,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/067.5.png",
+          "source_sha256": "a7dffdecc89fb9049659d5bb7933ddb7185ca4a49d01185b4e67b5acc455c668",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/near-horizontal-02.png",
+          "native_raw_sha256": "99f9283f62dabd0b1de3584c2884ceabe6ff914b1a8ae81559c6ee10f07a2b6e",
+          "version": "p4c/near-horizontal-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "0d2faf4c992aac5cacb92f90c0abe33fd67df737c4c7401a96a934327f4f3f2d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "090",
+          "row": 9,
+          "col": 4,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/090.png",
+          "source_sha256": "96718a5d0cd8e752a94b5ad244a7bd11a92d7964a1e18e6060a68e52dff86335",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/cardinals-01.png",
+          "native_raw_sha256": "f70a4b14f5441d63cdd70d4dc992a8aff6250f3a10ac2b91916ab94b42374afa",
+          "version": "p4c/cardinals-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "ca28c6cd9c6cd942939ec27a49fe9a742639a95d29805b1716d2f6e672d9d8ba",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "112.5",
+          "row": 9,
+          "col": 5,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/112.5.png",
+          "source_sha256": "947d086125de2cbcbbe636a21e95a2451ee2f0a8bc367539c9dce170048900a1",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/down-right-01.png",
+          "native_raw_sha256": "0b2ac2583ef4fecc65936caf8d9ccab3a9df3a795d20846c6363a8a54dfe72e5",
+          "version": "p4c/down-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "14f4d923d1bf7f139e13767d1807b372c329bb8efeea15573e7762e48613dfc1",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "135",
+          "row": 9,
+          "col": 6,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/135.png",
+          "source_sha256": "22072a260224774b11487fc3d017a921bc7e5e85e963c0010afd51f86c6c0857",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/down-right-01.png",
+          "native_raw_sha256": "0b2ac2583ef4fecc65936caf8d9ccab3a9df3a795d20846c6363a8a54dfe72e5",
+          "version": "p4c/down-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "0da6ba368af41a6029e6687035a6d410a0bf6ef763c7d08ac2074a5ce7f617d4",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "157.5",
+          "row": 9,
+          "col": 7,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/157.5.png",
+          "source_sha256": "09532c850c0c280e7ec5154455ed5d88883e50619647b8b476864b94c7cfbe75",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/down-right-01.png",
+          "native_raw_sha256": "0b2ac2583ef4fecc65936caf8d9ccab3a9df3a795d20846c6363a8a54dfe72e5",
+          "version": "p4c/down-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "dad549da7f01472b2711287b5bc852533a031f34e80df031ff4c49dece5f11fb",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "180",
+          "row": 10,
+          "col": 0,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/180.png",
+          "source_sha256": "62d239abf8d2b5ff9905ad5e1cac9968a3c61b35aab13b453bece72153315de4",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/cardinals-01.png",
+          "native_raw_sha256": "f70a4b14f5441d63cdd70d4dc992a8aff6250f3a10ac2b91916ab94b42374afa",
+          "version": "p4c/cardinals-01",
+          "origin": "GENERATED",
+          "acceptance_source": "RAW_JSON_ACCEPTED_GENERATED",
+          "pixel_sha256": "a6324b1e514681e28a0db82b9ce11b906cb3410ab9c0e24008f39c955f0796a4",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "202.5",
+          "row": 10,
+          "col": 1,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/202.5.png",
+          "source_sha256": "d3a37a5e5f7738759acedaf45531217fc357c557cc0896c1c9e4992cdf85a721",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/down-left-02.png",
+          "native_raw_sha256": "fa09c7e8e172cc020b9d1adfef58fc1f991b00996e9e42f83326f81bd448a076",
+          "version": "p4c/down-left-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "d0ea7bcb8e758b35ac981c476291a94187c120045b1bd41098063641004e9063",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "225",
+          "row": 10,
+          "col": 2,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/225.png",
+          "source_sha256": "a1aff859bc06f99839a37bb2fcfacc4188b2c730aa81a23bb66b76f2892fcf57",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/down-left-02.png",
+          "native_raw_sha256": "fa09c7e8e172cc020b9d1adfef58fc1f991b00996e9e42f83326f81bd448a076",
+          "version": "p4c/down-left-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "37519546801d466671fd2afa4ef4df2c1967ee74e3fc0a9212d1b21e16f79bb0",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "247.5",
+          "row": 10,
+          "col": 3,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/247.5.png",
+          "source_sha256": "0a67a721a528b8b587aadba98ba6c3e404d6b1d110ceacedb58d1d6d44e7a9fe",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/down-left-02.png",
+          "native_raw_sha256": "fa09c7e8e172cc020b9d1adfef58fc1f991b00996e9e42f83326f81bd448a076",
+          "version": "p4c/down-left-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "219d2e65f845616bf5557b883b14106f1dee693ecd9efefd635ec82a4b6a8c4a",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "270",
+          "row": 10,
+          "col": 4,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/270.png",
+          "source_sha256": "380e45a386408675e146d868509cd26441ddb5961f40b2b527c253ac2fec9089",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/cardinals-01.png",
+          "native_raw_sha256": "f70a4b14f5441d63cdd70d4dc992a8aff6250f3a10ac2b91916ab94b42374afa",
+          "version": "p4c/cardinals-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "0b21a6c39ae5d53ae903e6c0c23996c7292cc21b4087e72d7ea7013818a8c48f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "292.5",
+          "row": 10,
+          "col": 5,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/292.5.png",
+          "source_sha256": "8b75cffea4256b2b657cbec47d124b73c1073e5a16c12bdb395641af08c60849",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/near-horizontal-02.png",
+          "native_raw_sha256": "99f9283f62dabd0b1de3584c2884ceabe6ff914b1a8ae81559c6ee10f07a2b6e",
+          "version": "p4c/near-horizontal-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "5486819c4ebbe1f00935be11317d09afacba71f894fc330f027339c310893173",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "315",
+          "row": 10,
+          "col": 6,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/315.png",
+          "source_sha256": "0b9f188f788eb1c762c3a36c54d0805a2e87b72623478e874f7a030d018b18c5",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/up-left-01.png",
+          "native_raw_sha256": "2bce611272b92fa5698d012a043c2d45b1e2f82cdbb1a12ba70d082611a76d4a",
+          "version": "p4c/up-left-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "a3349879a58e63c5a892671c90597437d735ae52172988d648a9e064a9920bbb",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "337.5",
+          "row": 10,
+          "col": 7,
+          "source_path": "07_QA验收/P4-C/rei-white/frames/337.5.png",
+          "source_sha256": "d9bcca1f9263a602d9c361eb31ff4d0c7c580f5449f780c885b01e6661fe1f71",
+          "native_raw_path": "07_QA验收/P4-C/rei-white/raw/up-left-01.png",
+          "native_raw_sha256": "2bce611272b92fa5698d012a043c2d45b1e2f82cdbb1a12ba70d082611a76d4a",
+          "version": "p4c/up-left-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "3ba9e58356fe24720d6f4f05aad8cbb47f4226aa14a15fcc14d34854fd0221b6",
+          "human_status": "ACCEPTED"
+        }
+      ]
+    },
+    "rei-black": {
+      "id": "rei-black",
+      "displayName": "绫波丽·黑色战斗服09",
+      "expected_codex_selector_id": "custom:rei-black",
+      "grid": {
+        "columns": 8,
+        "rows": 11,
+        "cell_width": 192,
+        "cell_height": 208,
+        "width": 1536,
+        "height": 2288,
+        "active_cells": 74,
+        "blank_cells": 14
+      },
+      "deliverables": {
+        "form_extended_png": {
+          "path": "05_黑色战斗服/P4-D/delivery/spritesheet-extended.png",
+          "bytes": 1295403,
+          "sha256": "2baac0b9feb58b24b646c6cb72b8b36b2ca4afe82d43c43d67b5e8207dc73b6b"
+        },
+        "form_spritesheet_webp": {
+          "path": "05_黑色战斗服/P4-D/delivery/spritesheet.webp",
+          "bytes": 946396,
+          "sha256": "15e65fb6a5842722d97edb16a441a337f89212af8373b83f1ad9b87e3fada200"
+        },
+        "form_pet_json": {
+          "path": "05_黑色战斗服/P4-D/delivery/pet.json",
+          "bytes": 319,
+          "sha256": "980a4c7c26b551e91316fd4973e4e03a434825a69ca7db5eb608a266949d525e"
+        },
+        "package_spritesheet_webp": {
+          "path": "08_正式交付/P4-D-candidate/rei-black/spritesheet.webp",
+          "bytes": 946396,
+          "sha256": "15e65fb6a5842722d97edb16a441a337f89212af8373b83f1ad9b87e3fada200",
+          "decoded_rgba_pixel_sha256": "f35485755245397b94cbff7e65013f45c9082ae01c205efb5c9ee543171bb141"
+        },
+        "package_pet_json": {
+          "path": "08_正式交付/P4-D-candidate/rei-black/pet.json",
+          "bytes": 319,
+          "sha256": "980a4c7c26b551e91316fd4973e4e03a434825a69ca7db5eb608a266949d525e"
+        },
+        "individual_zip": {
+          "path": "08_正式交付/P4-D-candidate/rei-black-codex-pet-v2.zip",
+          "ok": true,
+          "bytes": 947202,
+          "sha256": "0a795c5b379f81c304d08b1f41b8b666ddd91fd5bc92ec555952f738f4cf5998",
+          "entry_count": 2,
+          "entries": [
+            "rei-black/pet.json",
+            "rei-black/spritesheet.webp"
+          ]
+        },
+        "contact_sheet_light": {
+          "path": "07_QA验收/P4-D/contact-sheets/rei-black-extended-contact-light.png",
+          "bytes": 1109363,
+          "sha256": "2b55b3634fbf110c01e45dc8e469a9e978bcaad8432103f117a16657be80a3f2"
+        },
+        "contact_sheet_dark": {
+          "path": "07_QA验收/P4-D/contact-sheets/rei-black-extended-contact-dark.png",
+          "bytes": 1048991,
+          "sha256": "269fdc90a3df8c7019987faf265b9656fd4c2215745fb5b9008748fa4843aa5c"
+        }
+      },
+      "neutral_reference_cell_r0c6": {
+        "row": 0,
+        "col": 6,
+        "protocol_basis": "09_项目文档/REI_PROJECT_ROADMAP.md (从验收 idle 提供辅助中性格) & 09_项目文档/CODEX_PETS_COMPATIBILITY.md & hatch-pet --neutral-cell idle/00.png",
+        "source_path": "05_黑色战斗服/P4-A/selected/idle/frames/00.png",
+        "source_sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455",
+        "pixel_sha256": "7f39418cc9c11354ad42d6801e480e4a253c862c8bd78c59e2d8780fb49ee8f6",
+        "exact_unaltered_copy_of_idle_00": true,
+        "temporary_badge_present": false
+      },
+      "standard_57_frames": [
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-A/selected/idle/frames/00.png",
+          "source_sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455",
+          "pixel_sha256": "7f39418cc9c11354ad42d6801e480e4a253c862c8bd78c59e2d8780fb49ee8f6",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-A/selected/idle/frames/01.png",
+          "source_sha256": "3cf61021ca7bcd0a6bca6405bb20b498d9ffe305b0a82ab4319fae8e83d19930",
+          "pixel_sha256": "76eb024c615f2ad5cd140e435e0c9e3b9c2780363882592c73ad538749cf7909",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-A/selected/idle/frames/02.png",
+          "source_sha256": "09860803125df4c2eac34c64877d28cae98b4c2901a97da931e1e21d4bf09b28",
+          "pixel_sha256": "6d557680bcf02952f444bcfcc9fa82f69e52cc810b017bac31d540517743d13f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-A/selected/idle/frames/03.png",
+          "source_sha256": "66c3a767068c6189efb42367a8ee50eb42b76e7aaca2e157fa739693b9cf696f",
+          "pixel_sha256": "20f62dcee6a893195ee22c8013c004df4d1a12a5181f64b8153817b4b35d35d3",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-A/selected/idle/frames/04.png",
+          "source_sha256": "fa6b66526b64a04f5789c7bb3c7976ee5bcc3560eec22f2368b351d818556c9c",
+          "pixel_sha256": "c78df0145c572d176f8f505c74bff5c27f9f7118249e4c10d75e2ca024383fc7",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "idle",
+          "row": 0,
+          "col": 5,
+          "source_path": "05_黑色战斗服/P4-A/selected/idle/frames/05.png",
+          "source_sha256": "cc4cf523b941bf23a8240f2695d9a3ab41f2bf68b47da61620a40fb710ced371",
+          "pixel_sha256": "e11e20dfa1c546bcd501bbc459d9eef9f119981c529a12501b50cd890022f068",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/00.png",
+          "source_sha256": "a1a69caac3d1459dac003979776b7e273862ba9968a7b74decd6a6ba67cd5d5d",
+          "pixel_sha256": "1ad431d244021dc1bb65271b2e8c29053be09fc6ed7bd77614ea569efddcaaff",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/01.png",
+          "source_sha256": "e2854f440f90c5cc45ba2352498f1efaef81fa0ba59c7257e364259cf47b982a",
+          "pixel_sha256": "d261f5415bff20a94c8217770c80537253aa3f6efba0fb02d0a68ca2d3b3f0c8",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/02.png",
+          "source_sha256": "85c2eeb9167a6a68229036fc9d670e773715b2f4f993e481f1d1a806e4b36123",
+          "pixel_sha256": "ca94f17f1dfa3f5a53e22a8dca1c0b96233c79ccc845151ef6094370149409e1",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/03.png",
+          "source_sha256": "3d2e87e028f78acd8bdb887210feb23fe5c994f34f142b0dca90484e31ba4ac1",
+          "pixel_sha256": "c354c170b12f64151761478cc0a9c490766c3b537d9af39d0040a271d7057327",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/04.png",
+          "source_sha256": "d547604f40b9a195dd4f34acaa2d64dedad83868e1b47e0541e0ba72766578ed",
+          "pixel_sha256": "ca7297262b7732583ffc6b45f30f0351f825a9e67ce28966ba9eac4846119d07",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 5,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/05.png",
+          "source_sha256": "26ab5f2082f8b5aa7fe7380464776ddf01e207e74dc87317a8cc8af2fcbcdeed",
+          "pixel_sha256": "a17e542e8090c17ef341701bca0fe465fe4fc88ab1c89226f091050e7180258c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 6,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/06.png",
+          "source_sha256": "401280e3fcc2718f6796c3e6591c9ddc70bb0dfac75f9aef32c1bb94c4c0c690",
+          "pixel_sha256": "0a96e7d13902e931825f2d1c1b217b8b8ce660b50877df6a98179f054e4115ae",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-right",
+          "row": 1,
+          "col": 7,
+          "source_path": "05_黑色战斗服/P4-A/FIX-BLACK/selected/running-right/frames/07.png",
+          "source_sha256": "6ab05bdb72ee5e0a1e8b92ff57ec63e232a6459706bcae133fb3c3a3e34f86c6",
+          "pixel_sha256": "1b12aef00754f413a95fd7328efcd6dff028d99e329cfe3480a4f6bbfb907697",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/00.png",
+          "source_sha256": "868ebfe4a5ad3f6ac8fe4f93139061e5ff2f6e85a64cb9629dffd10d5485455e",
+          "pixel_sha256": "23862c3bbc3ff311b4d855497ec96689d22222d99b02f7f64fdcfc396410fbd8",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/01.png",
+          "source_sha256": "c6969dee1fa7190c10cade0ed114003a3d4dda45cb5c0ab3822916e712f74b20",
+          "pixel_sha256": "15d374ca0679c3935133c0884ebe1382a368044108a66514d77a1ede0f97c79d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/02.png",
+          "source_sha256": "a35edfec9a70144c06678a06e990729c051ec8fd352fb51d831d6744ba0dcaf4",
+          "pixel_sha256": "b75a4b25065fa834a63f7e440e8ec610eb72bdd5b60407388ab2f75c1cacb98b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/03.png",
+          "source_sha256": "f7447d25daf7cb022a91775a78472e2023ab02c5f456d953824c5288863ab725",
+          "pixel_sha256": "823706d78072344d0a2fb166d88d5776992b5670f167372b71524fe51e286210",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/04.png",
+          "source_sha256": "52aea46b960a46a759ef40c530a403dc9dea9bf2e678cd4d86684e7ecb8bef02",
+          "pixel_sha256": "a82b1ad753444c9118f976d735647ba1f25ec98b47f9632a388126fa73777eaf",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 5,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/05.png",
+          "source_sha256": "d644cc391a15dfd28756db11a19b9dc6712f1a9941a248f7ebee9f15780c3c2d",
+          "pixel_sha256": "eb1492d03c6a5d4f49cb5bb8557fc93686a6db9359e338ad261275151a4d22fb",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 6,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/06.png",
+          "source_sha256": "21567ec5bd5c754ebbd5a7dbdf8f66953f4511a30e1e885f9b07806b61dd22cc",
+          "pixel_sha256": "a07e587978c63067ff6109a41da6b10b76c72b4bb90197e197b98e7438960b62",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running-left",
+          "row": 2,
+          "col": 7,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running-left/frames/07.png",
+          "source_sha256": "1cfdad1a087f38e0c3414cfce44fa238ee09a2766203631f2f5e158292f4d02c",
+          "pixel_sha256": "c3351500cd310a780805305e159a8af42fcc01ea956267ea4d887fc52ba60ee2",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/00.png",
+          "source_sha256": "0f78086607cdef1171b67a24510429f8b341859446b6dc35bdbe848733a1ad71",
+          "pixel_sha256": "1f2b1e0859e98c5624d6eea927576e84fa1fff05fef7b67f286f69066abf9862",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/01.png",
+          "source_sha256": "a809b13e861a45a9c5c7f235b6232c97fc888025d33d53e77aedc87d187d5957",
+          "pixel_sha256": "186616bd9c8e79f3b21c4a87b0175c4c15cd302d08752beeec2df0a70dd559f9",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/02.png",
+          "source_sha256": "0c02a107cb91bd3af0411586733de1ed677b89c732d63bc1dc5f09a24f4211f3",
+          "pixel_sha256": "65e34883ab6ef1e421c3764e73e6be255e877756e1cb38684ffd1ec303cb176d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waving",
+          "row": 3,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/03.png",
+          "source_sha256": "a6ea26435f5bebff4132edd5b471fc1cd84c3afec7e8fc6cc7a72a953c49cc0b",
+          "pixel_sha256": "ec058ef0da1dfd1dc7eb1bf0950c5f819f788077790ae199a0c0c693e1c4fe48",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/jumping/frames/00.png",
+          "source_sha256": "a623986c0c042a401227b8febea2a2e2bdcd7ef8b2b6b19d92097ec74752f9d7",
+          "pixel_sha256": "c1ae26aa925a0b97fb26676a669ebe5951aa61e6a961babc66c1ff61e95bd7d7",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/jumping/frames/01.png",
+          "source_sha256": "31d4db5e5d4f962e67a3fed69d6ba49820cfb8bae6767a6cd573ec6bc86da39b",
+          "pixel_sha256": "93809da215ff076eb00a7609b6ebe9f310babce34f87d218e7d8fddfd3bce240",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/jumping/frames/02.png",
+          "source_sha256": "9508efb23d597624b588f9a42bf646e1cb4a75f4f7b91cab81fbecf8c2a5fa32",
+          "pixel_sha256": "abd318ae0d40def955da3d4ed1a7f50068ada40a893df1e858686cc63d71452a",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/jumping/frames/03.png",
+          "source_sha256": "56b016f8a98e7c4b92bc0ce9810d52bca28b9a5bbbac3f2c029bac41463beb97",
+          "pixel_sha256": "c365fa8d920dae46c6c8162ff53743a1595eb8e644e99787d83bfbf9b13affc5",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "jumping",
+          "row": 4,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/jumping/frames/04.png",
+          "source_sha256": "c0b23dea6e4eb3389766f8827972f6849fd7baf74997062639da4faffe27eab1",
+          "pixel_sha256": "0c09bc8014ce7b388a8508d7a4db3a1bdb54898eb847ea0d6b9f1019da7462c6",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/00.png",
+          "source_sha256": "2a94b76c70ad9d7412e34d405b8d0bc29b5c556b717d01b3dafa2820adaea666",
+          "pixel_sha256": "acf79a64b80205963d70b9da0f431a05700944153c10d2f5acf23ec93dce5b8c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/01.png",
+          "source_sha256": "21056485888b62cfee37f10762db28c5062b941eff3d200811f408b66404ccb0",
+          "pixel_sha256": "3bf0521ea58a6f4d5766204ef90ae1e8860b5b0e972116466ffe8dd699a0d1ac",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/02.png",
+          "source_sha256": "1c58bbfebd306212aaa047840639729b1c9ef24f72215af10db74a3c8a4ce3db",
+          "pixel_sha256": "ae4ece47df7fe817128ea5dd22b310287567f5ede9820e79de5907eb3e11ca04",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/03.png",
+          "source_sha256": "c85dc33091c2717dcb9a2de9484b4b33f7be5da1f431dc228f8c2324e7d31acc",
+          "pixel_sha256": "f9697ccce51db26cfcc224dafc7bed0e0492eaabcbed88ecad24486cdb3d3698",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/04.png",
+          "source_sha256": "7c404c37b88311611670719855c46848b497f0cb495e7ea63c53e0c3ef1f48aa",
+          "pixel_sha256": "1c7d868852ef06d7e198672cb5e8bb77edcb345f57a8ebc866cdaab26e41bfb5",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 5,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/05.png",
+          "source_sha256": "c87da6da9d0c2d79ca04aa32783ac0ed797db324a3112d1622fbaa02d57084e8",
+          "pixel_sha256": "05223c815ca12055f26f6adb62b021bb7e53d1167a6b8cf8c88fac49ad779430",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 6,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/06.png",
+          "source_sha256": "4e594236e2daea854c2c284e55f256a716919902fc0e8e87242f379ccbcf616c",
+          "pixel_sha256": "20d0013e9e5d03600dd5da574a762a80380a7b1393e349b0b4862a2f214b0c21",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "failed",
+          "row": 5,
+          "col": 7,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/failed/frames/07.png",
+          "source_sha256": "7eefad9c5fb0a9bceba8f5f5c2a4609762affde93f41692698b5b5f79c00b2ea",
+          "pixel_sha256": "e47794b3267c93564631a3f8b4c45ca80d1cd64628add42fe4bfff1fc50c50d6",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waiting/frames/00.png",
+          "source_sha256": "487110ccb999b2454ca22e82bd521a274f8abbc3ee5a3bacd0c4f704702211c6",
+          "pixel_sha256": "8a8e4da75cfd002f3cc4dcad0b1bd3afe3c8807a16a0fbd914919ade7d6e232a",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waiting/frames/01.png",
+          "source_sha256": "7329405a82be00400a14a8d9344db18ae362bc3d976323dc405efb61aa46c679",
+          "pixel_sha256": "584e1f4ab1be49629e8e536199e99691f853e631afc0fca74d42b418ed32085f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waiting/frames/02.png",
+          "source_sha256": "a88c3d7155c7706d15a3e69d557e8dd20a29ecda4748807b469acfe34062810a",
+          "pixel_sha256": "2d6f8fd5ac51d2ab1360d9d36f50fb937fde7bc9a5556d962efc86e159b3bc7c",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waiting/frames/03.png",
+          "source_sha256": "6e2c69aaf8d3543e8d731a4863aedc6b63e3a575459acc1ef29a6f7fef41bfbb",
+          "pixel_sha256": "90a76455b34ea0202c999e4afd5448e241e1518a05757b5ae0fa12b125637cb4",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waiting/frames/04.png",
+          "source_sha256": "f2f4d49466f5d94802ee62f6b77d7a8c077070fff60b52aad829499075e85bc9",
+          "pixel_sha256": "0e0e1a44d13cdd96c45b119f9176d91e8f9b8b60ad842e1cb8c5876a210263b3",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "waiting",
+          "row": 6,
+          "col": 5,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/waiting/frames/05.png",
+          "source_sha256": "c42292df7b7d2401bc9688235e949c5dd163e576e6f050d4f58811b6f28b1c62",
+          "pixel_sha256": "4c3fce9e445e163cab17b3164345a44bf7b30be25f67e93fb9f394e7e21429e4",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/frames/00.png",
+          "source_sha256": "975cdcb0d35aa3a324e65e09c32ac8872eab8ef296653dda3195574ef4d6eb81",
+          "pixel_sha256": "a82f91c5626581dd27d25656dad869ce85fb1ce997dc76048a4271c4cdca95f1",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/frames/01.png",
+          "source_sha256": "36aa0c616a1d62ce5765f64d816abef6c6ce73fd0183d5f56a4d96891fc3f38b",
+          "pixel_sha256": "9d146af00357a2a50a7cc6a184e8b655246157ccae7f5105f6bae444b7ef61a9",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/frames/02.png",
+          "source_sha256": "51d094ce2dfe19a6413fedf7a0622486673e53ad417a4a40689af6c04c9b404b",
+          "pixel_sha256": "e6117c0f1fb733a8b83d1a4f8724e68e789799c50545a5c4307e7e70883d9711",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/frames/03.png",
+          "source_sha256": "1ab409e54423f18cd60468f2fc54f023d33ba6ab8d1377ffc88a88400ecbd187",
+          "pixel_sha256": "aeac961253d34bd494da5c47cdf444fb00d176746ae1f33c3b1294c5535269aa",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/frames/04.png",
+          "source_sha256": "28e8240eb675d1f5e605093684c933f760a3303d7fbc5863e480d5376d95e394",
+          "pixel_sha256": "05489696552a313b125f2df8a9a5b99291b239ebd8dcb5f94fd37d47bdc51511",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "running",
+          "row": 7,
+          "col": 5,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/frames/05.png",
+          "source_sha256": "40bd3528bfa3cdc10c1d0705b371cd2f828c6777c458e51ebb313ade84337352",
+          "pixel_sha256": "2d566c998f5f9a9bde442d4b52e6fdda3ce1320dbec2f0def9cf0963de110906",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 0,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/review/frames/00.png",
+          "source_sha256": "88ab156a6e0763542828b5c4adcf562f99284c312c9659d864721e92e5e182ff",
+          "pixel_sha256": "4d4c48ad25bdbddaf311d92f25c7505e8f3fa574d59e418b6357b81619256db2",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 1,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/review/frames/01.png",
+          "source_sha256": "2c32b1fb63b334312a088d909ad7bb1b950f503076730c71450d72fe7c18a303",
+          "pixel_sha256": "b511f88609dceba9baa40a6027eb36230be08cf0f2cd3c5a98f1c0d3c7af758b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 2,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/review/frames/02.png",
+          "source_sha256": "170cffdc4aaa85f142de821c11075d62e34b834a9c74a86d246490c3ffc833c3",
+          "pixel_sha256": "512a8a59f6234323fb95b98669e62cef751b25548b2c53923706049c5f723b3d",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 3,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/review/frames/03.png",
+          "source_sha256": "80c1df5d422cb706e6ed82c8cbbe5438c5b3b604e634e3b45bbdf3d6fff0fccf",
+          "pixel_sha256": "bccc1ab16be229df297c1e625e5fbb77f5893e671a153101298335d11cdd840b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 4,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/review/frames/04.png",
+          "source_sha256": "685b8989d69d0b6c71ccd26731dbeb78c0811c608d3de29d30b22d69e0e3cde5",
+          "pixel_sha256": "f89e3d306b0b4ac312b55704fe69ca264503de20023e73ad90929c94eca7fc33",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "state": "review",
+          "row": 8,
+          "col": 5,
+          "source_path": "05_黑色战斗服/P4-B/candidates/attempt-01/review/frames/05.png",
+          "source_sha256": "36b1723e6b923269eb58c97de7997f0969399f5a857ff9889ea1a0af31587ae9",
+          "pixel_sha256": "fdb7874aff22dfdac0076577f33146a51662931b53115814a7d7712c233c983b",
+          "human_status": "ACCEPTED"
+        }
+      ],
+      "direction_16_frames": [
+        {
+          "angle": "000",
+          "row": 9,
+          "col": 0,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/000.png",
+          "source_sha256": "b315906ecff13dfe97402886a0ee4c86fb340b52903748340e22ef37e384873b",
+          "native_raw_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+          "native_raw_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+          "version": "codex-cloud-pilot/attempt-02",
+          "origin": "REUSED_PILOT",
+          "acceptance_source": "RAW_JSON_ACCEPTED_REUSED_PILOT",
+          "pixel_sha256": "21848405f2b8ca14f0b8f1a44d9dc75c8f5063813894a7ae9552216f32f85727",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "022.5",
+          "row": 9,
+          "col": 1,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/022.5.png",
+          "source_sha256": "33bfcc6d8b791ae2aad9f59a67679caec9b528c4d00a5be74245e9fe87c976d6",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/upper-right-02.png",
+          "native_raw_sha256": "892c0e3b3d86d0d26e9cf35550cceb73acaaaef10691a6ca7e85a60e197b2062",
+          "version": "p4c/upper-right-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "c105fc93220127ec7478b8971300f4df6c902059493f58536e5da4de99d93428",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "045",
+          "row": 9,
+          "col": 2,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/045.png",
+          "source_sha256": "5f96bde8d73f140658d05d177e7e0cec1ce90be1850f8a0f452df75393f42adf",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/upper-right-02.png",
+          "native_raw_sha256": "892c0e3b3d86d0d26e9cf35550cceb73acaaaef10691a6ca7e85a60e197b2062",
+          "version": "p4c/upper-right-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "06eeaa3f99aea0b73c4a039f9af5df73d789ee052fb240e4d816860e974c26ff",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "067.5",
+          "row": 9,
+          "col": 3,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/067.5.png",
+          "source_sha256": "92247d9f3165d61fbfe9fe77db53a14a896a1ac59d11f0370c008834a1da4e88",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/upper-right-02.png",
+          "native_raw_sha256": "892c0e3b3d86d0d26e9cf35550cceb73acaaaef10691a6ca7e85a60e197b2062",
+          "version": "p4c/upper-right-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "30a33d5fda2f8bffa42e6b632922b640ecf1845236a1c8a3462fd5bbe6b991d1",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "090",
+          "row": 9,
+          "col": 4,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/090.png",
+          "source_sha256": "3d18e479d038ba17a46938a1fc46c059ea0d678f174a520d77be1c7035efcba4",
+          "native_raw_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+          "native_raw_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+          "version": "codex-cloud-pilot/attempt-02",
+          "origin": "REUSED_PILOT",
+          "acceptance_source": "RAW_JSON_ACCEPTED_REUSED_PILOT",
+          "pixel_sha256": "d4b41c97099501cc450b256d1e42f4cd20a2422776e68434a3cc67fcd7da9bd5",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "112.5",
+          "row": 9,
+          "col": 5,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/112.5.png",
+          "source_sha256": "765bf56b89522ca41c418a2696eb4a553e6c54fa273b9def81e90230d3d7dd60",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/lower-right-01.png",
+          "native_raw_sha256": "988494e0eeaf367dc163aef424961c59c6ac08d48e176e08194e485bf8933b04",
+          "version": "p4c/lower-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "e21e8315bbb7cab9be8def078a81c726ad47912608bb44906301a1d5dfab60a0",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "135",
+          "row": 9,
+          "col": 6,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/135.png",
+          "source_sha256": "401808002d041639413fee0c66ccea2945942d13d6f634e426dfe0326a11375c",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/lower-right-01.png",
+          "native_raw_sha256": "988494e0eeaf367dc163aef424961c59c6ac08d48e176e08194e485bf8933b04",
+          "version": "p4c/lower-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "03a19fd7f0def0ac1079c0723eba3fb03c770329c3f7ccbe3c86edd40af15485",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "157.5",
+          "row": 9,
+          "col": 7,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/157.5.png",
+          "source_sha256": "e085236fd54e17501d0388b4ecaeae03fdac8b432e1d358df48ca69a864e42e6",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/lower-right-01.png",
+          "native_raw_sha256": "988494e0eeaf367dc163aef424961c59c6ac08d48e176e08194e485bf8933b04",
+          "version": "p4c/lower-right-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "e9fd663cdf687fcbbc01e643227556f3d740012960e741d7ec62107b4b43d0cc",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "180",
+          "row": 10,
+          "col": 0,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/180.png",
+          "source_sha256": "9c4cc7626c6462eaf723ee7f853ba032f0f66169e4bff78181506bf5bc345c9a",
+          "native_raw_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+          "native_raw_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+          "version": "codex-cloud-pilot/attempt-02",
+          "origin": "REUSED_PILOT",
+          "acceptance_source": "RAW_JSON_ACCEPTED_REUSED_PILOT",
+          "pixel_sha256": "26df6abd035c93c8333eb8ab525aba8d1a9e53dfb3d844eff570459dc0f52d7b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "202.5",
+          "row": 10,
+          "col": 1,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/202.5.png",
+          "source_sha256": "94bf10e8b8a9808833d163023c252757e3a968c7b96356b0742698451a013f2e",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/lower-left-02.png",
+          "native_raw_sha256": "0ad1c5b907c2793304d6da26b7f92f5efff68b720c09017a6ab93c527281955a",
+          "version": "p4c/lower-left-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "01ce338513d6d6b2e15b76c7307b14090d221687f39b9ccb2767d6e9c00326df",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "225",
+          "row": 10,
+          "col": 2,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/225.png",
+          "source_sha256": "fb7c51c532978d4e8060890f140324751fb7b48e0d8ce163e26c8376839ee120",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/lower-left-02.png",
+          "native_raw_sha256": "0ad1c5b907c2793304d6da26b7f92f5efff68b720c09017a6ab93c527281955a",
+          "version": "p4c/lower-left-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "8da81f75c5058c0657069813f517e2d40a61272376262d4a715f03501b112b03",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "247.5",
+          "row": 10,
+          "col": 3,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/247.5.png",
+          "source_sha256": "42f329b8f59f4dc93ac8c846d28b2cc0b6698acda0c2af44458c18ee1a07a155",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/lower-left-02.png",
+          "native_raw_sha256": "0ad1c5b907c2793304d6da26b7f92f5efff68b720c09017a6ab93c527281955a",
+          "version": "p4c/lower-left-02",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "7c0d1b60c700f87896269474d18d2a7ebf6e661ec30c4899750e1247ebc499e9",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "270",
+          "row": 10,
+          "col": 4,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/270.png",
+          "source_sha256": "cdd2cdaa480cd1cb85771c875d300a913f870887ff34a526ef2a7d7a571dd3c1",
+          "native_raw_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+          "native_raw_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+          "version": "codex-cloud-pilot/attempt-02",
+          "origin": "REUSED_PILOT",
+          "acceptance_source": "RAW_JSON_ACCEPTED_REUSED_PILOT",
+          "pixel_sha256": "5a4dcb1074716a1f82e4defabbc9146f10762ff4ce4711ed0bc767ba49d31a14",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "292.5",
+          "row": 10,
+          "col": 5,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/292.5.png",
+          "source_sha256": "11f7db946ac1a764037ecf137faaeea7e22bdf771785c6d4a171c7c523cf80c8",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/upper-left-01.png",
+          "native_raw_sha256": "bf408e5e6fc7258064e49cc45309d046c764149080334a1e3e3c396909bb66b3",
+          "version": "p4c/upper-left-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "5b97c1e73efcbcc784204f1bc7447528155bfb404b51558e5d247d0c26158f7b",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "315",
+          "row": 10,
+          "col": 6,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/315.png",
+          "source_sha256": "d609b3d29a3173123ad67f1d60078c31e735c2fd9314e1887d2b24ad78a9000d",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/upper-left-01.png",
+          "native_raw_sha256": "bf408e5e6fc7258064e49cc45309d046c764149080334a1e3e3c396909bb66b3",
+          "version": "p4c/upper-left-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "2533d766ce57d93f5c2cb0f36ac994c87fd5fbaf66e51f120251fdeb236d670f",
+          "human_status": "ACCEPTED"
+        },
+        {
+          "angle": "337.5",
+          "row": 10,
+          "col": 7,
+          "source_path": "07_QA验收/P4-C/rei-black/frames/337.5.png",
+          "source_sha256": "27d1b57dfcd2a6f56731d2df7835321cb963c048c96d2c6f913c722e9144b653",
+          "native_raw_path": "07_QA验收/P4-C/rei-black/raw/upper-left-01.png",
+          "native_raw_sha256": "bf408e5e6fc7258064e49cc45309d046c764149080334a1e3e3c396909bb66b3",
+          "version": "p4c/upper-left-01",
+          "origin": "GENERATED",
+          "acceptance_source": "USER_SUPPLEMENTAL_ACCEPTED",
+          "pixel_sha256": "cc328c513710abd2873c27249ecae2129099ee0eca8b91fd21a791095be7d785",
+          "human_status": "ACCEPTED"
+        }
+      ]
+    }
+  },
+  "master_bundle_zip": {
+    "path": "08_正式交付/P4-D-candidate/rei-desktop-pet-p4d-all-3-bundle.zip",
+    "ok": true,
+    "bytes": 17066945,
+    "sha256": "5d1392d8e8673918e1b0e22060b14d9a857d6c90e7b868220a45c172bb7073ea",
+    "entry_count": 23,
+    "entries": [
+      "pets/rei-school/pet.json",
+      "pets/rei-school/spritesheet.webp",
+      "extended-png/rei-school-spritesheet-extended.png",
+      "individual-zips/rei-school-codex-pet-v2.zip",
+      "contact-sheets/rei-school-extended-contact-light.png",
+      "contact-sheets/rei-school-extended-contact-dark.png",
+      "pets/rei-white/pet.json",
+      "pets/rei-white/spritesheet.webp",
+      "extended-png/rei-white-spritesheet-extended.png",
+      "individual-zips/rei-white-codex-pet-v2.zip",
+      "contact-sheets/rei-white-extended-contact-light.png",
+      "contact-sheets/rei-white-extended-contact-dark.png",
+      "pets/rei-black/pet.json",
+      "pets/rei-black/spritesheet.webp",
+      "extended-png/rei-black-spritesheet-extended.png",
+      "individual-zips/rei-black-codex-pet-v2.zip",
+      "contact-sheets/rei-black-extended-contact-light.png",
+      "contact-sheets/rei-black-extended-contact-dark.png",
+      "qa/P4D_OFFLINE_QA.json",
+      "qa/P4D_QA_REPORT.md",
+      "qa/WINDOWS_P5_ACCEPTANCE_GUIDE.md",
+      "P4D_DELIVERY_MANIFEST.json",
+      "SHA256SUMS.txt"
+    ]
+  },
+  "sha256sums_file": {
+    "path": "08_正式交付/P4-D-candidate/SHA256SUMS.txt",
+    "bytes": 3427,
+    "sha256": "4eb8e48cde46070889e3b11a8456fa4fdf347b21dcec5327f482e014c3ee7bc9",
+    "entry_count": 28
+  },
+  "qa_report_md": {
+    "path": "07_QA验收/P4-D/P4D_QA_REPORT.md",
+    "bytes": 6951,
+    "sha256": "63d3b6905a370ab82b0e6a0ece2c1a03fa83f0fdf43d89670329d28fdba659c2"
+  },
+  "windows_p5_guide_md": {
+    "path": "07_QA验收/P4-D/WINDOWS_P5_ACCEPTANCE_GUIDE.md",
+    "bytes": 11148,
+    "sha256": "d5dd4516491097f242c0f322b1fbc8f760167025860837d2e6d75377d02c3d33"
+  }
+}

@@ -13,18 +13,18 @@
 - **兼容性预验证分支 Commit SHA**：`6dc14434c1fcaf82ed1a0f996a6a9142b4f5892d`（来自已保留分支 `cloud-bootstrap/p4-compat-preverify`）
 - **原生兼容性主控裁定（`REI-P4-COMPAT-MAIN-REVIEW-02`）**：**`BASE_RUNTIME_COMPATIBILITY_PASS`** / **`DETAILED_RUNTIME_VERIFICATION_PARTIAL`**
   - 16 方向逐项映射、`R0C6` 中心死区实际显示行为、完全退出重启持久化与任务事件触发动画留待后续专项验证或 P5 终验，不得标记为已全部通过。
-- **当前阶段**：`P4-C_ART_ACCEPTANCE_PASS` / `P4-D_FINAL_ASSEMBLY_AUTHORIZED`。正式 27 动作 171 帧与 3 形态 48 方向帧（合计 219 帧）全部完成人工验收绑定。[P4-B 验收台账](07_QA验收/P4-B/human-acceptance/ACCEPTANCE_LEDGER.json) · [P4-C 验收台账](07_QA验收/P4-C/human-acceptance/P4C_ACCEPTANCE_LEDGER.json)
+- **当前阶段**：`P4-D_CANDIDATE_OFFLINE_QA_PASS`（`main` 已统一于 `44624e1`；`feat/p4d-final-assembly` 完成三套 v2 扩展图集装配、264 格离线 QA、独立与总交付包及 Windows P5 指南，待主控验收）。[P4-D QA 报告](07_QA验收/P4-D/P4D_QA_REPORT.md) · [P4-D 交付清单](08_正式交付/P4-D-candidate/P4D_DELIVERY_MANIFEST.json) · [Windows P5 指南](07_QA验收/P4-D/WINDOWS_P5_ACCEPTANCE_GUIDE.md)
 - **云端核心环境**：`Ubuntu 24.04.5 LTS` / `Python 3.12.16` / 预装 `Pillow 13.0.0`（`libwebp 1.6.0`、`zlib 1.3`），无 PyPI 访问（无 NumPy/SciPy），详见 [CLOUD_RUNTIME_LOCK.txt](CLOUD_RUNTIME_LOCK.txt)
-- **图像生成实测边界**：Antigravity 本地 `image-generator` = **`NATIVE_ALPHA_BLOCKED`**（全部美术生产已结束，P4-D 阶段无需调用生图）
-- **主控裁定**：`P4-B-FIX_SKIPPED`、`P4-C_ART_ACCEPTANCE_PASS`、`P4-D_FINAL_ASSEMBLY_AUTHORIZED`。P5、P6 仍待授权。
+- **图像生成实测边界**：全部 219 帧美术生产与人工验收均已完成，P4-D 零生图调用
+- **未授权阶段**：P5 实机安装测试、P6 正式发布仍待主控对 P4-D 独立验收后逐阶段授权。
 
 ---
 
 ## 2. 接续顺序
 
-1. 核验时远端 `main` 指向 `6b4229f`、`feat/p4c-production` 指向 `be86cce`。取得用户明确授权后，按 [P4-C 结项与 main 统一方案](07_QA验收/P4-C/human-acceptance/P4C_CLOSEOUT_AND_MAIN_FF_PLAN.md) 将 P4-C 结项提交 fast-forward 推进至 `main`。
-2. 从统一后的 `main` 切出独立任务分支 `feat/p4d-final-assembly`，基于 Python 标准库 + Pillow 工具链装配校服、白服 00、黑服 09 三套 `1536×2288` v2 扩展图集、执行 264 格全量离线 QA 与打包交付，并编写 Windows P5 运行验收指南。
-3. 严禁在未获授权前执行 Windows 安装或正式发布；完成后由 ChatGPT 主控独立验收 P4-D。
+1. 经用户授权将 `feat/p4d-final-assembly` 推送至 GitHub，由 ChatGPT 主控独立核验三套 v2 交付包、264 格离线 QA 与 SHA-256 清单。
+2. 获主控 P5 授权后，在 Windows 本地按 [WINDOWS_P5_ACCEPTANCE_GUIDE.md](07_QA验收/P4-D/WINDOWS_P5_ACCEPTANCE_GUIDE.md) 执行原生 `validate_atlas.py --require-v2` 复检、三套独立安装、16 方向/死区/任务动画/重启持久化/Asuka 同尺寸对比实测。
+3. 严禁未授权提前安装、修改 Asuka 或标记为正式 `v1.0.0`。
 
 ---
 

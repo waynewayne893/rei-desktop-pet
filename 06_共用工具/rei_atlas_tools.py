@@ -323,22 +323,24 @@ def validate_atlas_image(path: Path, require_v2: bool = False) -> dict[str, Any]
             for c in range(COLS):
                 x0, y0 = c * CELL_W, r * CELL_H
                 cell_im = raw_im.crop((x0, y0, x0 + CELL_W, y0 + CELL_H))
-                is_used = c < expected_n or (is_ext and (r, c) == EXT_NEUTRAL_CELL)
+                is_neutral = is_ext and (r, c) == EXT_NEUTRAL_CELL
+                is_used = c < expected_n or is_neutral
                 if is_used:
                     active_cells += 1
                     stats = analyze_cell(cell_im, f"{state_name} ({r},{c})")
                     errors.extend(stats["errors"])
                     digest = stats["pixel_sha256"]
-                    if digest in row_hashes:
-                        errors.append(f"{state_name} ({r},{c}): duplicate frame pixels in row")
-                    row_hashes.add(digest)
+                    if not is_neutral:
+                        if digest in row_hashes:
+                            errors.append(f"{state_name} ({r},{c}): duplicate frame pixels in row")
+                        row_hashes.add(digest)
                     cell_reports.append(
                         {
                             "state": state_name,
                             "row": r,
                             "column": c,
                             "used": True,
-                            "is_neutral_cell": is_ext and (r, c) == EXT_NEUTRAL_CELL,
+                            "is_neutral_cell": is_neutral,
                             "nontransparent_pixels": stats["nontransparent_pixels"],
                             "solid_pixels": stats["solid_pixels"],
                             "solid_components": stats["solid_components"],
