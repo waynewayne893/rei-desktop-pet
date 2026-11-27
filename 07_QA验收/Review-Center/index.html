@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rei Desktop Pet · Review Center V1.0</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-title">
+        <span class="brand-dot"></span>
+        <h1>Rei Desktop Pet · Visual Review Center V1.0</h1>
+        <span class="pill pill-stage">P4-B PARTIAL · 非 v1.0.0</span>
+      </div>
+      <div class="brand-sub" id="metaSubtitle">加载索引中...</div>
+    </div>
+
+    <div class="progress-cluster">
+      <div class="progress-stats" id="progressStats">
+        <span class="stat-chip stat-accepted">ACCEPTED: <strong id="cntAcceptedActions">1</strong>/27 (<strong id="cntAcceptedFrames">8</strong>/171 帧)</span>
+        <span class="stat-chip stat-needs-fix">NEEDS_FIX: <strong id="cntNeedsFixActions">0</strong></span>
+        <span class="stat-chip stat-rejected">REJECTED: <strong id="cntRejectedActions">0</strong></span>
+        <span class="stat-chip stat-pending">PENDING: <strong id="cntPendingActions">26</strong> (<strong id="cntPendingFrames">163</strong> 帧)</span>
+        <span class="stat-chip stat-invalid hidden" id="statInvalidChip">HASH INVALIDATED: <strong id="cntInvalidActions">0</strong></span>
+      </div>
+      <div class="progress-bar" title="171 帧人工验收进度分布">
+        <div class="pb-seg pb-accepted" id="pbAccepted" style="width: 4.68%"></div>
+        <div class="pb-seg pb-needs-fix" id="pbNeedsFix" style="width: 0%"></div>
+        <div class="pb-seg pb-rejected" id="pbRejected" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <label class="btn btn-secondary" for="importJsonInput" title="导入已有 JSON 验收记录（自动校验资产哈希）">导入 JSON</label>
+      <input type="file" id="importJsonInput" accept=".json,application/json" class="hidden" />
+      <button class="btn btn-primary" id="btnExportJson" type="button">导出 JSON</button>
+      <button class="btn btn-accent" id="btnShowMarkdown" type="button">生成 Markdown 摘要</button>
+      <button class="btn btn-ghost" id="btnResetBaseline" type="button" title="重置为官方基线（仅保留黑服新版 running-right 8 帧 ACCEPTED）">重置基线</button>
+    </div>
+  </header>
+
+  <div class="governance-banner">
+    <strong>验收铁律：</strong>
+    <code>STRUCTURE_PASS</code> 绝不自动转为人工 <code>ACCEPTED</code>。初始基线仅 <strong>黑服新版 running-right（8 帧）</strong> 为明确已验收，其余 26 条动作（163 帧）均为待人工动态终审的候选。每条记录绑定候选版本与资产 SHA-256，若素材哈希变更，旧版验收将自动失效并回退为 <code>PENDING</code>。
+  </div>
+
+  <div id="toastBar" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <div class="workspace">
+    <!-- Left Sidebar: 3x9 = 27 Actions Unified Index -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>27 条动作统一索引（3×9）</h2>
+        <div class="filter-row" id="statusFilterGroup">
+          <button type="button" class="chip active" data-filter-status="ALL">全部 (27)</button>
+          <button type="button" class="chip" data-filter-status="PENDING">待审</button>
+          <button type="button" class="chip" data-filter-status="QA_WATCH">QA关注 (3)</button>
+          <button type="button" class="chip" data-filter-status="ACCEPTED">已通过</button>
+          <button type="button" class="chip" data-filter-status="NEEDS_FIX">需修复</button>
+          <button type="button" class="chip" data-filter-status="REJECTED">拒收</button>
+        </div>
+        <div class="filter-row" id="formFilterGroup">
+          <button type="button" class="chip active" data-filter-form="ALL">全部形态</button>
+          <button type="button" class="chip" data-filter-form="rei-school">校服</button>
+          <button type="button" class="chip" data-filter-form="rei-white">白服 00</button>
+          <button type="button" class="chip" data-filter-form="rei-black">黑服 09</button>
+        </div>
+      </div>
+      <div class="action-index" id="actionIndex"></div>
+    </aside>
+
+    <!-- Center + Right Main Area -->
+    <main class="main-panel">
+      <!-- Mode Tabs & Shared Playback Toolbar -->
+      <div class="toolbar">
+        <div class="mode-tabs" role="tablist">
+          <button type="button" class="tab-btn active" data-mode="single" role="tab">单动作精审</button>
+          <button type="button" class="tab-btn" data-mode="side-by-side" role="tab">三形态并排同步</button>
+          <button type="button" class="tab-btn" data-mode="compare" role="tab">新旧候选与母版对比</button>
+          <button type="button" class="tab-btn" data-mode="details" role="tab">局部放大与 00/09 标识</button>
+        </div>
+
+        <div class="controls-bar">
+          <div class="ctrl-group">
+            <button type="button" class="btn btn-sm btn-primary" id="btnPlayPause">暂停</button>
+            <button type="button" class="btn btn-sm btn-secondary" id="btnPrevFrame" title="上一帧 (←)">◀ 上一帧</button>
+            <button type="button" class="btn btn-sm btn-secondary" id="btnNextFrame" title="下一帧 (→)">下一帧 ▶</button>
+            <label class="toggle-inline"><input type="checkbox" id="chkLoop" checked /> 循环</label>
+          </div>
+
+          <div class="ctrl-group" id="bgSwitchGroup">
+            <span class="ctrl-label">底色:</span>
+            <button type="button" class="chip active" data-bg="light">浅底</button>
+            <button type="button" class="chip" data-bg="dark">深底</button>
+            <button type="button" class="chip" data-bg="checker">透明格</button>
+          </div>
+
+          <div class="ctrl-group" id="zoomSwitchGroup">
+            <span class="ctrl-label">缩放:</span>
+            <button type="button" class="chip" data-zoom="1">1×</button>
+            <button type="button" class="chip active" data-zoom="2">2×</button>
+            <button type="button" class="chip" data-zoom="4">4×</button>
+            <label class="toggle-inline"><input type="checkbox" id="chkPixelated" checked /> 像素锐利</label>
+            <label class="toggle-inline"><input type="checkbox" id="chkGuides" /> 锚点参考线</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timing Readout Strip -->
+      <div class="timing-bar" id="timingBar">
+        <div class="timing-left">
+          <strong id="currentTitle">—</strong>
+          <span class="badge" id="currentStatusBadge">PENDING</span>
+          <span class="badge badge-warn hidden" id="currentQaWatchBadge">QA 重点复核</span>
+          <span class="badge badge-invalid hidden" id="currentInvalidBadge">哈希已变 · 旧验收失效</span>
+        </div>
+        <div class="timing-right">
+          <span id="frameCounter">Frame 1 / 6</span>
+          <span class="sep">·</span>
+          <span id="frameDurationLabel">严格冻结时序: 280 ms</span>
+          <span class="sep">·</span>
+          <span id="cycleTotalLabel">循环总长: 1100 ms</span>
+        </div>
+      </div>
+
+      <!-- VIEW 1: Single Action Studio + Inspector -->
+      <section class="view-pane" id="viewSingle">
+        <div class="single-grid">
+          <div class="stage-column">
+            <div class="stage-viewport bg-light" id="singleStageViewport">
+              <div class="sprite-stage zoom-2 pixelated" id="singleSpriteStage">
+                <img id="singleFrameImg" alt="Active frame" />
+                <div class="guide-overlay hidden" id="singleGuideOverlay">
+                  <div class="guide-line-x"></div>
+                  <div class="guide-line-y"></div>
+                  <div class="guide-anchor-dot" title="Foot Anchor (96, 195)"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-strip-wrap">
+              <div class="frame-strip-header">
+                <span>逐帧序列（点击任意帧跳转；括号为已冻结帧时长 ms）</span>
+                <span class="mono-dim" id="singleFrameSha">SHA-256: —</span>
+              </div>
+              <div class="frame-strip" id="singleFrameStrip"></div>
+            </div>
+          </div>
+
+          <div class="inspector-column">
+            <!-- Human Review Decision Card -->
+            <div class="card">
+              <div class="card-title">
+                <h3>人工美术验收判定</h3>
+                <span class="mono-dim" id="inspectorActionKey">—</span>
+              </div>
+
+              <div id="invalidationAlert" class="alert alert-invalid hidden"></div>
+              <div id="lockedPreapprovedNotice" class="alert alert-info hidden"></div>
+              <div id="qaWatchNotice" class="alert alert-warn hidden"></div>
+
+              <div class="status-buttons" id="decisionStatusGroup">
+                <button type="button" class="status-btn" data-set-status="ACCEPTED">ACCEPTED<small>人工通过</small></button>
+                <button type="button" class="status-btn" data-set-status="NEEDS_FIX">NEEDS_FIX<small>需局部修复</small></button>
+                <button type="button" class="status-btn" data-set-status="REJECTED">REJECTED<small>拒收重做</small></button>
+                <button type="button" class="status-btn" data-set-status="PENDING">PENDING<small>待终审</small></button>
+              </div>
+
+              <div class="quick-tags">
+                <span class="ctrl-label">快捷意见标签：</span>
+                <button type="button" class="tag-chip" data-tag="动态自然流畅">动态自然流畅</button>
+                <button type="button" class="tag-chip" data-tag="循环切回偏硬">循环切回偏硬</button>
+                <button type="button" class="tag-chip" data-tag="边缘残影/白边">边缘残影/白边</button>
+                <button type="button" class="tag-chip" data-tag="胸口00/09标识清晰">胸口00/09标识清晰</button>
+                <button type="button" class="tag-chip" data-tag="胸口00/09标识异常">胸口00/09标识异常</button>
+                <button type="button" class="tag-chip" data-tag="手脚或发丝细节需修">手脚或发丝细节需修</button>
+                <button type="button" class="tag-chip" data-tag="脚底锚点稳定">脚底锚点稳定</button>
+              </div>
+
+              <label class="field-label" for="reviewerComment">人工验收意见（自动保存本地草稿并随 JSON 导出）</label>
+              <textarea id="reviewerComment" rows="4" placeholder="记录逐帧观感、循环衔接、边缘清洁度、00/09 标识或具体待修帧号（如 F5-F6）..."></textarea>
+
+              <div class="decision-meta" id="decisionMeta">上次更新时间：—</div>
+            </div>
+
+            <!-- Version & Hash Binding Card -->
+            <div class="card">
+              <div class="card-title">
+                <h3>候选版本与资产哈希绑定</h3>
+                <button type="button" class="btn btn-xs btn-ghost" id="btnCopyActionHash">复制动作哈希</button>
+              </div>
+              <dl class="meta-kv" id="assetBindingMeta"></dl>
+              <details class="hash-details">
+                <summary>查看本动作逐帧路径与 SHA-256（<span id="hashFrameCount">0</span> 帧）</summary>
+                <div class="hash-list" id="frameHashList"></div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 2: 3-Form Side-by-Side Synchronized Playback -->
+      <section class="view-pane hidden" id="viewSideBySide">
+        <div class="sbs-header">
+          <div>
+            <h3>三形态同状态并排同步播放：<span id="sbsStateName">—</span></h3>
+            <p class="dim">三套形态共享严格冻结帧索引与单帧时长（<span id="sbsTimingsText">—</span>），可直接对比动作节奏、比例、脚底对齐与表情一致性，并就地切换各形态验收状态。</p>
+          </div>
+          <div class="sbs-state-pills" id="sbsStatePills"></div>
+        </div>
+        <div class="sbs-grid" id="sbsGrid"></div>
+      </section>
+
+      <!-- VIEW 3: Old vs New Candidate & Master Comparison -->
+      <section class="view-pane hidden" id="viewCompare">
+        <div class="compare-header">
+          <div>
+            <h3>新旧候选对比与锁定母版对照</h3>
+            <p class="dim">直接对照历史拒收候选（黑服旧版 running-right 8 帧、白服 idle attempt-01 透明缺陷条带）与当前采用候选，同时支持将全部 27 条动作当前帧与已锁定 P3/P3-FIX 派生母版并排核对。</p>
+          </div>
+          <div class="compare-shortcuts">
+            <button type="button" class="btn btn-sm btn-secondary" data-jump-compare="rei-black::running-right">黑服 running-right 新旧对比</button>
+            <button type="button" class="btn btn-sm btn-secondary" data-jump-compare="rei-white::idle">白服 idle 新旧对比</button>
+          </div>
+        </div>
+        <div id="compareContent" class="compare-content"></div>
+      </section>
+
+      <!-- VIEW 4: Local Detail Loupe & 00/09 Marking Inspection -->
+      <section class="view-pane hidden" id="viewDetails">
+        <div class="details-layout">
+          <div class="card detail-loupe-card">
+            <div class="card-title">
+              <h3>实时局部细节放大镜（支持全部 171 帧）</h3>
+              <div class="ctrl-group" id="loupeZoomGroup">
+                <span class="ctrl-label">放大倍率:</span>
+                <button type="button" class="chip" data-loupe="4">4×</button>
+                <button type="button" class="chip active" data-loupe="6">6×</button>
+                <button type="button" class="chip" data-loupe="8">8×</button>
+              </div>
+            </div>
+            <p class="dim">点击或拖动左侧帧图定位局部检查区域，或使用下方一键焦点按钮直达胸口 <code>00</code>/<code>09</code>、面部发饰、手部或脚底锚点。</p>
+            <div class="preset-row" id="loupePresetRow">
+              <button type="button" class="chip active" data-focus="chest">胸口 00/09 与领结</button>
+              <button type="button" class="chip" data-focus="face">面部表情与发饰</button>
+              <button type="button" class="chip" data-focus="hands">手臂与手指轮廓</button>
+              <button type="button" class="chip" data-focus="feet">鞋袜与锚点 (96,195)</button>
+            </div>
+            <div class="loupe-pair">
+              <div class="loupe-source-wrap bg-light" id="loupeSourceWrap">
+                <canvas id="loupeSourceCanvas" width="384" height="416"></canvas>
+              </div>
+              <div class="loupe-zoom-wrap bg-light" id="loupeZoomWrap">
+                <canvas id="loupeZoomCanvas" width="384" height="384"></canvas>
+                <div class="mono-dim" id="loupeCoordLabel">中心坐标: (96, 108) · 6×</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card marking-sheets-card">
+            <div class="card-title">
+              <h3>高分辨率 00 / 09 胸前标识专检拼图（仓库实图）</h3>
+              <div class="ctrl-group" id="markingSheetTabs">
+                <button type="button" class="chip active" data-marking="white">白服 00 标识专检</button>
+                <button type="button" class="chip" data-marking="black">黑服 09 标识专检</button>
+              </div>
+            </div>
+            <p class="dim" id="markingSheetMeta">—</p>
+            <div class="marking-sheet-viewport" id="markingSheetViewport">
+              <img id="markingSheetImg" alt="00/09 chest marking QA sheet" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Markdown Summary Modal -->
+  <div class="modal-backdrop hidden" id="markdownModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Markdown 人工验收摘要</h3>
+        <button type="button" class="btn btn-sm btn-ghost" id="btnCloseMarkdown">关闭</button>
+      </div>
+      <div class="modal-body">
+        <textarea id="markdownOutput" rows="18" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="btnCopyMarkdown">复制到剪贴板</button>
+        <button type="button" class="btn btn-primary" id="btnDownloadMarkdown">下载 .md 文件</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/review-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

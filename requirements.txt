@@ -1,6 +1,14 @@
-# Rei Desktop Pet — Cross-platform Python runtime dependencies
-# Verified baseline: Python 3.14.6 (compatible with Python >= 3.11)
-# Pillow includes libwebp support for RGBA PNG/WebP encoding & decoding.
+# Rei Desktop Pet — Cross-Platform Python Runtime Dependencies
+# Unified cloud & local toolkit (06_共用工具/rei_atlas_tools.py) requires ONLY
+# Python 3.11+ standard library + Pillow (with libwebp support).
+#
+# Verified Linux Cloud lock (CLOUD_RUNTIME_LOCK.txt):
+#   Ubuntu 24.04.5 LTS / Python 3.12.16 / pillow==13.0.0 (libwebp 1.6.0, zlib 1.3)
+# Verified Windows Local baseline:
+#   Windows 11 / Python 3.14.6 / Pillow 12.3.0 (libwebp 1.6.0)
 Pillow>=11.0.0
-numpy>=2.0.0
-scipy>=1.14.0
+
+# Optional legacy extras (ONLY needed if re-running archived Windows P3/P4-A/P4-B scripts;
+# NOT required by 06_共用工具/rei_atlas_tools.py or Review Center tools):
+# numpy>=2.0.0
+# scipy>=1.14.0
