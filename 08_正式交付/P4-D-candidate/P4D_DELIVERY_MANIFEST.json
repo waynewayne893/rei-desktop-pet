@@ -2485,8 +2485,8 @@
   "master_bundle_zip": {
     "path": "08_正式交付/P4-D-candidate/rei-desktop-pet-p4d-all-3-bundle.zip",
     "ok": true,
-    "bytes": 17066945,
-    "sha256": "5d1392d8e8673918e1b0e22060b14d9a857d6c90e7b868220a45c172bb7073ea",
+    "bytes": 17041033,
+    "sha256": "c0fe9485ffa2720ff9fdfd64e3c6b41f34a8a5769a85814bc74fb7b627ccbdc7",
     "entry_count": 23,
     "entries": [
       "pets/rei-school/pet.json",
@@ -2510,15 +2510,9 @@
       "qa/P4D_OFFLINE_QA.json",
       "qa/P4D_QA_REPORT.md",
       "qa/WINDOWS_P5_ACCEPTANCE_GUIDE.md",
-      "P4D_DELIVERY_MANIFEST.json",
-      "SHA256SUMS.txt"
+      "PAYLOAD_MANIFEST.json",
+      "PAYLOAD_SHA256SUMS.txt"
     ]
-  },
-  "sha256sums_file": {
-    "path": "08_正式交付/P4-D-candidate/SHA256SUMS.txt",
-    "bytes": 3427,
-    "sha256": "4eb8e48cde46070889e3b11a8456fa4fdf347b21dcec5327f482e014c3ee7bc9",
-    "entry_count": 28
   },
   "qa_report_md": {
     "path": "07_QA验收/P4-D/P4D_QA_REPORT.md",
@@ -2529,5 +2523,29 @@
     "path": "07_QA验收/P4-D/WINDOWS_P5_ACCEPTANCE_GUIDE.md",
     "bytes": 11148,
     "sha256": "d5dd4516491097f242c0f322b1fbc8f760167025860837d2e6d75377d02c3d33"
+  },
+  "integrity_architecture": {
+    "model": "two-layer-acyclic-dag",
+    "inner_manifest": "08_正式交付/P4-D-candidate/PAYLOAD_MANIFEST.json",
+    "inner_sha256sums": "08_正式交付/P4-D-candidate/PAYLOAD_SHA256SUMS.txt",
+    "outer_manifest": "08_正式交付/P4-D-candidate/P4D_DELIVERY_MANIFEST.json",
+    "outer_sha256sums": "08_正式交付/P4-D-candidate/SHA256SUMS.txt",
+    "outer_manifest_records_outer_sha256sums": false,
+    "outer_files_included_in_bundle_zip": false,
+    "single_pass_zip_build": true
+  },
+  "inner_integrity": {
+    "payload_manifest": {
+      "path": "08_正式交付/P4-D-candidate/PAYLOAD_MANIFEST.json",
+      "bytes": 5930,
+      "sha256": "8103d2c66d08aaf152fd5f8f765d4b4e60a101a6004736f54e16547e06f9552d",
+      "payload_count": 21
+    },
+    "payload_sha256sums": {
+      "path": "08_正式交付/P4-D-candidate/PAYLOAD_SHA256SUMS.txt",
+      "bytes": 2329,
+      "sha256": "c29d32c87cf6f39c539f7f6af6825e44b883540017e1015b8f9398b43cc61559",
+      "entry_count": 22
+    }
   }
 }

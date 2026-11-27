@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "stage": "REI-PET-P4D-INTEGRITY-FIX",
+  "base_branch": "feat/p4d-final-assembly",
+  "base_commit": "6561fbde2605e81fd1077701bd681ab438135441",
+  "fix_branch": "fix/p4d-package-integrity",
+  "executed_at_local": "2026-11-27",
+  "environment": {
+    "os": "Windows 11",
+    "python": "3.14.6",
+    "pillow": "12.3.0",
+    "libwebp": "1.6.0"
+  },
+  "overall_ok": true,
+  "generated_artifacts": {
+    "PAYLOAD_MANIFEST.json": {
+      "bytes": 5930,
+      "sha256": "8103d2c66d08aaf152fd5f8f765d4b4e60a101a6004736f54e16547e06f9552d"
+    },
+    "PAYLOAD_SHA256SUMS.txt": {
+      "bytes": 2329,
+      "sha256": "c29d32c87cf6f39c539f7f6af6825e44b883540017e1015b8f9398b43cc61559"
+    },
+    "rei-desktop-pet-p4d-all-3-bundle.zip": {
+      "bytes": 17041033,
+      "sha256": "c0fe9485ffa2720ff9fdfd64e3c6b41f34a8a5769a85814bc74fb7b627ccbdc7"
+    },
+    "P4D_DELIVERY_MANIFEST.json": {
+      "bytes": 120858,
+      "sha256": "a933a31772f215de1f93614314773aab6e5ac9c09f37d2c8d4048c10daa47fe6"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 3793,
+      "sha256": "9fde179ce8984d870975ae334520ff9bc3627defa37607debe0c0fbf2c7bd5f6"
+    }
+  },
+  "tests": {
+    "1_outer_manifest_hash_verification": {
+      "ok": true,
+      "references_verified": 302
+    },
+    "2_outer_sha256sums_verification": {
+      "ok": true,
+      "entries_verified": 31
+    },
+    "3_master_zip_extract_and_crc": {
+      "ok": true,
+      "entry_count": 23
+    },
+    "4_inner_manifest_hash_verification": {
+      "ok": true,
+      "entries_verified": 21
+    },
+    "5_inner_sha256sums_verification": {
+      "ok": true,
+      "entries_verified": 22
+    },
+    "6_inner_outer_byte_parity": {
+      "ok": true,
+      "files_compared_identical": 23
+    },
+    "7_two_pass_bundle_only_idempotency": {
+      "ok": true,
+      "run1": {
+        "PAYLOAD_MANIFEST.json": {
+          "bytes": 5930,
+          "sha256": "8103d2c66d08aaf152fd5f8f765d4b4e60a101a6004736f54e16547e06f9552d"
+        },
+        "PAYLOAD_SHA256SUMS.txt": {
+          "bytes": 2329,
+          "sha256": "c29d32c87cf6f39c539f7f6af6825e44b883540017e1015b8f9398b43cc61559"
+        },
+        "rei-desktop-pet-p4d-all-3-bundle.zip": {
+          "bytes": 17041033,
+          "sha256": "c0fe9485ffa2720ff9fdfd64e3c6b41f34a8a5769a85814bc74fb7b627ccbdc7"
+        },
+        "P4D_DELIVERY_MANIFEST.json": {
+          "bytes": 120858,
+          "sha256": "a933a31772f215de1f93614314773aab6e5ac9c09f37d2c8d4048c10daa47fe6"
+        },
+        "SHA256SUMS.txt": {
+          "bytes": 3793,
+          "sha256": "9fde179ce8984d870975ae334520ff9bc3627defa37607debe0c0fbf2c7bd5f6"
+        }
+      },
+      "run2": {
+        "PAYLOAD_MANIFEST.json": {
+          "bytes": 5930,
+          "sha256": "8103d2c66d08aaf152fd5f8f765d4b4e60a101a6004736f54e16547e06f9552d"
+        },
+        "PAYLOAD_SHA256SUMS.txt": {
+          "bytes": 2329,
+          "sha256": "c29d32c87cf6f39c539f7f6af6825e44b883540017e1015b8f9398b43cc61559"
+        },
+        "rei-desktop-pet-p4d-all-3-bundle.zip": {
+          "bytes": 17041033,
+          "sha256": "c0fe9485ffa2720ff9fdfd64e3c6b41f34a8a5769a85814bc74fb7b627ccbdc7"
+        },
+        "P4D_DELIVERY_MANIFEST.json": {
+          "bytes": 120858,
+          "sha256": "a933a31772f215de1f93614314773aab6e5ac9c09f37d2c8d4048c10daa47fe6"
+        },
+        "SHA256SUMS.txt": {
+          "bytes": 3793,
+          "sha256": "9fde179ce8984d870975ae334520ff9bc3627defa37607debe0c0fbf2c7bd5f6"
+        }
+      }
+    },
+    "8_tamper_detection_in_isolated_temp_copy": {
+      "ok": true,
+      "outer_single_byte_corruption_target": "08_正式交付/P4-D-candidate/rei-school/pet.json",
+      "outer_rejected": true,
+      "outer_detected_errors": [
+        "Outer manifest hash mismatch: 08_正式交付/P4-D-candidate/rei-school/pet.json",
+        "Outer SHA256SUMS hash mismatch: 08_正式交付/P4-D-candidate/rei-school/pet.json",
+        "Inner/outer byte parity mismatch: pets/rei-school/pet.json"
+      ],
+      "inner_single_byte_corruption_target": "pets/rei-black/spritesheet.webp",
+      "inner_rejected": true,
+      "inner_manifest_mismatches": [
+        "pets/rei-black/spritesheet.webp"
+      ],
+      "inner_sums_mismatches": [
+        "pets/rei-black/spritesheet.webp"
+      ]
+    },
+    "9_acyclic_dag_no_self_or_circular_refs": {
+      "ok": true,
+      "invariants": {
+        "outer_manifest_has_no_sha256sums_file_key": true,
+        "outer_manifest_has_no_outer_sums_hash": true,
+        "outer_manifest_has_no_self_hash": true,
+        "outer_sums_excludes_self": true,
+        "bundle_zip_excludes_outer_manifest": true,
+        "bundle_zip_excludes_outer_sums": true,
+        "inner_manifest_excludes_master_zip": true,
+        "inner_manifest_excludes_inner_sums": true,
+        "inner_manifest_excludes_self": true,
+        "inner_sums_excludes_self": true,
+        "inner_sums_excludes_outer_files": true,
+        "inner_sums_uses_zip_relative_paths": true
+      }
+    },
+    "10_upstream_and_p4d_protected_assets_byte_identical_to_6561fbd": {
+      "ok": true,
+      "upstream_counts": {
+        "frozen_and_backups": 6,
+        "derived_masters": 3,
+        "standard_frames": 171,
+        "direction_frames": 48,
+        "standard_atlases": 3
+      },
+      "protected_p4d_assets_verified": 27,
+      "protected_mismatches": [],
+      "git_tracked_diff_vs_6561fbd": [
+        "M\t\"06_\\345\\205\\261\\347\\224\\250\\345\\267\\245\\345\\205\\267/p4d_assemble.py\"",
+        "M\t\"08_\\346\\255\\243\\345\\274\\217\\344\\272\\244\\344\\273\\230/P4-D-candidate/P4D_DELIVERY_MANIFEST.json\"",
+        "M\t\"08_\\346\\255\\243\\345\\274\\217\\344\\272\\244\\344\\273\\230/P4-D-candidate/SHA256SUMS.txt\"",
+        "M\t\"08_\\346\\255\\243\\345\\274\\217\\344\\272\\244\\344\\273\\230/P4-D-candidate/rei-desktop-pet-p4d-all-3-bundle.zip\""
+      ]
+    }
+  }
+}

@@ -681,8 +681,9 @@ def assemble_and_qa(root: Path, skip_bundle: bool = False) -> int:
         },
         "temporary_compat_assets_excluded": True,
         "pets": pet_manifest_entries,
+        "integrity_architecture": None,
+        "inner_integrity": None,
         "master_bundle_zip": None,
-        "sha256sums_file": None,
     }
 
     manifest_path = delivery_root / "P4D_DELIVERY_MANIFEST.json"
@@ -719,40 +720,157 @@ def assemble_and_qa(root: Path, skip_bundle: bool = False) -> int:
     return 0 if all_ok else 1
 
 
+def collect_inner_payload_entries(root: Path) -> list[tuple[str, Path]]:
+    """Return deterministic list of (zip_rel_path, disk_path) for immutable inner bundle payload."""
+    delivery_root = root / "08_正式交付" / "P4-D-candidate"
+    qa_root = root / "07_QA验收" / "P4-D"
+    entries: list[tuple[str, Path]] = []
+    for form_id, meta in PET_METADATA.items():
+        entries.append((f"pets/{form_id}/pet.json", delivery_root / form_id / "pet.json"))
+        entries.append((f"pets/{form_id}/spritesheet.webp", delivery_root / form_id / "spritesheet.webp"))
+        entries.append(
+            (
+                f"extended-png/{form_id}-spritesheet-extended.png",
+                root / meta["folder"] / "P4-D" / "delivery" / "spritesheet-extended.png",
+            )
+        )
+        entries.append((f"individual-zips/{form_id}-codex-pet-v2.zip", delivery_root / f"{form_id}-codex-pet-v2.zip"))
+        entries.append(
+            (
+                f"contact-sheets/{form_id}-extended-contact-light.png",
+                qa_root / "contact-sheets" / f"{form_id}-extended-contact-light.png",
+            )
+        )
+        entries.append(
+            (
+                f"contact-sheets/{form_id}-extended-contact-dark.png",
+                qa_root / "contact-sheets" / f"{form_id}-extended-contact-dark.png",
+            )
+        )
+    entries.append(("qa/P4D_OFFLINE_QA.json", qa_root / "P4D_OFFLINE_QA.json"))
+    entries.append(("qa/P4D_QA_REPORT.md", qa_root / "P4D_QA_REPORT.md"))
+    entries.append(("qa/WINDOWS_P5_ACCEPTANCE_GUIDE.md", qa_root / "WINDOWS_P5_ACCEPTANCE_GUIDE.md"))
+    for arcname, p in entries:
+        if not p.exists():
+            raise FileNotFoundError(f"Required payload asset missing for {arcname}: {p}")
+    return entries
+
+
 def finalize_bundle_and_sums(root: Path) -> int:
-    """Write master delivery ZIP and SHA256SUMS.txt after P4D_QA_REPORT.md and WINDOWS_P5_ACCEPTANCE_GUIDE.md exist."""
+    """
+    Build inner & outer integrity artifacts and master bundle ZIP in one strictly acyclic pass:
+
+      Immutable Payload (21 files)
+        -> PAYLOAD_MANIFEST.json          (inner: payload files only; no ZIP, no SUMS, no self)
+        -> PAYLOAD_SHA256SUMS.txt         (inner: payload files + PAYLOAD_MANIFEST.json; ZIP-relative; no self)
+        -> rei-desktop-pet-p4d-all-3-bundle.zip  (single-pass ZIP: payload + inner manifest + inner sums ONLY)
+        -> P4D_DELIVERY_MANIFEST.json     (outer: deliverables + inner manifest/sums + final ZIP; NO outer SUMS)
+        -> SHA256SUMS.txt                 (outer sink: deliverables + inner manifest/sums + final ZIP + outer manifest; no self)
+    """
     delivery_root = root / "08_正式交付" / "P4-D-candidate"
     qa_root = root / "07_QA验收" / "P4-D"
     manifest_path = delivery_root / "P4D_DELIVERY_MANIFEST.json"
     manifest_obj = json.loads(manifest_path.read_text(encoding="utf-8"))
 
-    qa_report = qa_root / "P4D_QA_REPORT.md"
-    p5_guide = qa_root / "WINDOWS_P5_ACCEPTANCE_GUIDE.md"
-    qa_json = qa_root / "P4D_OFFLINE_QA.json"
+    # Step 1: Collect immutable payload files (21 entries)
+    payload_entries = collect_inner_payload_entries(root)
 
-    bundle_entries: list[tuple[str, Path]] = []
-    for form_id, meta in PET_METADATA.items():
-        bundle_entries.append((f"pets/{form_id}/pet.json", delivery_root / form_id / "pet.json"))
-        bundle_entries.append((f"pets/{form_id}/spritesheet.webp", delivery_root / form_id / "spritesheet.webp"))
-        bundle_entries.append((f"extended-png/{form_id}-spritesheet-extended.png", root / meta["folder"] / "P4-D" / "delivery" / "spritesheet-extended.png"))
-        bundle_entries.append((f"individual-zips/{form_id}-codex-pet-v2.zip", delivery_root / f"{form_id}-codex-pet-v2.zip"))
-        bundle_entries.append((f"contact-sheets/{form_id}-extended-contact-light.png", qa_root / "contact-sheets" / f"{form_id}-extended-contact-light.png"))
-        bundle_entries.append((f"contact-sheets/{form_id}-extended-contact-dark.png", qa_root / "contact-sheets" / f"{form_id}-extended-contact-dark.png"))
+    # Step 2: Generate INNER PAYLOAD_MANIFEST.json (payload assets only; zero ZIP/SUMS/self references)
+    payload_manifest_path = delivery_root / "PAYLOAD_MANIFEST.json"
+    payload_manifest_obj = {
+        "schema_version": 1,
+        "layer": "INNER_PAYLOAD",
+        "stage": "REI-PET-P4D-FINAL-ASSEMBLY",
+        "base_unified_main_commit": manifest_obj.get("base_unified_main_commit", "44624e1572894f340e9b334ab339d958e7fb9ba2"),
+        "records_master_bundle_zip": False,
+        "records_payload_sha256sums": False,
+        "records_outer_files": False,
+        "records_self_hash": False,
+        "payload_count": len(payload_entries),
+        "files": [
+            {
+                "zip_path": arcname,
+                "repo_path": rel_posix(src_path, root),
+                "bytes": src_path.stat().st_size,
+                "sha256": tools.sha256_file(src_path),
+            }
+            for arcname, src_path in payload_entries
+        ],
+    }
+    payload_manifest_path.write_text(json.dumps(payload_manifest_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    bundle_entries.append(("qa/P4D_OFFLINE_QA.json", qa_json))
-    if qa_report.exists():
-        bundle_entries.append(("qa/P4D_QA_REPORT.md", qa_report))
-    if p5_guide.exists():
-        bundle_entries.append(("qa/WINDOWS_P5_ACCEPTANCE_GUIDE.md", p5_guide))
-    bundle_entries.append(("P4D_DELIVERY_MANIFEST.json", manifest_path))
+    # Step 3: Generate INNER PAYLOAD_SHA256SUMS.txt (ZIP-relative paths: 21 payload + PAYLOAD_MANIFEST.json; no self)
+    payload_sums_path = delivery_root / "PAYLOAD_SHA256SUMS.txt"
+    inner_sum_entries = payload_entries + [("PAYLOAD_MANIFEST.json", payload_manifest_path)]
+    inner_sum_lines = [f"{tools.sha256_file(src_path)}  {arcname}" for arcname, src_path in inner_sum_entries]
+    payload_sums_path.write_text("\n".join(inner_sum_lines) + "\n", encoding="utf-8")
+
+    # Step 4: Build master bundle ZIP in a SINGLE PASS (outer manifest & outer sums STRICTLY excluded)
+    bundle_entries = payload_entries + [
+        ("PAYLOAD_MANIFEST.json", payload_manifest_path),
+        ("PAYLOAD_SHA256SUMS.txt", payload_sums_path),
+    ]
+    forbidden_in_zip = {"P4D_DELIVERY_MANIFEST.json", "SHA256SUMS.txt"}
+    assert not any(arc in forbidden_in_zip for arc, _ in bundle_entries)
 
     bundle_zip_path = delivery_root / "rei-desktop-pet-p4d-all-3-bundle.zip"
     bundle_check = write_deterministic_zip(bundle_zip_path, bundle_entries)
 
-    # Collect SHA256SUMS.txt across all P4-D deliverables
-    sum_files: list[Path] = []
+    # Step 5: Generate OUTER P4D_DELIVERY_MANIFEST.json (records final ZIP & inner integrity; NEVER records outer SHA256SUMS.txt)
+    manifest_obj.pop("sha256sums_file", None)
+    qa_report = qa_root / "P4D_QA_REPORT.md"
+    p5_guide = qa_root / "WINDOWS_P5_ACCEPTANCE_GUIDE.md"
+    qa_json = qa_root / "P4D_OFFLINE_QA.json"
+
+    manifest_obj["offline_qa_json"] = {
+        "path": rel_posix(qa_json, root),
+        "bytes": qa_json.stat().st_size,
+        "sha256": tools.sha256_file(qa_json),
+    }
+    manifest_obj["qa_report_md"] = {
+        "path": rel_posix(qa_report, root),
+        "bytes": qa_report.stat().st_size,
+        "sha256": tools.sha256_file(qa_report),
+    }
+    manifest_obj["windows_p5_guide_md"] = {
+        "path": rel_posix(p5_guide, root),
+        "bytes": p5_guide.stat().st_size,
+        "sha256": tools.sha256_file(p5_guide),
+    }
+    manifest_obj["integrity_architecture"] = {
+        "model": "two-layer-acyclic-dag",
+        "inner_manifest": rel_posix(payload_manifest_path, root),
+        "inner_sha256sums": rel_posix(payload_sums_path, root),
+        "outer_manifest": rel_posix(manifest_path, root),
+        "outer_sha256sums": rel_posix(delivery_root / "SHA256SUMS.txt", root),
+        "outer_manifest_records_outer_sha256sums": False,
+        "outer_files_included_in_bundle_zip": False,
+        "single_pass_zip_build": True,
+    }
+    manifest_obj["inner_integrity"] = {
+        "payload_manifest": {
+            "path": rel_posix(payload_manifest_path, root),
+            "bytes": payload_manifest_path.stat().st_size,
+            "sha256": tools.sha256_file(payload_manifest_path),
+            "payload_count": len(payload_entries),
+        },
+        "payload_sha256sums": {
+            "path": rel_posix(payload_sums_path, root),
+            "bytes": payload_sums_path.stat().st_size,
+            "sha256": tools.sha256_file(payload_sums_path),
+            "entry_count": len(inner_sum_lines),
+        },
+    }
+    manifest_obj["master_bundle_zip"] = {
+        "path": rel_posix(bundle_zip_path, root),
+        **bundle_check,
+    }
+    manifest_path.write_text(json.dumps(manifest_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Step 6: Generate OUTER SHA256SUMS.txt (terminal DAG sink: all deliverables + inner manifest/sums + final ZIP + outer manifest; no self)
+    outer_sum_files: list[Path] = []
     for form_id, meta in PET_METADATA.items():
-        sum_files.extend([
+        outer_sum_files.extend([
             root / meta["folder"] / "P4-D" / "delivery" / "spritesheet-extended.png",
             root / meta["folder"] / "P4-D" / "delivery" / "spritesheet.webp",
             root / meta["folder"] / "P4-D" / "delivery" / "pet.json",
@@ -762,68 +880,34 @@ def finalize_bundle_and_sums(root: Path) -> int:
             qa_root / "contact-sheets" / f"{form_id}-extended-contact-light.png",
             qa_root / "contact-sheets" / f"{form_id}-extended-contact-dark.png",
         ])
-    sum_files.extend([qa_json])
-    if qa_report.exists():
-        sum_files.append(qa_report)
-    if p5_guide.exists():
-        sum_files.append(p5_guide)
-    sum_files.append(bundle_zip_path)
-
+    outer_sum_files.extend([
+        qa_json,
+        qa_report,
+        p5_guide,
+        payload_manifest_path,
+        payload_sums_path,
+        bundle_zip_path,
+        manifest_path,
+    ])
     sums_path = delivery_root / "SHA256SUMS.txt"
-    lines = [f"{tools.sha256_file(p)}  {rel_posix(p, root)}" for p in sum_files]
-    sums_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-    manifest_obj["master_bundle_zip"] = {
-        "path": rel_posix(bundle_zip_path, root),
-        **bundle_check,
-    }
-    manifest_obj["sha256sums_file"] = {
-        "path": rel_posix(sums_path, root),
-        "bytes": sums_path.stat().st_size,
-        "sha256": tools.sha256_file(sums_path),
-        "entry_count": len(lines),
-    }
-    if qa_report.exists():
-        manifest_obj["qa_report_md"] = {
-            "path": rel_posix(qa_report, root),
-            "bytes": qa_report.stat().st_size,
-            "sha256": tools.sha256_file(qa_report),
-        }
-    if p5_guide.exists():
-        manifest_obj["windows_p5_guide_md"] = {
-            "path": rel_posix(p5_guide, root),
-            "bytes": p5_guide.stat().st_size,
-            "sha256": tools.sha256_file(p5_guide),
-        }
-    manifest_path.write_text(json.dumps(manifest_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    # Re-write bundle ZIP once with final manifest + SHA256SUMS included inside
-    bundle_entries_final = [e for e in bundle_entries if e[0] != "P4D_DELIVERY_MANIFEST.json"]
-    bundle_entries_final.append(("P4D_DELIVERY_MANIFEST.json", manifest_path))
-    bundle_entries_final.append(("SHA256SUMS.txt", sums_path))
-    bundle_check = write_deterministic_zip(bundle_zip_path, bundle_entries_final)
-    manifest_obj["master_bundle_zip"] = {
-        "path": rel_posix(bundle_zip_path, root),
-        **bundle_check,
-    }
-    manifest_path.write_text(json.dumps(manifest_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    # Append manifest hash and refresh bundle hash in SHA256SUMS.txt
-    sum_files_final = [p for p in sum_files if p != bundle_zip_path] + [manifest_path, bundle_zip_path]
-    lines_final = [f"{tools.sha256_file(p)}  {rel_posix(p, root)}" for p in sum_files_final]
-    sums_path.write_text("\n".join(lines_final) + "\n", encoding="utf-8")
+    assert sums_path not in outer_sum_files
+    outer_sum_lines = [f"{tools.sha256_file(p)}  {rel_posix(p, root)}" for p in outer_sum_files]
+    sums_path.write_text("\n".join(outer_sum_lines) + "\n", encoding="utf-8")
 
     print(
         json.dumps(
             {
                 "ok": bundle_check["ok"],
+                "payload_manifest_sha256": tools.sha256_file(payload_manifest_path),
+                "payload_sha256sums_sha256": tools.sha256_file(payload_sums_path),
                 "bundle_zip": rel_posix(bundle_zip_path, root),
                 "bundle_bytes": bundle_check["bytes"],
                 "bundle_sha256": bundle_check["sha256"],
                 "bundle_entries": bundle_check["entry_count"],
-                "sha256sums": rel_posix(sums_path, root),
-                "sha256sums_entries": len(lines_final),
-                "manifest_sha256": tools.sha256_file(manifest_path),
+                "outer_manifest_sha256": tools.sha256_file(manifest_path),
+                "outer_sha256sums_path": rel_posix(sums_path, root),
+                "outer_sha256sums_entries": len(outer_sum_lines),
+                "outer_sha256sums_sha256": tools.sha256_file(sums_path),
             },
             ensure_ascii=False,
             indent=2,
@@ -832,13 +916,197 @@ def finalize_bundle_and_sums(root: Path) -> int:
     return 0 if bundle_check["ok"] else 1
 
 
+def verify_delivery_integrity(root: Path, extract_dir: Path | None = None) -> dict[str, Any]:
+    """Independently verify outer manifest, outer SHA256SUMS, ZIP CRC/contents, inner manifest, inner SHA256SUMS, byte-parity, and DAG acyclicity."""
+    import tempfile
+
+    delivery_root = root / "08_正式交付" / "P4-D-candidate"
+    manifest_path = delivery_root / "P4D_DELIVERY_MANIFEST.json"
+    sums_path = delivery_root / "SHA256SUMS.txt"
+    bundle_zip_path = delivery_root / "rei-desktop-pet-p4d-all-3-bundle.zip"
+    payload_manifest_path = delivery_root / "PAYLOAD_MANIFEST.json"
+    payload_sums_path = delivery_root / "PAYLOAD_SHA256SUMS.txt"
+
+    errors: list[str] = []
+    manifest_obj = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+    # 1. Outer manifest hash checks
+    outer_manifest_checked = 0
+    outer_refs: list[tuple[str, str]] = []
+    for top_key in ("p4b_acceptance_ledger", "p4c_acceptance_ledger", "offline_qa_json", "qa_report_md", "windows_p5_guide_md", "master_bundle_zip"):
+        entry = manifest_obj.get(top_key)
+        if not isinstance(entry, dict) or "path" not in entry or "sha256" not in entry:
+            errors.append(f"Outer manifest missing {top_key}")
+        else:
+            outer_refs.append((entry["path"], entry["sha256"]))
+    inner_int = manifest_obj.get("inner_integrity", {})
+    for ikey in ("payload_manifest", "payload_sha256sums"):
+        entry = inner_int.get(ikey)
+        if not isinstance(entry, dict) or "path" not in entry or "sha256" not in entry:
+            errors.append(f"Outer manifest missing inner_integrity.{ikey}")
+        else:
+            outer_refs.append((entry["path"], entry["sha256"]))
+    for pid, pdata in manifest_obj.get("pets", {}).items():
+        for dkey, dval in pdata.get("deliverables", {}).items():
+            outer_refs.append((dval["path"], dval["sha256"]))
+        nr = pdata.get("neutral_reference_cell_r0c6", {})
+        outer_refs.append((nr["source_path"], nr["source_sha256"]))
+        for fr in pdata.get("standard_57_frames", []):
+            outer_refs.append((fr["source_path"], fr["source_sha256"]))
+        for fr in pdata.get("direction_16_frames", []):
+            outer_refs.append((fr["source_path"], fr["source_sha256"]))
+            outer_refs.append((fr["native_raw_path"], fr["native_raw_sha256"]))
+
+    for rel, expected_sha in outer_refs:
+        fp = root / rel
+        if not fp.exists():
+            errors.append(f"Outer manifest target missing: {rel}")
+        elif tools.sha256_file(fp) != expected_sha:
+            errors.append(f"Outer manifest hash mismatch: {rel}")
+        else:
+            outer_manifest_checked += 1
+
+    # 2. Outer SHA256SUMS.txt checks
+    outer_sums_checked = 0
+    outer_sums_paths: list[str] = []
+    for line in sums_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        expected_sha, rel = line.split(None, 1)
+        outer_sums_paths.append(rel)
+        fp = root / rel
+        if not fp.exists():
+            errors.append(f"Outer SHA256SUMS target missing: {rel}")
+        elif tools.sha256_file(fp) != expected_sha:
+            errors.append(f"Outer SHA256SUMS hash mismatch: {rel}")
+        else:
+            outer_sums_checked += 1
+
+    # 3. Master ZIP extraction & CRC check + 4/5/6 inner verification
+    tmp_ctx = None
+    if extract_dir is None:
+        tmp_ctx = tempfile.TemporaryDirectory(prefix="rei-p4d-zip-verify-")
+        work_extract = Path(tmp_ctx.name)
+    else:
+        work_extract = extract_dir
+        work_extract.mkdir(parents=True, exist_ok=True)
+
+    zip_crc_ok = False
+    zip_entries: list[str] = []
+    inner_manifest_checked = 0
+    inner_sums_checked = 0
+    byte_parity_checked = 0
+    inner_sums_paths: list[str] = []
+    inner_manifest_paths: list[str] = []
+
+    try:
+        with zipfile.ZipFile(bundle_zip_path, "r") as zf:
+            bad = zf.testzip()
+            zip_crc_ok = bad is None
+            if not zip_crc_ok:
+                errors.append(f"ZIP CRC failure on member: {bad}")
+            zip_entries = zf.namelist()
+            zf.extractall(work_extract)
+
+        # Inner PAYLOAD_MANIFEST.json check on extracted files
+        ext_payload_manifest_path = work_extract / "PAYLOAD_MANIFEST.json"
+        if not ext_payload_manifest_path.exists():
+            errors.append("Extracted ZIP missing PAYLOAD_MANIFEST.json")
+            inner_manifest_obj = {}
+        else:
+            inner_manifest_obj = json.loads(ext_payload_manifest_path.read_text(encoding="utf-8"))
+            for item in inner_manifest_obj.get("files", []):
+                zp = item["zip_path"]
+                inner_manifest_paths.append(zp)
+                ef = work_extract / zp
+                if not ef.exists():
+                    errors.append(f"Inner manifest target missing in ZIP: {zp}")
+                elif tools.sha256_file(ef) != item["sha256"]:
+                    errors.append(f"Inner manifest hash mismatch in ZIP: {zp}")
+                else:
+                    inner_manifest_checked += 1
+
+        # Inner PAYLOAD_SHA256SUMS.txt check on extracted files
+        ext_payload_sums_path = work_extract / "PAYLOAD_SHA256SUMS.txt"
+        if not ext_payload_sums_path.exists():
+            errors.append("Extracted ZIP missing PAYLOAD_SHA256SUMS.txt")
+        else:
+            for line in ext_payload_sums_path.read_text(encoding="utf-8").splitlines():
+                line = line.strip()
+                if not line:
+                    continue
+                expected_sha, zp = line.split(None, 1)
+                inner_sums_paths.append(zp)
+                ef = work_extract / zp
+                if not ef.exists():
+                    errors.append(f"Inner SHA256SUMS target missing in ZIP: {zp}")
+                elif tools.sha256_file(ef) != expected_sha:
+                    errors.append(f"Inner SHA256SUMS hash mismatch in ZIP: {zp}")
+                else:
+                    inner_sums_checked += 1
+
+        # Byte-for-byte parity between extracted ZIP members and repo files
+        expected_pairs = collect_inner_payload_entries(root) + [
+            ("PAYLOAD_MANIFEST.json", payload_manifest_path),
+            ("PAYLOAD_SHA256SUMS.txt", payload_sums_path),
+        ]
+        for zp, repo_fp in expected_pairs:
+            ef = work_extract / zp
+            if not ef.exists() or ef.read_bytes() != repo_fp.read_bytes():
+                errors.append(f"Inner/outer byte parity mismatch: {zp}")
+            else:
+                byte_parity_checked += 1
+    finally:
+        if tmp_ctx is not None:
+            tmp_ctx.cleanup()
+
+    # 7. Acyclicity & non-self-reference DAG invariants
+    outer_manifest_raw = manifest_path.read_text(encoding="utf-8")
+    dag_checks = {
+        "outer_manifest_has_no_sha256sums_file_key": "sha256sums_file" not in manifest_obj,
+        "outer_manifest_has_no_outer_sums_hash": (tools.sha256_file(sums_path) not in outer_manifest_raw),
+        "outer_manifest_has_no_self_hash": (tools.sha256_file(manifest_path) not in outer_manifest_raw),
+        "outer_sums_excludes_self": rel_posix(sums_path, root) not in outer_sums_paths,
+        "bundle_zip_excludes_outer_manifest": "P4D_DELIVERY_MANIFEST.json" not in zip_entries,
+        "bundle_zip_excludes_outer_sums": "SHA256SUMS.txt" not in zip_entries,
+        "inner_manifest_excludes_master_zip": not any("bundle.zip" in p for p in inner_manifest_paths),
+        "inner_manifest_excludes_inner_sums": "PAYLOAD_SHA256SUMS.txt" not in inner_manifest_paths,
+        "inner_manifest_excludes_self": "PAYLOAD_MANIFEST.json" not in inner_manifest_paths,
+        "inner_sums_excludes_self": "PAYLOAD_SHA256SUMS.txt" not in inner_sums_paths,
+        "inner_sums_excludes_outer_files": not any(p in ("P4D_DELIVERY_MANIFEST.json", "SHA256SUMS.txt") for p in inner_sums_paths),
+        "inner_sums_uses_zip_relative_paths": all(not p.startswith("08_") and not p.startswith("07_") and not p.startswith("/") for p in inner_sums_paths),
+    }
+    for k, passed in dag_checks.items():
+        if not passed:
+            errors.append(f"DAG invariant failed: {k}")
+
+    return {
+        "ok": len(errors) == 0,
+        "outer_manifest_references_verified": outer_manifest_checked,
+        "outer_sha256sums_entries_verified": outer_sums_checked,
+        "zip_crc_ok": zip_crc_ok,
+        "zip_entry_count": len(zip_entries),
+        "inner_manifest_entries_verified": inner_manifest_checked,
+        "inner_sha256sums_entries_verified": inner_sums_checked,
+        "inner_outer_byte_parity_verified": byte_parity_checked,
+        "dag_checks": dag_checks,
+        "errors": errors,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Rei Desktop Pet P4-D final v2 assembly, offline QA & packaging")
     parser.add_argument("--root", type=Path, default=tools.default_root())
     parser.add_argument("--skip-bundle", action="store_true", help="Assemble & QA without writing master bundle ZIP yet")
-    parser.add_argument("--bundle-only", action="store_true", help="Write/refresh master bundle ZIP and SHA256SUMS.txt")
+    parser.add_argument("--bundle-only", action="store_true", help="Build inner/outer integrity manifests, sums, and master bundle ZIP (single pass)")
+    parser.add_argument("--verify-integrity", action="store_true", help="Run full two-layer delivery integrity verification")
     args = parser.parse_args()
     root = args.root.resolve()
+    if args.verify_integrity:
+        res = verify_delivery_integrity(root)
+        print(json.dumps(res, ensure_ascii=False, indent=2))
+        return 0 if res["ok"] else 1
     if args.bundle_only:
         return finalize_bundle_and_sums(root)
     return assemble_and_qa(root, skip_bundle=args.skip_bundle)
