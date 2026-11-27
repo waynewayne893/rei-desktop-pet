@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "stage": "REI-PET-CLOUD-BOOTSTRAP / P4-COMPAT-WINDOWS-VERIFY",
+  "source_repository": "https://github.com/waynewayne893/rei-desktop-pet",
+  "source_branch": "cloud-bootstrap/p4-compat-preverify",
+  "source_commit": "c5b5b4ffaae6db2c13c75c64e14918f6b0c7858a",
+  "test_pet_id": "rei-compat-test",
+  "expected_codex_selector_id": "custom:rei-compat-test",
+  "user_approved_windows_install": true,
+  "executed_at_local": "2026-11-27 06:21:00 to 06:53:27",
+  "tester": "USER (with Antigravity Windows local verification & rollback)",
+  "environment": {
+    "windows_os_version": "Microsoft Windows 11 家庭中文版 10.0.22000 (Build 22000)",
+    "codex_msix_package_full_name": "OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0",
+    "codex_app_version": "26.1120.6357.0",
+    "python_version": "3.14.6",
+    "pillow_version": "12.3.0",
+    "libwebp_version": "1.6.0"
+  },
+  "download_integrity": {
+    "expected_zip_sha256": "9b36d7dd843aa65e76d17b7da63f876681edacbd9b23f7963bdf50b06e834fea",
+    "actual_zip_sha256": "9b36d7dd843aa65e76d17b7da63f876681edacbd9b23f7963bdf50b06e834fea",
+    "expected_pet_json_sha256": "f48cbc7e785e39698ad5f701fabd6556917be72e7b3bee7ddae036b0ad27913f",
+    "actual_pet_json_sha256": "f48cbc7e785e39698ad5f701fabd6556917be72e7b3bee7ddae036b0ad27913f",
+    "expected_spritesheet_webp_sha256": "bd6d29f401738015dddf452a79ffc460e6d53851f1ce691cbf25dd4605365201",
+    "actual_spritesheet_webp_sha256": "bd6d29f401738015dddf452a79ffc460e6d53851f1ce691cbf25dd4605365201",
+    "all_hashes_match": true
+  },
+  "native_validate_atlas_require_v2": {
+    "validator_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\\app\\resources\\skills\\skills\\.curated\\hatch-pet\\scripts\\validate_atlas.py",
+    "command": "python -B \"C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\\app\\resources\\skills\\skills\\.curated\\hatch-pet\\scripts\\validate_atlas.py\" \"<TEMP>\\rei-compat-download\\rei-compat-test\\spritesheet.webp\" --require-v2 --json-out \"<TEMP>\\rei-compat-download\\native-validation-v2.json\"",
+    "exit_code": 0,
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "full_json_artifact": "07_QA验收/P4-COMPAT/WINDOWS_NATIVE_VALIDATION_V2.json",
+    "raw_stdout_excerpt": "{\"ok\": true, \"format\": \"WEBP\", \"mode\": \"RGBA\", \"columns\": 8, \"rows\": 11, \"sprite_version_number\": 2, \"width\": 1536, \"height\": 2288, \"transparent_rgb_residue_pixels\": 0, \"errors\": [], \"warnings\": []}"
+  },
+  "asuka_isolation_guard": {
+    "target_dir_absent_before_install": true,
+    "pre_install_active_pet_observed": "custom:asuka-school (via Codex migrated cloud pet mapping)",
+    "pre_install_hashes": {
+      "asuka-school/pet.json": "8f22978ed8105d6b6e023377a5d550406fd220f3cdaeb59dbd429393366e7091",
+      "asuka-school/spritesheet.webp": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+      "asuka-work/pet.json": "0dc5f4aa2a1c4accb0e0fc63ba0ca2cc5fa289f5195b0cf0885ae8454a43aa25",
+      "asuka-work/spritesheet.webp": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+      "asuka-mixed-test/pet.json": "8fd1de1dd21b142947c71da042b8e65465c76bc9cb896ad3ab6ce55fdbbdba04",
+      "asuka-mixed-test/spritesheet.webp": "83aba65992452114a6a4156f6ec9655a3869b3a127b6ab0ce8edf15ccc865fcb"
+    },
+    "post_rollback_hashes": {
+      "asuka-school/pet.json": "8f22978ed8105d6b6e023377a5d550406fd220f3cdaeb59dbd429393366e7091",
+      "asuka-school/spritesheet.webp": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+      "asuka-work/pet.json": "0dc5f4aa2a1c4accb0e0fc63ba0ca2cc5fa289f5195b0cf0885ae8454a43aa25",
+      "asuka-work/spritesheet.webp": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+      "asuka-mixed-test/pet.json": "8fd1de1dd21b142947c71da042b8e65465c76bc9cb896ad3ab6ce55fdbbdba04",
+      "asuka-mixed-test/spritesheet.webp": "83aba65992452114a6a4156f6ec9655a3869b3a127b6ab0ce8edf15ccc865fcb"
+    },
+    "all_asuka_hashes_unchanged": true
+  },
+  "registration_and_display": {
+    "discovered_in_settings_pets": true,
+    "selector_display_name_seen": "Rei Compat Test (Temporary) (user reported overall test passed with no issues; exact UI text not separately transcribed)",
+    "light_background_alpha_clean": null,
+    "dark_background_alpha_clean": null,
+    "clipping_or_box_artifacts": null,
+    "codex_runtime_state_evidence": {
+      "local_id_registered_in_first_awake": true,
+      "v2_spritesheet_fingerprint_1536x2288_cached": true,
+      "auto_migrated_to_cloud_pet_entry": true
+    },
+    "notes": "User manually tested rei-compat-test in Codex Desktop and confirmed no issues were found. Independently corroborated by Codex Desktop local sqlite state recording custom:rei-compat-test discovery, spriteVersionNumber=2 with [1536, 2288] spritesheet fingerprint, first-awake registration, and overlay movement. Light/dark background alpha and clipping sub-checks were not separately itemized by the user, so boolean subfields remain null rather than assumed PASS."
+  },
+  "animation_observations": {
+    "idle_loops_cols_0_to_5_only": null,
+    "idle_erroneously_shows_neutral_0_6": null,
+    "running_right_on_drag": "NOT_ITEMIZED",
+    "running_left_on_drag": "NOT_ITEMIZED",
+    "waving": "NOT_TRIGGERED",
+    "jumping": "NOT_TRIGGERED",
+    "failed": "NOT_TRIGGERED",
+    "waiting": "NOT_TRIGGERED",
+    "running": "NOT_TRIGGERED",
+    "review": "NOT_TRIGGERED",
+    "notes": "User confirmed manual Codex Desktop compatibility test completed without issues, but did not provide per-state itemization. Codex sqlite state recorded first-awake registration for custom:rei-compat-test and overlay drag displacement (x: 1123->1104, y: 46->87). Strictly honoring governance rules, task/event states not explicitly observed and reported are marked NOT_TRIGGERED, and unitemized idle/drag sub-checks are marked null / NOT_ITEMIZED rather than PASS."
+  },
+  "mouse_direction_mapping_16_sectors": {
+    "clockwise_order_matches_expected": null,
+    "row9_to_row10_transition_157_5_to_180_clean": null,
+    "wraparound_337_5_to_000_clean": null,
+    "center_deadzone_behavior": "NOT_REPORTED",
+    "cardinal_checks": {
+      "000_N_up_R9C0": "NOT_REPORTED",
+      "090_E_right_R9C4": "NOT_REPORTED",
+      "180_S_down_R10C0": "NOT_REPORTED",
+      "270_W_left_R10C4": "NOT_REPORTED"
+    },
+    "all_16_sectors_verified": null,
+    "mismatched_sectors": [],
+    "notes": "User confirmed manual compatibility testing found no issues, but did not report individual 16-sector readouts or whether center deadzone displayed NEUTRAL_CELL_0_6 vs IDLE_FALLBACK. Left as NOT_REPORTED / null rather than fabricating PASS."
+  },
+  "restart_persistence": {
+    "codex_fully_quit_and_relaunched": false,
+    "pet_restored_cleanly_after_restart": null,
+    "no_errors_or_fallback": null,
+    "notes": "Process audit at closeout (06:53:23) confirmed all OpenAI.Codex GUI and helper processes remained running continuously since 2026-11-27 04:48:48-04:53:20 (prior to the 06:23:59 test installation). Full quit-and-relaunch persistence was therefore not executed in this run and is strictly NOT marked PASS."
+  },
+  "safe_rollback": {
+    "switched_active_pet_back": true,
+    "rei_compat_test_dir_removed": true,
+    "removed_from_settings_pets_after_refresh": null,
+    "asuka_pets_still_functional": true,
+    "notes": "Codex Desktop sqlite state confirmed active selection returned to custom:asuka-school before closeout. Local directory %USERPROFILE%\\.codex\\pets\\rei-compat-test was removed (Test-Path=False) and all 6 Asuka pet files verified SHA-256 identical. Note: Codex Desktop 26.1120.6357.0 auto-migrated custom:rei-compat-test into a cloud pet entry during testing; Codex app state was intentionally not edited programmatically, so post-refresh UI removal is left null pending optional user cleanup in Codex UI."
+  },
+  "overall_verdict": "PARTIAL",
+  "blocking_issues": [],
+  "summary_notes": "All automated and native Windows v2 compatibility gates PASSED with zero errors/warnings: fixed commit c5b5b4ff ZIP/pet.json/spritesheet.webp SHA-256 3/3 match; official OpenAI.Codex 26.1120.6357.0 hatch-pet validate_atlas.py --require-v2 exited 0 (ok=true, 1536x2288 WEBP RGBA, sprite_version_number=2, 0 transparent RGB residue, R0C6 recognized as used=true with 7509 px); Codex Desktop discovered, fingerprinted (1536x2288 v2), and loaded custom:rei-compat-test; user manually completed testing and confirmed no issues; safe rollback removed only local rei-compat-test while all 6 Asuka files remained byte-for-byte identical. Overall verdict is conservatively recorded as PARTIAL (not full PASS) because granular 16-sector / R0C6 center-deadzone classification (NEUTRAL_CELL_0_6 vs IDLE_FALLBACK), task-triggered animations, and full quit-and-relaunch persistence were not individually confirmed/executed."
+}
