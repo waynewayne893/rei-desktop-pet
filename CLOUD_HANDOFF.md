@@ -2,7 +2,7 @@
 
 > **架构状态**：GitHub-first + Cloud Execution（本地开发迁移、Linux 云端恢复验证与 Windows 基础兼容性预验证均已结项；GitHub 私有仓库为唯一正式工程数据源）  
 > **原生兼容性主控裁定（`REI-P4-COMPAT-MAIN-REVIEW-02`）**：**`BASE_RUNTIME_COMPATIBILITY_PASS`** / **`DETAILED_RUNTIME_VERIFICATION_PARTIAL`**  
-> **版本定位**：`P4-B_ART_ACCEPTANCE_PASS`，尚未正式发布
+> **版本定位**：`P4-C_ART_ACCEPTANCE_PASS` / `P4-D_FINAL_ASSEMBLY_AUTHORIZED`，尚未正式发布
 
 ---
 
@@ -30,7 +30,8 @@
 - **P4-COMPAT 原生兼容性预验证（已结项）**：主控裁定 **`BASE_RUNTIME_COMPATIBILITY_PASS` / `DETAILED_RUNTIME_VERIFICATION_PARTIAL`**：
   - 临时测试包 `rei-compat-test` 通过 Windows `OpenAI.Codex 26.1120.6357.0` 原生 `validate_atlas.py --require-v2`（退出码 `0`、0 错误、0 警告、88 格逐项一致）；用户亲自实机运行确认无异常；回退后原有 3 套 Asuka 宠物 6 个文件 SHA-256 完全一致。
   - **测试边界**：16 方向逐项映射、`R0C6` 中心死区实际渲染、完全退出重启持久化及任务事件触发动画均未完成逐项实测，留待后续专项验证或 P5 终验，不得标记为已全部通过。
-- **最新主控裁定**：`CODEX_CLOUD_ART_PIPELINE_QUALIFIED`、`P4-B-FIX_SKIPPED`、`P4-C_PRODUCTION_AUTHORIZED`。专项目标已验收 10 帧，正式 waiting 保持原版。P4-D、P5、P6 仍待授权。
+- **P4-C**：48/48 方向帧通过结构与 12/12 主方向盲检，并经用户明确确认全部人工验收通过（原始 7+41 JSON 原样归档，41 帧补充验收单独登记，219 帧全部保持原字节）。[P4-C 验收台账](07_QA验收/P4-C/human-acceptance/P4C_ACCEPTANCE_LEDGER.json)
+- **最新主控裁定**：`CODEX_CLOUD_ART_PIPELINE_QUALIFIED`、`P4-B-FIX_SKIPPED`、`P4-C_ART_ACCEPTANCE_PASS`、`P4-D_FINAL_ASSEMBLY_AUTHORIZED`。全部美术生产已完成，P4-D 无需调用生图；P5、P6 仍待逐阶段授权。
 
 ---
 
@@ -58,11 +59,12 @@
 
 ## 5. 人工验收结果
 
-正式资产 27 动作、171 帧全部通过，试验 waiting 和黑服四基准方向独立通过。预览画质疑问曾纳入审阅，用户最终接受全部正式动作。本轮没有全量锐化、超分辨率或重新生成授权。 [原始记录与哈希](07_QA验收/P4-B/human-acceptance/ACCEPTANCE_LEDGER.json)
+- **P4-B 正式标准动作**：27/27 动作、171/171 帧全部 `ACCEPTED`（试验 waiting 6 帧作为通过的备用候选，正式图集沿用原版）。[P4-B 验收台账](07_QA验收/P4-B/human-acceptance/ACCEPTANCE_LEDGER.json)
+- **P4-C 16 方向注视**：3 形态 48/48 帧全部 `ACCEPTED`（原始 7 `ACCEPTED` + 41 `PENDING_HUMAN_REVIEW` JSON 原样归档，结合用户明确确认「48个方向全部人工验收通过」单独登记 41 帧 `ACCEPTED`）。[P4-C 验收台账](07_QA验收/P4-C/human-acceptance/P4C_ACCEPTANCE_LEDGER.json)
 
-## 6. 下一阶段云端任务入口
+## 6. 下一阶段任务入口
 
-统一结项基准后，从独立任务分支执行 P4-C。黑服四个已通过样本由 attempt-02 登记，校服与白服各生成 16 帧、黑服补 12 帧。48 帧候选完成离线 QA 后停在人工终审门禁。 [基准统一方案](07_QA验收/P4-B/human-acceptance/CLOSEOUT_AND_MAIN_FF_PLAN.md)
+按 [P4-C 结项与 main 统一方案](07_QA验收/P4-C/human-acceptance/P4C_CLOSEOUT_AND_MAIN_FF_PLAN.md) 获得用户明确授权后将本结项提交 fast-forward 统一至 `main`，随后切出独立分支 `feat/p4d-final-assembly` 完成三套 `1536×2288` v2 扩展图集装配、264 格全量离线 QA、交付打包与 Windows P5 验收指南。
 
 ---
 

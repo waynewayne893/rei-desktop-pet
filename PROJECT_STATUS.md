@@ -6,7 +6,7 @@
 - **已验证初始资产基线 Commit SHA**：`8e5f592d8f93fd6a0b5485462e3e2a7591b57fd8`（候选标签 `v0.4.0-p4b-candidate`）
 - **兼容性预验证分支 Commit SHA**：`6dc14434c1fcaf82ed1a0f996a6a9142b4f5892d`（由 `cloud-bootstrap/p4-compat-preverify` 交付并已包含于试验分支历史。结项核验时远端 `main` 仍指向 `0b430a2`）
 - **原生兼容性主控裁定（`REI-P4-COMPAT-MAIN-REVIEW-02`）**：**`BASE_RUNTIME_COMPATIBILITY_PASS`** / **`DETAILED_RUNTIME_VERIFICATION_PARTIAL`**
-- **版本定位**：`P4-B_ART_ACCEPTANCE_PASS`，尚未进行正式发布
+- **版本定位**：`P4-C_ART_ACCEPTANCE_PASS` / `P4-D_FINAL_ASSEMBLY_AUTHORIZED`，尚未进行正式发布（待用户授权 fast-forward 统一 `main` 后切出 `feat/p4d-final-assembly`）
 
 ---
 
@@ -24,14 +24,15 @@
   - **严格未标通过的细项边界**：16 方向逐项映射读数、`R0C6` 中性参考格中心死区实际显示行为（`NEUTRAL_CELL_0_6` vs `IDLE_FALLBACK`）、完全退出重启持久化、以及任务/事件触发动画（`waving`、`jumping`、`failed`、`waiting`、`running`、`review`）均尚未完成逐项实测，留待后续专项验证或 P5 终验，**不得标记为已全部通过**。
   - 临时方向测试素材严格隔离于 `07_QA验收/P4-COMPAT/`，不计入正式 P4-C 产物。
 - **Antigravity 本地 `image-generator` 实测结果**：**`NATIVE_ALPHA_BLOCKED`**（仅输出不透明 RGB JPEG、最大 `16:9`、无 `transparent_background: true`），详见 [AGY_IMAGE_GEN_CAPABILITY_REPORT.md](07_QA验收/P4-B-FIX/capability-test/AGY_IMAGE_GEN_CAPABILITY_REPORT.md)。
-- **后续裁定**：`P4-B-FIX_SKIPPED`、`P4-C_PRODUCTION_AUTHORIZED`。远端 main 已核验统一基准 `6b4229f`。独立 P4-C 任务分支完成 48 帧结构检查，其中黑服 4 帧保留人工通过，44 帧待人工终审。P4-D、P5、P6 仍待逐阶段授权。
+- **P4-C 16 方向注视生产与人工验收**：**48/48 方向帧 `ACCEPTED`**（3 形态 × 16 方向；黑服 4 主方向沿用专项已验收复用帧，44 新帧结构 QA 与 12/12 盲检通过）。原始方向验收 JSON（7 `ACCEPTED` + 41 `PENDING_HUMAN_REVIEW`，SHA-256 `afc540b6...58fe4144`）原样只读归档，用户明确补充确认「48个方向全部人工验收通过」，剩余 41 帧已单独登记为 `ACCEPTED` 并完成 48/48 资产哈希绑定。详见 [P4-C 人工验收台账](07_QA验收/P4-C/human-acceptance/P4C_ACCEPTANCE_LEDGER.json) · [P4-C 结项与 main 统一方案](07_QA验收/P4-C/human-acceptance/P4C_CLOSEOUT_AND_MAIN_FF_PLAN.md)。
+- **后续裁定**：`P4-B-FIX_SKIPPED`、`P4-C_ART_ACCEPTANCE_PASS`、`P4-D_FINAL_ASSEMBLY_AUTHORIZED`。核验时远端 `main` 仍为 `6b4229f`、`feat/p4c-production` 为 `be86cce`；P4-C 结项提交待用户明确授权后 fast-forward 统一至 `main`，随后切出独立任务分支 `feat/p4d-final-assembly` 执行最终 v2 装配与离线 QA。P5、P6 仍待逐阶段授权。
 
 ---
 
 ## 2. 当前任务队列
 
-1. 统一结项提交包含兼容性预验证、Review Center、Codex Cloud 专项试验和两份原始人工验收记录。 [远端 fast-forward 方案](07_QA验收/P4-B/human-acceptance/CLOSEOUT_AND_MAIN_FF_PLAN.md)
-2. P4-C 已在独立任务分支完成 48 帧离线 QA。待批后推送该分支，44 新帧待人工验收。 [P4-C 方向候选 QA](07_QA验收/P4-C/P4C_PRODUCTION_QA_REPORT.md)
-3. P4-D、P5、P6 等待逐阶段授权。
+1. **P4-C 结项统一 `main`（待用户授权）**：按 [P4-C 结项与 main fast-forward 方案](07_QA验收/P4-C/human-acceptance/P4C_CLOSEOUT_AND_MAIN_FF_PLAN.md) 将本结项提交常规 fast-forward 推进至 `main`。
+2. **P4-D 最终装配与离线 QA（已授权，接续执行）**：从统一后的 `main` 切出 `feat/p4d-final-assembly`，装配校服、白服 00、黑服 09 三套 `1536×2288` v2 扩展图集（每套 57 标准动作 + 16 方向 + `R0C6` 中性格 = 74 有效格 + 14 空格），完成全部 264 格离线 QA、独立与总交付 ZIP 打包及 Windows P5 验收指南。
+3. **P5（Windows 实机安装验收）、P6**：等待主控对 P4-D 独立验收后逐阶段授权。
 
 详见：[CLOUD_HANDOFF.md](CLOUD_HANDOFF.md) · [CLOUD_REPRODUCIBILITY_REPORT.md](CLOUD_REPRODUCIBILITY_REPORT.md) · [WINDOWS_COMPAT_TEST_REPORT.md](07_QA验收/P4-COMPAT/WINDOWS_COMPAT_TEST_REPORT.md)

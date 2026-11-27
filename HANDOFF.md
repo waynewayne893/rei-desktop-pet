@@ -13,18 +13,18 @@
 - **兼容性预验证分支 Commit SHA**：`6dc14434c1fcaf82ed1a0f996a6a9142b4f5892d`（来自已保留分支 `cloud-bootstrap/p4-compat-preverify`）
 - **原生兼容性主控裁定（`REI-P4-COMPAT-MAIN-REVIEW-02`）**：**`BASE_RUNTIME_COMPATIBILITY_PASS`** / **`DETAILED_RUNTIME_VERIFICATION_PARTIAL`**
   - 16 方向逐项映射、`R0C6` 中心死区实际显示行为、完全退出重启持久化与任务事件触发动画留待后续专项验证或 P5 终验，不得标记为已全部通过。
-- **当前阶段**：`P4-B_ART_ACCEPTANCE_PASS`。正式 27 动作、171 帧全部人工通过。专项 waiting 六帧及黑服四方向亦通过。 [验收台账](07_QA验收/P4-B/human-acceptance/ACCEPTANCE_LEDGER.json)
+- **当前阶段**：`P4-C_ART_ACCEPTANCE_PASS` / `P4-D_FINAL_ASSEMBLY_AUTHORIZED`。正式 27 动作 171 帧与 3 形态 48 方向帧（合计 219 帧）全部完成人工验收绑定。[P4-B 验收台账](07_QA验收/P4-B/human-acceptance/ACCEPTANCE_LEDGER.json) · [P4-C 验收台账](07_QA验收/P4-C/human-acceptance/P4C_ACCEPTANCE_LEDGER.json)
 - **云端核心环境**：`Ubuntu 24.04.5 LTS` / `Python 3.12.16` / 预装 `Pillow 13.0.0`（`libwebp 1.6.0`、`zlib 1.3`），无 PyPI 访问（无 NumPy/SciPy），详见 [CLOUD_RUNTIME_LOCK.txt](CLOUD_RUNTIME_LOCK.txt)
-- **图像生成实测边界**：Antigravity 本地 `image-generator` = **`NATIVE_ALPHA_BLOCKED`**
-- **主控裁定**：跳过 P4-B-FIX，授权 P4-C。P4-D、P5、P6 仍待授权。
+- **图像生成实测边界**：Antigravity 本地 `image-generator` = **`NATIVE_ALPHA_BLOCKED`**（全部美术生产已结束，P4-D 阶段无需调用生图）
+- **主控裁定**：`P4-B-FIX_SKIPPED`、`P4-C_ART_ACCEPTANCE_PASS`、`P4-D_FINAL_ASSEMBLY_AUTHORIZED`。P5、P6 仍待授权。
 
 ---
 
-## 2. 云端接续顺序
+## 2. 接续顺序
 
-1. 兼容性预验证和基础运行测试已经完成，提交均为专项试验分支的祖先。结项核验记录的远端 `main` 仍在 `0b430a2`。 [合并方案](07_QA验收/P4-B/human-acceptance/CLOSEOUT_AND_MAIN_FF_PLAN.md)
-2. 人工原始验收文件已归档。正式 waiting 沿用原版，新版作为通过的备用候选。
-3. 统一基准后从独立分支进行 P4-C。先登记黑服已通过的四方向，再生成剩余 44 帧并交人工终审。
+1. 核验时远端 `main` 指向 `6b4229f`、`feat/p4c-production` 指向 `be86cce`。取得用户明确授权后，按 [P4-C 结项与 main 统一方案](07_QA验收/P4-C/human-acceptance/P4C_CLOSEOUT_AND_MAIN_FF_PLAN.md) 将 P4-C 结项提交 fast-forward 推进至 `main`。
+2. 从统一后的 `main` 切出独立任务分支 `feat/p4d-final-assembly`，基于 Python 标准库 + Pillow 工具链装配校服、白服 00、黑服 09 三套 `1536×2288` v2 扩展图集、执行 264 格全量离线 QA 与打包交付，并编写 Windows P5 运行验收指南。
+3. 严禁在未获授权前执行 Windows 安装或正式发布；完成后由 ChatGPT 主控独立验收 P4-D。
 
 ---
 
