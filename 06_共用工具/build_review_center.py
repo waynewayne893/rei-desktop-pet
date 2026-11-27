@@ -20,7 +20,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import subprocess
 import sys
 import zipfile
 from pathlib import Path
@@ -103,14 +102,6 @@ def compute_action_asset_hash(
     return sha256_bytes(payload)
 
 
-def git_head_sha(root: Path) -> str:
-    try:
-        out = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=str(root), text=True).strip()
-        return out
-    except Exception:
-        return "UNKNOWN"
-
-
 def build_pilot_payload(root: Path, offline_media: dict[str, Path], offline: bool) -> dict[str, Any]:
     pilot_dir = root / "07_QA验收/CODEX-CLOUD-ART-PILOT"
     manifest = json.loads((pilot_dir / "CODEX_CLOUD_ART_PILOT_MANIFEST.json").read_text(encoding="utf-8"))
@@ -177,6 +168,23 @@ def build_pilot_payload(root: Path, offline_media: dict[str, Path], offline: boo
 def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
     asset_manifest = json.loads((root / "07_QA验收/REI_P4B_ASSET_MANIFEST.json").read_text(encoding="utf-8"))
     resume_matrix = json.loads((root / "07_QA验收/REI_P4B_RESUME_MATRIX.json").read_text(encoding="utf-8"))
+
+    archive = root / "07_QA验收/P4-B/human-acceptance"
+    ledger = json.loads((archive / "ACCEPTANCE_LEDGER.json").read_text(encoding="utf-8"))
+
+    def verified_export(kind: str) -> tuple[str, dict[str, Any]]:
+        entry = ledger["archives"][kind]
+        path = archive / entry["path"]
+        if sha256_file(path) != entry["sha256"]:
+            raise ValueError(f"Acceptance archive hash mismatch: {kind}")
+        return entry["sha256"], json.loads(path.read_text(encoding="utf-8"))
+
+    official_review_sha, official_review = verified_export("official")
+    pilot_review_sha, pilot_review = verified_export("pilot")
+    approved = {decision["key"]: decision for decision in official_review["decisions"]}
+    if len(approved) != len(official_review["decisions"]) or len(approved) != 27:
+        raise ValueError("The acceptance archive must contain 27 distinct decisions")
+    stage = "P4-B_ART_ACCEPTANCE_PASS"
 
     manifest_rows = {(r["id"], r["state"]): r for r in asset_manifest["registered_rows"]}
     matrix_rows = {(r["id"], r["state"]): r for r in resume_matrix["matrix_3x9"]}
@@ -308,9 +316,16 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
                 action_hash = compute_action_asset_hash(
                     fid, state_name, xrow["selected_version"], source_sha, frame_sha256s
                 )
-                # Governance rule: ONLY rei-black::running-right (8 frames) is explicitly ACCEPTED.
-                is_preapproved = fid == "rei-black" and state_name == "running-right"
-                assert is_preapproved == (xrow["status"] == "ACCEPTED")
+                decision = approved[key]
+                if (
+                    decision["status"] != "ACCEPTED" or decision["invalidated"]
+                    or xrow["status"] != "ACCEPTED"
+                    or decision["action_asset_hash"] != action_hash
+                    or decision["selected_version"] != xrow["selected_version"]
+                    or decision["source_sha256"] != source_sha
+                    or decision["frame_sha256s"] != frame_sha256s
+                ):
+                    raise ValueError(f"Archived acceptance does not match current assets: {key}")
 
                 actions.append(
                     {
@@ -328,14 +343,10 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
                         "source_path": source_path,
                         "source_sha256": source_sha,
                         "action_asset_hash": action_hash,
-                        "initial_status": "ACCEPTED" if is_preapproved else "PENDING",
-                        "initial_comment": (
-                            "用户已明确人工验收通过的 FIX-BLACK 新版黑服右跑（8 帧），禁止重做。"
-                            if is_preapproved
-                            else ""
-                        ),
-                        "initial_updated_at": "2026-11-27T00:00:00Z" if is_preapproved else None,
-                        "locked_preapproved": is_preapproved,
+                        "initial_status": decision["status"],
+                        "initial_comment": decision["comment"],
+                        "initial_updated_at": decision["updated_at"],
+                        "locked_preapproved": decision["locked_preapproved"],
                         "qa_attention": key in QA_WATCH_NOTES,
                         "qa_attention_note": QA_WATCH_NOTES.get(key),
                         "agy_visual_notes": xrow.get("agy_visual_notes", ""),
@@ -362,21 +373,18 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
         {"state": st, "row": r, "expected_frames": n, "durations_ms": list(ROW_DURATIONS[st])}
         for st, r, n in ROW_SPECS
     ]
-    baseline_commit = git_head_sha(root)
-    # Keep the official baseline revision stable when only review tooling changes.
-    previous_template = root / "07_QA验收/Review-Center/REI_ART_REVIEW_TEMPLATE.json"
-    if previous_template.is_file():
-        previous = json.loads(previous_template.read_text(encoding="utf-8"))
-        if previous.get("manifest_fingerprint") == manifest_fingerprint:
-            baseline_commit = previous["baseline_commit"]
+    if official_review["manifest_fingerprint"] != manifest_fingerprint:
+        raise ValueError("Official acceptance fingerprint mismatch")
+    baseline_commit = official_review["baseline_commit"]
 
     def make_bundle(offline: bool) -> dict[str, Any]:
         return {
             "schema_version": 1,
             "project": "rei-desktop-pet",
             "tool": "Rei Review Center V1.0",
-            "stage": "P4-B PARTIAL",
+            "stage": stage,
             "bundle_mode": "offline-zip" if offline else "repo-relative",
+            "acceptance_sha256": official_review_sha,
             "baseline_commit": baseline_commit,
             "manifest_fingerprint": manifest_fingerprint,
             "total_actions": 27,
@@ -403,18 +411,12 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
         "schema_version": 1,
         "project": "rei-desktop-pet",
         "tool": "Rei Review Center V1.0",
-        "stage": "P4-B PARTIAL",
+        "stage": stage,
         "baseline_commit": baseline_commit,
         "manifest_fingerprint": manifest_fingerprint,
         "exported_at": None,
         "structure_pass_never_auto_accepted": True,
-        "summary": {
-            "total_actions": 27,
-            "total_frames": 171,
-            "actions_by_status": {"ACCEPTED": 1, "NEEDS_FIX": 0, "REJECTED": 0, "PENDING": 26},
-            "frames_by_status": {"ACCEPTED": 8, "NEEDS_FIX": 0, "REJECTED": 0, "PENDING": 163},
-            "invalidated_actions": 0,
-        },
+        "summary": official_review["summary"],
         "decisions": [
             {
                 "key": a["key"],
@@ -441,8 +443,13 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
     template_path = review_dir / "REI_ART_REVIEW_TEMPLATE.json"
     template_path.write_text(json.dumps(template_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    pilot_repo_data = build_pilot_payload(root, offline_media, offline=False)
-    pilot_offline_data = build_pilot_payload(root, offline_media, offline=True)
+    def accepted_pilot_payload(offline: bool) -> dict[str, Any]:
+        data = build_pilot_payload(root, offline_media, offline)
+        data["acceptance"] = {"sha256": pilot_review_sha, "payload": pilot_review}
+        return data
+
+    pilot_repo_data = accepted_pilot_payload(offline=False)
+    pilot_offline_data = accepted_pilot_payload(offline=True)
     (assets_dir / "pilot-data.js").write_text(
         "window.REI_PILOT_DATA = " + json.dumps(pilot_repo_data, ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8",
@@ -495,10 +502,10 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
         "ok": True,
         "total_actions": 27,
         "total_frames": 171,
-        "pre_accepted_actions": 1,
-        "pre_accepted_frames": 8,
-        "pending_actions": 26,
-        "pending_frames": 163,
+        "pre_accepted_actions": official_review["summary"]["actions_by_status"]["ACCEPTED"],
+        "pre_accepted_frames": official_review["summary"]["frames_by_status"]["ACCEPTED"],
+        "pending_actions": official_review["summary"]["actions_by_status"]["PENDING"],
+        "pending_frames": official_review["summary"]["frames_by_status"]["PENDING"],
         "manifest_fingerprint": manifest_fingerprint,
         "offline_media_files_bundled": len(offline_media),
         "zip_entries_count": len(zip_entries),

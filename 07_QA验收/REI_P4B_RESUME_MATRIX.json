@@ -50,14 +50,16 @@
         "status": "REJECTED_BY_USER (replaced by FIX-BLACK attempt-01; excluded from atlas)"
       }
     ],
-    "accepted_frames_explicit": 8,
-    "protected_p4a_baseline_frames_pending_consolidated_signoff": 34,
-    "p4b_candidate_frames_pending_human_art_review": 129,
+    "accepted_frames_explicit": 171,
+    "protected_p4a_baseline_frames_pending_consolidated_signoff": 0,
+    "p4b_candidate_frames_pending_human_art_review": 0,
     "missing_or_incomplete_frames": 0
   },
   "action_counts_by_status": {
-    "CANDIDATE": 26,
-    "ACCEPTED": 1
+    "ACCEPTED": 27,
+    "NEEDS_FIX": 0,
+    "REJECTED": 0,
+    "PENDING": 0
   },
   "matrix_3x9": [
     {
@@ -66,7 +68,7 @@
       "state": "idle",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": true,
       "origin_phase": "P4-A",
       "produced_by": "Codex",
@@ -105,8 +107,8 @@
         "c9443243ef3bd80b4031e6cd324f369017c1e4988916ac373f93d66867d26af4"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Protected 42-frame P4-A baseline carried into P4-B gate (gate.json protected_frames=42; structure PASS; white idle attempt-01 rejected & fixed by attempt-02). No standalone signed per-row art-acceptance JSON beyond P4-B gate progression, so conservatively tagged CANDIDATE (protected_p4a_baseline=true) pending consolidated user sign-off.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 6de56d6d21ef38f61e554853e0603095b588fc003b8d117ea180285429c19bb3.",
       "agy_visual_notes": "Protected P4-A baseline; hash-verified identical to REI_P4A_ASSET_MANIFEST_FIX_BLACK.json."
     },
     {
@@ -115,7 +117,7 @@
       "state": "running-right",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": true,
       "origin_phase": "P4-A",
       "produced_by": "Codex",
@@ -158,8 +160,8 @@
         "18ffade9aa9e008fbe409d861a98a9254a173f232c31808936c89745b0a627f2"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Protected 42-frame P4-A baseline carried into P4-B gate (gate.json protected_frames=42; structure PASS; white idle attempt-01 rejected & fixed by attempt-02). No standalone signed per-row art-acceptance JSON beyond P4-B gate progression, so conservatively tagged CANDIDATE (protected_p4a_baseline=true) pending consolidated user sign-off.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 44ad5ade40472d616e9605621b39442feb5ef0e67d4cd472ec11ec4b01a12b4f.",
       "agy_visual_notes": "Protected P4-A baseline; hash-verified identical to REI_P4A_ASSET_MANIFEST_FIX_BLACK.json."
     },
     {
@@ -168,7 +170,7 @@
       "state": "running-left",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -211,8 +213,8 @@
         "9b0a1217bea89391d0fb50ae164c469c10ecfde3b30ac720ae0cc090562ba6f8"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 7237238e5c8d2665eea94a7e45c9fff8d47744fc7f22e641d7a65eb23a641272.",
       "agy_visual_notes": "8/8 frames facing left, natural alternating stride and arm swing, skirt sway, white clips and red bow preserved, min_top=4px, clean alpha on dark and light."
     },
     {
@@ -221,7 +223,7 @@
       "state": "waving",
       "expected_frames": 4,
       "actual_frames": 4,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -256,8 +258,8 @@
         "004849ad6501abe1d9b32f832fbf71a6320ef175d08608f44e0e01a26c1880db"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset f8d10a5c310d0dab3bead9eb117f86b3105a5f0c340b321ab77475be96f8634f.",
       "agy_visual_notes": "4/4 frames: F1 clasped hands, F2-F3 clear right-hand wave with gentle expression, F4 returns to clasped hands; clean loop and alpha, min_top=6px."
     },
     {
@@ -266,7 +268,7 @@
       "state": "jumping",
       "expected_frames": 5,
       "actual_frames": 5,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -303,8 +305,8 @@
         "9e2589e9cbd32df5854130ff7343d4d3d40ac95c1bc6248da6017e71259d0794"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 678d7e17289950b34110fbe9f2d6a746a703210174e666f48606c153729b86c4.",
       "agy_visual_notes": "5/5 frames: crouch (h=171), takeoff, airborne peak (bottom=183, 12px lift), landing crouch, clasped standing recovery (h=188); no top clipping (min_top=4px)."
     },
     {
@@ -313,7 +315,7 @@
       "state": "failed",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -356,8 +358,8 @@
         "be65a3f55bde239bfa91c40fd221708db7c4960cc638fb09085c66003a0e7423"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 9281dc25a0a3921f595632f51737d06e454fce4690624d92a6e18776bb9c5a94.",
       "agy_visual_notes": "8/8 frames: gradual head bow with downcast/closed eyes F3-F5 and calm recovery F6-F8 while maintaining clasped hands; min_top=4px."
     },
     {
@@ -366,7 +368,7 @@
       "state": "waiting",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -405,8 +407,8 @@
         "0e12bc4093cd99c483963999ec5ed2096ebf051aecd28bbe24b83d819f78a371"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 6a8c2043bad88bf1500a832d47684cc0e61c5e7b4d42f292ba3f411f2defc6f9.",
       "agy_visual_notes": "6/6 frames: head tilt F2, left hand palm-up inviting input F3-F6 with blink on F5; min_top=6px. Note for art review: F6 holds palm-up before looping to F1 clasped hands."
     },
     {
@@ -415,7 +417,7 @@
       "state": "running",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -454,8 +456,8 @@
         "256ff54f8358c520e1637979c802ae717f13120bffdebb7e88bc27909bcda7ce"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset d95ced0f187265d7b3cb0a77ffa18fa19a1b14706619ad3073b4525d8df756a9.",
       "agy_visual_notes": "6/6 frames: focused working/thinking state (not lateral run); right hand raised near chin/collar F2-F6 with blink F4 and subtle finger motion; min_top=6px."
     },
     {
@@ -464,7 +466,7 @@
       "state": "review",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -503,8 +505,8 @@
         "5041def737aa3cc647e810a57138eea90f336a28014852ca72371538e05d84a1"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 57a44d7db516a2c456fc283632716b1ba80812812f93466c0d018661522efcae.",
       "agy_visual_notes": "6/6 frames: attentive glance F1-F2, forward inspecting nod F3, eyes-closed confirmation F4, slight lift F5, neutral return F6; min_top=5px."
     },
     {
@@ -513,7 +515,7 @@
       "state": "idle",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": true,
       "origin_phase": "P4-A-CONTINUE",
       "produced_by": "Codex",
@@ -552,8 +554,8 @@
         "a08f798d4d16470cb73dda7c90699ab43e0eaba98e92ea96eb2955f738d3b13b"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Protected 42-frame P4-A baseline carried into P4-B gate (gate.json protected_frames=42; structure PASS; white idle attempt-01 rejected & fixed by attempt-02). No standalone signed per-row art-acceptance JSON beyond P4-B gate progression, so conservatively tagged CANDIDATE (protected_p4a_baseline=true) pending consolidated user sign-off.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 7195ffd1469f22152d561ccfd2cb79d963e263bb889cf89d7c78a82e600d8f73.",
       "agy_visual_notes": "Protected P4-A baseline; hash-verified identical to REI_P4A_ASSET_MANIFEST_FIX_BLACK.json."
     },
     {
@@ -562,7 +564,7 @@
       "state": "running-right",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": true,
       "origin_phase": "P4-A-CONTINUE",
       "produced_by": "Codex",
@@ -605,8 +607,8 @@
         "9140769f0eded3e3e92d6489a88c86c21f9e15da593d4b2fcd830eef540c42fd"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Protected 42-frame P4-A baseline carried into P4-B gate (gate.json protected_frames=42; structure PASS; white idle attempt-01 rejected & fixed by attempt-02). No standalone signed per-row art-acceptance JSON beyond P4-B gate progression, so conservatively tagged CANDIDATE (protected_p4a_baseline=true) pending consolidated user sign-off.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset d77884814b02217ea8301306133f69a588070b5bfb713bb5aede7d2d668e4e8a.",
       "agy_visual_notes": "Protected P4-A baseline; hash-verified identical to REI_P4A_ASSET_MANIFEST_FIX_BLACK.json."
     },
     {
@@ -615,7 +617,7 @@
       "state": "running-left",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -658,8 +660,8 @@
         "2c416b6dba8843ddfbe488faebd4b5d42da40fc84ddfe0bb0cdeb4badd487031"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 1d4159aa0e6b1fc4852869a0f186056985d30ddcd38429f576a25bbe66a10044.",
       "agy_visual_notes": "8/8 frames facing left, natural stride with airborne frame 4 (bottom=180), upright unmirrored 00 verified on high-res source, orange wrist rings and green accents intact, min_top=6px."
     },
     {
@@ -668,7 +670,7 @@
       "state": "waving",
       "expected_frames": 4,
       "actual_frames": 4,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -703,8 +705,8 @@
         "f8ea76f4e1f8d3110d9d4251cb3199ebd0eb5c2d43a35ed1b182e102d201ced3"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 3393ac46fb99c4d46207e014b60fb3c84ae5a8eb010c7282ca19281c5b40f436.",
       "agy_visual_notes": "4/4 frames: F1 arms down, F2-F3 clear right-hand wave, F4 returns to arms down; upright 00 and five-finger silhouette intact, min_top=6px."
     },
     {
@@ -713,7 +715,7 @@
       "state": "jumping",
       "expected_frames": 5,
       "actual_frames": 5,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -750,8 +752,8 @@
         "7aeeddc3e8dcc3d92ffc9908350877d12e2fb24ad10293331649f62e64e0900d"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 6839fdc808b30befc85e356ab29840b3022974e238be720fe31d57d5cb8f6716.",
       "agy_visual_notes": "5/5 frames: crouch (h=170), takeoff, airborne peak (bottom=178, 17px lift), landing crouch, standing recovery (h=182); upright 00 intact, no top clipping (min_top=4px)."
     },
     {
@@ -760,7 +762,7 @@
       "state": "failed",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -803,8 +805,8 @@
         "44f9ca9aa52d61986e6190319bd8d1ddf2751b4f431e3bd929acdfaa70f1b77a"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset b629c22f02de14dc3f3c6983b6dac697a7ae4f8fd408450cc8d02d807a0a2adf.",
       "agy_visual_notes": "8/8 frames: eyes lower and head bows F3-F6 with subtle hand curl, recovers F7-F8; upright 00 intact, min_top=4px."
     },
     {
@@ -813,7 +815,7 @@
       "state": "waiting",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -852,8 +854,8 @@
         "90baf42550ba609e97e27319127b355ad29ac0966b897e642f4ecbf7c256608d"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset b772bb07091623db729a1822b6ff34734926d6889c671f898c4305e592c7f0f8.",
       "agy_visual_notes": "6/6 frames: slight tilt F2, right palm-up inviting gesture F3, front clasped waiting F4-F5 with blink, returns to neutral F6; upright 00 intact, min_top=6px."
     },
     {
@@ -862,7 +864,7 @@
       "state": "running",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -901,8 +903,8 @@
         "ad44969c6767aec43a18e5391f6b07d91129ec127a9fe363251fd93304a78fbe"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset d0b9df0fff3a7c336b6dd6ba1f8f28a1523bd06c32b439e72e7c3c89897434e0.",
       "agy_visual_notes": "6/6 frames: focused working/monitoring pose (not lateral run); right hand raised near chest/chin F2-F6 with gaze focus; upright 00 intact, min_top=6px."
     },
     {
@@ -911,7 +913,7 @@
       "state": "review",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -950,8 +952,8 @@
         "3ae5d48f4304d989987e58cbfff232612b54f807792f9f49c6a9c5f1a7a51389"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 2a81aa6578a7129e2c594e6a1d6e158ba485a7e363cf947491b74ee8edb27cfa.",
       "agy_visual_notes": "6/6 frames: attentive gaze F1-F2, downward inspect F3, eyes-closed confirm F4, slight chin lift with waist-touch confirm F5, neutral return F6; upright 00 intact, min_top=6px."
     },
     {
@@ -960,7 +962,7 @@
       "state": "idle",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": true,
       "origin_phase": "P4-A",
       "produced_by": "Codex",
@@ -999,8 +1001,8 @@
         "cc4cf523b941bf23a8240f2695d9a3ab41f2bf68b47da61620a40fb710ced371"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Protected 42-frame P4-A baseline carried into P4-B gate (gate.json protected_frames=42; structure PASS; white idle attempt-01 rejected & fixed by attempt-02). No standalone signed per-row art-acceptance JSON beyond P4-B gate progression, so conservatively tagged CANDIDATE (protected_p4a_baseline=true) pending consolidated user sign-off.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 902176408e5a1b4e435a537dfa8a7265dc10c31c9e7f48a841d8e2b9e1125a85.",
       "agy_visual_notes": "Protected P4-A baseline; hash-verified identical to REI_P4A_ASSET_MANIFEST_FIX_BLACK.json."
     },
     {
@@ -1053,7 +1055,7 @@
       ],
       "structure_qa": "PASS",
       "human_art_acceptance": "APPROVED",
-      "acceptance_basis": "Explicitly approved by user in P4-B authorization and AGY takeover prompt; old P4-A/originals/running-right/attempt-01 marked REJECTED and excluded.",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 3546dc58a1460749a54d6c770a9c52202cc2db6a5b79e987acebdaaf7202f3aa.",
       "agy_visual_notes": "Protected P4-A baseline; hash-verified identical to REI_P4A_ASSET_MANIFEST_FIX_BLACK.json."
     },
     {
@@ -1062,7 +1064,7 @@
       "state": "running-left",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -1105,8 +1107,8 @@
         "1cfdad1a087f38e0c3414cfce44fa238ee09a2766203631f2f5e158292f4d02c"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset b74ab3777fd3f8496cee92d33dd0dfa814d94d008f99164d452148fc6d92450b.",
       "agy_visual_notes": "8/8 frames facing left, arm-holding released with natural arm swing matching FIX-BLACK running-right kinematics, upright unmirrored red 09 verified across all 8 source poses, red boot trim intact, min_top=5px."
     },
     {
@@ -1115,7 +1117,7 @@
       "state": "waving",
       "expected_frames": 4,
       "actual_frames": 4,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -1150,8 +1152,8 @@
         "a6ea26435f5bebff4132edd5b471fc1cd84c3afec7e8fc6cc7a72a953c49cc0b"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 207bcd01642b577f773ce5a37dca5a51fabcdd966213547c13080384bf84ad55.",
       "agy_visual_notes": "4/4 frames: F1/F4 relaxed arms at sides, F2-F3 clear right-hand wave; red 09 intact, min_top=6px. Note for art review: F1/F4 release static forearm-hold."
     },
     {
@@ -1160,7 +1162,7 @@
       "state": "jumping",
       "expected_frames": 5,
       "actual_frames": 5,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -1197,8 +1199,8 @@
         "c0b23dea6e4eb3389766f8827972f6849fd7baf74997062639da4faffe27eab1"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 88f126a36238a96084cf6292b52b7104c5462a304bf9a6cd2951b3fd2ff36492.",
       "agy_visual_notes": "5/5 frames: crouch (h=162), takeoff, airborne peak (bottom=182, 13px lift), landing crouch, standing recovery (h=189); red 09 intact, no top clipping (min_top=4px)."
     },
     {
@@ -1207,7 +1209,7 @@
       "state": "failed",
       "expected_frames": 8,
       "actual_frames": 8,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -1250,8 +1252,8 @@
         "7eefad9c5fb0a9bceba8f5f5c2a4609762affde93f41692698b5b5f79c00b2ea"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset dd7f3ecac76f6cd66800a4084a0b749d1d10b731591ca71197239739ee1e14f0.",
       "agy_visual_notes": "8/8 frames: retains right-hand-on-left-arm posture, bows head with closed/downcast eyes F3-F5 and slowly recovers F6-F8; red 09 intact, min_top=4px."
     },
     {
@@ -1260,7 +1262,7 @@
       "state": "waiting",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -1299,8 +1301,8 @@
         "c42292df7b7d2401bc9688235e949c5dd163e576e6f050d4f58811b6f28b1c62"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 0efd20a241604b247c15f1119025d015c72eb5fd397f1c4616a9c22a73daaa55.",
       "agy_visual_notes": "6/6 frames: arm-hold F1-F2 with subtle head tilt, brief right palm-up prompt F3, returns to arm-hold F4-F6 with blink on F5; red 09 intact, min_top=6px."
     },
     {
@@ -1309,7 +1311,7 @@
       "state": "running",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -1348,8 +1350,8 @@
         "40bd3528bfa3cdc10c1d0705b371cd2f828c6777c458e51ebb313ade84337352"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset 7f8bd42b42dd291b530a8316fcc0ef2a8eb3e3c1c0fb0092250d3ebc648cf835.",
       "agy_visual_notes": "6/6 frames: quiet working/thinking pose (not lateral run); right hand near chin/collar F2-F6 with blink F4; red 09 intact, min_top=6px."
     },
     {
@@ -1358,7 +1360,7 @@
       "state": "review",
       "expected_frames": 6,
       "actual_frames": 6,
-      "status": "CANDIDATE",
+      "status": "ACCEPTED",
       "protected_p4a_baseline": false,
       "origin_phase": "P4-B",
       "produced_by": "Codex (reused & assembled by Antigravity)",
@@ -1397,9 +1399,10 @@
         "36b1723e6b923269eb58c97de7997f0969399f5a857ff9889ea1a0af31587ae9"
       ],
       "structure_qa": "PASS",
-      "human_art_acceptance": "PENDING_USER_REVIEW",
-      "acceptance_basis": "Generated & registered by Codex prior to quota exhaustion (STRUCTURE_READY_FOR_VISUAL_REVIEW); reused and audited by Antigravity (alpha, margins, connected components, 00/09 markings, dark/light sheets, assembled atlas STRUCTURE_PASS). Awaiting final human art acceptance.",
+      "human_art_acceptance": "APPROVED",
+      "acceptance_basis": "Verified P4-B Review Center user export (a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c), asset c3f7a6b6ae0077045b4308e46a4d1cc8cb3b78218a550109075c09370b81bae1.",
       "agy_visual_notes": "6/6 frames: arm-hold attentive gaze F1-F2, inspecting lean F3, eyes-closed nod F4, releases arms to sides F5-F6; red 09 intact, min_top=6px. Note for art review: F6->F1 transitions from arms down to arm-hold."
     }
-  ]
+  ],
+  "human_acceptance_ledger": "07_QA验收/P4-B/human-acceptance/ACCEPTANCE_LEDGER.json"
 }

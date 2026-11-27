@@ -12,21 +12,21 @@
       <div class="brand-title">
         <span class="brand-dot"></span>
         <h1>Rei Desktop Pet · Visual Review Center V1.0</h1>
-        <span class="pill pill-stage">P4-B PARTIAL · 非 v1.0.0</span>
+        <span class="pill pill-stage">P4-B 美术验收通过</span>
       </div>
       <div class="brand-sub" id="metaSubtitle">加载索引中...</div>
     </div>
 
     <div class="progress-cluster">
       <div class="progress-stats" id="progressStats">
-        <span class="stat-chip stat-accepted">ACCEPTED: <strong id="cntAcceptedActions">1</strong>/27 (<strong id="cntAcceptedFrames">8</strong>/171 帧)</span>
+        <span class="stat-chip stat-accepted">ACCEPTED: <strong id="cntAcceptedActions">27</strong>/27 (<strong id="cntAcceptedFrames">171</strong>/171 帧)</span>
         <span class="stat-chip stat-needs-fix">NEEDS_FIX: <strong id="cntNeedsFixActions">0</strong></span>
         <span class="stat-chip stat-rejected">REJECTED: <strong id="cntRejectedActions">0</strong></span>
-        <span class="stat-chip stat-pending">PENDING: <strong id="cntPendingActions">26</strong> (<strong id="cntPendingFrames">163</strong> 帧)</span>
+        <span class="stat-chip stat-pending">PENDING: <strong id="cntPendingActions">0</strong> (<strong id="cntPendingFrames">0</strong> 帧)</span>
         <span class="stat-chip stat-invalid hidden" id="statInvalidChip">HASH INVALIDATED: <strong id="cntInvalidActions">0</strong></span>
       </div>
       <div class="progress-bar" title="171 帧人工验收进度分布">
-        <div class="pb-seg pb-accepted" id="pbAccepted" style="width: 4.68%"></div>
+        <div class="pb-seg pb-accepted" id="pbAccepted" style="width: 100%"></div>
         <div class="pb-seg pb-needs-fix" id="pbNeedsFix" style="width: 0%"></div>
         <div class="pb-seg pb-rejected" id="pbRejected" style="width: 0%"></div>
       </div>
@@ -38,13 +38,13 @@
       <input type="file" id="importJsonInput" accept=".json,application/json" class="hidden" />
       <button class="btn btn-primary" id="btnExportJson" type="button">导出 JSON</button>
       <button class="btn btn-accent" id="btnShowMarkdown" type="button">生成 Markdown 摘要</button>
-      <button class="btn btn-ghost" id="btnResetBaseline" type="button" title="重置为官方基线（仅保留黑服新版 running-right 8 帧 ACCEPTED）">重置基线</button>
+      <button class="btn btn-ghost" id="btnResetBaseline" type="button" title="恢复归档的正式人工验收基线">重置基线</button>
     </div>
   </header>
 
   <div class="governance-banner">
     <strong>验收铁律：</strong>
-    <code>STRUCTURE_PASS</code> 绝不自动转为人工 <code>ACCEPTED</code>。初始基线仅 <strong>黑服新版 running-right（8 帧）</strong> 为明确已验收，其余 26 条动作（163 帧）均为待人工动态终审的候选。每条记录绑定候选版本与资产 SHA-256，若素材哈希变更，旧版验收将自动失效并回退为 <code>PENDING</code>。
+    <code>STRUCTURE_PASS</code> 绝不自动转为人工 <code>ACCEPTED</code>。归档用户记录确认 <strong>27/27 条动作、171/171 帧</strong> 人工验收通过。每条记录绑定候选版本与资产 SHA-256，若素材哈希变更，旧版验收将自动失效并回退为 <code>PENDING</code>。
   </div>
 
   <div id="toastBar" class="toast hidden" role="status" aria-live="polite"></div>

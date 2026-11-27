@@ -3,7 +3,7 @@
 
   const official = window.REI_REVIEW_DATA.actions.find(action => action.key === "rei-school::waiting");
   const pilot = window.REI_PILOT_DATA;
-  const storageKey = "rei-codex-cloud-art-pilot-v1";
+  const storageKey = "rei-codex-cloud-art-pilot-v1::" + pilot.acceptance.sha256.slice(0, 16);
   const recordType = "rei-codex-cloud-art-pilot";
   const pending = "PENDING_HUMAN_REVIEW";
   const statuses = [pending, "ACCEPTED", "NEEDS_FIX", "REJECTED"];
@@ -260,6 +260,8 @@
     setTimeout(() => URL.revokeObjectURL(href), 1000);
   });
   try {
+    const accepted = importRecords(pilot.acceptance.payload);
+    if (accepted) get("message").textContent = `${accepted} 项归档哈希或版本已变，已回退为待审。`;
     const draft = localStorage.getItem(storageKey);
     if (draft) {
       const stale = importRecords(JSON.parse(draft));

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "source_project_head": "41805664c10b21b90a8aca20cbfbd521b5fc33cc",
+  "rulings": [
+    "P4-B_ART_ACCEPTANCE_PASS",
+    "CODEX_CLOUD_ART_PIPELINE_QUALIFIED",
+    "P4-B-FIX_SKIPPED",
+    "P4-C_PRODUCTION_AUTHORIZED"
+  ],
+  "archives": {
+    "official": {
+      "path": "rei-art-review-2026-11-27T16-45-32.json",
+      "sha256": "a66427663b14f55257f8f4c3dd36e496296cefce84a695aa7641c79e4556205c"
+    },
+    "pilot": {
+      "path": "REI_CODEX_CLOUD_PILOT_REVIEW.json",
+      "sha256": "5e7c66e74183beaedb610fa8b789f83bbe8b40163328d5b2589f671f247e907b"
+    }
+  },
+  "official_summary": {
+    "total_actions": 27,
+    "total_frames": 171,
+    "actions_by_status": {
+      "ACCEPTED": 27,
+      "NEEDS_FIX": 0,
+      "REJECTED": 0,
+      "PENDING": 0
+    },
+    "frames_by_status": {
+      "ACCEPTED": 171,
+      "NEEDS_FIX": 0,
+      "REJECTED": 0,
+      "PENDING": 0
+    },
+    "invalidated_actions": 0
+  },
+  "official_asset_fingerprint": "56f30e4c5a5d6fa5b088e3b321fbb0d484f8ce4845f168c444b3958415248767",
+  "pilot_summary": {
+    "accepted_items": 5,
+    "accepted_frames": 10,
+    "waiting_fate": "ACCEPTED_ALTERNATE_NOT_IN_STANDARD_ATLAS"
+  },
+  "p4c_reuse_verified": [
+    {
+      "angle_degrees": 0,
+      "frame_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/000.png",
+      "frame_sha256": "b315906ecff13dfe97402886a0ee4c86fb340b52903748340e22ef37e384873b",
+      "native_source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+      "native_source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+      "pilot_decision_id": "000"
+    },
+    {
+      "angle_degrees": 90,
+      "frame_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/090.png",
+      "frame_sha256": "3d18e479d038ba17a46938a1fc46c059ea0d678f174a520d77be1c7035efcba4",
+      "native_source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+      "native_source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+      "pilot_decision_id": "090"
+    },
+    {
+      "angle_degrees": 180,
+      "frame_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/180.png",
+      "frame_sha256": "9c4cc7626c6462eaf723ee7f853ba032f0f66169e4bff78181506bf5bc345c9a",
+      "native_source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+      "native_source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+      "pilot_decision_id": "180"
+    },
+    {
+      "angle_degrees": 270,
+      "frame_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/270.png",
+      "frame_sha256": "cdd2cdaa480cd1cb85771c875d300a913f870887ff34a526ef2a7d7a571dd3c1",
+      "native_source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+      "native_source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+      "pilot_decision_id": "270"
+    }
+  ],
+  "quality_scope": "用户曾提出预览画质疑问，最终接受全部 27 条动作。裁定范围不含全量锐化、超分辨率或重新生成。"
+}

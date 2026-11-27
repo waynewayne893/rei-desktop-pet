@@ -126,5 +126,121 @@ window.REI_PILOT_DATA = {
         "src": "../CODEX-CLOUD-ART-PILOT/evidence/directions-attempt-01-qa.json"
       }
     ]
+  },
+  "acceptance": {
+    "sha256": "5e7c66e74183beaedb610fa8b789f83bbe8b40163328d5b2589f671f247e907b",
+    "payload": {
+      "type": "rei-codex-cloud-art-pilot",
+      "schema_version": 1,
+      "decisions": [
+        {
+          "id": "waiting",
+          "status": "ACCEPTED",
+          "comment": "",
+          "binding": {
+            "candidate": {
+              "version": "codex-cloud-pilot/attempt-01",
+              "source": "f68e585c5b73214a41d38585aa394d42fcb0961840bbc6e28b33d3024b232b89",
+              "frames": [
+                "5580b4b1749467f7770e39a5dbe2c9e19100431ee5e6b82a84522b015ccb3f56",
+                "03a03495ca1b4d131b03c8e96d4c8e365db2890c48e1c4dbbaba4b02e148af64",
+                "71f15dbd0b52d77c8d4a7764638d88449437cee15cb57078e34694645fb59efa",
+                "368f644cc9430c464c8548f5c365a5c93095a7acee8a16a7c7f48e17e034ef94",
+                "63f782be6f799df94129ccdc7ba2a297f7a3ad61df083940c0f69a6c608c280b",
+                "b0dfc778e4e5428001112acb7a08a8e0d7ecd6c3e23b6f10c86714acdf64b2af"
+              ]
+            },
+            "reference": {
+              "version": "P4-B/attempt-01",
+              "source": "f19efac284e80c3d2ac242fac507b162a8085ecb458e3de5b89345f6a98abcc7",
+              "frames": [
+                "60fae5f8619315c18c9f885fd9665da64fd29f3dca4c475ea1e57571b84333d6",
+                "6f2e3a27e2566324ee3c6930d35c93a9ca6091f28c5d9db39c7f5dbce2f0a3a7",
+                "c227245353c2ad84fd31e02a78db393fdef34506911cb47f11d410a5fb35921f",
+                "2a28e392ba01d0083a26c8f8901814f8bb8235b76cdfe5c886be9f751378edfe",
+                "422030aa32515f677e2b812d353f49ebed0bad4043879d153783a4840f426db0",
+                "0e12bc4093cd99c483963999ec5ed2096ebf051aecd28bbe24b83d819f78a371"
+              ]
+            }
+          }
+        },
+        {
+          "id": "000",
+          "status": "ACCEPTED",
+          "comment": "",
+          "binding": {
+            "candidate": {
+              "version": "codex-cloud-pilot/attempt-02",
+              "source": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+              "frames": [
+                "b315906ecff13dfe97402886a0ee4c86fb340b52903748340e22ef37e384873b"
+              ]
+            },
+            "reference": {
+              "version": "P3 派生 RGBA 母版",
+              "source": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+              "frames": []
+            }
+          }
+        },
+        {
+          "id": "090",
+          "status": "ACCEPTED",
+          "comment": "",
+          "binding": {
+            "candidate": {
+              "version": "codex-cloud-pilot/attempt-02",
+              "source": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+              "frames": [
+                "3d18e479d038ba17a46938a1fc46c059ea0d678f174a520d77be1c7035efcba4"
+              ]
+            },
+            "reference": {
+              "version": "P3 派生 RGBA 母版",
+              "source": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+              "frames": []
+            }
+          }
+        },
+        {
+          "id": "180",
+          "status": "ACCEPTED",
+          "comment": "",
+          "binding": {
+            "candidate": {
+              "version": "codex-cloud-pilot/attempt-02",
+              "source": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+              "frames": [
+                "9c4cc7626c6462eaf723ee7f853ba032f0f66169e4bff78181506bf5bc345c9a"
+              ]
+            },
+            "reference": {
+              "version": "P3 派生 RGBA 母版",
+              "source": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+              "frames": []
+            }
+          }
+        },
+        {
+          "id": "270",
+          "status": "ACCEPTED",
+          "comment": "",
+          "binding": {
+            "candidate": {
+              "version": "codex-cloud-pilot/attempt-02",
+              "source": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+              "frames": [
+                "cdd2cdaa480cd1cb85771c875d300a913f870887ff34a526ef2a7d7a571dd3c1"
+              ]
+            },
+            "reference": {
+              "version": "P3 派生 RGBA 母版",
+              "source": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+              "frames": []
+            }
+          }
+        }
+      ]
+    }
   }
 };

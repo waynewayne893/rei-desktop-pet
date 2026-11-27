@@ -8,7 +8,7 @@
     return;
   }
 
-  const STORAGE_KEY = "rei_review_center_v1_draft::" + DATA.manifest_fingerprint.slice(0, 16);
+  const STORAGE_KEY = "rei_review_center_v1_draft::" + DATA.manifest_fingerprint.slice(0, 16) + "::" + DATA.acceptance_sha256.slice(0, 16);
   const VALID_STATUSES = ["ACCEPTED", "REJECTED", "NEEDS_FIX", "PENDING"];
   const LOUPE_PRESETS = {
     chest: { x: 96, y: 108, label: "胸口 00/09 与领结" },
@@ -89,7 +89,7 @@
         state: act.state,
         row: act.row,
         frame_count: act.frame_count,
-        status: act.initial_status, // ONLY rei-black::running-right is ACCEPTED; remaining 26 are PENDING
+        status: act.initial_status,
         comment: act.initial_comment || "",
         updated_at: act.initial_updated_at || null,
         selected_version: act.selected_version,
@@ -244,7 +244,7 @@
       schema_version: 1,
       project: "rei-desktop-pet",
       tool: "Rei Review Center V1.0",
-      stage: "P4-B PARTIAL",
+      stage: DATA.stage,
       baseline_commit: DATA.baseline_commit,
       manifest_fingerprint: DATA.manifest_fingerprint,
       exported_at: new Date().toISOString(),
@@ -1188,7 +1188,7 @@
         localStorage.removeItem(STORAGE_KEY);
       } catch (_) {}
       renderAll();
-      showToast("已重置为基线状态（仅黑服新版 running-right 8 帧 ACCEPTED，其余 163 帧 PENDING）");
+      showToast("已恢复归档的人工验收基线");
     });
 
     // Keyboard shortcuts
