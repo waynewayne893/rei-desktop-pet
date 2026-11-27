@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "stage": "REI-PET-CLOUD-BOOTSTRAP / P4-COMPAT-WINDOWS-VERIFY",
+  "test_pet_id": "rei-compat-test",
+  "expected_codex_selector_id": "custom:rei-compat-test",
+  "user_approved_windows_install": false,
+  "executed_at_local": "YYYY-MM-DD HH:MM:SS",
+  "tester": "USER",
+  "environment": {
+    "windows_os_version": "",
+    "codex_msix_package_full_name": "",
+    "codex_app_version": "",
+    "python_version": "",
+    "pillow_version": "",
+    "libwebp_version": ""
+  },
+  "download_integrity": {
+    "expected_zip_sha256": "9b36d7dd843aa65e76d17b7da63f876681edacbd9b23f7963bdf50b06e834fea",
+    "actual_zip_sha256": "",
+    "expected_pet_json_sha256": "f48cbc7e785e39698ad5f701fabd6556917be72e7b3bee7ddae036b0ad27913f",
+    "actual_pet_json_sha256": "",
+    "expected_spritesheet_webp_sha256": "bd6d29f401738015dddf452a79ffc460e6d53851f1ce691cbf25dd4605365201",
+    "actual_spritesheet_webp_sha256": "",
+    "all_hashes_match": null
+  },
+  "native_validate_atlas_require_v2": {
+    "validator_path": "",
+    "command": "python -B <validator_path> <path_to_spritesheet.webp> --require-v2",
+    "exit_code": null,
+    "ok": null,
+    "errors": [],
+    "warnings": [],
+    "raw_stdout_excerpt": ""
+  },
+  "asuka_isolation_guard": {
+    "target_dir_absent_before_install": null,
+    "pre_install_hashes": {
+      "asuka-school/pet.json": "",
+      "asuka-school/spritesheet.webp": "",
+      "asuka-work/pet.json": "",
+      "asuka-work/spritesheet.webp": "",
+      "asuka-mixed-test/pet.json": "",
+      "asuka-mixed-test/spritesheet.webp": ""
+    },
+    "post_rollback_hashes": {
+      "asuka-school/pet.json": "",
+      "asuka-school/spritesheet.webp": "",
+      "asuka-work/pet.json": "",
+      "asuka-work/spritesheet.webp": "",
+      "asuka-mixed-test/pet.json": "",
+      "asuka-mixed-test/spritesheet.webp": ""
+    },
+    "all_asuka_hashes_unchanged": null
+  },
+  "registration_and_display": {
+    "discovered_in_settings_pets": null,
+    "selector_display_name_seen": "",
+    "light_background_alpha_clean": null,
+    "dark_background_alpha_clean": null,
+    "clipping_or_box_artifacts": null,
+    "notes": ""
+  },
+  "animation_observations": {
+    "idle_loops_cols_0_to_5_only": null,
+    "idle_erroneously_shows_neutral_0_6": null,
+    "running_right_on_drag": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "running_left_on_drag": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "waving": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "jumping": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "failed": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "waiting": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "running": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "review": "PENDING | PASS | FAIL | NOT_TRIGGERED",
+    "notes": ""
+  },
+  "mouse_direction_mapping_16_sectors": {
+    "clockwise_order_matches_expected": null,
+    "row9_to_row10_transition_157_5_to_180_clean": null,
+    "wraparound_337_5_to_000_clean": null,
+    "center_deadzone_behavior": "PENDING | NEUTRAL_CELL_0_6 | IDLE_FALLBACK | OTHER",
+    "cardinal_checks": {
+      "000_N_up_R9C0": "PENDING | PASS | FAIL",
+      "090_E_right_R9C4": "PENDING | PASS | FAIL",
+      "180_S_down_R10C0": "PENDING | PASS | FAIL",
+      "270_W_left_R10C4": "PENDING | PASS | FAIL"
+    },
+    "all_16_sectors_verified": null,
+    "mismatched_sectors": [],
+    "notes": ""
+  },
+  "restart_persistence": {
+    "codex_fully_quit_and_relaunched": null,
+    "pet_restored_cleanly_after_restart": null,
+    "no_errors_or_fallback": null,
+    "notes": ""
+  },
+  "safe_rollback": {
+    "switched_active_pet_back": null,
+    "rei_compat_test_dir_removed": null,
+    "removed_from_settings_pets_after_refresh": null,
+    "asuka_pets_still_functional": null
+  },
+  "overall_verdict": "PENDING | PASS | PARTIAL | FAIL",
+  "blocking_issues": [],
+  "summary_notes": ""
+}

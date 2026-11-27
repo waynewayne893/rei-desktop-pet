@@ -1,0 +1,7 @@
+{
+  "id": "rei-compat-test",
+  "displayName": "Rei Compat Test (Temporary)",
+  "description": "Temporary P4-COMPAT v2 extended atlas test package using 57 rei-school standard frames, 16 directional test badges, and (0,6) neutral reference cell. Not for formal P4-C/P5 release.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

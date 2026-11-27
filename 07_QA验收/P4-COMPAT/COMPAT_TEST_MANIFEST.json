@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "stage": "REI-PET-CLOUD-BOOTSTRAP / P4-COMPAT",
+  "purpose": "Temporary Codex Desktop Pets v2 extended atlas compatibility pre-verification package. NOT a formal P4-C/P4-D/P5 release.",
+  "temporary_directional_assets_excluded_from_p4c": true,
+  "test_pet_id": "rei-compat-test",
+  "expected_codex_selector_id": "custom:rei-compat-test",
+  "source_form": "rei-school",
+  "source_standard_frames_count": 57,
+  "neutral_reference_cell": {
+    "row": 0,
+    "col": 6,
+    "base_frame": "03_校服绫波丽/P4-A/selected/idle/frames/00.png",
+    "visual_marker": "NEUTRAL (0,6) connected bottom pill"
+  },
+  "temporary_directional_cells_count": 16,
+  "blank_cells_count": 14,
+  "total_active_cells": 74,
+  "grid": {
+    "columns": 8,
+    "rows": 11,
+    "cell_width": 192,
+    "cell_height": 208,
+    "width": 1536,
+    "height": 2288
+  },
+  "builder": {
+    "script": "06_共用工具/rei_compat_builder.py",
+    "python": "3.12.16",
+    "pillow": "13.0.0",
+    "libwebp": "1.6.0",
+    "webp_encoding": {
+      "format": "WEBP",
+      "lossless": true,
+      "quality": 100,
+      "method": 6,
+      "exact": true
+    }
+  },
+  "deliverables": {
+    "pet_json": {
+      "path": "07_QA验收/P4-COMPAT/rei-compat-test/pet.json",
+      "bytes": 349,
+      "sha256": "f48cbc7e785e39698ad5f701fabd6556917be72e7b3bee7ddae036b0ad27913f"
+    },
+    "spritesheet_webp": {
+      "path": "07_QA验收/P4-COMPAT/rei-compat-test/spritesheet.webp",
+      "bytes": 802834,
+      "sha256": "bd6d29f401738015dddf452a79ffc460e6d53851f1ce691cbf25dd4605365201",
+      "decoded_rgba_pixel_sha256": "0716868a02ea773020281acb8a41199e9cff8a8269b108adbd5cabc092568bd9"
+    },
+    "downloadable_zip": {
+      "path": "07_QA验收/P4-COMPAT/rei-compat-test.zip",
+      "bytes": 803543,
+      "sha256": "9b36d7dd843aa65e76d17b7da63f876681edacbd9b23f7963bdf50b06e834fea",
+      "entries": [
+        "rei-compat-test/pet.json",
+        "rei-compat-test/spritesheet.webp"
+      ]
+    },
+    "contact_sheet_light": {
+      "path": "07_QA验收/P4-COMPAT/rei-compat-test-contact-sheet.png",
+      "bytes": 933454,
+      "sha256": "5e80fd002f67d7ce7fb88dc75fd23ddcadbefa4a475365a731576d84e52cf7a6"
+    },
+    "contact_sheet_dark": {
+      "path": "07_QA验收/P4-COMPAT/rei-compat-test-contact-sheet-dark.png",
+      "bytes": 947598,
+      "sha256": "deba2e07e7624ee116ba993a7fb7178c7b7cb8f8d8b6544c52466f58db068e68"
+    }
+  },
+  "source_frames": [
+    {
+      "state": "idle",
+      "row": 0,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/00.png",
+      "source_sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/01.png",
+      "source_sha256": "210a1e7955ea7ccb0c74e3d3c069ed3f4959815143f130ddf8cb18f5ebb1c300"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/02.png",
+      "source_sha256": "481874ee79839dabe2ebae19c55115f16ea4fb1b02df78c176d05717d8bb1416"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/03.png",
+      "source_sha256": "df966e8ee3f8e79be77bf38366206869ad43dee8c9ba62f53593e48e81627bd5"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/04.png",
+      "source_sha256": "0ed679baecc7b0d1870c4a57bd50bea333e7f8d3a3d3e6a20f0c16821ef1a0c3"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "col": 5,
+      "source_path": "03_校服绫波丽/P4-A/selected/idle/frames/05.png",
+      "source_sha256": "c9443243ef3bd80b4031e6cd324f369017c1e4988916ac373f93d66867d26af4"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/00.png",
+      "source_sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/01.png",
+      "source_sha256": "feec8a714f98d079e49695800e3164d1964d12fd7cc49a24e311bdebf35b7e79"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/02.png",
+      "source_sha256": "52edaddc6bbb56ee34c497a3ced4abe19817ddee23f8aa624f8ad5fb74b943cd"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/03.png",
+      "source_sha256": "eece125185b95bc8ad4954dd9e1a201cf5d7b2c72b49dc96bbc33b1f93aebd02"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/04.png",
+      "source_sha256": "450bf1ca604e126b17d0a4dbff8273c17232190e050a7235e06abfada2150dc7"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 5,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/05.png",
+      "source_sha256": "2a74819e0d2b1c9c4b29d4b8e8f4906b23dc36165f431e3254b6d89450c2b5d6"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 6,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/06.png",
+      "source_sha256": "651e46cb86062cf8745b915eb9f3a970c4055e574a1cc96dff7b948ad31d7e30"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "col": 7,
+      "source_path": "03_校服绫波丽/P4-A/selected/running-right/frames/07.png",
+      "source_sha256": "18ffade9aa9e008fbe409d861a98a9254a173f232c31808936c89745b0a627f2"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/00.png",
+      "source_sha256": "ab4f0f7dfe77ecf3e59f7cb3d64cd9d9ce6464151e0f59dac05dd05f25630539"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/01.png",
+      "source_sha256": "fddc2daa67fece166f1852d226aa175c76870756208421a7fe93d330515d9bc5"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/02.png",
+      "source_sha256": "e8eef67f65fa9d01409a1d50cdc5560ada402e9fd1f727aad50fe2c5d8921e6d"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/03.png",
+      "source_sha256": "b2f0c161ab67d26a354cdae59a8ff22622d9e315405b869774df8109255912b2"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/04.png",
+      "source_sha256": "ae63f2494431601fd48af69776002cd91afdf69eb373083f9e81bf67f70fb6b2"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 5,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/05.png",
+      "source_sha256": "66678fccaec6b4c1827fbd2e7d2a75960d8f1c0f5be61e57e487b7e73abaab2c"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 6,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/06.png",
+      "source_sha256": "39532fe50ea9ac4b789036816624741f7a3fd32fe7b519a756d80b43788c47ef"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "col": 7,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running-left/frames/07.png",
+      "source_sha256": "9b0a1217bea89391d0fb50ae164c469c10ecfde3b30ac720ae0cc090562ba6f8"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/00.png",
+      "source_sha256": "0618583cc278ff907c2fdf02e1e1ca38749c6638baa61a94ff8bd359302ad225"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/01.png",
+      "source_sha256": "ffc2ed2eecf05d2b3840f8648934a3c1ef4c7f76b358b6f1f6e7281d53f532df"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/02.png",
+      "source_sha256": "8cafa87cf922f7b468ef1155a1cdb9e1019121d378e392eabdeb348cfc07dbb8"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/03.png",
+      "source_sha256": "004849ad6501abe1d9b32f832fbf71a6320ef175d08608f44e0e01a26c1880db"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/00.png",
+      "source_sha256": "8345534b6ad18683cc924604c22c87e5e52441f1a8da2af52dfd8693698d7879"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/01.png",
+      "source_sha256": "e4160b549a7d6bb93a9599fd53623063a33242c4d0f23531ef42dc7d72ed8761"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/02.png",
+      "source_sha256": "f97b6c073805399d6e4a60bbaa8069222b671a39f2e8bdbaa2b90477d972c276"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/03.png",
+      "source_sha256": "41a34724210135b27c15b90c460024efe2ddc18b1d21d134fbf3bdf9a862c3a6"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/04.png",
+      "source_sha256": "9e2589e9cbd32df5854130ff7343d4d3d40ac95c1bc6248da6017e71259d0794"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/00.png",
+      "source_sha256": "647e7dba809095f8372655a4f987042d6bf54f46b4b65d78cd3668759949a887"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/01.png",
+      "source_sha256": "bd45847583ffe9c8000e1c352858a4a001130485ea9aa26387364de27c404993"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/02.png",
+      "source_sha256": "1c03c4cc373df156dd9d0368eee95e6728e83091fc3b293f4795ff7f8b918a2b"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/03.png",
+      "source_sha256": "b8d99f7a9fc37cd17fcce30c7ac44569a0686d0ef488f5b1f4bddb807a5839d8"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/04.png",
+      "source_sha256": "f816aa982b6a24e3b01298b2275d88ee23077911c922584f0d9e7455ec87e8bb"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 5,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/05.png",
+      "source_sha256": "dcf505ab47de099468bdad059d983a8bda854ccd079ae63888e25bcc0647eead"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 6,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/06.png",
+      "source_sha256": "f83116f9e6377c740b6c8e2b004188562f7079d5635804d3ceee42df80cdaedd"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "col": 7,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/failed/frames/07.png",
+      "source_sha256": "be65a3f55bde239bfa91c40fd221708db7c4960cc638fb09085c66003a0e7423"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/00.png",
+      "source_sha256": "60fae5f8619315c18c9f885fd9665da64fd29f3dca4c475ea1e57571b84333d6"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/01.png",
+      "source_sha256": "6f2e3a27e2566324ee3c6930d35c93a9ca6091f28c5d9db39c7f5dbce2f0a3a7"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/02.png",
+      "source_sha256": "c227245353c2ad84fd31e02a78db393fdef34506911cb47f11d410a5fb35921f"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/03.png",
+      "source_sha256": "2a28e392ba01d0083a26c8f8901814f8bb8235b76cdfe5c886be9f751378edfe"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/04.png",
+      "source_sha256": "422030aa32515f677e2b812d353f49ebed0bad4043879d153783a4840f426db0"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "col": 5,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/05.png",
+      "source_sha256": "0e12bc4093cd99c483963999ec5ed2096ebf051aecd28bbe24b83d819f78a371"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/00.png",
+      "source_sha256": "9f68cc97aacb1ad03183e6924e7603a3f2a62c138aeb1d998822a708a83f53ff"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/01.png",
+      "source_sha256": "a5e9cbe096966b0df538de0fc62f7f39d126bbbe8714c15ceb2e02095bd92066"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/02.png",
+      "source_sha256": "0927a8d52018c171bee9ad9388eca91d1b63f0f3ce61fb81d128a06f56cfadec"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/03.png",
+      "source_sha256": "14c3fd6fc6c95335a57df0a19e2a65303d1504cf5174ac3b61d87e2558faa662"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/04.png",
+      "source_sha256": "44872f11ff115539c962bde1601f648ea6ab92e950b3a8e5c3c3d8409ca869c8"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "col": 5,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/running/frames/05.png",
+      "source_sha256": "256ff54f8358c520e1637979c802ae717f13120bffdebb7e88bc27909bcda7ce"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "col": 0,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/00.png",
+      "source_sha256": "eca5ad735723103f1be5afa59bcc5886860e4c2217b06041722ed399b03e72b2"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "col": 1,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/01.png",
+      "source_sha256": "d9801b942b5b1749b2019748401b02f489e1632aec4e386d8a9b4dcde59a1434"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "col": 2,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/02.png",
+      "source_sha256": "6db73cecbc4042265267d11d23f037c056dc8aabd309cc6495a9aaf31c2aa5b5"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "col": 3,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/03.png",
+      "source_sha256": "2e1425fb6f6d47876de8437c2284d1b12f653dade6edb4c07d9d3f6751fb595b"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "col": 4,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/04.png",
+      "source_sha256": "25939edfd469b6b04a11a6a30b66b27282a16ed7d429ed49eb3d0d64a4b080ae"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "col": 5,
+      "source_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/frames/05.png",
+      "source_sha256": "5041def737aa3cc647e810a57138eea90f336a28014852ca72371538e05d84a1"
+    }
+  ],
+  "temporary_directional_cells": [
+    {
+      "row": 9,
+      "col": 0,
+      "deg": 0.0,
+      "deg_label": "000°",
+      "compass": "N",
+      "pixel_sha256": "79526afc2519fc7161165049f2d3abbd0d3f7ad620a8324e831d23debb98318c",
+      "nontransparent_pixels": 9513,
+      "solid_pixels": 9513,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 19,
+        "right": 42,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 9,
+      "col": 1,
+      "deg": 22.5,
+      "deg_label": "022.5°",
+      "compass": "NNE",
+      "pixel_sha256": "29c88df2e1effdbef16c1fc02867c468eb3eb47f3b38ec199fd7099dbf85ef2f",
+      "nontransparent_pixels": 9530,
+      "solid_pixels": 9530,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 25,
+        "right": 42,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 9,
+      "col": 2,
+      "deg": 45.0,
+      "deg_label": "045°",
+      "compass": "NE",
+      "pixel_sha256": "6e3f5e3add06499a098df69af3f94a57710ea03d1af3d539b4151065f9146f27",
+      "nontransparent_pixels": 9490,
+      "solid_pixels": 9490,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 44,
+        "right": 36,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 9,
+      "col": 3,
+      "deg": 67.5,
+      "deg_label": "067.5°",
+      "compass": "ENE",
+      "pixel_sha256": "b38607a1118d734760451a58f13291504c0e40b769890f0fcac35a89672d9422",
+      "nontransparent_pixels": 9499,
+      "solid_pixels": 9499,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 51,
+        "right": 17,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 9,
+      "col": 4,
+      "deg": 90.0,
+      "deg_label": "090°",
+      "compass": "E",
+      "pixel_sha256": "125fcc274c37b41f0a530d0ffe0ab9a3e2cf635526161f998dd17e0880648b60",
+      "nontransparent_pixels": 9479,
+      "solid_pixels": 9479,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 51,
+        "right": 11,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 9,
+      "col": 5,
+      "deg": 112.5,
+      "deg_label": "112.5°",
+      "compass": "ESE",
+      "pixel_sha256": "a47ce109b0bd84cebf75752851b3e18cc6b8d67ceeb831686458fc845882989f",
+      "nontransparent_pixels": 9486,
+      "solid_pixels": 9486,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 51,
+        "right": 17,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 9,
+      "col": 6,
+      "deg": 135.0,
+      "deg_label": "135°",
+      "compass": "SE",
+      "pixel_sha256": "b3f25a4f088cc93471f594dd39a68ca2d8a3689d9bc7174148de0c22725ea9a9",
+      "nontransparent_pixels": 9467,
+      "solid_pixels": 9467,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 51,
+        "right": 36,
+        "bottom": 44
+      }
+    },
+    {
+      "row": 9,
+      "col": 7,
+      "deg": 157.5,
+      "deg_label": "157.5°",
+      "compass": "SSE",
+      "pixel_sha256": "9b57e702a6d0fd0b7da84f603ffac4dcfee3abda43da984a08a2e692aa30a0c4",
+      "nontransparent_pixels": 9499,
+      "solid_pixels": 9499,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 51,
+        "right": 42,
+        "bottom": 25
+      }
+    },
+    {
+      "row": 10,
+      "col": 0,
+      "deg": 180.0,
+      "deg_label": "180°",
+      "compass": "S",
+      "pixel_sha256": "6223a58c407600276f5db21b755f166184438a2a832b7bcc76beeb8609a40bec",
+      "nontransparent_pixels": 9484,
+      "solid_pixels": 9484,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 51,
+        "right": 42,
+        "bottom": 19
+      }
+    },
+    {
+      "row": 10,
+      "col": 1,
+      "deg": 202.5,
+      "deg_label": "202.5°",
+      "compass": "SSW",
+      "pixel_sha256": "d51d5c77ad4244ca64025f1197a5d33b5adb36f936d1ece69bc88479a1d5eca9",
+      "nontransparent_pixels": 9512,
+      "solid_pixels": 9512,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 51,
+        "right": 42,
+        "bottom": 25
+      }
+    },
+    {
+      "row": 10,
+      "col": 2,
+      "deg": 225.0,
+      "deg_label": "225°",
+      "compass": "SW",
+      "pixel_sha256": "36cf2f0ab130256097b1b9a7ee6e920b9589b2d95f4715399959769c0d04862b",
+      "nontransparent_pixels": 9491,
+      "solid_pixels": 9491,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 36,
+        "top": 51,
+        "right": 42,
+        "bottom": 44
+      }
+    },
+    {
+      "row": 10,
+      "col": 3,
+      "deg": 247.5,
+      "deg_label": "247.5°",
+      "compass": "WSW",
+      "pixel_sha256": "646b1bb21bbd5d241b1767a457b5cc87dfe014068c1037aa8d4145ddf41bcc09",
+      "nontransparent_pixels": 9517,
+      "solid_pixels": 9517,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 17,
+        "top": 51,
+        "right": 42,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 10,
+      "col": 4,
+      "deg": 270.0,
+      "deg_label": "270°",
+      "compass": "W",
+      "pixel_sha256": "0539593cc28752ea2508f86c1adb9a75d6f99f067575829f8b9565a933cc010a",
+      "nontransparent_pixels": 9505,
+      "solid_pixels": 9505,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 11,
+        "top": 51,
+        "right": 42,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 10,
+      "col": 5,
+      "deg": 292.5,
+      "deg_label": "292.5°",
+      "compass": "WNW",
+      "pixel_sha256": "6664b9b434a9be34b29a7312df066c06bf29141d5fceb46e924cbb388236dfbc",
+      "nontransparent_pixels": 9530,
+      "solid_pixels": 9530,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 17,
+        "top": 51,
+        "right": 42,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 10,
+      "col": 6,
+      "deg": 315.0,
+      "deg_label": "315°",
+      "compass": "NW",
+      "pixel_sha256": "ef4159e556448b0984cedad7d9045ee63bb1f7aa42ea6b58cbdb49c35ca43f28",
+      "nontransparent_pixels": 9513,
+      "solid_pixels": 9513,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 36,
+        "top": 44,
+        "right": 42,
+        "bottom": 50
+      }
+    },
+    {
+      "row": 10,
+      "col": 7,
+      "deg": 337.5,
+      "deg_label": "337.5°",
+      "compass": "NNW",
+      "pixel_sha256": "2c84fcb3d72e736ac7fda387d3b229380eac5a328be0cd448fab1d47e21dc4db",
+      "nontransparent_pixels": 9543,
+      "solid_pixels": 9543,
+      "solid_components": 1,
+      "alpha_components": 1,
+      "margins": {
+        "left": 43,
+        "top": 25,
+        "right": 42,
+        "bottom": 50
+      }
+    }
+  ]
+}
