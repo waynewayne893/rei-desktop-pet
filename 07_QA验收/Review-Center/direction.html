@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>P4-C 方向验收 · Rei Review Center</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/direction.css" />
+  <script defer src="assets/direction-data.js"></script>
+  <script defer src="assets/direction.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>P4-C 方向验收</h1>
+      <p class="brand-sub">三种形态 × 16 方向 · 000° 朝上，顺时针递增</p>
+    </div>
+    <a class="btn btn-secondary" href="index.html">返回正式动作</a>
+  </header>
+
+  <main class="direction-main">
+    <p id="direction-unavailable" class="card hidden">当前包还没有完整的 P4-C 方向索引。</p>
+
+    <div id="direction-review" class="hidden">
+      <section class="card direction-view" aria-label="方向帧预览">
+        <div class="direction-controls">
+          <label>形态
+            <select id="direction-form"></select>
+          </label>
+          <label>方向
+            <select id="direction-angle"></select>
+          </label>
+          <button class="btn btn-secondary" id="direction-prev" type="button">上一方向</button>
+          <button class="btn btn-secondary" id="direction-next" type="button">下一方向</button>
+          <label>背景
+            <select id="direction-background">
+              <option value="light">浅底</option>
+              <option value="dark">深底</option>
+              <option value="checker">透明格</option>
+            </select>
+          </label>
+        </div>
+        <div class="direction-preview">
+          <div id="direction-stage" class="bg-light">
+            <img id="direction-img" width="192" height="208" alt="" />
+          </div>
+          <div class="direction-meta">
+            <p id="direction-origin"></p>
+            <p id="direction-slot" class="mono-dim"></p>
+            <dl>
+              <dt>帧 SHA-256</dt>
+              <dd id="direction-hash" class="mono-dim"></dd>
+              <dt>原始图 SHA-256</dt>
+              <dd id="direction-source-hash" class="mono-dim"></dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="card direction-review-controls" aria-label="本方向人工验收">
+        <p id="direction-counts" aria-live="polite"></p>
+        <div class="direction-controls">
+          <label>判定
+            <select id="direction-status">
+              <option value="PENDING_HUMAN_REVIEW">待人工验收</option>
+              <option value="ACCEPTED">通过</option>
+              <option value="NEEDS_FIX">需修复</option>
+              <option value="REJECTED">拒收</option>
+            </select>
+          </label>
+        </div>
+        <label class="direction-comment">备注
+          <textarea id="direction-comment" rows="3"></textarea>
+        </label>
+        <div class="direction-controls">
+          <label class="btn btn-secondary direction-file" for="direction-import">导入方向 JSON</label>
+          <input type="file" id="direction-import" accept=".json,application/json" />
+          <button class="btn btn-primary" id="direction-export" type="button">导出方向 JSON</button>
+        </div>
+        <p id="direction-message" role="status"></p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

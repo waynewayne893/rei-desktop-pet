@@ -1,0 +1,64 @@
+{
+  "rei-school": {
+    "batches": {
+      "STRUCTURE_PASS": 5
+    },
+    "height_px": [
+      186,
+      189
+    ],
+    "foot_x": [
+      95.5,
+      96.5
+    ],
+    "foot_y": [
+      194,
+      195
+    ],
+    "max_detached_pixels": 15,
+    "max_detached_alpha": 4,
+    "min_adjacent_silhouette_iou": 0.88618
+  },
+  "rei-white": {
+    "batches": {
+      "FAILED": 3,
+      "STRUCTURE_PASS": 7
+    },
+    "height_px": [
+      186,
+      188
+    ],
+    "foot_x": [
+      95.5,
+      96.5
+    ],
+    "foot_y": [
+      194,
+      195
+    ],
+    "max_detached_pixels": 7,
+    "max_detached_alpha": 4,
+    "min_adjacent_silhouette_iou": 0.83964
+  },
+  "rei-black": {
+    "batches": {
+      "STRUCTURE_PASS": 4,
+      "FAILED": 2
+    },
+    "height_px": [
+      186,
+      190
+    ],
+    "foot_x": [
+      95.0,
+      96.5
+    ],
+    "foot_y": [
+      194,
+      196
+    ],
+    "max_detached_pixels": 14,
+    "max_detached_alpha": 4,
+    "min_adjacent_silhouette_iou": 0.84232
+  }
+}

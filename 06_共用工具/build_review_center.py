@@ -29,7 +29,7 @@ _TOOLS_DIR = Path(__file__).resolve().parent
 if str(_TOOLS_DIR) not in sys.path:
     sys.path.insert(0, str(_TOOLS_DIR))
 
-from rei_atlas_tools import ROW_DURATIONS, ROW_SPECS, default_root, sha256_bytes, sha256_file  # noqa: E402
+from rei_atlas_tools import LOOK_DIRECTIONS, ROW_DURATIONS, ROW_SPECS, default_root, sha256_bytes, sha256_file  # noqa: E402
 
 FORM_META: list[dict[str, str]] = [
     {
@@ -163,6 +163,72 @@ def build_pilot_payload(root: Path, offline_media: dict[str, Path], offline: boo
             ],
         },
     }
+
+
+def build_direction_payload(
+    root: Path, offline_media: dict[str, Path], ledger: dict[str, Any], offline: bool,
+) -> dict[str, Any] | None:
+    manifest_path = root / "07_QA验收/P4-C/P4C_DIRECTION_ASSET_MANIFEST.json"
+    if not manifest_path.is_file():
+        return None
+
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    entries = manifest["frames"]
+    selected = {(entry["form"], entry["angle"]): entry for entry in entries}
+    forms = [{"id": item["id"], "label": item["label"]} for item in FORM_META]
+    angles = [slot["deg_label"].removesuffix("°") for slot in LOOK_DIRECTIONS]
+    expected = {(form["id"], angle) for form in forms for angle in angles}
+    if len(entries) != len(expected) or set(selected) != expected:
+        raise ValueError("P4-C manifest must contain one frame per form and direction")
+
+    accepted = {
+        ("rei-black", item["pilot_decision_id"]): item
+        for item in ledger["p4c_reuse_verified"]
+    }
+    cardinal_keys = {("rei-black", angle) for angle in ("000", "090", "180", "270")}
+    if set(accepted) != cardinal_keys:
+        raise ValueError("P4-C reuse ledger must bind the four black cardinal directions")
+
+    frames = []
+    source_hashes: dict[Path, str] = {}
+    for form in forms:
+        for angle, slot in zip(angles, LOOK_DIRECTIONS):
+            key = (form["id"], angle)
+            entry = selected[key]
+            if (entry["row"], entry["col"]) != (slot["row"], slot["col"]):
+                raise ValueError(f"P4-C atlas slot mismatch: {key}")
+            reuse = accepted.get(key)
+            origin = "REUSED_PILOT" if reuse else "GENERATED"
+            status = "ACCEPTED" if reuse else "PENDING_HUMAN_REVIEW"
+            if (entry["origin"], entry["human_status"]) != (origin, status):
+                raise ValueError(f"P4-C approval source mismatch: {key}")
+            frame_path = (root / entry["path"]).resolve()
+            if not frame_path.is_relative_to(root) or sha256_file(frame_path) != entry["sha256"]:
+                raise ValueError(f"P4-C frame SHA-256 mismatch: {key}")
+            source_path = (root / entry["source_path"]).resolve()
+            if not source_path.is_relative_to(root):
+                raise ValueError(f"P4-C source is outside the project: {key}")
+            if source_path not in source_hashes:
+                source_hashes[source_path] = sha256_file(source_path)
+            source_hash = source_hashes[source_path]
+            if source_hash != entry["source_sha256"]:
+                raise ValueError(f"P4-C source SHA-256 mismatch: {key}")
+            if reuse and (
+                entry["sha256"] != reuse["frame_sha256"]
+                or entry["source_path"] != reuse["native_source_path"]
+                or source_hash != reuse["native_source_sha256"]
+            ):
+                raise ValueError(f"P4-C reuse differs from the accepted pilot: {key}")
+            packed = f"media/directions/{form['id']}/{angle}.png"
+            offline_media[packed] = frame_path
+            frames.append({
+                "form": form["id"], "angle": angle, "row": slot["row"], "col": slot["col"],
+                "sha256": entry["sha256"], "source_sha256": source_hash, "origin": origin,
+                "human_status": status, "version": entry["version"],
+                "src": packed if offline else f"../../{frame_path.relative_to(root).as_posix()}",
+            })
+
+    return {"schema_version": 1, "forms": forms, "angles": angles, "frames": frames}
 
 
 def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
@@ -455,6 +521,14 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
         encoding="utf-8",
     )
 
+    direction_repo_data = build_direction_payload(root, offline_media, ledger, offline=False)
+    direction_offline_data = build_direction_payload(root, offline_media, ledger, offline=True)
+    direction_script = "window.REI_DIRECTION_DATA = "
+    (assets_dir / "direction-data.js").write_text(
+        direction_script + json.dumps(direction_repo_data, ensure_ascii=False, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+
     # Build deterministic self-contained offline ZIP package
     offline_data_js_bytes = (
         "window.REI_REVIEW_DATA = " + json.dumps(offline_bundle, ensure_ascii=False, indent=2) + ";\n"
@@ -464,6 +538,9 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
     static_files = [
         ("rei-review-center-v1.0/index.html", review_dir / "index.html"),
         ("rei-review-center-v1.0/pilot.html", review_dir / "pilot.html"),
+        ("rei-review-center-v1.0/direction.html", review_dir / "direction.html"),
+        ("rei-review-center-v1.0/assets/direction.css", assets_dir / "direction.css"),
+        ("rei-review-center-v1.0/assets/direction.js", assets_dir / "direction.js"),
         ("rei-review-center-v1.0/assets/pilot.css", assets_dir / "pilot.css"),
         ("rei-review-center-v1.0/assets/pilot.js", assets_dir / "pilot.js"),
         ("rei-review-center-v1.0/assets/styles.css", assets_dir / "styles.css"),
@@ -489,6 +566,9 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
         pilot_script = "window.REI_PILOT_DATA = " + json.dumps(pilot_offline_data, ensure_ascii=False, indent=2) + ";\n"
         write_entry("rei-review-center-v1.0/assets/pilot-data.js", pilot_script.encode("utf-8"))
 
+        offline_direction_script = direction_script + json.dumps(direction_offline_data, ensure_ascii=False, indent=2) + ";\n"
+        write_entry("rei-review-center-v1.0/assets/direction-data.js", offline_direction_script.encode("utf-8"))
+
         for rel_media in sorted(offline_media.keys()):
             src = offline_media[rel_media]
             write_entry(f"rei-review-center-v1.0/{rel_media}", src.read_bytes())
@@ -507,6 +587,7 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
         "pending_actions": official_review["summary"]["actions_by_status"]["PENDING"],
         "pending_frames": official_review["summary"]["frames_by_status"]["PENDING"],
         "manifest_fingerprint": manifest_fingerprint,
+        "direction_frames_bundled": len(direction_offline_data["frames"]) if direction_offline_data else 0,
         "offline_media_files_bundled": len(offline_media),
         "zip_entries_count": len(zip_entries),
         "deliverables": {

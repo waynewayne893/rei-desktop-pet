@@ -1,0 +1,74 @@
+{
+  "form": "rei-black",
+  "batch": "lower-left-01",
+  "angles": [
+    "202.5",
+    "225",
+    "247.5"
+  ],
+  "source_path": "07_QA验收/P4-C/rei-black/raw/lower-left-01.png",
+  "source_sha256": "8313773eb91ad3a0a10b2185542f85174b139f1a7611697fddfccbb35dc24bac",
+  "prompt_path": "07_QA验收/P4-C/rei-black/raw/lower-left-01.txt",
+  "prompt_sha256": "7503f25706cd6727f2afb1a6c918ea1a1cf6421a5676500b5ba18c41cfb2821f",
+  "raw": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_zero": 1347461,
+    "alpha_partial": 223061,
+    "alpha_opaque": 2006,
+    "alpha_bbox": [
+      41,
+      18,
+      2037,
+      694
+    ],
+    "solid_x_spans": [
+      [
+        391,
+        583
+      ],
+      [
+        978,
+        1174
+      ],
+      [
+        1557,
+        1568
+      ],
+      [
+        1569,
+        1759
+      ]
+    ],
+    "raw_border_alpha_max": 0,
+    "raw_border_transparent": true,
+    "registration_alpha_floor": 1,
+    "raw_alpha_one_pixels": 8051,
+    "effective_alpha_bbox": [
+      388,
+      18,
+      1764,
+      694
+    ],
+    "alpha_cleanup": {
+      "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+      "threshold_u8": 1,
+      "changed_pixels": 8051,
+      "source_png_sha256": "8313773eb91ad3a0a10b2185542f85174b139f1a7611697fddfccbb35dc24bac",
+      "pre_cleanup_rgba_pixel_sha256": "16c8ddb1e2e210643227fbc078ee418f5abdaa24010ee0ee533796b02e6b2f75",
+      "post_cleanup_rgba_pixel_sha256": "87ef088256cd7e40c4c3e68a459ed3e52e1ed47d4ca797e448ae6319e03479a6"
+    }
+  },
+  "errors": [
+    "Expected 3 separated silhouettes, found 4"
+  ],
+  "structure": "FAILED"
+}

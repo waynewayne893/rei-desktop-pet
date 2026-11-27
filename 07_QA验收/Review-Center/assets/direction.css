@@ -1,0 +1,27 @@
+.direction-main { width: min(980px, 100%); margin: 0 auto; padding: 18px; }
+.direction-view { display: grid; gap: 16px; }
+.direction-controls, .direction-preview {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+}
+.direction-controls label:not(.direction-file) { display: inline-flex; align-items: center; gap: 6px; }
+.direction-main select {
+  color: var(--text);
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 7px;
+  font: inherit;
+}
+#direction-stage { flex: 0 0 192px; }
+#direction-img { display: block; width: 192px; height: 208px; image-rendering: pixelated; }
+.direction-meta { flex: 1 1 250px; min-width: 0; }
+.direction-meta dl { margin: 0; }
+.direction-meta dd { margin: 0 0 6px; overflow-wrap: anywhere; }
+.direction-review-controls { margin-top: 14px; }
+.direction-comment { display: grid; gap: 5px; margin: 12px 0; }
+#direction-import { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.direction-file:has(+ input:focus-visible) { outline: 2px solid var(--primary); }
+#direction-message:empty { display: none; }

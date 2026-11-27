@@ -1,0 +1,109 @@
+{
+  "000": {
+    "form": "rei-black",
+    "angle": "000",
+    "path": "07_QA验收/P4-C/rei-black/frames/000.png",
+    "sha256": "b315906ecff13dfe97402886a0ee4c86fb340b52903748340e22ef37e384873b",
+    "source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+    "source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+    "origin": "REUSED_PILOT",
+    "human_status": "ACCEPTED",
+    "version": "codex-cloud-pilot/attempt-02",
+    "pilot_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/000.png",
+    "qa_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/evidence/directions-attempt-02-qa.json",
+    "acceptance_path": "07_QA验收/P4-B/human-acceptance/REI_CODEX_CLOUD_PILOT_REVIEW.json",
+    "acceptance_sha256": "5e7c66e74183beaedb610fa8b789f83bbe8b40163328d5b2589f671f247e907b",
+    "solid_height": 189,
+    "foot_anchor": [
+      96.0,
+      195
+    ],
+    "detached_alpha_components": []
+  },
+  "090": {
+    "form": "rei-black",
+    "angle": "090",
+    "path": "07_QA验收/P4-C/rei-black/frames/090.png",
+    "sha256": "3d18e479d038ba17a46938a1fc46c059ea0d678f174a520d77be1c7035efcba4",
+    "source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+    "source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+    "origin": "REUSED_PILOT",
+    "human_status": "ACCEPTED",
+    "version": "codex-cloud-pilot/attempt-02",
+    "pilot_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/090.png",
+    "qa_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/evidence/directions-attempt-02-qa.json",
+    "acceptance_path": "07_QA验收/P4-B/human-acceptance/REI_CODEX_CLOUD_PILOT_REVIEW.json",
+    "acceptance_sha256": "5e7c66e74183beaedb610fa8b789f83bbe8b40163328d5b2589f671f247e907b",
+    "solid_height": 189,
+    "foot_anchor": [
+      95.5,
+      195
+    ],
+    "detached_alpha_components": [
+      {
+        "pixel_count": 5,
+        "max_alpha_u8": 4
+      }
+    ]
+  },
+  "180": {
+    "form": "rei-black",
+    "angle": "180",
+    "path": "07_QA验收/P4-C/rei-black/frames/180.png",
+    "sha256": "9c4cc7626c6462eaf723ee7f853ba032f0f66169e4bff78181506bf5bc345c9a",
+    "source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+    "source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+    "origin": "REUSED_PILOT",
+    "human_status": "ACCEPTED",
+    "version": "codex-cloud-pilot/attempt-02",
+    "pilot_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/180.png",
+    "qa_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/evidence/directions-attempt-02-qa.json",
+    "acceptance_path": "07_QA验收/P4-B/human-acceptance/REI_CODEX_CLOUD_PILOT_REVIEW.json",
+    "acceptance_sha256": "5e7c66e74183beaedb610fa8b789f83bbe8b40163328d5b2589f671f247e907b",
+    "solid_height": 188,
+    "foot_anchor": [
+      96.0,
+      195
+    ],
+    "detached_alpha_components": [
+      {
+        "pixel_count": 7,
+        "max_alpha_u8": 3
+      }
+    ]
+  },
+  "270": {
+    "form": "rei-black",
+    "angle": "270",
+    "path": "07_QA验收/P4-C/rei-black/frames/270.png",
+    "sha256": "cdd2cdaa480cd1cb85771c875d300a913f870887ff34a526ef2a7d7a571dd3c1",
+    "source_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/raw/directions-attempt-02.png",
+    "source_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+    "origin": "REUSED_PILOT",
+    "human_status": "ACCEPTED",
+    "version": "codex-cloud-pilot/attempt-02",
+    "pilot_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/frames/directions/attempt-02/270.png",
+    "qa_path": "07_QA验收/CODEX-CLOUD-ART-PILOT/evidence/directions-attempt-02-qa.json",
+    "acceptance_path": "07_QA验收/P4-B/human-acceptance/REI_CODEX_CLOUD_PILOT_REVIEW.json",
+    "acceptance_sha256": "5e7c66e74183beaedb610fa8b789f83bbe8b40163328d5b2589f671f247e907b",
+    "solid_height": 188,
+    "foot_anchor": [
+      96.0,
+      196
+    ],
+    "detached_alpha_components": [
+      {
+        "pixel_count": 5,
+        "max_alpha_u8": 4
+      },
+      {
+        "pixel_count": 2,
+        "max_alpha_u8": 3
+      },
+      {
+        "pixel_count": 1,
+        "max_alpha_u8": 1
+      }
+    ]
+  }
+}

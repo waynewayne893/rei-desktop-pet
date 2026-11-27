@@ -1,0 +1,186 @@
+{
+  "method": "Separate Codex reviewer saw only a permuted set of crops labeled A\u2013D for each form; the mapping and generation plan were withheld.",
+  "classification": "Machine-assisted blind visual QA; independent of human acceptance.",
+  "rounds": [
+    {
+      "sheet": "07_QA\u9a8c\u6536/P4-C/P4C_CARDINAL_BLIND_SHEET.png",
+      "sha256": "c5f8e40a4e8c59addd611ffab457b33717cea524f4d26e4123f1139827805d9e",
+      "readable": 11,
+      "total": 12,
+      "scores": [
+        {
+          "form": "rei-school",
+          "label": "A",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-school/attempts/cardinals-attempt-01/090.png",
+          "sha256": "f1e06c1e1bb68ed2e2b14ab141212b46aae630a743ca829a66be36bb8d9eab78",
+          "expected_angle": "090",
+          "observed_direction": "RIGHT",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-school",
+          "label": "B",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-school/attempts/cardinals-attempt-01/180.png",
+          "sha256": "229a8302d650f7e0a3b75fe07e443441e631b9827e32fe49796ea941dd3c37d1",
+          "expected_angle": "180",
+          "observed_direction": "DOWN",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-school",
+          "label": "C",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-school/attempts/cardinals-attempt-01/000.png",
+          "sha256": "8e36902a6c7ce63e744e8aa82d981ea23dcc8efcb4bd18a94fa5ad69e9dbf859",
+          "expected_angle": "000",
+          "observed_direction": "UP",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-school",
+          "label": "D",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-school/attempts/cardinals-attempt-01/270.png",
+          "sha256": "a30e46c6564346a1445ef19361823fa769c3a1f9531c62d529b0445470ff9373",
+          "expected_angle": "270",
+          "observed_direction": "LEFT",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-white",
+          "label": "A",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/cardinals-01/180.png",
+          "sha256": "62d239abf8d2b5ff9905ad5e1cac9968a3c61b35aab13b453bece72153315de4",
+          "expected_angle": "180",
+          "observed_direction": "DOWN",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-white",
+          "label": "B",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/cardinals-01/090.png",
+          "sha256": "96718a5d0cd8e752a94b5ad244a7bd11a92d7964a1e18e6060a68e52dff86335",
+          "expected_angle": "090",
+          "observed_direction": "RIGHT",
+          "confidence": "MEDIUM",
+          "readable": true
+        },
+        {
+          "form": "rei-white",
+          "label": "C",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/cardinals-01/000.png",
+          "sha256": "fa236cc8f38e4a8b6988ee9cf55d8c84265c2b9f5ed5a96eb73d86ecd006528c",
+          "expected_angle": "000",
+          "observed_direction": "UNCLEAR",
+          "confidence": "LOW",
+          "readable": false
+        },
+        {
+          "form": "rei-white",
+          "label": "D",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/cardinals-01/270.png",
+          "sha256": "380e45a386408675e146d868509cd26441ddb5961f40b2b527c253ac2fec9089",
+          "expected_angle": "270",
+          "observed_direction": "LEFT",
+          "confidence": "MEDIUM",
+          "readable": true
+        },
+        {
+          "form": "rei-black",
+          "label": "A",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-black/frames/270.png",
+          "sha256": "cdd2cdaa480cd1cb85771c875d300a913f870887ff34a526ef2a7d7a571dd3c1",
+          "expected_angle": "270",
+          "observed_direction": "LEFT",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-black",
+          "label": "B",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-black/frames/000.png",
+          "sha256": "b315906ecff13dfe97402886a0ee4c86fb340b52903748340e22ef37e384873b",
+          "expected_angle": "000",
+          "observed_direction": "UP",
+          "confidence": "MEDIUM",
+          "readable": true
+        },
+        {
+          "form": "rei-black",
+          "label": "C",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-black/frames/090.png",
+          "sha256": "3d18e479d038ba17a46938a1fc46c059ea0d678f174a520d77be1c7035efcba4",
+          "expected_angle": "090",
+          "observed_direction": "RIGHT",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-black",
+          "label": "D",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-black/frames/180.png",
+          "sha256": "9c4cc7626c6462eaf723ee7f853ba032f0f66169e4bff78181506bf5bc345c9a",
+          "expected_angle": "180",
+          "observed_direction": "DOWN",
+          "confidence": "HIGH",
+          "readable": true
+        }
+      ],
+      "observations": "White initial up read nearly neutral; white horizontal readings and black up showed modest but readable turns."
+    },
+    {
+      "sheet": "07_QA\u9a8c\u6536/P4-C/P4C_WHITE_CARDINAL_BLIND_RETEST.png",
+      "sha256": "739a75cfb68a349fad8d6fee2ab783529acab997ef9c6bd096a4f859bb5611e3",
+      "readable": 4,
+      "total": 4,
+      "scores": [
+        {
+          "form": "rei-white",
+          "label": "W",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/cardinals-01/270.png",
+          "sha256": "380e45a386408675e146d868509cd26441ddb5961f40b2b527c253ac2fec9089",
+          "expected_angle": "270",
+          "observed_direction": "LEFT",
+          "confidence": "MEDIUM",
+          "readable": true
+        },
+        {
+          "form": "rei-white",
+          "label": "X",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/cardinals-01/090.png",
+          "sha256": "96718a5d0cd8e752a94b5ad244a7bd11a92d7964a1e18e6060a68e52dff86335",
+          "expected_angle": "090",
+          "observed_direction": "RIGHT",
+          "confidence": "MEDIUM",
+          "readable": true
+        },
+        {
+          "form": "rei-white",
+          "label": "Y",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/cardinals-01/180.png",
+          "sha256": "62d239abf8d2b5ff9905ad5e1cac9968a3c61b35aab13b453bece72153315de4",
+          "expected_angle": "180",
+          "observed_direction": "DOWN",
+          "confidence": "HIGH",
+          "readable": true
+        },
+        {
+          "form": "rei-white",
+          "label": "Z",
+          "path": "07_QA\u9a8c\u6536/P4-C/rei-white/attempts/up-cardinal-03/000.png",
+          "sha256": "558e7f79c3f0535efa8949930fc7ba25d35be34ba54dc98eea6a9bf00a9bb93e",
+          "expected_angle": "000",
+          "observed_direction": "UP",
+          "confidence": "HIGH",
+          "readable": true
+        }
+      ],
+      "observations": "The replacement up view is pronounced; sideways turns remain moderate."
+    }
+  ],
+  "selected_cardinals_readable": 12,
+  "selected_cardinals_total": 12
+}

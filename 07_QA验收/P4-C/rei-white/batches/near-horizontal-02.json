@@ -1,0 +1,181 @@
+{
+  "form": "rei-white",
+  "batch": "near-horizontal-02",
+  "angles": [
+    "067.5",
+    "292.5"
+  ],
+  "source_path": "07_QA验收/P4-C/rei-white/raw/near-horizontal-02.png",
+  "source_sha256": "99f9283f62dabd0b1de3584c2884ceabe6ff914b1a8ae81559c6ee10f07a2b6e",
+  "prompt_path": "07_QA验收/P4-C/rei-white/raw/near-horizontal-02.txt",
+  "prompt_sha256": "bc1ec4e75f2a2cf3706874bd8e6361ad5dd508757e460b769c117a8b57a68eb2",
+  "raw": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_zero": 1319535,
+    "alpha_partial": 252271,
+    "alpha_opaque": 722,
+    "alpha_bbox": [
+      41,
+      0,
+      1860,
+      724
+    ],
+    "solid_x_spans": [
+      [
+        540,
+        751
+      ],
+      [
+        1418,
+        1632
+      ]
+    ],
+    "raw_border_alpha_max": 1,
+    "raw_border_transparent": false,
+    "registration_alpha_floor": 1,
+    "raw_alpha_one_pixels": 67135,
+    "effective_alpha_bbox": [
+      532,
+      15,
+      1667,
+      711
+    ],
+    "alpha_cleanup": {
+      "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+      "threshold_u8": 1,
+      "changed_pixels": 67135,
+      "source_png_sha256": "99f9283f62dabd0b1de3584c2884ceabe6ff914b1a8ae81559c6ee10f07a2b6e",
+      "pre_cleanup_rgba_pixel_sha256": "35acf5e5809d753df310d4e4bca16786ab6138e7748abcbc46478adc08103f7f",
+      "post_cleanup_rgba_pixel_sha256": "597312c1c1d07725081dd3e7e27ba4b0817d5b6f28128390c395cf69c51ad57c"
+    },
+    "raw_internal_split_alpha_max": [
+      0
+    ],
+    "split_edges": [
+      0,
+      1084,
+      2172
+    ]
+  },
+  "errors": [],
+  "registration": {
+    "row_isotropic_scale": 0.27425237053245805,
+    "source_height_baseline": 685.5,
+    "shared_source_ground": null,
+    "frames": [
+      {
+        "id": "067.5",
+        "source_solid_bbox_in_strip_slot": [
+          540,
+          22,
+          751,
+          708
+        ],
+        "offset": [
+          62,
+          5
+        ],
+        "registered_solid_bbox": [
+          64,
+          7,
+          122,
+          195
+        ],
+        "solid_height": 188,
+        "foot_anchor_measured": [
+          96.0,
+          195
+        ],
+        "nontransparent_pixels": 6946,
+        "solid_pixels": 5784,
+        "solid_components": 1,
+        "alpha_components": 1,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          62,
+          5,
+          123,
+          196
+        ],
+        "margins": {
+          "left": 62,
+          "top": 5,
+          "right": 69,
+          "bottom": 12
+        },
+        "pixel_sha256": "0d2faf4c992aac5cacb92f90c0abe33fd67df737c4c7401a96a934327f4f3f2d",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-white/attempts/near-horizontal-02/067.5.png",
+        "sha256": "a7dffdecc89fb9049659d5bb7933ddb7185ca4a49d01185b4e67b5acc455c668",
+        "detached_alpha_components": []
+      },
+      {
+        "id": "292.5",
+        "source_solid_bbox_in_strip_slot": [
+          334,
+          23,
+          548,
+          708
+        ],
+        "offset": [
+          68,
+          5
+        ],
+        "registered_solid_bbox": [
+          69,
+          7,
+          128,
+          195
+        ],
+        "solid_height": 188,
+        "foot_anchor_measured": [
+          96.5,
+          195
+        ],
+        "nontransparent_pixels": 7080,
+        "solid_pixels": 5890,
+        "solid_components": 1,
+        "alpha_components": 3,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          68,
+          5,
+          133,
+          196
+        ],
+        "margins": {
+          "left": 68,
+          "top": 5,
+          "right": 59,
+          "bottom": 12
+        },
+        "pixel_sha256": "5486819c4ebbe1f00935be11317d09afacba71f894fc330f027339c310893173",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-white/attempts/near-horizontal-02/292.5.png",
+        "sha256": "8b75cffea4256b2b657cbec47d124b73c1073e5a16c12bdb395641af08c60849",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 5,
+            "max_alpha_u8": 4
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 1
+          }
+        ]
+      }
+    ]
+  },
+  "structure": "STRUCTURE_PASS"
+}

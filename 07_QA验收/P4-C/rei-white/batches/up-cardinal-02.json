@@ -1,0 +1,128 @@
+{
+  "form": "rei-white",
+  "batch": "up-cardinal-02",
+  "angles": [
+    "000"
+  ],
+  "source_path": "07_QA验收/P4-C/rei-white/raw/up-cardinal-02.png",
+  "source_sha256": "9180485891b067222489fe58149335a9e92692a21887bc7ef7f31460d18ce057",
+  "prompt_path": "07_QA验收/P4-C/rei-white/raw/up-cardinal-02.txt",
+  "prompt_sha256": "8faff189994c6369ce410cd70a0ac98a74e335014013ba1b69bb77afac786217",
+  "raw": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_zero": 1461828,
+    "alpha_partial": 110299,
+    "alpha_opaque": 401,
+    "alpha_bbox": [
+      0,
+      0,
+      2134,
+      724
+    ],
+    "solid_x_spans": [
+      [
+        954,
+        1215
+      ]
+    ],
+    "raw_border_alpha_max": 2,
+    "raw_border_transparent": false,
+    "registration_alpha_floor": 1,
+    "raw_alpha_one_pixels": 6695,
+    "effective_alpha_bbox": [
+      948,
+      0,
+      1221,
+      714
+    ],
+    "alpha_cleanup": {
+      "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+      "threshold_u8": 1,
+      "changed_pixels": 6695,
+      "source_png_sha256": "9180485891b067222489fe58149335a9e92692a21887bc7ef7f31460d18ce057",
+      "pre_cleanup_rgba_pixel_sha256": "6af617ea4e49bdccd2d52a265644ff28b9ca383b548792c8f361693bbe55a13e",
+      "post_cleanup_rgba_pixel_sha256": "04faafef66125e8b0e0b3e269bbf06e8267d96e4494aea48586e2a76258e79d2"
+    },
+    "raw_internal_split_alpha_max": [],
+    "split_edges": [
+      0,
+      2172
+    ]
+  },
+  "errors": [
+    "Alpha above the noise floor touches a raw canvas border"
+  ],
+  "registration": {
+    "row_isotropic_scale": 0.268188302425107,
+    "source_height_baseline": 701,
+    "shared_source_ground": null,
+    "frames": [
+      {
+        "id": "000",
+        "source_solid_bbox_in_strip_slot": [
+          954,
+          10,
+          1215,
+          711
+        ],
+        "offset": [
+          60,
+          4
+        ],
+        "registered_solid_bbox": [
+          62,
+          7,
+          131,
+          194
+        ],
+        "solid_height": 187,
+        "foot_anchor_measured": [
+          95.5,
+          194
+        ],
+        "nontransparent_pixels": 7736,
+        "solid_pixels": 6686,
+        "solid_components": 1,
+        "alpha_components": 3,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          60,
+          4,
+          133,
+          195
+        ],
+        "margins": {
+          "left": 60,
+          "top": 4,
+          "right": 59,
+          "bottom": 13
+        },
+        "pixel_sha256": "381b750e2d5c47ea91824d24c7531e17fde83cb07b6d1eebe2151e4a47fa9e83",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-white/attempts/up-cardinal-02/000.png",
+        "sha256": "b58116716cf60b27126c2492eaf0722428c2667ec561a92cce4c06477c4b103b",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 3,
+            "max_alpha_u8": 3
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 3
+          }
+        ]
+      }
+    ]
+  },
+  "structure": "FAILED"
+}

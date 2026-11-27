@@ -1,0 +1,253 @@
+{
+  "form": "rei-black",
+  "batch": "upper-right-02",
+  "angles": [
+    "022.5",
+    "045",
+    "067.5"
+  ],
+  "source_path": "07_QA验收/P4-C/rei-black/raw/upper-right-02.png",
+  "source_sha256": "892c0e3b3d86d0d26e9cf35550cceb73acaaaef10691a6ca7e85a60e197b2062",
+  "prompt_path": "07_QA验收/P4-C/rei-black/raw/upper-right-02.txt",
+  "prompt_sha256": "c184352ceecfa0542b5e15f8b1acaa8e6b79528dbbf56e63d85fc92a1457075e",
+  "raw": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_zero": 1330503,
+    "alpha_partial": 240177,
+    "alpha_opaque": 1848,
+    "alpha_bbox": [
+      37,
+      9,
+      2142,
+      708
+    ],
+    "solid_x_spans": [
+      [
+        378,
+        587
+      ],
+      [
+        968,
+        1169
+      ],
+      [
+        1564,
+        1763
+      ]
+    ],
+    "raw_border_alpha_max": 0,
+    "raw_border_transparent": true,
+    "registration_alpha_floor": 1,
+    "raw_alpha_one_pixels": 11930,
+    "effective_alpha_bbox": [
+      373,
+      19,
+      1769,
+      704
+    ],
+    "alpha_cleanup": {
+      "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+      "threshold_u8": 1,
+      "changed_pixels": 11930,
+      "source_png_sha256": "892c0e3b3d86d0d26e9cf35550cceb73acaaaef10691a6ca7e85a60e197b2062",
+      "pre_cleanup_rgba_pixel_sha256": "fabdfe7df80731095b8d06b313ef5342f8b658b16e7807075f61cc29602d1c9f",
+      "post_cleanup_rgba_pixel_sha256": "efd42374c4b2d3b3ef3f4af43936bb8b82cc10eff6a26b641dd687ebc35a8a16"
+    },
+    "raw_internal_split_alpha_max": [
+      0,
+      1
+    ],
+    "split_edges": [
+      0,
+      777,
+      1366,
+      2172
+    ]
+  },
+  "errors": [],
+  "registration": {
+    "row_isotropic_scale": 0.27728613569321536,
+    "source_height_baseline": 678,
+    "shared_source_ground": null,
+    "frames": [
+      {
+        "id": "022.5",
+        "source_solid_bbox_in_strip_slot": [
+          378,
+          22,
+          587,
+          700
+        ],
+        "offset": [
+          65,
+          6
+        ],
+        "registered_solid_bbox": [
+          66,
+          7,
+          125,
+          194
+        ],
+        "solid_height": 187,
+        "foot_anchor_measured": [
+          96.0,
+          194
+        ],
+        "nontransparent_pixels": 6419,
+        "solid_pixels": 5504,
+        "solid_components": 1,
+        "alpha_components": 3,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          65,
+          6,
+          126,
+          195
+        ],
+        "margins": {
+          "left": 65,
+          "top": 6,
+          "right": 66,
+          "bottom": 13
+        },
+        "pixel_sha256": "c105fc93220127ec7478b8971300f4df6c902059493f58536e5da4de99d93428",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-black/attempts/upper-right-02/022.5.png",
+        "sha256": "33bfcc6d8b791ae2aad9f59a67679caec9b528c4d00a5be74245e9fe87c976d6",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 12,
+            "max_alpha_u8": 3
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 2
+          }
+        ]
+      },
+      {
+        "id": "045",
+        "source_solid_bbox_in_strip_slot": [
+          191,
+          22,
+          392,
+          700
+        ],
+        "offset": [
+          62,
+          6
+        ],
+        "registered_solid_bbox": [
+          63,
+          7,
+          118,
+          195
+        ],
+        "solid_height": 188,
+        "foot_anchor_measured": [
+          95.5,
+          195
+        ],
+        "nontransparent_pixels": 6266,
+        "solid_pixels": 5379,
+        "solid_components": 1,
+        "alpha_components": 2,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          62,
+          6,
+          119,
+          196
+        ],
+        "margins": {
+          "left": 62,
+          "top": 6,
+          "right": 73,
+          "bottom": 12
+        },
+        "pixel_sha256": "06eeaa3f99aea0b73c4a039f9af5df73d789ee052fb240e4d816860e974c26ff",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-black/attempts/upper-right-02/045.png",
+        "sha256": "5f96bde8d73f140658d05d177e7e0cec1ce90be1850f8a0f452df75393f42adf",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 14,
+            "max_alpha_u8": 4
+          }
+        ]
+      },
+      {
+        "id": "067.5",
+        "source_solid_bbox_in_strip_slot": [
+          198,
+          23,
+          397,
+          700
+        ],
+        "offset": [
+          61,
+          6
+        ],
+        "registered_solid_bbox": [
+          62,
+          7,
+          117,
+          195
+        ],
+        "solid_height": 188,
+        "foot_anchor_measured": [
+          96.5,
+          195
+        ],
+        "nontransparent_pixels": 6383,
+        "solid_pixels": 5465,
+        "solid_components": 1,
+        "alpha_components": 4,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          61,
+          6,
+          119,
+          196
+        ],
+        "margins": {
+          "left": 61,
+          "top": 6,
+          "right": 73,
+          "bottom": 12
+        },
+        "pixel_sha256": "30a33d5fda2f8bffa42e6b632922b640ecf1845236a1c8a3462fd5bbe6b991d1",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-black/attempts/upper-right-02/067.5.png",
+        "sha256": "92247d9f3165d61fbfe9fe77db53a14a896a1ac59d11f0370c008834a1da4e88",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 2,
+            "max_alpha_u8": 4
+          },
+          {
+            "pixel_count": 2,
+            "max_alpha_u8": 3
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 3
+          }
+        ]
+      }
+    ]
+  },
+  "structure": "STRUCTURE_PASS"
+}

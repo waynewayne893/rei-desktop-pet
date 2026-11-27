@@ -1,0 +1,231 @@
+{
+  "form": "rei-school",
+  "batch": "quad-nw-attempt-01",
+  "angles": [
+    "292.5",
+    "315",
+    "337.5"
+  ],
+  "source_path": "07_QA验收/P4-C/rei-school/raw/quad-nw-attempt-01.png",
+  "source_sha256": "10b78cc8dbd0f087faa4ce5b6afc7b4a0a0b0435005aed8efe9b7cf3ceaa3277",
+  "prompt_path": "07_QA验收/P4-C/rei-school/raw/quad-nw-attempt-01.txt",
+  "prompt_sha256": "49b12c65dfb9f7fb73d74824420d245d3fd0372c02f7e57cda6c11bec68ca239",
+  "raw": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_zero": 1331689,
+    "alpha_partial": 238964,
+    "alpha_opaque": 1875,
+    "alpha_bbox": [
+      324,
+      14,
+      2070,
+      707
+    ],
+    "solid_x_spans": [
+      [
+        328,
+        532
+      ],
+      [
+        983,
+        1184
+      ],
+      [
+        1636,
+        1844
+      ]
+    ],
+    "raw_border_alpha_max": 0,
+    "raw_border_transparent": true,
+    "registration_alpha_floor": 1,
+    "raw_alpha_one_pixels": 8995,
+    "effective_alpha_bbox": [
+      324,
+      14,
+      1848,
+      707
+    ],
+    "alpha_cleanup": {
+      "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+      "threshold_u8": 1,
+      "changed_pixels": 8995,
+      "source_png_sha256": "10b78cc8dbd0f087faa4ce5b6afc7b4a0a0b0435005aed8efe9b7cf3ceaa3277",
+      "pre_cleanup_rgba_pixel_sha256": "c887ba82d48eb12333cb137ff32a23b125fd72113f657e0b9cb6875cebf9d1a3",
+      "post_cleanup_rgba_pixel_sha256": "6565e457a41425c61235a2557e9bf85b2c283d98e3aa46765aad51ee9aa2d027"
+    },
+    "raw_internal_split_alpha_max": [
+      0,
+      0
+    ],
+    "split_edges": [
+      0,
+      757,
+      1410,
+      2172
+    ]
+  },
+  "errors": [],
+  "registration": {
+    "row_isotropic_scale": 0.27365356622998543,
+    "source_height_baseline": 687,
+    "shared_source_ground": null,
+    "frames": [
+      {
+        "id": "292.5",
+        "source_solid_bbox_in_strip_slot": [
+          328,
+          17,
+          532,
+          704
+        ],
+        "offset": [
+          71,
+          6
+        ],
+        "registered_solid_bbox": [
+          72,
+          7,
+          127,
+          194
+        ],
+        "solid_height": 187,
+        "foot_anchor_measured": [
+          95.5,
+          194
+        ],
+        "nontransparent_pixels": 6170,
+        "solid_pixels": 5316,
+        "solid_components": 1,
+        "alpha_components": 1,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          71,
+          6,
+          128,
+          195
+        ],
+        "margins": {
+          "left": 71,
+          "top": 6,
+          "right": 64,
+          "bottom": 13
+        },
+        "pixel_sha256": "882dfec63a25ee6d3c4287fec2b6065d95721c8334fe530ff91a592ba8d1d139",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-school/attempts/quad-nw-attempt-01/292.5.png",
+        "sha256": "50e5644e4135f3d1192b466caa42f41b3b9dd25f293c41aec106fddeb68e8c97",
+        "detached_alpha_components": []
+      },
+      {
+        "id": "315",
+        "source_solid_bbox_in_strip_slot": [
+          226,
+          18,
+          427,
+          704
+        ],
+        "offset": [
+          71,
+          6
+        ],
+        "registered_solid_bbox": [
+          72,
+          7,
+          127,
+          194
+        ],
+        "solid_height": 187,
+        "foot_anchor_measured": [
+          96.5,
+          194
+        ],
+        "nontransparent_pixels": 6217,
+        "solid_pixels": 5399,
+        "solid_components": 1,
+        "alpha_components": 1,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          71,
+          6,
+          128,
+          195
+        ],
+        "margins": {
+          "left": 71,
+          "top": 6,
+          "right": 64,
+          "bottom": 13
+        },
+        "pixel_sha256": "96624ca2f36abe01ab8c5e6dea76d39ed0bf802ab68012bc7634e3f215435e20",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-school/attempts/quad-nw-attempt-01/315.png",
+        "sha256": "476b18ea150cf8157a565fdb38f0378e49dfd986084e98cd9ce45000ccf9d2cd",
+        "detached_alpha_components": []
+      },
+      {
+        "id": "337.5",
+        "source_solid_bbox_in_strip_slot": [
+          226,
+          17,
+          434,
+          704
+        ],
+        "offset": [
+          70,
+          6
+        ],
+        "registered_solid_bbox": [
+          71,
+          7,
+          128,
+          194
+        ],
+        "solid_height": 187,
+        "foot_anchor_measured": [
+          96.5,
+          194
+        ],
+        "nontransparent_pixels": 6251,
+        "solid_pixels": 5426,
+        "solid_components": 1,
+        "alpha_components": 2,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          70,
+          6,
+          129,
+          195
+        ],
+        "margins": {
+          "left": 70,
+          "top": 6,
+          "right": 63,
+          "bottom": 13
+        },
+        "pixel_sha256": "da58bbe17e55ca3e620dcd8fee8e2b70b4c9902b06e72ad5402c03d9ce3a38bd",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-school/attempts/quad-nw-attempt-01/337.5.png",
+        "sha256": "bcfb8bfdc5b3e94662f00f848afbaefbb8a07c184cd8e256b749357d5ce9f279",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 2,
+            "max_alpha_u8": 1
+          }
+        ]
+      }
+    ]
+  },
+  "structure": "STRUCTURE_PASS"
+}

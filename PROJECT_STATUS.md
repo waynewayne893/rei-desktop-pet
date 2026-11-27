@@ -24,14 +24,14 @@
   - **严格未标通过的细项边界**：16 方向逐项映射读数、`R0C6` 中性参考格中心死区实际显示行为（`NEUTRAL_CELL_0_6` vs `IDLE_FALLBACK`）、完全退出重启持久化、以及任务/事件触发动画（`waving`、`jumping`、`failed`、`waiting`、`running`、`review`）均尚未完成逐项实测，留待后续专项验证或 P5 终验，**不得标记为已全部通过**。
   - 临时方向测试素材严格隔离于 `07_QA验收/P4-COMPAT/`，不计入正式 P4-C 产物。
 - **Antigravity 本地 `image-generator` 实测结果**：**`NATIVE_ALPHA_BLOCKED`**（仅输出不透明 RGB JPEG、最大 `16:9`、无 `transparent_background: true`），详见 [AGY_IMAGE_GEN_CAPABILITY_REPORT.md](07_QA验收/P4-B-FIX/capability-test/AGY_IMAGE_GEN_CAPABILITY_REPORT.md)。
-- **后续裁定**：`P4-B-FIX_SKIPPED`、`P4-C_PRODUCTION_AUTHORIZED`。P4-C 按统一基准开独立分支。P4-D、P5、P6 仍待逐阶段授权。
+- **后续裁定**：`P4-B-FIX_SKIPPED`、`P4-C_PRODUCTION_AUTHORIZED`。远端 main 已核验统一基准 `6b4229f`。独立 P4-C 任务分支完成 48 帧结构检查，其中黑服 4 帧保留人工通过，44 帧待人工终审。P4-D、P5、P6 仍待逐阶段授权。
 
 ---
 
 ## 2. 当前任务队列
 
 1. 统一结项提交包含兼容性预验证、Review Center、Codex Cloud 专项试验和两份原始人工验收记录。 [远端 fast-forward 方案](07_QA验收/P4-B/human-acceptance/CLOSEOUT_AND_MAIN_FF_PLAN.md)
-2. 基准统一后进入 P4-C。黑服四方向已核验原图和帧哈希，可按人工验收绑定登记。其余 44 方向帧待生成及终审。
+2. P4-C 已在独立任务分支完成 48 帧离线 QA。待批后推送该分支，44 新帧待人工验收。 [P4-C 方向候选 QA](07_QA验收/P4-C/P4C_PRODUCTION_QA_REPORT.md)
 3. P4-D、P5、P6 等待逐阶段授权。
 
 详见：[CLOUD_HANDOFF.md](CLOUD_HANDOFF.md) · [CLOUD_REPRODUCIBILITY_REPORT.md](CLOUD_REPRODUCIBILITY_REPORT.md) · [WINDOWS_COMPAT_TEST_REPORT.md](07_QA验收/P4-COMPAT/WINDOWS_COMPAT_TEST_REPORT.md)

@@ -1,0 +1,307 @@
+{
+  "form": "rei-school",
+  "batch": "cardinals-attempt-01",
+  "angles": [
+    "000",
+    "090",
+    "180",
+    "270"
+  ],
+  "source_path": "07_QA验收/P4-C/rei-school/raw/cardinals-attempt-01.png",
+  "source_sha256": "2af64a1fea8d669ab8275f8ac845dfab7d04e2d979a78505ae7428d47d7b8dfb",
+  "prompt_path": "07_QA验收/P4-C/rei-school/raw/cardinals-attempt-01.txt",
+  "prompt_sha256": "420ae8204a339699ae5cc5a696d8b3624f1d7ffa5e03276943c44175b1602c04",
+  "raw": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_zero": 1263145,
+    "alpha_partial": 306886,
+    "alpha_opaque": 2497,
+    "alpha_bbox": [
+      65,
+      15,
+      2134,
+      706
+    ],
+    "solid_x_spans": [
+      [
+        238,
+        436
+      ],
+      [
+        737,
+        929
+      ],
+      [
+        1236,
+        1438
+      ],
+      [
+        1741,
+        1942
+      ]
+    ],
+    "raw_border_alpha_max": 0,
+    "raw_border_transparent": true,
+    "registration_alpha_floor": 1,
+    "raw_alpha_one_pixels": 13380,
+    "effective_alpha_bbox": [
+      235,
+      19,
+      1947,
+      705
+    ],
+    "alpha_cleanup": {
+      "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+      "threshold_u8": 1,
+      "changed_pixels": 13380,
+      "source_png_sha256": "2af64a1fea8d669ab8275f8ac845dfab7d04e2d979a78505ae7428d47d7b8dfb",
+      "pre_cleanup_rgba_pixel_sha256": "c773305478f86a405acb3f6e80a42291543c00fec48d1d0040e0c98d90c0b161",
+      "post_cleanup_rgba_pixel_sha256": "73afdb9a59af42732b92141692ac43c4b638c9198f70e698855162165edd522f"
+    },
+    "raw_internal_split_alpha_max": [
+      0,
+      0,
+      1
+    ],
+    "split_edges": [
+      0,
+      586,
+      1082,
+      1589,
+      2172
+    ]
+  },
+  "errors": [],
+  "registration": {
+    "row_isotropic_scale": 0.2783123612139156,
+    "source_height_baseline": 675.5,
+    "shared_source_ground": null,
+    "frames": [
+      {
+        "id": "000",
+        "source_solid_bbox_in_strip_slot": [
+          238,
+          27,
+          436,
+          702
+        ],
+        "offset": [
+          72,
+          6
+        ],
+        "registered_solid_bbox": [
+          73,
+          7,
+          128,
+          195
+        ],
+        "solid_height": 188,
+        "foot_anchor_measured": [
+          96.5,
+          195
+        ],
+        "nontransparent_pixels": 6171,
+        "solid_pixels": 5285,
+        "solid_components": 1,
+        "alpha_components": 2,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          72,
+          6,
+          129,
+          196
+        ],
+        "margins": {
+          "left": 72,
+          "top": 6,
+          "right": 63,
+          "bottom": 12
+        },
+        "pixel_sha256": "1732beb7cda1f6797ba455ad57f76bd6a7b29a4094e9f886dd1627ae7821f86d",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-school/attempts/cardinals-attempt-01/000.png",
+        "sha256": "8e36902a6c7ce63e744e8aa82d981ea23dcc8efcb4bd18a94fa5ad69e9dbf859",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 9,
+            "max_alpha_u8": 3
+          }
+        ]
+      },
+      {
+        "id": "090",
+        "source_solid_bbox_in_strip_slot": [
+          151,
+          24,
+          343,
+          702
+        ],
+        "offset": [
+          70,
+          5
+        ],
+        "registered_solid_bbox": [
+          72,
+          6,
+          125,
+          195
+        ],
+        "solid_height": 189,
+        "foot_anchor_measured": [
+          96.0,
+          195
+        ],
+        "nontransparent_pixels": 6134,
+        "solid_pixels": 5281,
+        "solid_components": 1,
+        "alpha_components": 3,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          70,
+          5,
+          126,
+          196
+        ],
+        "margins": {
+          "left": 70,
+          "top": 5,
+          "right": 66,
+          "bottom": 12
+        },
+        "pixel_sha256": "645e904ee29be793521e9c40bdb55fb3711c2df504ff765ac39e1664b7866f3a",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-school/attempts/cardinals-attempt-01/090.png",
+        "sha256": "f1e06c1e1bb68ed2e2b14ab141212b46aae630a743ca829a66be36bb8d9eab78",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 5,
+            "max_alpha_u8": 3
+          },
+          {
+            "pixel_count": 2,
+            "max_alpha_u8": 1
+          }
+        ]
+      },
+      {
+        "id": "180",
+        "source_solid_bbox_in_strip_slot": [
+          154,
+          32,
+          356,
+          702
+        ],
+        "offset": [
+          70,
+          8
+        ],
+        "registered_solid_bbox": [
+          71,
+          9,
+          127,
+          195
+        ],
+        "solid_height": 186,
+        "foot_anchor_measured": [
+          96.0,
+          195
+        ],
+        "nontransparent_pixels": 6130,
+        "solid_pixels": 5297,
+        "solid_components": 1,
+        "alpha_components": 1,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          70,
+          8,
+          128,
+          196
+        ],
+        "margins": {
+          "left": 70,
+          "top": 8,
+          "right": 64,
+          "bottom": 12
+        },
+        "pixel_sha256": "ec5fe8a77daf098ac01148a443a3a40f8c0a002a48d23667173ce430d2ef452e",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-school/attempts/cardinals-attempt-01/180.png",
+        "sha256": "229a8302d650f7e0a3b75fe07e443441e631b9827e32fe49796ea941dd3c37d1",
+        "detached_alpha_components": []
+      },
+      {
+        "id": "270",
+        "source_solid_bbox_in_strip_slot": [
+          152,
+          26,
+          353,
+          702
+        ],
+        "offset": [
+          72,
+          6
+        ],
+        "registered_solid_bbox": [
+          73,
+          7,
+          129,
+          195
+        ],
+        "solid_height": 188,
+        "foot_anchor_measured": [
+          96.5,
+          195
+        ],
+        "nontransparent_pixels": 6157,
+        "solid_pixels": 5292,
+        "solid_components": 1,
+        "alpha_components": 4,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          72,
+          6,
+          130,
+          196
+        ],
+        "margins": {
+          "left": 72,
+          "top": 6,
+          "right": 62,
+          "bottom": 12
+        },
+        "pixel_sha256": "4326f2877d68c6fb4b03ccb76e08ad1d3de78a3f6c44bafedf3ecca1f91e1400",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-school/attempts/cardinals-attempt-01/270.png",
+        "sha256": "a30e46c6564346a1445ef19361823fa769c3a1f9531c62d529b0445470ff9373",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 15,
+            "max_alpha_u8": 4
+          },
+          {
+            "pixel_count": 3,
+            "max_alpha_u8": 2
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 1
+          }
+        ]
+      }
+    ]
+  },
+  "structure": "STRUCTURE_PASS"
+}

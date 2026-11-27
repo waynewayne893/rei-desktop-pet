@@ -1,0 +1,265 @@
+{
+  "form": "rei-black",
+  "batch": "lower-left-02",
+  "angles": [
+    "202.5",
+    "225",
+    "247.5"
+  ],
+  "source_path": "07_QA验收/P4-C/rei-black/raw/lower-left-02.png",
+  "source_sha256": "0ad1c5b907c2793304d6da26b7f92f5efff68b720c09017a6ab93c527281955a",
+  "prompt_path": "07_QA验收/P4-C/rei-black/raw/lower-left-02.txt",
+  "prompt_sha256": "cabb5f5b2b492aee026892d92be39f6090d2b91b38446ac88ed44fb82f274e7d",
+  "raw": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_zero": 1355721,
+    "alpha_partial": 214486,
+    "alpha_opaque": 2321,
+    "alpha_bbox": [
+      55,
+      29,
+      2141,
+      690
+    ],
+    "solid_x_spans": [
+      [
+        379,
+        574
+      ],
+      [
+        975,
+        1170
+      ],
+      [
+        1566,
+        1767
+      ]
+    ],
+    "raw_border_alpha_max": 0,
+    "raw_border_transparent": true,
+    "registration_alpha_floor": 1,
+    "raw_alpha_one_pixels": 7677,
+    "effective_alpha_bbox": [
+      374,
+      30,
+      1770,
+      685
+    ],
+    "alpha_cleanup": {
+      "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+      "threshold_u8": 1,
+      "changed_pixels": 7677,
+      "source_png_sha256": "0ad1c5b907c2793304d6da26b7f92f5efff68b720c09017a6ab93c527281955a",
+      "pre_cleanup_rgba_pixel_sha256": "5a632b4e26ca06cc3896b1468899240c4929a1fc520791b9dd7c7dbd89a31d09",
+      "post_cleanup_rgba_pixel_sha256": "187a55b5a02c1a63c6261afa44ff900e1bbe8bedd9ed9a4692b3c6480fba3997"
+    },
+    "raw_internal_split_alpha_max": [
+      0,
+      0
+    ],
+    "split_edges": [
+      0,
+      774,
+      1368,
+      2172
+    ]
+  },
+  "errors": [],
+  "registration": {
+    "row_isotropic_scale": 0.2896764252696456,
+    "source_height_baseline": 649,
+    "shared_source_ground": null,
+    "frames": [
+      {
+        "id": "202.5",
+        "source_solid_bbox_in_strip_slot": [
+          379,
+          40,
+          574,
+          682
+        ],
+        "offset": [
+          65,
+          8
+        ],
+        "registered_solid_bbox": [
+          66,
+          9,
+          123,
+          195
+        ],
+        "solid_height": 186,
+        "foot_anchor_measured": [
+          96.0,
+          195
+        ],
+        "nontransparent_pixels": 6304,
+        "solid_pixels": 5415,
+        "solid_components": 1,
+        "alpha_components": 5,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          65,
+          8,
+          124,
+          196
+        ],
+        "margins": {
+          "left": 65,
+          "top": 8,
+          "right": 68,
+          "bottom": 12
+        },
+        "pixel_sha256": "01ce338513d6d6b2e15b76c7307b14090d221687f39b9ccb2767d6e9c00326df",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-black/attempts/lower-left-02/202.5.png",
+        "sha256": "94bf10e8b8a9808833d163023c252757e3a968c7b96356b0742698451a013f2e",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 9,
+            "max_alpha_u8": 3
+          },
+          {
+            "pixel_count": 5,
+            "max_alpha_u8": 4
+          },
+          {
+            "pixel_count": 2,
+            "max_alpha_u8": 3
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 3
+          }
+        ]
+      },
+      {
+        "id": "225",
+        "source_solid_bbox_in_strip_slot": [
+          201,
+          33,
+          396,
+          682
+        ],
+        "offset": [
+          64,
+          6
+        ],
+        "registered_solid_bbox": [
+          66,
+          7,
+          122,
+          194
+        ],
+        "solid_height": 187,
+        "foot_anchor_measured": [
+          96.0,
+          194
+        ],
+        "nontransparent_pixels": 6269,
+        "solid_pixels": 5385,
+        "solid_components": 1,
+        "alpha_components": 5,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          64,
+          6,
+          123,
+          195
+        ],
+        "margins": {
+          "left": 64,
+          "top": 6,
+          "right": 69,
+          "bottom": 13
+        },
+        "pixel_sha256": "8da81f75c5058c0657069813f517e2d40a61272376262d4a715f03501b112b03",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-black/attempts/lower-left-02/225.png",
+        "sha256": "fb7c51c532978d4e8060890f140324751fb7b48e0d8ce163e26c8376839ee120",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 6,
+            "max_alpha_u8": 2
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 1
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 1
+          },
+          {
+            "pixel_count": 1,
+            "max_alpha_u8": 1
+          }
+        ]
+      },
+      {
+        "id": "247.5",
+        "source_solid_bbox_in_strip_slot": [
+          198,
+          32,
+          399,
+          682
+        ],
+        "offset": [
+          63,
+          6
+        ],
+        "registered_solid_bbox": [
+          64,
+          7,
+          122,
+          195
+        ],
+        "solid_height": 188,
+        "foot_anchor_measured": [
+          95.0,
+          195
+        ],
+        "nontransparent_pixels": 6374,
+        "solid_pixels": 5466,
+        "solid_components": 1,
+        "alpha_components": 2,
+        "hidden_rgb_pixels": 0,
+        "border_non_transparent_pixels": 0,
+        "alpha_bbox": [
+          63,
+          6,
+          123,
+          196
+        ],
+        "margins": {
+          "left": 63,
+          "top": 6,
+          "right": 69,
+          "bottom": 12
+        },
+        "pixel_sha256": "7c0d1b60c700f87896269474d18d2a7ebf6e661ec30c4899750e1247ebc499e9",
+        "errors": [],
+        "path": "07_QA验收/P4-C/rei-black/attempts/lower-left-02/247.5.png",
+        "sha256": "42f329b8f59f4dc93ac8c846d28b2cc0b6698acda0c2af44458c18ee1a07a155",
+        "detached_alpha_components": [
+          {
+            "pixel_count": 4,
+            "max_alpha_u8": 3
+          }
+        ]
+      }
+    ]
+  },
+  "structure": "STRUCTURE_PASS"
+}
