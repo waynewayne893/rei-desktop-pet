@@ -1,0 +1,242 @@
+{
+  "school_alpha48_ablation": {
+    "idle": [
+      {
+        "frame": 1,
+        "nonzero_alpha_before": 5754,
+        "nonzero_alpha_after": 5640,
+        "lost_solid_pixels_alpha128": 64,
+        "lost_solid_hair_roi_alpha128": 26,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 2,
+        "nonzero_alpha_before": 5796,
+        "nonzero_alpha_after": 5672,
+        "lost_solid_pixels_alpha128": 67,
+        "lost_solid_hair_roi_alpha128": 33,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 3,
+        "nonzero_alpha_before": 5858,
+        "nonzero_alpha_after": 5688,
+        "lost_solid_pixels_alpha128": 76,
+        "lost_solid_hair_roi_alpha128": 33,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 4,
+        "nonzero_alpha_before": 5824,
+        "nonzero_alpha_after": 5665,
+        "lost_solid_pixels_alpha128": 78,
+        "lost_solid_hair_roi_alpha128": 34,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 5,
+        "nonzero_alpha_before": 5789,
+        "nonzero_alpha_after": 5656,
+        "lost_solid_pixels_alpha128": 78,
+        "lost_solid_hair_roi_alpha128": 32,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 6,
+        "nonzero_alpha_before": 5793,
+        "nonzero_alpha_after": 5661,
+        "lost_solid_pixels_alpha128": 65,
+        "lost_solid_hair_roi_alpha128": 38,
+        "erased_opaque_pixels": 0
+      }
+    ],
+    "running-right": [
+      {
+        "frame": 1,
+        "nonzero_alpha_before": 5683,
+        "nonzero_alpha_after": 5578,
+        "lost_solid_pixels_alpha128": 53,
+        "lost_solid_hair_roi_alpha128": 17,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 2,
+        "nonzero_alpha_before": 5528,
+        "nonzero_alpha_after": 5442,
+        "lost_solid_pixels_alpha128": 58,
+        "lost_solid_hair_roi_alpha128": 22,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 3,
+        "nonzero_alpha_before": 5437,
+        "nonzero_alpha_after": 5328,
+        "lost_solid_pixels_alpha128": 55,
+        "lost_solid_hair_roi_alpha128": 17,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 4,
+        "nonzero_alpha_before": 5617,
+        "nonzero_alpha_after": 5500,
+        "lost_solid_pixels_alpha128": 48,
+        "lost_solid_hair_roi_alpha128": 18,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 5,
+        "nonzero_alpha_before": 5535,
+        "nonzero_alpha_after": 5438,
+        "lost_solid_pixels_alpha128": 42,
+        "lost_solid_hair_roi_alpha128": 13,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 6,
+        "nonzero_alpha_before": 5532,
+        "nonzero_alpha_after": 5444,
+        "lost_solid_pixels_alpha128": 56,
+        "lost_solid_hair_roi_alpha128": 17,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 7,
+        "nonzero_alpha_before": 5425,
+        "nonzero_alpha_after": 5329,
+        "lost_solid_pixels_alpha128": 41,
+        "lost_solid_hair_roi_alpha128": 16,
+        "erased_opaque_pixels": 0
+      },
+      {
+        "frame": 8,
+        "nonzero_alpha_before": 5650,
+        "nonzero_alpha_after": 5551,
+        "lost_solid_pixels_alpha128": 55,
+        "lost_solid_hair_roi_alpha128": 19,
+        "erased_opaque_pixels": 0
+      }
+    ]
+  },
+  "gait_ground": {
+    "rei-school": [
+      {
+        "frame": 1,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      },
+      {
+        "frame": 2,
+        "solid_bottom": 194,
+        "ground_gap_at_alpha128": 1
+      },
+      {
+        "frame": 3,
+        "solid_bottom": 194,
+        "ground_gap_at_alpha128": 1
+      },
+      {
+        "frame": 4,
+        "solid_bottom": 186,
+        "ground_gap_at_alpha128": 9
+      },
+      {
+        "frame": 5,
+        "solid_bottom": 194,
+        "ground_gap_at_alpha128": 1
+      },
+      {
+        "frame": 6,
+        "solid_bottom": 194,
+        "ground_gap_at_alpha128": 1
+      },
+      {
+        "frame": 7,
+        "solid_bottom": 194,
+        "ground_gap_at_alpha128": 1
+      },
+      {
+        "frame": 8,
+        "solid_bottom": 183,
+        "ground_gap_at_alpha128": 12
+      }
+    ],
+    "rei-black": [
+      {
+        "frame": 1,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      },
+      {
+        "frame": 2,
+        "solid_bottom": 188,
+        "ground_gap_at_alpha128": 7
+      },
+      {
+        "frame": 3,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      },
+      {
+        "frame": 4,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      },
+      {
+        "frame": 5,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      },
+      {
+        "frame": 6,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      },
+      {
+        "frame": 7,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      },
+      {
+        "frame": 8,
+        "solid_bottom": 195,
+        "ground_gap_at_alpha128": 0
+      }
+    ]
+  },
+  "black_contrast": [
+    {
+      "frame": 1,
+      "lower_body_alpha128_pixels": 2096,
+      "luma_difference_under_12_pct": 55.5
+    },
+    {
+      "frame": 3,
+      "lower_body_alpha128_pixels": 1771,
+      "luma_difference_under_12_pct": 53.4
+    },
+    {
+      "frame": 5,
+      "lower_body_alpha128_pixels": 2028,
+      "luma_difference_under_12_pct": 58.1
+    },
+    {
+      "frame": 8,
+      "lower_body_alpha128_pixels": 2095,
+      "luma_difference_under_12_pct": 54.1
+    }
+  ],
+  "images": [
+    {
+      "path": "07_QA验收/P4-A/continue/school-alpha48-before-after.png",
+      "sha256": "b1e07a7dac5db8d0f3e416331e51bc1efddc02443543449b516589dfbf284ecb"
+    },
+    {
+      "path": "07_QA验收/P4-A/continue/preserved-gait-transitions.png",
+      "sha256": "95944484c78216804cf0f61af90dba18c32da5568dd6ff0a9a23560001482768"
+    },
+    {
+      "path": "07_QA验收/P4-A/continue/black-forearm-and-contrast.png",
+      "sha256": "941a6d35069d2b41b5b97612595cca711a9339e895ada71f52241f6955fde186"
+    }
+  ]
+}

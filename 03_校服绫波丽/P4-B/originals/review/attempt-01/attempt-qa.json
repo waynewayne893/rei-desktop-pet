@@ -1,0 +1,44 @@
+{
+  "id": "rei-school",
+  "state": "review",
+  "attempt": "attempt-01",
+  "source_path": "03_校服绫波丽/P4-B/originals/review/attempt-01/source.png",
+  "sha256": "f206d391d1ba00af8ef54e42d7423272fb72eb026c9a06d152ece4c1865d27da",
+  "native_alpha_pass": true,
+  "status": "STRUCTURE_READY_FOR_VISUAL_REVIEW",
+  "size": [
+    2172,
+    724
+  ],
+  "mode": "RGBA",
+  "alpha_zero": 1028210,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "row_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/row-evidence.json",
+  "contact_path": "03_校服绫波丽/P4-B/candidates/attempt-01/review/contact-sheet.png",
+  "min_top_margin": 5,
+  "solid_heights": [
+    188,
+    189,
+    183,
+    184,
+    189,
+    188
+  ],
+  "solid_bottoms": [
+    195,
+    195,
+    195,
+    195,
+    195,
+    195
+  ]
+}

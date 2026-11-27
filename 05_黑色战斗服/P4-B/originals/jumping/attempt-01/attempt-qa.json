@@ -1,0 +1,42 @@
+{
+  "id": "rei-black",
+  "state": "jumping",
+  "attempt": "attempt-01",
+  "source_path": "05_黑色战斗服/P4-B/originals/jumping/attempt-01/source.png",
+  "sha256": "b6686cbcf4806d08a17c6f43d1dcc27fbaa7ac3d12e08317368ca33f53102b69",
+  "native_alpha_pass": true,
+  "status": "STRUCTURE_READY_FOR_VISUAL_REVIEW",
+  "size": [
+    1983,
+    793
+  ],
+  "mode": "RGBA",
+  "alpha_zero": 1007011,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "row_path": "05_黑色战斗服/P4-B/candidates/attempt-01/jumping/row-evidence.json",
+  "contact_path": "05_黑色战斗服/P4-B/candidates/attempt-01/jumping/contact-sheet.png",
+  "min_top_margin": 4,
+  "solid_heights": [
+    162,
+    176,
+    177,
+    174,
+    189
+  ],
+  "solid_bottoms": [
+    195,
+    195,
+    182,
+    195,
+    195
+  ]
+}

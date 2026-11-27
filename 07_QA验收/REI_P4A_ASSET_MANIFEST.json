@@ -1,0 +1,1504 @@
+{
+  "schema_version": 1,
+  "stage": "REI-PET-P4-A",
+  "date": "2026-11-27",
+  "status": "PARTIAL",
+  "gate": {
+    "status": "pass",
+    "user_identity_confirmation": "确认三套母版与白服修复版",
+    "historical_download_source": "missing; retain record",
+    "solid_idle_height_px": 188,
+    "frame_px": [
+      192,
+      208
+    ],
+    "anchor": [
+      96,
+      195
+    ]
+  },
+  "input_assets": [
+    {
+      "id": "rei-black",
+      "source_sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb",
+      "master_path": "02_标准化母版/rei-black/master-rgba.png",
+      "master_sha256": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+      "native_sha256": "0f43ec8c132b17fc9d531d7ace855c0d7285d404fbded86f9ee396aff5dab302",
+      "native_margins_ltrb": [
+        66,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "id": "rei-school",
+      "source_sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1",
+      "master_path": "02_标准化母版/rei-school/master-rgba.png",
+      "master_sha256": "38b2db6fabc1daf5ad5b368152a12cc0a92a22a0abb12ce0dafcd588f61e8528",
+      "native_sha256": "ac82f3d0a6eb17945a7e25266ab03e3f93f82506067da65975c9e012df9f157d",
+      "native_margins_ltrb": [
+        65,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "id": "rei-white",
+      "source_sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019",
+      "master_path": "02_标准化母版/P3-FIX/rei-white-master-rgba-p3-fix.png",
+      "master_sha256": "92ff3c4d9c33534a58d4c54d0556bef7d98dfe49cea6804f9b29ec90ff174c5c",
+      "native_sha256": "82fbe069ad19e8b599d791c75897fcccf97f9b946b5834c873fabe5e554f5bf6",
+      "native_margins_ltrb": [
+        66,
+        6,
+        67,
+        12
+      ]
+    }
+  ],
+  "registered_rows": [
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "source": {
+        "path": "03_校服绫波丽/P4-A/originals/idle/attempt-01/source.png",
+        "sha256": "376d787ff16f08c5d7f7dab27ea3440455c420931f4a497b581de59e83d73d85",
+        "bytes": 2710922,
+        "size": [
+          2172,
+          724
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 19223
+      },
+      "registered_row_scale_xy": [
+        0.2712842712842713,
+        0.2712842712842713
+      ],
+      "source_ground_y": 709,
+      "boundary_anchor_xy": [
+        96,
+        195
+      ],
+      "matte_alpha_floor": 48,
+      "method": "native-alpha major connected poses, shared isotropic row registration",
+      "frame_duration_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "frames": [
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/frames/00.png",
+          "sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+          "bytes": 18474,
+          "source_origin_box": [
+            104,
+            11,
+            317,
+            713
+          ],
+          "source_local_solid_bbox": [
+            5,
+            5,
+            208,
+            698
+          ],
+          "source_horizontal_anchor": 105.5,
+          "solid_bbox": [
+            69,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            68,
+            6,
+            125,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            68,
+            6,
+            67,
+            12
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/frames/01.png",
+          "sha256": "210a1e7955ea7ccb0c74e3d3c069ed3f4959815143f130ddf8cb18f5ebb1c300",
+          "bytes": 18559,
+          "source_origin_box": [
+            455,
+            11,
+            668,
+            713
+          ],
+          "source_local_solid_bbox": [
+            4,
+            5,
+            208,
+            698
+          ],
+          "source_horizontal_anchor": 105,
+          "solid_bbox": [
+            69,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            68,
+            6,
+            125,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            68,
+            6,
+            67,
+            12
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/frames/02.png",
+          "sha256": "481874ee79839dabe2ebae19c55115f16ea4fb1b02df78c176d05717d8bb1416",
+          "bytes": 18565,
+          "source_origin_box": [
+            805,
+            11,
+            1018,
+            713
+          ],
+          "source_local_solid_bbox": [
+            5,
+            5,
+            209,
+            698
+          ],
+          "source_horizontal_anchor": 104.5,
+          "solid_bbox": [
+            69,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            68,
+            6,
+            125,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            68,
+            6,
+            67,
+            12
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/frames/03.png",
+          "sha256": "df966e8ee3f8e79be77bf38366206869ad43dee8c9ba62f53593e48e81627bd5",
+          "bytes": 18461,
+          "source_origin_box": [
+            1155,
+            11,
+            1368,
+            713
+          ],
+          "source_local_solid_bbox": [
+            4,
+            5,
+            208,
+            698
+          ],
+          "source_horizontal_anchor": 104.5,
+          "solid_bbox": [
+            69,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            68,
+            6,
+            125,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            68,
+            6,
+            67,
+            12
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/frames/04.png",
+          "sha256": "0ed679baecc7b0d1870c4a57bd50bea333e7f8d3a3d3e6a20f0c16821ef1a0c3",
+          "bytes": 18540,
+          "source_origin_box": [
+            1503,
+            11,
+            1718,
+            713
+          ],
+          "source_local_solid_bbox": [
+            5,
+            5,
+            210,
+            698
+          ],
+          "source_horizontal_anchor": 106.5,
+          "solid_bbox": [
+            69,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            68,
+            6,
+            125,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            68,
+            6,
+            67,
+            12
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/frames/05.png",
+          "sha256": "c9443243ef3bd80b4031e6cd324f369017c1e4988916ac373f93d66867d26af4",
+          "bytes": 18515,
+          "source_origin_box": [
+            1853,
+            11,
+            2068,
+            713
+          ],
+          "source_local_solid_bbox": [
+            5,
+            5,
+            210,
+            698
+          ],
+          "source_horizontal_anchor": 107,
+          "solid_bbox": [
+            68,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            68,
+            6,
+            125,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            68,
+            6,
+            67,
+            12
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/native-first-frame.png",
+          "sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+          "bytes": 18474
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/contact-sheet.png",
+          "sha256": "e77a866ac199eb0da72f2c603ce92fac41681cbf7b76b902627237056bccb963",
+          "bytes": 177584
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/idle-dark.gif",
+          "sha256": "a831ec4a90b2f77a51aade82b36d786a3a896ca4012f38db1d37b45bda99ca4d",
+          "bytes": 48955
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/idle/idle-light.gif",
+          "sha256": "0953007c7ad8e3376e8c728cfb69029e31c6b31d21ea7fd5107af44877784c8f",
+          "bytes": 48664
+        }
+      ]
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "source": {
+        "path": "03_校服绫波丽/P4-A/originals/running-right/attempt-01/source.png",
+        "sha256": "e9b7ce6efc3162931a9657be50724d0045e761d43a42b332462ebe08c18cba9f",
+        "bytes": 2307760,
+        "size": [
+          2172,
+          724
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 108687
+      },
+      "registered_row_scale_xy": [
+        0.27941176470588236,
+        0.27941176470588236
+      ],
+      "source_ground_y": 702,
+      "boundary_anchor_xy": [
+        96,
+        195
+      ],
+      "matte_alpha_floor": 48,
+      "method": "native-alpha major connected poses, shared isotropic row registration",
+      "frame_duration_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "frames": [
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/00.png",
+          "sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00",
+          "bytes": 18787,
+          "source_origin_box": [
+            35,
+            20,
+            258,
+            706
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            219,
+            682
+          ],
+          "source_horizontal_anchor": 110,
+          "solid_bbox": [
+            67,
+            6,
+            126,
+            195
+          ],
+          "nonzero_bbox": [
+            66,
+            5,
+            127,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            66,
+            5,
+            65,
+            12
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/01.png",
+          "sha256": "feec8a714f98d079e49695800e3164d1964d12fd7cc49a24e311bdebf35b7e79",
+          "bytes": 18643,
+          "source_origin_box": [
+            325,
+            21,
+            531,
+            703
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            201,
+            677
+          ],
+          "source_horizontal_anchor": 88.5,
+          "solid_bbox": [
+            73,
+            6,
+            127,
+            194
+          ],
+          "nonzero_bbox": [
+            72,
+            5,
+            128,
+            194
+          ],
+          "transparent_margins_ltrb": [
+            72,
+            5,
+            64,
+            14
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/02.png",
+          "sha256": "52edaddc6bbb56ee34c497a3ced4abe19817ddee23f8aa624f8ad5fb74b943cd",
+          "bytes": 18280,
+          "source_origin_box": [
+            599,
+            20,
+            802,
+            701
+          ],
+          "source_local_solid_bbox": [
+            5,
+            5,
+            198,
+            677
+          ],
+          "source_horizontal_anchor": 91.75,
+          "solid_bbox": [
+            72,
+            6,
+            126,
+            194
+          ],
+          "nonzero_bbox": [
+            71,
+            5,
+            126,
+            194
+          ],
+          "transparent_margins_ltrb": [
+            71,
+            5,
+            66,
+            14
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/03.png",
+          "sha256": "eece125185b95bc8ad4954dd9e1a201cf5d7b2c72b49dc96bbc33b1f93aebd02",
+          "bytes": 18833,
+          "source_origin_box": [
+            807,
+            18,
+            1074,
+            675
+          ],
+          "source_local_solid_bbox": [
+            5,
+            4,
+            262,
+            653
+          ],
+          "source_horizontal_anchor": 149.25,
+          "solid_bbox": [
+            56,
+            5,
+            128,
+            186
+          ],
+          "nonzero_bbox": [
+            55,
+            5,
+            128,
+            187
+          ],
+          "transparent_margins_ltrb": [
+            55,
+            5,
+            64,
+            21
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/04.png",
+          "sha256": "450bf1ca604e126b17d0a4dbff8273c17232190e050a7235e06abfada2150dc7",
+          "bytes": 18333,
+          "source_origin_box": [
+            1119,
+            21,
+            1344,
+            705
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            220,
+            679
+          ],
+          "source_horizontal_anchor": 117,
+          "solid_bbox": [
+            65,
+            6,
+            125,
+            194
+          ],
+          "nonzero_bbox": [
+            64,
+            5,
+            126,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            64,
+            5,
+            66,
+            13
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/05.png",
+          "sha256": "2a74819e0d2b1c9c4b29d4b8e8f4906b23dc36165f431e3254b6d89450c2b5d6",
+          "bytes": 18560,
+          "source_origin_box": [
+            1401,
+            23,
+            1616,
+            704
+          ],
+          "source_local_solid_bbox": [
+            4,
+            5,
+            211,
+            677
+          ],
+          "source_horizontal_anchor": 100,
+          "solid_bbox": [
+            69,
+            7,
+            127,
+            194
+          ],
+          "nonzero_bbox": [
+            69,
+            6,
+            127,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            69,
+            6,
+            65,
+            13
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/06.png",
+          "sha256": "651e46cb86062cf8745b915eb9f3a970c4055e574a1cc96dff7b948ad31d7e30",
+          "bytes": 17866,
+          "source_origin_box": [
+            1679,
+            23,
+            1887,
+            703
+          ],
+          "source_local_solid_bbox": [
+            4,
+            5,
+            204,
+            675
+          ],
+          "source_horizontal_anchor": 95.5,
+          "solid_bbox": [
+            71,
+            7,
+            126,
+            194
+          ],
+          "nonzero_bbox": [
+            70,
+            6,
+            127,
+            194
+          ],
+          "transparent_margins_ltrb": [
+            70,
+            6,
+            65,
+            14
+          ]
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/frames/07.png",
+          "sha256": "18ffade9aa9e008fbe409d861a98a9254a173f232c31808936c89745b0a627f2",
+          "bytes": 18768,
+          "source_origin_box": [
+            1886,
+            20,
+            2158,
+            663
+          ],
+          "source_local_solid_bbox": [
+            5,
+            4,
+            268,
+            639
+          ],
+          "source_horizontal_anchor": 159,
+          "solid_bbox": [
+            53,
+            6,
+            126,
+            183
+          ],
+          "nonzero_bbox": [
+            52,
+            5,
+            127,
+            183
+          ],
+          "transparent_margins_ltrb": [
+            52,
+            5,
+            65,
+            25
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/native-first-frame.png",
+          "sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00",
+          "bytes": 18787
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/contact-sheet.png",
+          "sha256": "32b31a1b87d31e391688d98b349397ba6c19a8911a9f6fadd4639b51f5a5a904",
+          "bytes": 234859
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/running-right-dark.gif",
+          "sha256": "633552a4245c898747c6786e7b05700644ad83aaf96bcdafe9336450227675db",
+          "bytes": 62114
+        },
+        {
+          "path": "03_校服绫波丽/P4-A/selected/running-right/running-right-light.gif",
+          "sha256": "240a080357384cc6714b6f4df64425a673259c5af6bad88fe96d4baf20fc604e",
+          "bytes": 62051
+        }
+      ]
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "source": {
+        "path": "05_黑色战斗服/P4-A/originals/idle/attempt-01/source.png",
+        "sha256": "0ce48630d0b4e366d45d9277d0369a494064e89139b0ca1c482f44a78be8d5ac",
+        "bytes": 1214606,
+        "size": [
+          2172,
+          724
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 996277
+      },
+      "registered_row_scale_xy": [
+        0.26857142857142857,
+        0.26857142857142857
+      ],
+      "source_ground_y": 714,
+      "boundary_anchor_xy": [
+        96,
+        195
+      ],
+      "matte_alpha_floor": 0,
+      "method": "native-alpha major connected poses, shared isotropic row registration",
+      "frame_duration_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "frames": [
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/frames/00.png",
+          "sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455",
+          "bytes": 17554,
+          "source_origin_box": [
+            161,
+            9,
+            373,
+            718
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            208,
+            705
+          ],
+          "source_horizontal_anchor": 111,
+          "solid_bbox": [
+            67,
+            7,
+            122,
+            195
+          ],
+          "nonzero_bbox": [
+            67,
+            6,
+            123,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            67,
+            6,
+            69,
+            12
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/frames/01.png",
+          "sha256": "3cf61021ca7bcd0a6bca6405bb20b498d9ffe305b0a82ab4319fae8e83d19930",
+          "bytes": 17470,
+          "source_origin_box": [
+            494,
+            8,
+            707,
+            718
+          ],
+          "source_local_solid_bbox": [
+            4,
+            5,
+            209,
+            706
+          ],
+          "source_horizontal_anchor": 111,
+          "solid_bbox": [
+            67,
+            7,
+            122,
+            195
+          ],
+          "nonzero_bbox": [
+            67,
+            6,
+            123,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            67,
+            6,
+            69,
+            12
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/frames/02.png",
+          "sha256": "09860803125df4c2eac34c64877d28cae98b4c2901a97da931e1e21d4bf09b28",
+          "bytes": 17468,
+          "source_origin_box": [
+            826,
+            10,
+            1037,
+            718
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            206,
+            704
+          ],
+          "source_horizontal_anchor": 110.5,
+          "solid_bbox": [
+            67,
+            7,
+            122,
+            195
+          ],
+          "nonzero_bbox": [
+            67,
+            6,
+            122,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            67,
+            6,
+            70,
+            12
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/frames/03.png",
+          "sha256": "66c3a767068c6189efb42367a8ee50eb42b76e7aaca2e157fa739693b9cf696f",
+          "bytes": 17542,
+          "source_origin_box": [
+            1156,
+            10,
+            1370,
+            718
+          ],
+          "source_local_solid_bbox": [
+            5,
+            4,
+            210,
+            704
+          ],
+          "source_horizontal_anchor": 112,
+          "solid_bbox": [
+            67,
+            7,
+            122,
+            195
+          ],
+          "nonzero_bbox": [
+            67,
+            6,
+            123,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            67,
+            6,
+            69,
+            12
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/frames/04.png",
+          "sha256": "fa6b66526b64a04f5789c7bb3c7976ee5bcc3560eec22f2368b351d818556c9c",
+          "bytes": 17594,
+          "source_origin_box": [
+            1485,
+            9,
+            1700,
+            718
+          ],
+          "source_local_solid_bbox": [
+            4,
+            5,
+            210,
+            705
+          ],
+          "source_horizontal_anchor": 116,
+          "solid_bbox": [
+            66,
+            7,
+            121,
+            195
+          ],
+          "nonzero_bbox": [
+            65,
+            6,
+            122,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            65,
+            6,
+            70,
+            12
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/frames/05.png",
+          "sha256": "cc4cf523b941bf23a8240f2695d9a3ab41f2bf68b47da61620a40fb710ced371",
+          "bytes": 17540,
+          "source_origin_box": [
+            1817,
+            10,
+            2030,
+            718
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            209,
+            704
+          ],
+          "source_horizontal_anchor": 115,
+          "solid_bbox": [
+            66,
+            7,
+            121,
+            195
+          ],
+          "nonzero_bbox": [
+            66,
+            6,
+            122,
+            196
+          ],
+          "transparent_margins_ltrb": [
+            66,
+            6,
+            70,
+            12
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/native-first-frame.png",
+          "sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455",
+          "bytes": 17554
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/contact-sheet.png",
+          "sha256": "447b66ce2d5f3c18085675428ccf4f05cce02a16544139556b15ec89f3cc27bf",
+          "bytes": 168180
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/idle-dark.gif",
+          "sha256": "b8c336dcb92d144e6a51e9fd957a380c0cc6636972db1911555650c8d80184e9",
+          "bytes": 48207
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/idle/idle-light.gif",
+          "sha256": "1638fc6b453c49717304819eb26d6cae73504cb17eb044a7754c087898445279",
+          "bytes": 48616
+        }
+      ]
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "source": {
+        "path": "05_黑色战斗服/P4-A/originals/running-right/attempt-01/source.png",
+        "sha256": "11711472443a06c866a699046c3cb28f40a536558c2fb622ad683be0d945ea30",
+        "bytes": 1421587,
+        "size": [
+          2172,
+          724
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 930360
+      },
+      "registered_row_scale_xy": [
+        0.2687634024303074,
+        0.2687634024303074
+      ],
+      "source_ground_y": 712,
+      "boundary_anchor_xy": [
+        96,
+        195
+      ],
+      "matte_alpha_floor": 0,
+      "method": "native-alpha major connected poses, shared isotropic row registration",
+      "frame_duration_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "frames": [
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/00.png",
+          "sha256": "155d861b81b59253059834a3b32585dd662503f29432c342fea8902a8099924d",
+          "bytes": 16954,
+          "source_origin_box": [
+            20,
+            8,
+            264,
+            716
+          ],
+          "source_local_solid_bbox": [
+            5,
+            4,
+            239,
+            704
+          ],
+          "source_horizontal_anchor": 133,
+          "solid_bbox": [
+            62,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            61,
+            6,
+            125,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            61,
+            6,
+            67,
+            13
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/01.png",
+          "sha256": "59827a05dee9a7455a72bd917966d6998f51c5077e548c8c30514a315cddf54a",
+          "bytes": 16921,
+          "source_origin_box": [
+            304,
+            8,
+            535,
+            689
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            226,
+            677
+          ],
+          "source_horizontal_anchor": 123,
+          "solid_bbox": [
+            64,
+            7,
+            124,
+            188
+          ],
+          "nonzero_bbox": [
+            64,
+            6,
+            124,
+            188
+          ],
+          "transparent_margins_ltrb": [
+            64,
+            6,
+            68,
+            20
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/02.png",
+          "sha256": "ffdd01daeae428a88a103fdd3bbd0476a45a07f9ad6b9eda451cd3fa23dd9615",
+          "bytes": 16502,
+          "source_origin_box": [
+            581,
+            8,
+            807,
+            715
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            221,
+            703
+          ],
+          "source_horizontal_anchor": 106.5,
+          "solid_bbox": [
+            69,
+            7,
+            127,
+            195
+          ],
+          "nonzero_bbox": [
+            68,
+            6,
+            128,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            68,
+            6,
+            64,
+            13
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/03.png",
+          "sha256": "62e59b72a02d7fa32ab7adbdf3024432de8d99a6ce8ce71d1529a930bf1f3e14",
+          "bytes": 17128,
+          "source_origin_box": [
+            804,
+            8,
+            1079,
+            715
+          ],
+          "source_local_solid_bbox": [
+            5,
+            4,
+            271,
+            703
+          ],
+          "source_horizontal_anchor": 159.5,
+          "solid_bbox": [
+            54,
+            7,
+            126,
+            195
+          ],
+          "nonzero_bbox": [
+            54,
+            6,
+            127,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            54,
+            6,
+            65,
+            13
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/04.png",
+          "sha256": "6ab54abaa2a8ffd1fa7edc9e3fe01c14b849a4cd1eaa9d9f6ef8c5ba056db437",
+          "bytes": 17000,
+          "source_origin_box": [
+            1084,
+            8,
+            1351,
+            716
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            262,
+            704
+          ],
+          "source_horizontal_anchor": 155.5,
+          "solid_bbox": [
+            55,
+            7,
+            125,
+            195
+          ],
+          "nonzero_bbox": [
+            55,
+            6,
+            125,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            55,
+            6,
+            67,
+            13
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/05.png",
+          "sha256": "f4f1036b2fe3b1bee4f7276117656052d90bdc059f67188971094c008c24bbaf",
+          "bytes": 16693,
+          "source_origin_box": [
+            1407,
+            8,
+            1622,
+            716
+          ],
+          "source_local_solid_bbox": [
+            5,
+            4,
+            210,
+            704
+          ],
+          "source_horizontal_anchor": 109,
+          "solid_bbox": [
+            68,
+            7,
+            123,
+            195
+          ],
+          "nonzero_bbox": [
+            67,
+            6,
+            124,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            67,
+            6,
+            68,
+            13
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/06.png",
+          "sha256": "73b1d0b6920a1af8c601efa34f71bce004e26294a4ede718c196aa31517ba8f9",
+          "bytes": 16518,
+          "source_origin_box": [
+            1662,
+            8,
+            1893,
+            716
+          ],
+          "source_local_solid_bbox": [
+            5,
+            4,
+            227,
+            704
+          ],
+          "source_horizontal_anchor": 114.5,
+          "solid_bbox": [
+            66,
+            7,
+            126,
+            195
+          ],
+          "nonzero_bbox": [
+            66,
+            6,
+            127,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            66,
+            6,
+            65,
+            13
+          ]
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/frames/07.png",
+          "sha256": "a4a629875790964f0fab78b44b89b7e26c42b20f450fd9af8bc5c9fecf401a7e",
+          "bytes": 17561,
+          "source_origin_box": [
+            1879,
+            8,
+            2164,
+            715
+          ],
+          "source_local_solid_bbox": [
+            4,
+            4,
+            281,
+            702
+          ],
+          "source_horizontal_anchor": 178.5,
+          "solid_bbox": [
+            49,
+            7,
+            124,
+            195
+          ],
+          "nonzero_bbox": [
+            49,
+            6,
+            124,
+            195
+          ],
+          "transparent_margins_ltrb": [
+            49,
+            6,
+            68,
+            13
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/native-first-frame.png",
+          "sha256": "155d861b81b59253059834a3b32585dd662503f29432c342fea8902a8099924d",
+          "bytes": 16954
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/contact-sheet.png",
+          "sha256": "e9c8e9b123d7030a2edb507aaddf37d1377d54c500d74303cca90f599f2dc45b",
+          "bytes": 214476
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/running-right-dark.gif",
+          "sha256": "bc53deb192bd12878493b8ebea21a3c2157e7fe50d95722044ed57f7670a9dc9",
+          "bytes": 60670
+        },
+        {
+          "path": "05_黑色战斗服/P4-A/selected/running-right/running-right-light.gif",
+          "sha256": "f7268a0a09cae7508baff67a7f0164ab51f60b7308c619f9c44ff8c507f61667",
+          "bytes": 61096
+        }
+      ]
+    }
+  ],
+  "rejected_originals": [
+    {
+      "id": "rei-white",
+      "relative_path": "04_白色战斗服/P4-A/originals/idle/attempt-01/source.png",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        178,
+        253
+      ],
+      "alpha_zero": 0,
+      "ok": false,
+      "error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_白色战斗服\\P4-A\\originals\\idle\\attempt-01\\source.png has no fully transparent background pixels; preserve the original and request approval for a replacement with transparent_background: true",
+      "sha256": "2327a2e1b1ea908d1e90f84ee89b2ccda22e5cb4f9c920241f8c165844183cd4",
+      "state": "idle",
+      "status": "rejected_by_bundled_native_alpha_loader"
+    }
+  ],
+  "visual_review_status": {
+    "school": "candidates for human review",
+    "black": "candidates for human review",
+    "white": "blocked: wait for approval to replace invalid encoded-alpha source"
+  },
+  "not_started": [
+    {
+      "id": "rei-white",
+      "state": "running-right",
+      "reason": "hold this form until idle source passes"
+    }
+  ],
+  "counts": {
+    "requested_frames": 42,
+    "technical_candidates": 28,
+    "requested_rows": 6,
+    "rows_with_technical_candidates": 4
+  },
+  "generation_jobs": [
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "ref": "02_标准化母版/rei-black/master-rgba.png",
+      "guide": "07_QA验收/P4-A/layout-guides/idle.png",
+      "prompt": "Create one animation SOURCE STRIP for an authorized desktop-pet character derived from the attached frozen character artwork. Reference 1 is the exact identity and wardrobe, reference 2 is layout-only, never depict that guide. Show exactly SIX separately drawn full-body animation poses in ONE horizontal row on true transparent alpha, in temporal order left to right, evenly spaced, consistent large height and planted bottom baseline. Use a wide landscape canvas and keep the head, fringe and both feet fully inside each slot. Preserve the reference's detailed clean cel-shaded anime illustration, identical face, red eyes when open, short pale blue hair shape and single cowlick, skin, lean body and long-leg proportions, and the exact dark Mark.09 suit with gray inserts, red straps, green chest details, black-red clips and red boot markings; preserve chest glyph 09 as on reference. Right hand stays lightly on her left arm through all six frames; the long left forearm hangs and feet stay planted. Draw frame 1 neutral open gaze; frame 2 slow subtle inhale; frame 3 gaze lowers slightly; frame 4 softly blinks; frame 5 reopens without smiling; frame 6 returns to the original aloof expression. Only subtle natural joint, chest, eye and hair changes. All six figures face front. Preserve human anatomy and costume silhouettes. No duplicated sprites, visible guides, grid, text, shadow, white field, props, panels, platform or effects. Stable feet, calm seamless loop. Output actual transparent PNG-like RGBA."
+    },
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "ref": "02_标准化母版/rei-school/master-rgba.png",
+      "guide": "07_QA验收/P4-A/layout-guides/idle.png",
+      "prompt": "Create one animation SOURCE STRIP for an authorized desktop-pet character derived from the attached frozen character artwork. Reference 1 is the exact identity and wardrobe, reference 2 is layout-only, never depict that guide. Show exactly SIX separately drawn full-body animation poses in ONE horizontal row on true transparent alpha, in temporal order left to right, evenly spaced, consistent large height and planted bottom baseline. Use a wide landscape canvas and keep the head, fringe and both feet fully inside each slot. Preserve the reference's detailed clean cel-shaded anime illustration, identical face, red eyes when open, short pale blue hair shape and single cowlick, skin, lean body and long-leg proportions, and the exact blue school dress with pleated teal-blue skirt, red tied bow, white short sleeves, both white/light socks and pale school shoes, and two plain white hair clips. Both hands remain gently clasped in front, legs and feet planted, demure relaxed balance. Draw frame 1 open eyes at rest; frame 2 a subtle breath in shoulder and collar; frame 3 lids half down; frame 4 quiet blink; frame 5 lids reopen with tiny fringe settling; frame 6 return near initial open neutral. Hands stay together. Only subtle natural joint, chest, eye and hair changes. All six figures face front. Preserve human anatomy and costume silhouettes. No duplicated sprites, visible guides, grid, text, shadow, white field, props, panels, platform or effects. Stable feet, calm seamless loop. Output actual transparent PNG-like RGBA."
+    },
+    {
+      "id": "rei-white",
+      "state": "idle",
+      "ref": "02_标准化母版/P3-FIX/rei-white-master-rgba-p3-fix.png",
+      "guide": "07_QA验收/P4-A/layout-guides/idle.png",
+      "prompt": "Create one animation SOURCE STRIP for an authorized desktop-pet character derived from the attached frozen character artwork. Reference 1 is the exact identity and wardrobe, reference 2 is layout-only, never depict that guide. Show exactly SIX separately drawn full-body animation poses in ONE horizontal row on true transparent alpha, in temporal order left to right, evenly spaced, consistent large height and planted bottom baseline. Use a wide landscape canvas and keep the head, fringe and both feet fully inside each slot. Preserve the reference's detailed clean cel-shaded anime illustration, identical face, red eyes when open, short pale blue hair shape and single cowlick, skin, lean body and long-leg proportions, and the exact mostly white 00 pilot suit, orange shoulder and cuff pieces, green chest side detail, dark inset stripes and white-dark boots, and the same two pale clips; retain chest glyph 00 as on reference. Both arms remain naturally down and hands relaxed; feet planted in the original standby posture. Draw frame 1 steady open-eyed standby; frame 2 subtle inhale; frame 3 eyelids ease down; frame 4 a short calm blink; frame 5 reopen into attentive gaze; frame 6 rest. Tiny hair follow through only. Only subtle natural joint, chest, eye and hair changes. All six figures face front. Preserve human anatomy and costume silhouettes. No duplicated sprites, visible guides, grid, text, shadow, white field, props, panels, platform or effects. Stable feet, calm seamless loop. Output actual transparent PNG-like RGBA."
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "ref": "02_标准化母版/rei-black/master-rgba.png",
+      "guide": "07_QA验收/P4-A/layout-guides/running-right-transparent-guide.png",
+      "prompt": "Draw an eight-pose animation sprite SOURCE STRIP derived from the attached user-frozen artwork. Reference 1 locks exact character. Reference 2 is positioning only and must not appear. Output a wide landscape true RGBA cutout: between and around every sprite the alpha is exactly zero. No white pixels, haze, opaque canvas, checkerboard, shadow, matte, floor, borders or lettering outside the figures. Draw exactly EIGHT separate, fully visible same-scale full-body sprites from head to sole in one horizontal row, temporal order left to right, small equal gaps, keep a shared ground plane. Every sprite must look and face screen-right in a right-facing three-quarter anime view. Alternate physically different feet and knees over two equal halves: pose 1 near foot front contact, 2 near loading, 3 near foot passes under hips as far leg lifts, 4 near toe drives off far foot forward, 5 far foot front contact, 6 far loading, 7 far foot passes under hips, 8 far toe drives off near leg forward. Keep modest flight height and preserve leg length and head size. A contained, low-amplitude jog. Right gloved hand keeps light contact with left forearm, allowing a tiny upper-body counter rotation. The left hand hangs relaxed. Both legs alternate distinctly, knees and heel lift supply the energy. Mark.09 stays legible and unmirrored, restrained expression. Preserve the exact reference face, red eyes, detailed clean anime linework and soft cel shading, pale blue bob and cowlick, lean long legs and the exact dark Mark.09 suit with gray inserts, red straps, green chest details, black-red clips and red boot markings; preserve chest glyph 09 as on reference. Keep complete shoes and correct arms, no intentional cropping, no poses superimposed, no pose duplication, text captions or graphics. Request native alpha transparent background, full opacity inside figures and smooth thin alpha only immediately on edges."
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "ref": "02_标准化母版/rei-school/master-rgba.png",
+      "guide": "07_QA验收/P4-A/layout-guides/running-right-transparent-guide.png",
+      "prompt": "Draw an eight-pose animation sprite SOURCE STRIP derived from the attached user-frozen artwork. Reference 1 locks exact character. Reference 2 is positioning only and must not appear. Output a wide landscape true RGBA cutout: between and around every sprite the alpha is exactly zero. No white pixels, haze, opaque canvas, checkerboard, shadow, matte, floor, borders or lettering outside the figures. Draw exactly EIGHT separate, fully visible same-scale full-body sprites from head to sole in one horizontal row, temporal order left to right, small equal gaps, keep a shared ground plane. Every sprite must look and face screen-right in a right-facing three-quarter anime view. Alternate physically different feet and knees over two equal halves: pose 1 near foot front contact, 2 near loading, 3 near foot passes under hips as far leg lifts, 4 near toe drives off far foot forward, 5 far foot front contact, 6 far loading, 7 far foot passes under hips, 8 far toe drives off near leg forward. Keep modest flight height and preserve leg length and head size. A light, graceful restrained jog. Her knees articulate and alternate the near and far foot. The hands release from the idle clasp only during the gait and swing gently close to her torso; no exaggerated arm swing. Pleats, bow and hair tips follow the body lightly. Calm neutral expression. Preserve the exact reference face, red eyes, detailed clean anime linework and soft cel shading, pale blue bob and cowlick, lean long legs and the exact blue school dress with pleated teal-blue skirt, red tied bow, white short sleeves, both white/light socks and pale school shoes, and two plain white hair clips. Keep complete shoes and correct arms, no intentional cropping, no poses superimposed, no pose duplication, text captions or graphics. Request native alpha transparent background, full opacity inside figures and smooth thin alpha only immediately on edges."
+    }
+  ],
+  "per_form_contact_sheets": [
+    {
+      "id": "rei-school",
+      "stats": [
+        {
+          "state": "idle",
+          "frames": 6,
+          "frame_rgba_delta_including_wrap": [
+            5692,
+            5729,
+            5679,
+            5652,
+            5654,
+            5634
+          ],
+          "min_nonzero_top_margin": 6,
+          "solid_height_range": [
+            188,
+            188
+          ],
+          "solid_bottom_extent": [
+            195,
+            195
+          ]
+        },
+        {
+          "state": "running-right",
+          "frames": 8,
+          "frame_rgba_delta_including_wrap": [
+            6338,
+            6213,
+            6775,
+            6563,
+            6452,
+            6215,
+            6809,
+            7220
+          ],
+          "min_nonzero_top_margin": 5,
+          "solid_height_range": [
+            177,
+            189
+          ],
+          "solid_bottom_extent": [
+            183,
+            195
+          ]
+        }
+      ],
+      "sheet_path": "03_校服绫波丽/P4-A/P4-A-contact-sheet.png",
+      "sheet_sha256": "2385cf504e57f7822cfa4b63103179772e1179348c9d69fefd9f2782fd225a68"
+    },
+    {
+      "id": "rei-black",
+      "stats": [
+        {
+          "state": "idle",
+          "frames": 6,
+          "frame_rgba_delta_including_wrap": [
+            5475,
+            5485,
+            5478,
+            5586,
+            5497,
+            5537
+          ],
+          "min_nonzero_top_margin": 6,
+          "solid_height_range": [
+            188,
+            188
+          ],
+          "solid_bottom_extent": [
+            195,
+            195
+          ]
+        },
+        {
+          "state": "running-right",
+          "frames": 8,
+          "frame_rgba_delta_including_wrap": [
+            5988,
+            5955,
+            5771,
+            6124,
+            6202,
+            5640,
+            6102,
+            6500
+          ],
+          "min_nonzero_top_margin": 6,
+          "solid_height_range": [
+            181,
+            188
+          ],
+          "solid_bottom_extent": [
+            188,
+            195
+          ]
+        }
+      ],
+      "sheet_path": "05_黑色战斗服/P4-A/P4-A-contact-sheet.png",
+      "sheet_sha256": "0014de0600b805d2d94947c19c749bbba514af5befb6d94cc45918fc99dc6ed1"
+    }
+  ],
+  "geometry_and_files_verified": "Pillow decoded frames and GIF timing; visual contact sheet review; 49 P2 artifacts and 11 historical QA entries rehashed"
+}

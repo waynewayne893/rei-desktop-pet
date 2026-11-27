@@ -1,0 +1,185 @@
+{
+  "per_frame": [
+    {
+      "frame": 1,
+      "sha256": "a1a69caac3d1459dac003979776b7e273862ba9968a7b74decd6a6ba67cd5d5d",
+      "alpha128_bbox": [
+        59,
+        5,
+        134,
+        194
+      ],
+      "transparent_margins_ltrb": [
+        59,
+        5,
+        57,
+        14
+      ],
+      "lowest_visible_solid_y_exclusive": 194,
+      "rise_from_ground_y195": 1
+    },
+    {
+      "frame": 2,
+      "sha256": "e2854f440f90c5cc45ba2352498f1efaef81fa0ba59c7257e364259cf47b982a",
+      "alpha128_bbox": [
+        70,
+        7,
+        126,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        69,
+        6,
+        65,
+        12
+      ],
+      "lowest_visible_solid_y_exclusive": 195,
+      "rise_from_ground_y195": 0
+    },
+    {
+      "frame": 3,
+      "sha256": "85c2eeb9167a6a68229036fc9d670e773715b2f4f993e481f1d1a806e4b36123",
+      "alpha128_bbox": [
+        72,
+        7,
+        124,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        71,
+        7,
+        67,
+        12
+      ],
+      "lowest_visible_solid_y_exclusive": 195,
+      "rise_from_ground_y195": 0
+    },
+    {
+      "frame": 4,
+      "sha256": "3d2e87e028f78acd8bdb887210feb23fe5c994f34f142b0dca90484e31ba4ac1",
+      "alpha128_bbox": [
+        56,
+        7,
+        139,
+        189
+      ],
+      "transparent_margins_ltrb": [
+        55,
+        6,
+        52,
+        18
+      ],
+      "lowest_visible_solid_y_exclusive": 189,
+      "rise_from_ground_y195": 6
+    },
+    {
+      "frame": 5,
+      "sha256": "d547604f40b9a195dd4f34acaa2d64dedad83868e1b47e0541e0ba72766578ed",
+      "alpha128_bbox": [
+        74,
+        7,
+        125,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        73,
+        6,
+        67,
+        12
+      ],
+      "lowest_visible_solid_y_exclusive": 195,
+      "rise_from_ground_y195": 0
+    },
+    {
+      "frame": 6,
+      "sha256": "26ab5f2082f8b5aa7fe7380464776ddf01e207e74dc87317a8cc8af2fcbcdeed",
+      "alpha128_bbox": [
+        65,
+        7,
+        123,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        64,
+        6,
+        68,
+        12
+      ],
+      "lowest_visible_solid_y_exclusive": 195,
+      "rise_from_ground_y195": 0
+    },
+    {
+      "frame": 7,
+      "sha256": "401280e3fcc2718f6796c3e6591c9ddc70bb0dfac75f9aef32c1bb94c4c0c690",
+      "alpha128_bbox": [
+        68,
+        7,
+        122,
+        192
+      ],
+      "transparent_margins_ltrb": [
+        67,
+        6,
+        69,
+        15
+      ],
+      "lowest_visible_solid_y_exclusive": 192,
+      "rise_from_ground_y195": 3
+    },
+    {
+      "frame": 8,
+      "sha256": "6ab05bdb72ee5e0a1e8b92ff57ec63e232a6459706bcae133fb3c3a3e34f86c6",
+      "alpha128_bbox": [
+        55,
+        7,
+        135,
+        193
+      ],
+      "transparent_margins_ltrb": [
+        55,
+        6,
+        56,
+        14
+      ],
+      "lowest_visible_solid_y_exclusive": 193,
+      "rise_from_ground_y195": 2
+    }
+  ],
+  "comparisons": [
+    {
+      "path": "07_QA验收/P4-A/FIX-BLACK/black-old-vs-new-light.gif",
+      "sha256": "2e6d65926b65f58f6afcc1847064e7a22ede28a9c45d33367ba5067bc266f4c4",
+      "bytes": 141297
+    },
+    {
+      "path": "07_QA验收/P4-A/FIX-BLACK/three-form-right-run-light.gif",
+      "sha256": "423159d8f81c0d4276c9ded4924cf2feb839b67b4466d49d71a15d19d5908885",
+      "bytes": 190389
+    },
+    {
+      "path": "07_QA验收/P4-A/FIX-BLACK/black-old-vs-new-contact.png",
+      "sha256": "cd9993daf92068088afc4b3d3dc4fa8f453eb28c3b697cf91986eacfb81d9201",
+      "bytes": 227138
+    },
+    {
+      "path": "07_QA验收/P4-A/FIX-BLACK/black-face-suit-arms-source-detail.png",
+      "sha256": "5429d928fddcb661496dd5023e558d5f8e4d1baf2ab2aa0a6d38343753a85c17",
+      "bytes": 201527
+    }
+  ],
+  "asset_integrity": {
+    "path": "07_QA验收/P4-A/FIX-BLACK/preserved-assets-hashes.json",
+    "sha256": "9306153b995a42056ad605008d7f293a1e07cc89a5adb5a831db3aabd19f7a88",
+    "bytes": 20687
+  },
+  "frame_timings_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ]
+}

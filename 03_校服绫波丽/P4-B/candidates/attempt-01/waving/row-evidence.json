@@ -1,0 +1,204 @@
+{
+  "id": "rei-school",
+  "state": "waving",
+  "source": {
+    "path": "03_校服绫波丽/P4-B/originals/waving/attempt-01/source.png",
+    "sha256": "f5d912e0512801f733fb3e00d35341e7bb48885549f384f0c07d337182ade373",
+    "bytes": 1144788,
+    "size": [
+      1774,
+      887
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 1062787
+  },
+  "registered_row_scale_xy": [
+    0.22394282310899344,
+    0.22394282310899344
+  ],
+  "source_ground_y": 855,
+  "boundary_anchor_xy": [
+    96,
+    195
+  ],
+  "matte_alpha_floor": 0,
+  "method": "native-alpha major connected poses, shared isotropic row registration",
+  "frame_duration_ms": [
+    140,
+    140,
+    140,
+    280
+  ],
+  "frames": [
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/00.png",
+      "sha256": "0618583cc278ff907c2fdf02e1e1ca38749c6638baa61a94ff8bd359302ad225",
+      "bytes": 18890,
+      "source_origin_box": [
+        186,
+        12,
+        444,
+        859
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        254,
+        843
+      ],
+      "source_horizontal_anchor": 135.5,
+      "solid_bbox": [
+        67,
+        7,
+        122,
+        195
+      ],
+      "nonzero_bbox": [
+        66,
+        7,
+        123,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        66,
+        7,
+        69,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/01.png",
+      "sha256": "ffc2ed2eecf05d2b3840f8648934a3c1ef4c7f76b358b6f1f6e7281d53f532df",
+      "bytes": 19803,
+      "source_origin_box": [
+        562,
+        11,
+        820,
+        859
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        254,
+        844
+      ],
+      "source_horizontal_anchor": 136.0,
+      "solid_bbox": [
+        67,
+        7,
+        122,
+        195
+      ],
+      "nonzero_bbox": [
+        66,
+        6,
+        123,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        66,
+        6,
+        69,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/02.png",
+      "sha256": "8cafa87cf922f7b468ef1155a1cdb9e1019121d378e392eabdeb348cfc07dbb8",
+      "bytes": 19790,
+      "source_origin_box": [
+        932,
+        11,
+        1190,
+        859
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        254,
+        844
+      ],
+      "source_horizontal_anchor": 141.5,
+      "solid_bbox": [
+        65,
+        7,
+        121,
+        195
+      ],
+      "nonzero_bbox": [
+        65,
+        6,
+        122,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        65,
+        6,
+        70,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/frames/03.png",
+      "sha256": "004849ad6501abe1d9b32f832fbf71a6320ef175d08608f44e0e01a26c1880db",
+      "bytes": 18736,
+      "source_origin_box": [
+        1320,
+        11,
+        1578,
+        859
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        253,
+        843
+      ],
+      "source_horizontal_anchor": 139.0,
+      "solid_bbox": [
+        66,
+        7,
+        122,
+        195
+      ],
+      "nonzero_bbox": [
+        65,
+        6,
+        122,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        65,
+        6,
+        70,
+        13
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/native-first-frame.png",
+      "sha256": "0618583cc278ff907c2fdf02e1e1ca38749c6638baa61a94ff8bd359302ad225",
+      "bytes": 18890
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/contact-sheet.png",
+      "sha256": "a376eb2ae47726c444bf3e63449b8005eccd7260fda4280962f5d6e854fc1dff",
+      "bytes": 127241
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/waving-dark.gif",
+      "sha256": "6d2309087b4def4efc4e620178537e42f333307a9eb0ea22c99a8ed0dd8cf0fe",
+      "bytes": 33342
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waving/waving-light.gif",
+      "sha256": "25606e7c884e6a266b963f62529cb030b6d8de5524d89d75364ef77e69b45f60",
+      "bytes": 33217
+    }
+  ]
+}

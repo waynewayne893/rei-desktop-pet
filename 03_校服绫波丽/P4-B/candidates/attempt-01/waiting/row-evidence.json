@@ -1,0 +1,278 @@
+{
+  "id": "rei-school",
+  "state": "waiting",
+  "source": {
+    "path": "03_校服绫波丽/P4-B/originals/waiting/attempt-01/source.png",
+    "sha256": "f19efac284e80c3d2ac242fac507b162a8085ecb458e3de5b89345f6a98abcc7",
+    "bytes": 1276504,
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 1017762
+  },
+  "registered_row_scale_xy": [
+    0.26704545454545453,
+    0.26704545454545453
+  ],
+  "source_ground_y": 713,
+  "boundary_anchor_xy": [
+    96,
+    195
+  ],
+  "matte_alpha_floor": 0,
+  "method": "native-alpha major connected poses, shared isotropic row registration",
+  "frame_duration_ms": [
+    150,
+    150,
+    150,
+    150,
+    150,
+    260
+  ],
+  "frames": [
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/00.png",
+      "sha256": "60fae5f8619315c18c9f885fd9665da64fd29f3dca4c475ea1e57571b84333d6",
+      "bytes": 18948,
+      "source_origin_box": [
+        145,
+        3,
+        365,
+        718
+      ],
+      "source_local_solid_bbox": [
+        5,
+        5,
+        216,
+        710
+      ],
+      "source_horizontal_anchor": 98.5,
+      "solid_bbox": [
+        71,
+        7,
+        127,
+        195
+      ],
+      "nonzero_bbox": [
+        70,
+        6,
+        128,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        70,
+        6,
+        64,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/01.png",
+      "sha256": "6f2e3a27e2566324ee3c6930d35c93a9ca6091f28c5d9db39c7f5dbce2f0a3a7",
+      "bytes": 19137,
+      "source_origin_box": [
+        463,
+        2,
+        690,
+        717
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        223,
+        711
+      ],
+      "source_horizontal_anchor": 107.5,
+      "solid_bbox": [
+        68,
+        6,
+        127,
+        195
+      ],
+      "nonzero_bbox": [
+        68,
+        6,
+        127,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        68,
+        6,
+        65,
+        13
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/02.png",
+      "sha256": "c227245353c2ad84fd31e02a78db393fdef34506911cb47f11d410a5fb35921f",
+      "bytes": 19351,
+      "source_origin_box": [
+        779,
+        5,
+        1035,
+        717
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        251,
+        708
+      ],
+      "source_horizontal_anchor": 115.0,
+      "solid_bbox": [
+        67,
+        7,
+        132,
+        195
+      ],
+      "nonzero_bbox": [
+        66,
+        6,
+        133,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        66,
+        6,
+        59,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/03.png",
+      "sha256": "2a28e392ba01d0083a26c8f8901814f8bb8235b76cdfe5c886be9f751378edfe",
+      "bytes": 19265,
+      "source_origin_box": [
+        1103,
+        5,
+        1357,
+        717
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        250,
+        708
+      ],
+      "source_horizontal_anchor": 114.0,
+      "solid_bbox": [
+        67,
+        7,
+        132,
+        195
+      ],
+      "nonzero_bbox": [
+        66,
+        6,
+        133,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        66,
+        6,
+        59,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/04.png",
+      "sha256": "422030aa32515f677e2b812d353f49ebed0bad4043879d153783a4840f426db0",
+      "bytes": 19320,
+      "source_origin_box": [
+        1425,
+        5,
+        1679,
+        718
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        249,
+        708
+      ],
+      "source_horizontal_anchor": 112.0,
+      "solid_bbox": [
+        67,
+        7,
+        132,
+        195
+      ],
+      "nonzero_bbox": [
+        67,
+        6,
+        133,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        67,
+        6,
+        59,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/05.png",
+      "sha256": "0e12bc4093cd99c483963999ec5ed2096ebf051aecd28bbe24b83d819f78a371",
+      "bytes": 19070,
+      "source_origin_box": [
+        1750,
+        6,
+        1999,
+        718
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        245,
+        707
+      ],
+      "source_horizontal_anchor": 109.5,
+      "solid_bbox": [
+        68,
+        7,
+        132,
+        195
+      ],
+      "nonzero_bbox": [
+        67,
+        7,
+        133,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        67,
+        7,
+        59,
+        12
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/native-first-frame.png",
+      "sha256": "60fae5f8619315c18c9f885fd9665da64fd29f3dca4c475ea1e57571b84333d6",
+      "bytes": 18948
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/contact-sheet.png",
+      "sha256": "c94ec556cf82157bd8ac2b3f144456449a8c1e608bd0576746fb25c2335e25fc",
+      "bytes": 184929
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/waiting-dark.gif",
+      "sha256": "6ebc78914d53c18aac0575be8778d3a1e3d4bd3b0c9f628bc09382deca9b1733",
+      "bytes": 49395
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/waiting-light.gif",
+      "sha256": "463718be10c4399a1fbdffa25217f54823d101b2df2b82bf3ec898c0150b3ab4",
+      "bytes": 49441
+    }
+  ]
+}

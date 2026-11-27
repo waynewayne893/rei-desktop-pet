@@ -1,0 +1,87 @@
+{
+  "verified": true,
+  "p4a_manifest_sha256": "85001f7b6c1c61434a8bf9fe5a6561d7f38fada7dbfe89c44524de9f314cf447",
+  "protected_frames": 42,
+  "white_retry": {
+    "id": "rei-white",
+    "state": "idle",
+    "attempt": "attempt-02",
+    "path": "04_白色战斗服/P4-A/originals/idle/attempt-02/source.png",
+    "sha256": "a21608225d4a405b63da386ad4b841a757e0e4a1705edfbb7d7d086ce5ad9287",
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_minmax": [
+      0,
+      255
+    ],
+    "alpha_zero": 752220,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "ok": true
+  },
+  "black_user_art_approval": "P4-B user direction explicitly approves the newer running-right",
+  "black_locked_right_source": {
+    "path": "05_黑色战斗服/P4-A/FIX-BLACK/originals/attempt-01/source.png",
+    "sha256": "28f6579909d79599fd268c008ec85e33da3f4c4bad7e4e9fd52ae51bea6a5e1d",
+    "bytes": 1350803,
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 924108
+  },
+  "black_old_status": "REJECTED",
+  "inputs": [
+    {
+      "id": "rei-black",
+      "source_sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb",
+      "master_path": "02_标准化母版/rei-black/master-rgba.png",
+      "master_sha256": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+      "native_sha256": "0f43ec8c132b17fc9d531d7ace855c0d7285d404fbded86f9ee396aff5dab302",
+      "native_margins_ltrb": [
+        66,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "id": "rei-school",
+      "source_sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1",
+      "master_path": "02_标准化母版/rei-school/master-rgba.png",
+      "master_sha256": "38b2db6fabc1daf5ad5b368152a12cc0a92a22a0abb12ce0dafcd588f61e8528",
+      "native_sha256": "ac82f3d0a6eb17945a7e25266ab03e3f93f82506067da65975c9e012df9f157d",
+      "native_margins_ltrb": [
+        65,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "id": "rei-white",
+      "source_sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019",
+      "master_path": "02_标准化母版/P3-FIX/rei-white-master-rgba-p3-fix.png",
+      "master_sha256": "92ff3c4d9c33534a58d4c54d0556bef7d98dfe49cea6804f9b29ec90ff174c5c",
+      "native_sha256": "82fbe069ad19e8b599d791c75897fcccf97f9b946b5834c873fabe5e554f5bf6",
+      "native_margins_ltrb": [
+        66,
+        6,
+        67,
+        12
+      ]
+    }
+  ]
+}

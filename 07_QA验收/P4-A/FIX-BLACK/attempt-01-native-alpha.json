@@ -1,0 +1,22 @@
+{
+  "path": "05_黑色战斗服/P4-A/FIX-BLACK/originals/attempt-01/source.png",
+  "bytes": 1350803,
+  "sha256": "28f6579909d79599fd268c008ec85e33da3f4c4bad7e4e9fd52ae51bea6a5e1d",
+  "mode": "RGBA",
+  "size": [
+    2172,
+    724
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_zero": 924108,
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "ok": true
+}

@@ -1,0 +1,278 @@
+{
+  "id": "rei-white",
+  "state": "waiting",
+  "source": {
+    "path": "04_白色战斗服/P4-B/originals/waiting/attempt-01/source.png",
+    "sha256": "b1fb0624055ac88ceb2857bd1a88c848b456eebfa4d8ff54f75766b2eaf7fa61",
+    "bytes": 1503844,
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 779860
+  },
+  "registered_row_scale_xy": [
+    0.27246376811594203,
+    0.27246376811594203
+  ],
+  "source_ground_y": 706,
+  "boundary_anchor_xy": [
+    96,
+    195
+  ],
+  "matte_alpha_floor": 0,
+  "method": "native-alpha major connected poses, shared isotropic row registration",
+  "frame_duration_ms": [
+    150,
+    150,
+    150,
+    150,
+    150,
+    260
+  ],
+  "frames": [
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/00.png",
+      "sha256": "dd2e0c4cf9e6d71049045e8d1fd050a50435cc132fac42acfb1b851a58048319",
+      "bytes": 20775,
+      "source_origin_box": [
+        134,
+        10,
+        360,
+        709
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        221,
+        695
+      ],
+      "source_horizontal_anchor": 117.5,
+      "solid_bbox": [
+        65,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        65,
+        6,
+        125,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        65,
+        6,
+        67,
+        13
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/01.png",
+      "sha256": "389996cd8768d16a4be69e3a07d1944436fb2094cd661972872d951823aac6ec",
+      "bytes": 20552,
+      "source_origin_box": [
+        469,
+        11,
+        692,
+        709
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        219,
+        694
+      ],
+      "source_horizontal_anchor": 126.5,
+      "solid_bbox": [
+        63,
+        7,
+        121,
+        195
+      ],
+      "nonzero_bbox": [
+        62,
+        6,
+        122,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        62,
+        6,
+        70,
+        13
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/02.png",
+      "sha256": "646bf286e218b87c0b82ee6556126448f29dd5cab6c3a43f2de739ed37916995",
+      "bytes": 20962,
+      "source_origin_box": [
+        787,
+        11,
+        1038,
+        710
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        247,
+        695
+      ],
+      "source_horizontal_anchor": 139.5,
+      "solid_bbox": [
+        59,
+        7,
+        125,
+        195
+      ],
+      "nonzero_bbox": [
+        59,
+        6,
+        126,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        59,
+        6,
+        66,
+        12
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/03.png",
+      "sha256": "ff67ee640502a481ad7d0916751d97f2a026dc3cf035a94d9d5dca0b37649bef",
+      "bytes": 19204,
+      "source_origin_box": [
+        1142,
+        11,
+        1365,
+        709
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        219,
+        694
+      ],
+      "source_horizontal_anchor": 115.5,
+      "solid_bbox": [
+        66,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        65,
+        6,
+        125,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        65,
+        6,
+        67,
+        13
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/04.png",
+      "sha256": "57918ee2c21cd3c1f2bef52ea93c22405df3ab5c22ec8ac0fc207b0fd532e8c2",
+      "bytes": 19210,
+      "source_origin_box": [
+        1469,
+        11,
+        1693,
+        709
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        220,
+        694
+      ],
+      "source_horizontal_anchor": 115.5,
+      "solid_bbox": [
+        66,
+        7,
+        125,
+        195
+      ],
+      "nonzero_bbox": [
+        65,
+        6,
+        125,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        65,
+        6,
+        67,
+        13
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/frames/05.png",
+      "sha256": "90baf42550ba609e97e27319127b355ad29ac0966b897e642f4ecbf7c256608d",
+      "bytes": 20679,
+      "source_origin_box": [
+        1797,
+        10,
+        2019,
+        708
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        218,
+        693
+      ],
+      "source_horizontal_anchor": 124.5,
+      "solid_bbox": [
+        63,
+        7,
+        122,
+        194
+      ],
+      "nonzero_bbox": [
+        63,
+        6,
+        122,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        63,
+        6,
+        70,
+        13
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/native-first-frame.png",
+      "sha256": "dd2e0c4cf9e6d71049045e8d1fd050a50435cc132fac42acfb1b851a58048319",
+      "bytes": 20775
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/contact-sheet.png",
+      "sha256": "c3d273d0895d10b75d819ab1d4aa3dc508d72e780c7854d859d7d90b8b53f543",
+      "bytes": 196083
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/waiting-dark.gif",
+      "sha256": "28d8b3fbb0ce58af3fbd03d175b1ea50176f4b6feb18e0cf6778a66e9fbf5e1c",
+      "bytes": 51762
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/waiting/waiting-light.gif",
+      "sha256": "8749a42000bef84f2719882dd8e565a64419ad435de4d1583ec2e6d0b5fcf62b",
+      "bytes": 51717
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "method": "Read original PNGs without manipulating alpha; run bundled native alpha loader",
+  "before": {
+    "id": "rei-white",
+    "state": "idle",
+    "attempt": "attempt-01",
+    "path": "04_白色战斗服/P4-A/originals/idle/attempt-01/source.png",
+    "sha256": "2327a2e1b1ea908d1e90f84ee89b2ccda22e5cb4f9c920241f8c165844183cd4",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_minmax": [
+      178,
+      253
+    ],
+    "alpha_zero": 0,
+    "corner_alpha": [
+      184,
+      178,
+      184,
+      179
+    ],
+    "ok": false,
+    "failure": "bundled native alpha loader rejects missing fully transparent pixels"
+  },
+  "after": {
+    "id": "rei-white",
+    "state": "idle",
+    "attempt": "attempt-02",
+    "path": "04_白色战斗服/P4-A/originals/idle/attempt-02/source.png",
+    "sha256": "a21608225d4a405b63da386ad4b841a757e0e4a1705edfbb7d7d086ce5ad9287",
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_minmax": [
+      0,
+      255
+    ],
+    "alpha_zero": 752220,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "ok": true
+  }
+}

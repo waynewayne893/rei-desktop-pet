@@ -1,0 +1,170 @@
+[
+  {
+    "id": "rei-school",
+    "state": "running-left",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "8/8 frames facing left, natural alternating stride and arm swing, skirt sway, white clips and red bow preserved, min_top=4px, clean alpha on dark and light."
+  },
+  {
+    "id": "rei-white",
+    "state": "running-left",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "8/8 frames facing left, natural stride with airborne frame 4 (bottom=180), upright unmirrored 00 verified on high-res source, orange wrist rings and green accents intact, min_top=6px."
+  },
+  {
+    "id": "rei-black",
+    "state": "running-left",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "8/8 frames facing left, arm-holding released with natural arm swing matching FIX-BLACK running-right kinematics, upright unmirrored red 09 verified across all 8 source poses, red boot trim intact, min_top=5px."
+  },
+  {
+    "id": "rei-school",
+    "state": "waving",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "4/4 frames: F1 clasped hands, F2-F3 clear right-hand wave with gentle expression, F4 returns to clasped hands; clean loop and alpha, min_top=6px."
+  },
+  {
+    "id": "rei-white",
+    "state": "waving",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "4/4 frames: F1 arms down, F2-F3 clear right-hand wave, F4 returns to arms down; upright 00 and five-finger silhouette intact, min_top=6px."
+  },
+  {
+    "id": "rei-black",
+    "state": "waving",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "4/4 frames: F1/F4 relaxed arms at sides, F2-F3 clear right-hand wave; red 09 intact, min_top=6px. Note for art review: F1/F4 release static forearm-hold."
+  },
+  {
+    "id": "rei-school",
+    "state": "jumping",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "5/5 frames: crouch (h=171), takeoff, airborne peak (bottom=183, 12px lift), landing crouch, clasped standing recovery (h=188); no top clipping (min_top=4px)."
+  },
+  {
+    "id": "rei-white",
+    "state": "jumping",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "5/5 frames: crouch (h=170), takeoff, airborne peak (bottom=178, 17px lift), landing crouch, standing recovery (h=182); upright 00 intact, no top clipping (min_top=4px)."
+  },
+  {
+    "id": "rei-black",
+    "state": "jumping",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "5/5 frames: crouch (h=162), takeoff, airborne peak (bottom=182, 13px lift), landing crouch, standing recovery (h=189); red 09 intact, no top clipping (min_top=4px)."
+  },
+  {
+    "id": "rei-school",
+    "state": "failed",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "8/8 frames: gradual head bow with downcast/closed eyes F3-F5 and calm recovery F6-F8 while maintaining clasped hands; min_top=4px."
+  },
+  {
+    "id": "rei-white",
+    "state": "failed",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "8/8 frames: eyes lower and head bows F3-F6 with subtle hand curl, recovers F7-F8; upright 00 intact, min_top=4px."
+  },
+  {
+    "id": "rei-black",
+    "state": "failed",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "8/8 frames: retains right-hand-on-left-arm posture, bows head with closed/downcast eyes F3-F5 and slowly recovers F6-F8; red 09 intact, min_top=4px."
+  },
+  {
+    "id": "rei-school",
+    "state": "waiting",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: head tilt F2, left hand palm-up inviting input F3-F6 with blink on F5; min_top=6px. Note for art review: F6 holds palm-up before looping to F1 clasped hands."
+  },
+  {
+    "id": "rei-white",
+    "state": "waiting",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: slight tilt F2, right palm-up inviting gesture F3, front clasped waiting F4-F5 with blink, returns to neutral F6; upright 00 intact, min_top=6px."
+  },
+  {
+    "id": "rei-black",
+    "state": "waiting",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: arm-hold F1-F2 with subtle head tilt, brief right palm-up prompt F3, returns to arm-hold F4-F6 with blink on F5; red 09 intact, min_top=6px."
+  },
+  {
+    "id": "rei-school",
+    "state": "running",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: focused working/thinking state (not lateral run); right hand raised near chin/collar F2-F6 with blink F4 and subtle finger motion; min_top=6px."
+  },
+  {
+    "id": "rei-white",
+    "state": "running",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: focused working/monitoring pose (not lateral run); right hand raised near chest/chin F2-F6 with gaze focus; upright 00 intact, min_top=6px."
+  },
+  {
+    "id": "rei-black",
+    "state": "running",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: quiet working/thinking pose (not lateral run); right hand near chin/collar F2-F6 with blink F4; red 09 intact, min_top=6px."
+  },
+  {
+    "id": "rei-school",
+    "state": "review",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: attentive glance F1-F2, forward inspecting nod F3, eyes-closed confirmation F4, slight lift F5, neutral return F6; min_top=5px."
+  },
+  {
+    "id": "rei-white",
+    "state": "review",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: attentive gaze F1-F2, downward inspect F3, eyes-closed confirm F4, slight chin lift with waist-touch confirm F5, neutral return F6; upright 00 intact, min_top=6px."
+  },
+  {
+    "id": "rei-black",
+    "state": "review",
+    "attempt": "attempt-01",
+    "candidate": true,
+    "reviewer": "Antigravity (takeover structural + visual pre-QA; human art acceptance pending)",
+    "notes": "6/6 frames: arm-hold attentive gaze F1-F2, inspecting lean F3, eyes-closed nod F4, releases arms to sides F5-F6; red 09 intact, min_top=6px. Note for art review: F6->F1 transitions from arms down to arm-hold."
+  }
+]

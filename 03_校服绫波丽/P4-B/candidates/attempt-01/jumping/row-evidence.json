@@ -1,0 +1,241 @@
+{
+  "id": "rei-school",
+  "state": "jumping",
+  "source": {
+    "path": "03_校服绫波丽/P4-B/originals/jumping/attempt-01/source.png",
+    "sha256": "822683b5ea610eef753b51154c995f14506a0e83eccbf84850121251ed01f948",
+    "bytes": 1540155,
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 741485
+  },
+  "registered_row_scale_xy": [
+    0.27259684361549497,
+    0.27259684361549497
+  ],
+  "source_ground_y": 717,
+  "boundary_anchor_xy": [
+    96,
+    195
+  ],
+  "matte_alpha_floor": 0,
+  "method": "native-alpha major connected poses, shared isotropic row registration",
+  "frame_duration_ms": [
+    140,
+    140,
+    140,
+    140,
+    280
+  ],
+  "frames": [
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/00.png",
+      "sha256": "8345534b6ad18683cc924604c22c87e5e52441f1a8da2af52dfd8693698d7879",
+      "bytes": 20607,
+      "source_origin_box": [
+        119,
+        84,
+        372,
+        722
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        249,
+        633
+      ],
+      "source_horizontal_anchor": 117.5,
+      "solid_bbox": [
+        65,
+        24,
+        132,
+        195
+      ],
+      "nonzero_bbox": [
+        65,
+        23,
+        132,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        65,
+        23,
+        60,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/01.png",
+      "sha256": "e4160b549a7d6bb93a9599fd53623063a33242c4d0f23531ef42dc7d72ed8761",
+      "bytes": 22314,
+      "source_origin_box": [
+        493,
+        44,
+        811,
+        719
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        314,
+        671
+      ],
+      "source_horizontal_anchor": 166.0,
+      "solid_bbox": [
+        52,
+        13,
+        136,
+        194
+      ],
+      "nonzero_bbox": [
+        51,
+        12,
+        137,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        51,
+        12,
+        55,
+        13
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/02.png",
+      "sha256": "f97b6c073805399d6e4a60bbaa8069222b671a39f2e8bdbaa2b90477d972c276",
+      "bytes": 22424,
+      "source_origin_box": [
+        910,
+        16,
+        1253,
+        676
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        338,
+        656
+      ],
+      "source_horizontal_anchor": 180.25,
+      "solid_bbox": [
+        48,
+        5,
+        139,
+        183
+      ],
+      "nonzero_bbox": [
+        48,
+        4,
+        140,
+        183
+      ],
+      "transparent_margins_ltrb": [
+        48,
+        4,
+        52,
+        25
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/03.png",
+      "sha256": "41a34724210135b27c15b90c460024efe2ddc18b1d21d134fbf3bdf9a862c3a6",
+      "bytes": 22613,
+      "source_origin_box": [
+        1325,
+        69,
+        1676,
+        719
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        346,
+        646
+      ],
+      "source_horizontal_anchor": 169.0,
+      "solid_bbox": [
+        51,
+        20,
+        144,
+        194
+      ],
+      "nonzero_bbox": [
+        51,
+        19,
+        145,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        51,
+        19,
+        47,
+        13
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/frames/04.png",
+      "sha256": "9e2589e9cbd32df5854130ff7343d4d3d40ac95c1bc6248da6017e71259d0794",
+      "bytes": 19598,
+      "source_origin_box": [
+        1801,
+        21,
+        2030,
+        721
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        224,
+        695
+      ],
+      "source_horizontal_anchor": 121.0,
+      "solid_bbox": [
+        64,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        64,
+        6,
+        125,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        64,
+        6,
+        67,
+        13
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/native-first-frame.png",
+      "sha256": "8345534b6ad18683cc924604c22c87e5e52441f1a8da2af52dfd8693698d7879",
+      "bytes": 20607
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/contact-sheet.png",
+      "sha256": "5e988eb143973d5079277cbaeaa6b6f37da8875bdf08472906965cef49118c30",
+      "bytes": 178525
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/jumping-dark.gif",
+      "sha256": "af17fc5bf52fcb126e8c78fb6f65cac7d08edfd828f21f3de950116bd9cd4104",
+      "bytes": 44588
+    },
+    {
+      "path": "03_校服绫波丽/P4-B/candidates/attempt-01/jumping/jumping-light.gif",
+      "sha256": "db5fb4c443ef6c03214d9d2681c08b77f63b09067d32fb72b2d481afc4e40deb",
+      "bytes": 44714
+    }
+  ]
+}

@@ -1,0 +1,1195 @@
+{
+  "schema_version": 1,
+  "stage": "REI-PET-P3-FIX",
+  "date": "2026-11-27",
+  "basis": "REI-PET-P3-MAIN-REVIEW-01",
+  "p3_status": "PARTIAL",
+  "source_provenance": {
+    "historical_download_source_missing": true,
+    "current_workspace_freeze_confirmation": "PENDING_USER_CONFIRMATION"
+  },
+  "source_p3_manifest_sha256": "eb5a5aea56f3d405334d073ef06e25daba98e888a5150e49bfd2e964f6d95d9a",
+  "reproducible_recipe": {
+    "path": "build_p3_fix.py",
+    "sha256": "95426e184e8d849d125557d140668891acb7b45ba6bd7c5759058bccfdf8faf0",
+    "tested_runtime": "Python 3.14.6, Pillow 12.3.0, NumPy 2.4.6, SciPy 1.18.0",
+    "run_from": "Rei workspace root, on a fresh output staging directory with the same fixture paths"
+  },
+  "assets_unchanged_source_and_p3": {
+    "rei-school": {
+      "original_source": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-school-base-v1.0.png",
+        "sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1",
+        "bytes": 1349906,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "source_backup": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-school-base-v1.0.png",
+        "sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1"
+      },
+      "p3_master_before": {
+        "path": "rei-school/master-rgba.png",
+        "sha256": "38b2db6fabc1daf5ad5b368152a12cc0a92a22a0abb12ce0dafcd588f61e8528",
+        "bytes": 611410
+      },
+      "p3_sample_180_before": {
+        "path": "rei-school/sample-192x208.png",
+        "sha256": "6ca374cd0b7e9ba7c3d6983641bece139b9fc9d0510a51475e87c776878cd8de",
+        "bytes": 17512
+      },
+      "scale_source": {
+        "path": "rei-school/master-rgba.png",
+        "sha256": "38b2db6fabc1daf5ad5b368152a12cc0a92a22a0abb12ce0dafcd588f61e8528",
+        "bytes": 611410
+      }
+    },
+    "rei-white": {
+      "original_source": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-white-base-v1.0.png",
+        "sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019",
+        "bytes": 1374491,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "source_backup": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-white-base-v1.0.png",
+        "sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019"
+      },
+      "p3_master_before": {
+        "path": "rei-white/master-rgba.png",
+        "sha256": "bcde5e70d0476a1b69e5a5b4d08a911d3eb72ff5df2a295eff4f18b922ed9b63",
+        "bytes": 636349
+      },
+      "p3_sample_180_before": {
+        "path": "rei-white/sample-192x208.png",
+        "sha256": "99d6d3adf8317eebd08bbb765fd1d13963d6d23447f52c3f5c6d2b3e67bd6a41",
+        "bytes": 18483
+      },
+      "scale_source": {
+        "path": "rei-white-master-rgba-p3-fix.png",
+        "sha256": "92ff3c4d9c33534a58d4c54d0556bef7d98dfe49cea6804f9b29ec90ff174c5c",
+        "bytes": 636234
+      }
+    },
+    "rei-black": {
+      "original_source": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-black-base-v1.0.png",
+        "sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb",
+        "bytes": 1286466,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "source_backup": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-black-base-v1.0.png",
+        "sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb"
+      },
+      "p3_master_before": {
+        "path": "rei-black/master-rgba.png",
+        "sha256": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+        "bytes": 581380
+      },
+      "p3_sample_180_before": {
+        "path": "rei-black/sample-192x208.png",
+        "sha256": "69f9c681355b6f8b0e0fdf59e2d7d49d689d4d461d95052bb29a1f58cb84db26",
+        "bytes": 16762
+      },
+      "scale_source": {
+        "path": "rei-black/master-rgba.png",
+        "sha256": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+        "bytes": 581380
+      }
+    }
+  },
+  "white_local_repair": {
+    "declared_roi_half_open": [
+      528,
+      910,
+      542,
+      970
+    ],
+    "method": "Modify alpha only between paired source ink rails in the specified ROI. Keep RGB except zeroing hidden RGB at newly transparent pixels.",
+    "track_y": [
+      910,
+      920,
+      930,
+      945,
+      955,
+      969
+    ],
+    "left_track_x": [
+      534,
+      534,
+      533,
+      532,
+      531,
+      530
+    ],
+    "right_track_x": [
+      537,
+      536,
+      536,
+      536,
+      536,
+      536
+    ],
+    "rail_search_radius_px": 1,
+    "paired_rail_separation_px_inclusive": [
+      2,
+      8
+    ],
+    "source_blue_max_for_protected_ink": 170,
+    "source_blue_fade_from_to": [
+      211,
+      231
+    ],
+    "stats": {
+      "processed_rail_pairs": 60,
+      "skipped_rows": [],
+      "changed_pixel_count": 80,
+      "observed_changed_bbox": [
+        532,
+        917,
+        536,
+        962
+      ],
+      "outside_roi_changed_pixels": 0,
+      "protected_dark_edge_changed_pixels": 0,
+      "row_changes": [
+        {
+          "y": 917,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 918,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 919,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 920,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 922,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 923,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 924,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 925,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 926,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 927,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 928,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 929,
+          "x": [
+            535
+          ]
+        },
+        {
+          "y": 930,
+          "x": [
+            534,
+            535
+          ]
+        },
+        {
+          "y": 931,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 932,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 933,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 935,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 936,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 937,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 938,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 939,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 940,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 941,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 942,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 943,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 944,
+          "x": [
+            533,
+            534
+          ]
+        },
+        {
+          "y": 945,
+          "x": [
+            533,
+            534
+          ]
+        },
+        {
+          "y": 946,
+          "x": [
+            533,
+            534
+          ]
+        },
+        {
+          "y": 947,
+          "x": [
+            534
+          ]
+        },
+        {
+          "y": 948,
+          "x": [
+            533,
+            534
+          ]
+        },
+        {
+          "y": 949,
+          "x": [
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 950,
+          "x": [
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 951,
+          "x": [
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 952,
+          "x": [
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 953,
+          "x": [
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 954,
+          "x": [
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 955,
+          "x": [
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 956,
+          "x": [
+            532,
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 957,
+          "x": [
+            532,
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 958,
+          "x": [
+            532,
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 959,
+          "x": [
+            532,
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 960,
+          "x": [
+            532,
+            533,
+            534,
+            535
+          ]
+        },
+        {
+          "y": 961,
+          "x": [
+            532,
+            533,
+            534,
+            535
+          ]
+        }
+      ]
+    },
+    "before_alpha": {
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "nonzero_alpha_bbox": [
+        284,
+        22,
+        749,
+        1510
+      ],
+      "alpha128_bbox": [
+        285,
+        23,
+        748,
+        1509
+      ],
+      "alpha128_height": 1486,
+      "alpha_zero": 1219985,
+      "alpha_partial": 15074,
+      "alpha_full": 337805,
+      "transparent_margins_LTRB": [
+        284,
+        22,
+        275,
+        26
+      ],
+      "opaque_component_count_alpha128": 1,
+      "hidden_nonzero_rgb_pixels": 0
+    },
+    "after_alpha": {
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "nonzero_alpha_bbox": [
+        284,
+        22,
+        749,
+        1510
+      ],
+      "alpha128_bbox": [
+        285,
+        23,
+        748,
+        1509
+      ],
+      "alpha128_height": 1486,
+      "alpha_zero": 1220045,
+      "alpha_partial": 15066,
+      "alpha_full": 337753,
+      "transparent_margins_LTRB": [
+        284,
+        22,
+        275,
+        26
+      ],
+      "opaque_component_count_alpha128": 1,
+      "hidden_nonzero_rgb_pixels": 0
+    },
+    "fixed_master": {
+      "path": "rei-white-master-rgba-p3-fix.png",
+      "sha256": "92ff3c4d9c33534a58d4c54d0556bef7d98dfe49cea6804f9b29ec90ff174c5c",
+      "bytes": 636234
+    },
+    "fixed_mask": {
+      "path": "rei-white-alpha-mask-p3-fix.png",
+      "sha256": "e45c0b385ee0c7d94ea25459f9e04d3afe4fac4f14349eb5ef78ca55652f7de5",
+      "bytes": 16579
+    },
+    "comparison": {
+      "path": "rei-white-edge-before-after.png",
+      "sha256": "ce46fff7d4ceaee0db8fbd250782bfcea99d93300b44e41b811572d0a0518e7c",
+      "bytes": 26901
+    },
+    "before_mask": {
+      "path_from_p3_root": "rei-white/alpha-mask.png",
+      "sha256": "5909d398788d9152824640d8122068bd75eb2348adf8a2a134072b0fbd216919"
+    },
+    "visual_result": "5× 明暗底逐图对比，大腿内侧连续浅色残边明显收敛。留有个别低对比混合像素，双侧深线可辨。"
+  },
+  "scale_candidates": [
+    {
+      "id": "rei-school",
+      "target_height": 180,
+      "file": {
+        "path": "scale-candidates/rei-school/rei-school-180px.png",
+        "sha256": "6ca374cd0b7e9ba7c3d6983641bece139b9fc9d0510a51475e87c776878cd8de",
+        "bytes": 17512
+      },
+      "transform": {
+        "scale_xy": [
+          0.12162162162162163,
+          0.12162162162162163
+        ],
+        "source_foot_x": 522.5,
+        "source_alpha128_bottom": 1506,
+        "source_box_in_padded_input": [
+          1269.1666666666667,
+          1438.6666666666667,
+          2847.833333333333,
+          3148.8888888888887
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          67,
+          14,
+          124,
+          196
+        ],
+        "alpha128_bbox": [
+          67,
+          15,
+          123,
+          195
+        ],
+        "alpha128_height": 180,
+        "alpha_zero": 34636,
+        "alpha_partial": 1181,
+        "alpha_full": 4119,
+        "transparent_margins_LTRB": [
+          67,
+          14,
+          68,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": 0,
+      "frame_edge_nonzero_alpha": false
+    },
+    {
+      "id": "rei-school",
+      "target_height": 188,
+      "file": {
+        "path": "scale-candidates/rei-school/rei-school-188px.png",
+        "sha256": "ac82f3d0a6eb17945a7e25266ab03e3f93f82506067da65975c9e012df9f157d",
+        "bytes": 18894
+      },
+      "transform": {
+        "scale_xy": [
+          0.12702702702702703,
+          0.12702702702702703
+        ],
+        "source_foot_x": 522.5,
+        "source_alpha128_bottom": 1506,
+        "source_box_in_padded_input": [
+          1302.7553191489362,
+          1506.8936170212767,
+          2814.244680851064,
+          3144.3404255319147
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          65,
+          6,
+          125,
+          196
+        ],
+        "alpha128_bbox": [
+          66,
+          7,
+          125,
+          195
+        ],
+        "alpha128_height": 188,
+        "alpha_zero": 34166,
+        "alpha_partial": 1238,
+        "alpha_full": 4532,
+        "transparent_margins_LTRB": [
+          65,
+          6,
+          67,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": null,
+      "frame_edge_nonzero_alpha": false
+    },
+    {
+      "id": "rei-school",
+      "target_height": 194,
+      "file": {
+        "path": "scale-candidates/rei-school/rei-school-194px.png",
+        "sha256": "39b1d577245243205a9c23db000cbeb118ac8c176bb788a9d9a04128cb57da73",
+        "bytes": 19780
+      },
+      "transform": {
+        "scale_xy": [
+          0.13108108108108107,
+          0.13108108108108107
+        ],
+        "source_foot_x": 522.5,
+        "source_alpha128_bottom": 1506,
+        "source_box_in_padded_input": [
+          1326.1288659793813,
+          1554.3711340206185,
+          2790.8711340206182,
+          3141.1752577319585
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          65,
+          0,
+          126,
+          196
+        ],
+        "alpha128_bbox": [
+          65,
+          1,
+          126,
+          195
+        ],
+        "alpha128_height": 194,
+        "alpha_zero": 33808,
+        "alpha_partial": 1269,
+        "alpha_full": 4859,
+        "transparent_margins_LTRB": [
+          65,
+          0,
+          66,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": null,
+      "frame_edge_nonzero_alpha": true
+    },
+    {
+      "id": "rei-white",
+      "target_height": 180,
+      "file": {
+        "path": "scale-candidates/rei-white/rei-white-180px.png",
+        "sha256": "cd96da0edf9a0b326774ac8ef14e19973e2b0f57852b590344ab5200c58b6b36",
+        "bytes": 18478
+      },
+      "transform": {
+        "scale_xy": [
+          0.12113055181695828,
+          0.12113055181695828
+        ],
+        "source_foot_x": 520,
+        "source_alpha128_bottom": 1509,
+        "source_box_in_padded_input": [
+          1263.4666666666667,
+          1435.1666666666667,
+          2848.5333333333333,
+          3152.322222222222
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          67,
+          14,
+          124,
+          196
+        ],
+        "alpha128_bbox": [
+          68,
+          15,
+          124,
+          195
+        ],
+        "alpha128_height": 180,
+        "alpha_zero": 34439,
+        "alpha_partial": 1545,
+        "alpha_full": 3952,
+        "transparent_margins_LTRB": [
+          67,
+          14,
+          68,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": 43,
+      "frame_edge_nonzero_alpha": false
+    },
+    {
+      "id": "rei-white",
+      "target_height": 188,
+      "file": {
+        "path": "scale-candidates/rei-white/rei-white-188px.png",
+        "sha256": "82fbe069ad19e8b599d791c75897fcccf97f9b946b5834c873fabe5e554f5bf6",
+        "bytes": 19809
+      },
+      "transform": {
+        "scale_xy": [
+          0.126514131897712,
+          0.126514131897712
+        ],
+        "source_foot_x": 520,
+        "source_alpha128_bottom": 1509,
+        "source_box_in_padded_input": [
+          1297.1914893617022,
+          1503.6702127659576,
+          2814.808510638298,
+          3147.755319148936
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          66,
+          6,
+          125,
+          196
+        ],
+        "alpha128_bbox": [
+          66,
+          7,
+          125,
+          195
+        ],
+        "alpha128_height": 188,
+        "alpha_zero": 33966,
+        "alpha_partial": 1633,
+        "alpha_full": 4337,
+        "transparent_margins_LTRB": [
+          66,
+          6,
+          67,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": null,
+      "frame_edge_nonzero_alpha": false
+    },
+    {
+      "id": "rei-white",
+      "target_height": 194,
+      "file": {
+        "path": "scale-candidates/rei-white/rei-white-194px.png",
+        "sha256": "5745d247893852640b8c87155f61e4971af9a11eb36f2601105e801c34a2f3d7",
+        "bytes": 20829
+      },
+      "transform": {
+        "scale_xy": [
+          0.13055181695827725,
+          0.13055181695827725
+        ],
+        "source_foot_x": 520,
+        "source_alpha128_bottom": 1509,
+        "source_box_in_padded_input": [
+          1320.659793814433,
+          1551.340206185567,
+          2791.340206185567,
+          3144.577319587629
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          65,
+          0,
+          126,
+          196
+        ],
+        "alpha128_bbox": [
+          65,
+          1,
+          126,
+          195
+        ],
+        "alpha128_height": 194,
+        "alpha_zero": 33578,
+        "alpha_partial": 1690,
+        "alpha_full": 4668,
+        "transparent_margins_LTRB": [
+          65,
+          0,
+          66,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": null,
+      "frame_edge_nonzero_alpha": true
+    },
+    {
+      "id": "rei-black",
+      "target_height": 180,
+      "file": {
+        "path": "scale-candidates/rei-black/rei-black-180px.png",
+        "sha256": "69f9c681355b6f8b0e0fdf59e2d7d49d689d4d461d95052bb29a1f58cb84db26",
+        "bytes": 16762
+      },
+      "transform": {
+        "scale_xy": [
+          0.12121212121212122,
+          0.12121212121212122
+        ],
+        "source_foot_x": 521.5,
+        "source_alpha128_bottom": 1509,
+        "source_box_in_padded_input": [
+          1265.5,
+          1436.25,
+          2849.5,
+          3152.25
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          67,
+          14,
+          124,
+          196
+        ],
+        "alpha128_bbox": [
+          67,
+          15,
+          123,
+          195
+        ],
+        "alpha128_height": 180,
+        "alpha_zero": 34757,
+        "alpha_partial": 1375,
+        "alpha_full": 3804,
+        "transparent_margins_LTRB": [
+          67,
+          14,
+          68,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": 0,
+      "frame_edge_nonzero_alpha": false
+    },
+    {
+      "id": "rei-black",
+      "target_height": 188,
+      "file": {
+        "path": "scale-candidates/rei-black/rei-black-188px.png",
+        "sha256": "0f43ec8c132b17fc9d531d7ace855c0d7285d404fbded86f9ee396aff5dab302",
+        "bytes": 18065
+      },
+      "transform": {
+        "scale_xy": [
+          0.1265993265993266,
+          0.1265993265993266
+        ],
+        "source_foot_x": 521.5,
+        "source_alpha128_bottom": 1509,
+        "source_box_in_padded_input": [
+          1299.2021276595744,
+          1504.7074468085107,
+          2815.797872340426,
+          3147.6861702127662
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          66,
+          6,
+          125,
+          196
+        ],
+        "alpha128_bbox": [
+          66,
+          7,
+          125,
+          195
+        ],
+        "alpha128_height": 188,
+        "alpha_zero": 34286,
+        "alpha_partial": 1448,
+        "alpha_full": 4202,
+        "transparent_margins_LTRB": [
+          66,
+          6,
+          67,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": null,
+      "frame_edge_nonzero_alpha": false
+    },
+    {
+      "id": "rei-black",
+      "target_height": 194,
+      "file": {
+        "path": "scale-candidates/rei-black/rei-black-194px.png",
+        "sha256": "619150e3d8a70abb2d0f4c0aa4d47f4ceabd781ab229a1b7927ae4c15075af12",
+        "bytes": 18933
+      },
+      "transform": {
+        "scale_xy": [
+          0.13063973063973064,
+          0.13063973063973064
+        ],
+        "source_foot_x": 521.5,
+        "source_alpha128_bottom": 1509,
+        "source_box_in_padded_input": [
+          1322.6546391752577,
+          1552.3453608247423,
+          2792.345360824742,
+          3144.5103092783506
+        ]
+      },
+      "alpha": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          65,
+          0,
+          126,
+          196
+        ],
+        "alpha128_bbox": [
+          65,
+          1,
+          125,
+          195
+        ],
+        "alpha128_height": 194,
+        "alpha_zero": 33931,
+        "alpha_partial": 1490,
+        "alpha_full": 4515,
+        "transparent_margins_LTRB": [
+          65,
+          0,
+          66,
+          12
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      },
+      "same_scale_p3_changed_rgba_pixels": null,
+      "frame_edge_nonzero_alpha": true
+    }
+  ],
+  "scale_policy": {
+    "foot_anchor_cell_boundary_xy": [
+      96,
+      195
+    ],
+    "frame_size": [
+      192,
+      208
+    ],
+    "resampling": "Pillow RGBA Lanczos, same exact x/y scale via floating point source box, α below 8 cleared",
+    "heights": [
+      180,
+      188,
+      194
+    ],
+    "selected_height": null,
+    "white_basis": "P3-FIX RGBA",
+    "school_black_basis": "existing P3 RGBA",
+    "safety_note": "Margins measured in static cells. Any full-frame contact at 194 px is reported. Motion clearance requires future row-level verification."
+  },
+  "installed_asuka_native_comparison": {
+    "asuka-school": {
+      "path": "C:\\Users\\86191\\.codex\\pets\\asuka-school\\spritesheet.webp",
+      "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+      "source_cell_row_col": [
+        0,
+        0
+      ],
+      "native_image_bbox_alpha128": [
+        35,
+        5,
+        157,
+        203
+      ],
+      "observed_native": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          34,
+          5,
+          157,
+          203
+        ],
+        "alpha128_bbox": [
+          35,
+          5,
+          157,
+          203
+        ],
+        "alpha128_height": 198,
+        "alpha_zero": 26554,
+        "alpha_partial": 12883,
+        "alpha_full": 499,
+        "transparent_margins_LTRB": [
+          34,
+          5,
+          35,
+          5
+        ],
+        "opaque_component_count_alpha128": 1,
+        "hidden_nonzero_rgb_pixels": 0
+      }
+    },
+    "asuka-work": {
+      "path": "C:\\Users\\86191\\.codex\\pets\\asuka-work\\spritesheet.webp",
+      "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+      "source_cell_row_col": [
+        0,
+        0
+      ],
+      "native_image_bbox_alpha128": [
+        36,
+        7,
+        156,
+        201
+      ],
+      "observed_native": {
+        "dimensions": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "nonzero_alpha_bbox": [
+          34,
+          5,
+          158,
+          203
+        ],
+        "alpha128_bbox": [
+          36,
+          7,
+          156,
+          201
+        ],
+        "alpha128_height": 194,
+        "alpha_zero": 26965,
+        "alpha_partial": 12390,
+        "alpha_full": 581,
+        "transparent_margins_LTRB": [
+          34,
+          5,
+          34,
+          5
+        ],
+        "opaque_component_count_alpha128": 2,
+        "hidden_nonzero_rgb_pixels": 0
+      }
+    }
+  },
+  "new_scale_previews": [
+    {
+      "path": "scale-comparison-dark.png",
+      "sha256": "256af678a99e126ebac342934982bc2c60597cefa2901c60959c0a2e987dd4cf",
+      "bytes": 265454
+    },
+    {
+      "path": "scale-comparison-light.png",
+      "sha256": "b8f713be064036d5d947d1d6a3fc1623c5979a32890c41d20124ca48e9f12db2",
+      "bytes": 265230
+    }
+  ],
+  "inherited_previews": [
+    {
+      "path": "frozen-masters-preview.png",
+      "sha256": "8c840462a94961fe2f84c5e449ad5b019e723d0a6d049e4307660a2e61477e0a",
+      "bytes": 505531
+    },
+    {
+      "path": "native-size-comparison.png",
+      "sha256": "6a3c0ddf9696d2f907905b58e6aeae50a46aa9a402a449bf73beb65c17e8d937",
+      "bytes": 227113
+    },
+    {
+      "path": "equal-height-comparison.png",
+      "sha256": "3f46f07b65203c404354fe8b9cc170cdb07860d75ee2ac83e34e7894c905665e",
+      "bytes": 109699
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "rei-white",
+  "state": "failed",
+  "attempt": "attempt-01",
+  "source_path": "04_白色战斗服/P4-B/originals/failed/attempt-01/source.png",
+  "sha256": "52de6d4b494e0dd6409bcb447d56a8ed9d400bd14754f6cdc2184261739413b6",
+  "native_alpha_pass": true,
+  "status": "STRUCTURE_READY_FOR_VISUAL_REVIEW",
+  "size": [
+    2188,
+    718
+  ],
+  "mode": "RGBA",
+  "alpha_zero": 554585,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "row_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/row-evidence.json",
+  "contact_path": "04_白色战斗服/P4-B/candidates/attempt-01/failed/contact-sheet.png",
+  "min_top_margin": 4,
+  "solid_heights": [
+    190,
+    190,
+    187,
+    184,
+    183,
+    181,
+    186,
+    189
+  ],
+  "solid_bottoms": [
+    195,
+    195,
+    195,
+    195,
+    195,
+    195,
+    195,
+    195
+  ]
+}

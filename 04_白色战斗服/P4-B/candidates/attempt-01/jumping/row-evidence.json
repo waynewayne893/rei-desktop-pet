@@ -1,0 +1,241 @@
+{
+  "id": "rei-white",
+  "state": "jumping",
+  "source": {
+    "path": "04_白色战斗服/P4-B/originals/jumping/attempt-01/source.png",
+    "sha256": "520c682bd24b246c29244e3d73123b7f4fd0f8fb25d0965ed72af580b00ace3a",
+    "bytes": 1547464,
+    "size": [
+      1983,
+      793
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 540598
+  },
+  "registered_row_scale_xy": [
+    0.2602739726027397,
+    0.2602739726027397
+  ],
+  "source_ground_y": 757,
+  "boundary_anchor_xy": [
+    96,
+    195
+  ],
+  "matte_alpha_floor": 0,
+  "method": "native-alpha major connected poses, shared isotropic row registration",
+  "frame_duration_ms": [
+    140,
+    140,
+    140,
+    140,
+    280
+  ],
+  "frames": [
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/00.png",
+      "sha256": "422f2706c693b29c3c55eb5ff79aa421e9a7461cbfe55376412215ee8d7290eb",
+      "bytes": 20625,
+      "source_origin_box": [
+        78,
+        100,
+        351,
+        761
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        268,
+        656
+      ],
+      "source_horizontal_anchor": 136.5,
+      "solid_bbox": [
+        62,
+        25,
+        130,
+        195
+      ],
+      "nonzero_bbox": [
+        61,
+        25,
+        131,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        61,
+        25,
+        61,
+        13
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/01.png",
+      "sha256": "144e63806ba5901824cf9cb9531932444925f62eb9de7018523bc81457b4dccd",
+      "bytes": 19649,
+      "source_origin_box": [
+        508,
+        64,
+        758,
+        759
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        246,
+        690
+      ],
+      "source_horizontal_anchor": 105.5,
+      "solid_bbox": [
+        70,
+        16,
+        132,
+        194
+      ],
+      "nonzero_bbox": [
+        69,
+        15,
+        133,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        69,
+        15,
+        59,
+        13
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/02.png",
+      "sha256": "5dbdcc85e1dd4e1ac357d89a8f28f73d010507f589095206359a22e516fb27c3",
+      "bytes": 19412,
+      "source_origin_box": [
+        856,
+        23,
+        1145,
+        695
+      ],
+      "source_local_solid_bbox": [
+        5,
+        4,
+        285,
+        668
+      ],
+      "source_horizontal_anchor": 141.0,
+      "solid_bbox": [
+        61,
+        5,
+        133,
+        178
+      ],
+      "nonzero_bbox": [
+        60,
+        4,
+        134,
+        178
+      ],
+      "transparent_margins_ltrb": [
+        60,
+        4,
+        58,
+        30
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/03.png",
+      "sha256": "08809d025d6f6fbac90865d6d7db5190807d6b49d55090ea9b3490e2406e54a7",
+      "bytes": 20575,
+      "source_origin_box": [
+        1236,
+        92,
+        1518,
+        761
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        278,
+        665
+      ],
+      "source_horizontal_anchor": 141.5,
+      "solid_bbox": [
+        60,
+        23,
+        131,
+        195
+      ],
+      "nonzero_bbox": [
+        60,
+        22,
+        132,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        60,
+        22,
+        60,
+        13
+      ]
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/frames/04.png",
+      "sha256": "7aeeddc3e8dcc3d92ffc9908350877d12e2fb24ad10293331649f62e64e0900d",
+      "bytes": 20664,
+      "source_origin_box": [
+        1657,
+        52,
+        1889,
+        760
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        227,
+        703
+      ],
+      "source_horizontal_anchor": 116.0,
+      "solid_bbox": [
+        67,
+        13,
+        125,
+        195
+      ],
+      "nonzero_bbox": [
+        66,
+        12,
+        126,
+        195
+      ],
+      "transparent_margins_ltrb": [
+        66,
+        12,
+        66,
+        13
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/native-first-frame.png",
+      "sha256": "422f2706c693b29c3c55eb5ff79aa421e9a7461cbfe55376412215ee8d7290eb",
+      "bytes": 20625
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/contact-sheet.png",
+      "sha256": "e388171a34f4f635494ed3c374754b33242bf7ae3fe901517861aee417798e71",
+      "bytes": 165778
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/jumping-dark.gif",
+      "sha256": "21d7c0d70699a4927a4d61220b3915b001a8a0e64b91092c0d66d936cc281a63",
+      "bytes": 41933
+    },
+    {
+      "path": "04_白色战斗服/P4-B/candidates/attempt-01/jumping/jumping-light.gif",
+      "sha256": "ed2ae0741b04de85be4114e9a26be44be2c4efe6b90f3f833f7fda021f26fbd4",
+      "bytes": 42037
+    }
+  ]
+}

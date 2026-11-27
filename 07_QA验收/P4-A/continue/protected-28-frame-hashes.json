@@ -1,0 +1,343 @@
+{
+  "baseline_manifest": "07_QA验收/REI_P4A_ASSET_MANIFEST.json",
+  "baseline_manifest_sha256": "f0531fc6e2cad4a491f4b174d51e570648a89d163e7a3222a8811d11b7104b18",
+  "hashed_frames": [
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "frame": 1,
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/00.png",
+      "p4a_sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+      "continue_sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc"
+    },
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "frame": 2,
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/01.png",
+      "p4a_sha256": "210a1e7955ea7ccb0c74e3d3c069ed3f4959815143f130ddf8cb18f5ebb1c300",
+      "continue_sha256": "210a1e7955ea7ccb0c74e3d3c069ed3f4959815143f130ddf8cb18f5ebb1c300"
+    },
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "frame": 3,
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/02.png",
+      "p4a_sha256": "481874ee79839dabe2ebae19c55115f16ea4fb1b02df78c176d05717d8bb1416",
+      "continue_sha256": "481874ee79839dabe2ebae19c55115f16ea4fb1b02df78c176d05717d8bb1416"
+    },
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "frame": 4,
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/03.png",
+      "p4a_sha256": "df966e8ee3f8e79be77bf38366206869ad43dee8c9ba62f53593e48e81627bd5",
+      "continue_sha256": "df966e8ee3f8e79be77bf38366206869ad43dee8c9ba62f53593e48e81627bd5"
+    },
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "frame": 5,
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/04.png",
+      "p4a_sha256": "0ed679baecc7b0d1870c4a57bd50bea333e7f8d3a3d3e6a20f0c16821ef1a0c3",
+      "continue_sha256": "0ed679baecc7b0d1870c4a57bd50bea333e7f8d3a3d3e6a20f0c16821ef1a0c3"
+    },
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "frame": 6,
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/05.png",
+      "p4a_sha256": "c9443243ef3bd80b4031e6cd324f369017c1e4988916ac373f93d66867d26af4",
+      "continue_sha256": "c9443243ef3bd80b4031e6cd324f369017c1e4988916ac373f93d66867d26af4"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 1,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/00.png",
+      "p4a_sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00",
+      "continue_sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 2,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/01.png",
+      "p4a_sha256": "feec8a714f98d079e49695800e3164d1964d12fd7cc49a24e311bdebf35b7e79",
+      "continue_sha256": "feec8a714f98d079e49695800e3164d1964d12fd7cc49a24e311bdebf35b7e79"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 3,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/02.png",
+      "p4a_sha256": "52edaddc6bbb56ee34c497a3ced4abe19817ddee23f8aa624f8ad5fb74b943cd",
+      "continue_sha256": "52edaddc6bbb56ee34c497a3ced4abe19817ddee23f8aa624f8ad5fb74b943cd"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 4,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/03.png",
+      "p4a_sha256": "eece125185b95bc8ad4954dd9e1a201cf5d7b2c72b49dc96bbc33b1f93aebd02",
+      "continue_sha256": "eece125185b95bc8ad4954dd9e1a201cf5d7b2c72b49dc96bbc33b1f93aebd02"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 5,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/04.png",
+      "p4a_sha256": "450bf1ca604e126b17d0a4dbff8273c17232190e050a7235e06abfada2150dc7",
+      "continue_sha256": "450bf1ca604e126b17d0a4dbff8273c17232190e050a7235e06abfada2150dc7"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 6,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/05.png",
+      "p4a_sha256": "2a74819e0d2b1c9c4b29d4b8e8f4906b23dc36165f431e3254b6d89450c2b5d6",
+      "continue_sha256": "2a74819e0d2b1c9c4b29d4b8e8f4906b23dc36165f431e3254b6d89450c2b5d6"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 7,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/06.png",
+      "p4a_sha256": "651e46cb86062cf8745b915eb9f3a970c4055e574a1cc96dff7b948ad31d7e30",
+      "continue_sha256": "651e46cb86062cf8745b915eb9f3a970c4055e574a1cc96dff7b948ad31d7e30"
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frame": 8,
+      "path": "03_校服绫波丽/P4-A/selected/running-right/frames/07.png",
+      "p4a_sha256": "18ffade9aa9e008fbe409d861a98a9254a173f232c31808936c89745b0a627f2",
+      "continue_sha256": "18ffade9aa9e008fbe409d861a98a9254a173f232c31808936c89745b0a627f2"
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "frame": 1,
+      "path": "05_黑色战斗服/P4-A/selected/idle/frames/00.png",
+      "p4a_sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455",
+      "continue_sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455"
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "frame": 2,
+      "path": "05_黑色战斗服/P4-A/selected/idle/frames/01.png",
+      "p4a_sha256": "3cf61021ca7bcd0a6bca6405bb20b498d9ffe305b0a82ab4319fae8e83d19930",
+      "continue_sha256": "3cf61021ca7bcd0a6bca6405bb20b498d9ffe305b0a82ab4319fae8e83d19930"
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "frame": 3,
+      "path": "05_黑色战斗服/P4-A/selected/idle/frames/02.png",
+      "p4a_sha256": "09860803125df4c2eac34c64877d28cae98b4c2901a97da931e1e21d4bf09b28",
+      "continue_sha256": "09860803125df4c2eac34c64877d28cae98b4c2901a97da931e1e21d4bf09b28"
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "frame": 4,
+      "path": "05_黑色战斗服/P4-A/selected/idle/frames/03.png",
+      "p4a_sha256": "66c3a767068c6189efb42367a8ee50eb42b76e7aaca2e157fa739693b9cf696f",
+      "continue_sha256": "66c3a767068c6189efb42367a8ee50eb42b76e7aaca2e157fa739693b9cf696f"
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "frame": 5,
+      "path": "05_黑色战斗服/P4-A/selected/idle/frames/04.png",
+      "p4a_sha256": "fa6b66526b64a04f5789c7bb3c7976ee5bcc3560eec22f2368b351d818556c9c",
+      "continue_sha256": "fa6b66526b64a04f5789c7bb3c7976ee5bcc3560eec22f2368b351d818556c9c"
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "frame": 6,
+      "path": "05_黑色战斗服/P4-A/selected/idle/frames/05.png",
+      "p4a_sha256": "cc4cf523b941bf23a8240f2695d9a3ab41f2bf68b47da61620a40fb710ced371",
+      "continue_sha256": "cc4cf523b941bf23a8240f2695d9a3ab41f2bf68b47da61620a40fb710ced371"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 1,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/00.png",
+      "p4a_sha256": "155d861b81b59253059834a3b32585dd662503f29432c342fea8902a8099924d",
+      "continue_sha256": "155d861b81b59253059834a3b32585dd662503f29432c342fea8902a8099924d"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 2,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/01.png",
+      "p4a_sha256": "59827a05dee9a7455a72bd917966d6998f51c5077e548c8c30514a315cddf54a",
+      "continue_sha256": "59827a05dee9a7455a72bd917966d6998f51c5077e548c8c30514a315cddf54a"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 3,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/02.png",
+      "p4a_sha256": "ffdd01daeae428a88a103fdd3bbd0476a45a07f9ad6b9eda451cd3fa23dd9615",
+      "continue_sha256": "ffdd01daeae428a88a103fdd3bbd0476a45a07f9ad6b9eda451cd3fa23dd9615"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 4,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/03.png",
+      "p4a_sha256": "62e59b72a02d7fa32ab7adbdf3024432de8d99a6ce8ce71d1529a930bf1f3e14",
+      "continue_sha256": "62e59b72a02d7fa32ab7adbdf3024432de8d99a6ce8ce71d1529a930bf1f3e14"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 5,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/04.png",
+      "p4a_sha256": "6ab54abaa2a8ffd1fa7edc9e3fe01c14b849a4cd1eaa9d9f6ef8c5ba056db437",
+      "continue_sha256": "6ab54abaa2a8ffd1fa7edc9e3fe01c14b849a4cd1eaa9d9f6ef8c5ba056db437"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 6,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/05.png",
+      "p4a_sha256": "f4f1036b2fe3b1bee4f7276117656052d90bdc059f67188971094c008c24bbaf",
+      "continue_sha256": "f4f1036b2fe3b1bee4f7276117656052d90bdc059f67188971094c008c24bbaf"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 7,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/06.png",
+      "p4a_sha256": "73b1d0b6920a1af8c601efa34f71bce004e26294a4ede718c196aa31517ba8f9",
+      "continue_sha256": "73b1d0b6920a1af8c601efa34f71bce004e26294a4ede718c196aa31517ba8f9"
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frame": 8,
+      "path": "05_黑色战斗服/P4-A/selected/running-right/frames/07.png",
+      "p4a_sha256": "a4a629875790964f0fab78b44b89b7e26c42b20f450fd9af8bc5c9fecf401a7e",
+      "continue_sha256": "a4a629875790964f0fab78b44b89b7e26c42b20f450fd9af8bc5c9fecf401a7e"
+    }
+  ],
+  "other_protected_assets": [
+    {
+      "path": "03_校服绫波丽/P4-A/originals/idle/attempt-01/source.png",
+      "p4a_sha256": "376d787ff16f08c5d7f7dab27ea3440455c420931f4a497b581de59e83d73d85",
+      "continue_sha256": "376d787ff16f08c5d7f7dab27ea3440455c420931f4a497b581de59e83d73d85"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/native-first-frame.png",
+      "p4a_sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+      "continue_sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/contact-sheet.png",
+      "p4a_sha256": "e77a866ac199eb0da72f2c603ce92fac41681cbf7b76b902627237056bccb963",
+      "continue_sha256": "e77a866ac199eb0da72f2c603ce92fac41681cbf7b76b902627237056bccb963"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/idle-dark.gif",
+      "p4a_sha256": "a831ec4a90b2f77a51aade82b36d786a3a896ca4012f38db1d37b45bda99ca4d",
+      "continue_sha256": "a831ec4a90b2f77a51aade82b36d786a3a896ca4012f38db1d37b45bda99ca4d"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/idle-light.gif",
+      "p4a_sha256": "0953007c7ad8e3376e8c728cfb69029e31c6b31d21ea7fd5107af44877784c8f",
+      "continue_sha256": "0953007c7ad8e3376e8c728cfb69029e31c6b31d21ea7fd5107af44877784c8f"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/originals/running-right/attempt-01/source.png",
+      "p4a_sha256": "e9b7ce6efc3162931a9657be50724d0045e761d43a42b332462ebe08c18cba9f",
+      "continue_sha256": "e9b7ce6efc3162931a9657be50724d0045e761d43a42b332462ebe08c18cba9f"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/running-right/native-first-frame.png",
+      "p4a_sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00",
+      "continue_sha256": "4d6495559253a9cffcfc6b47676963fd497f2f026adad969124b01ebfeae3b00"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/running-right/contact-sheet.png",
+      "p4a_sha256": "32b31a1b87d31e391688d98b349397ba6c19a8911a9f6fadd4639b51f5a5a904",
+      "continue_sha256": "32b31a1b87d31e391688d98b349397ba6c19a8911a9f6fadd4639b51f5a5a904"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/running-right/running-right-dark.gif",
+      "p4a_sha256": "633552a4245c898747c6786e7b05700644ad83aaf96bcdafe9336450227675db",
+      "continue_sha256": "633552a4245c898747c6786e7b05700644ad83aaf96bcdafe9336450227675db"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/running-right/running-right-light.gif",
+      "p4a_sha256": "240a080357384cc6714b6f4df64425a673259c5af6bad88fe96d4baf20fc604e",
+      "continue_sha256": "240a080357384cc6714b6f4df64425a673259c5af6bad88fe96d4baf20fc604e"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/originals/idle/attempt-01/source.png",
+      "p4a_sha256": "0ce48630d0b4e366d45d9277d0369a494064e89139b0ca1c482f44a78be8d5ac",
+      "continue_sha256": "0ce48630d0b4e366d45d9277d0369a494064e89139b0ca1c482f44a78be8d5ac"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/idle/native-first-frame.png",
+      "p4a_sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455",
+      "continue_sha256": "e46d9facdf2c6045eed6f031d3fcf8cfffbf434f1ad690a6118e5c5bb3d03455"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/idle/contact-sheet.png",
+      "p4a_sha256": "447b66ce2d5f3c18085675428ccf4f05cce02a16544139556b15ec89f3cc27bf",
+      "continue_sha256": "447b66ce2d5f3c18085675428ccf4f05cce02a16544139556b15ec89f3cc27bf"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/idle/idle-dark.gif",
+      "p4a_sha256": "b8c336dcb92d144e6a51e9fd957a380c0cc6636972db1911555650c8d80184e9",
+      "continue_sha256": "b8c336dcb92d144e6a51e9fd957a380c0cc6636972db1911555650c8d80184e9"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/idle/idle-light.gif",
+      "p4a_sha256": "1638fc6b453c49717304819eb26d6cae73504cb17eb044a7754c087898445279",
+      "continue_sha256": "1638fc6b453c49717304819eb26d6cae73504cb17eb044a7754c087898445279"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/originals/running-right/attempt-01/source.png",
+      "p4a_sha256": "11711472443a06c866a699046c3cb28f40a536558c2fb622ad683be0d945ea30",
+      "continue_sha256": "11711472443a06c866a699046c3cb28f40a536558c2fb622ad683be0d945ea30"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/running-right/native-first-frame.png",
+      "p4a_sha256": "155d861b81b59253059834a3b32585dd662503f29432c342fea8902a8099924d",
+      "continue_sha256": "155d861b81b59253059834a3b32585dd662503f29432c342fea8902a8099924d"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/running-right/contact-sheet.png",
+      "p4a_sha256": "e9c8e9b123d7030a2edb507aaddf37d1377d54c500d74303cca90f599f2dc45b",
+      "continue_sha256": "e9c8e9b123d7030a2edb507aaddf37d1377d54c500d74303cca90f599f2dc45b"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/running-right/running-right-dark.gif",
+      "p4a_sha256": "bc53deb192bd12878493b8ebea21a3c2157e7fe50d95722044ed57f7670a9dc9",
+      "continue_sha256": "bc53deb192bd12878493b8ebea21a3c2157e7fe50d95722044ed57f7670a9dc9"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/selected/running-right/running-right-light.gif",
+      "p4a_sha256": "f7268a0a09cae7508baff67a7f0164ab51f60b7308c619f9c44ff8c507f61667",
+      "continue_sha256": "f7268a0a09cae7508baff67a7f0164ab51f60b7308c619f9c44ff8c507f61667"
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/P4-A-contact-sheet.png",
+      "p4a_sha256": "2385cf504e57f7822cfa4b63103179772e1179348c9d69fefd9f2782fd225a68",
+      "continue_sha256": "2385cf504e57f7822cfa4b63103179772e1179348c9d69fefd9f2782fd225a68"
+    },
+    {
+      "path": "05_黑色战斗服/P4-A/P4-A-contact-sheet.png",
+      "p4a_sha256": "0014de0600b805d2d94947c19c749bbba514af5befb6d94cc45918fc99dc6ed1",
+      "continue_sha256": "0014de0600b805d2d94947c19c749bbba514af5befb6d94cc45918fc99dc6ed1"
+    }
+  ],
+  "unchanged": true
+}

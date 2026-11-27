@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "rows": [
+    {
+      "state": "idle",
+      "frames": [
+        "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-idle-attempt-02\\idle\\00.png",
+        "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-idle-attempt-02\\idle\\01.png",
+        "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-idle-attempt-02\\idle\\02.png",
+        "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-idle-attempt-02\\idle\\03.png",
+        "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-idle-attempt-02\\idle\\04.png",
+        "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-idle-attempt-02\\idle\\05.png"
+      ],
+      "method": "components"
+    }
+  ]
+}

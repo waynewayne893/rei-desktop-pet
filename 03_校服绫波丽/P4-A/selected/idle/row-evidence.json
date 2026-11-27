@@ -1,0 +1,278 @@
+{
+  "id": "rei-school",
+  "state": "idle",
+  "source": {
+    "path": "03_校服绫波丽/P4-A/originals/idle/attempt-01/source.png",
+    "sha256": "376d787ff16f08c5d7f7dab27ea3440455c420931f4a497b581de59e83d73d85",
+    "bytes": 2710922,
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 19223
+  },
+  "registered_row_scale_xy": [
+    0.2712842712842713,
+    0.2712842712842713
+  ],
+  "source_ground_y": 709,
+  "boundary_anchor_xy": [
+    96,
+    195
+  ],
+  "matte_alpha_floor": 48,
+  "method": "native-alpha major connected poses, shared isotropic row registration",
+  "frame_duration_ms": [
+    280,
+    110,
+    110,
+    140,
+    140,
+    320
+  ],
+  "frames": [
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/00.png",
+      "sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+      "bytes": 18474,
+      "source_origin_box": [
+        104,
+        11,
+        317,
+        713
+      ],
+      "source_local_solid_bbox": [
+        5,
+        5,
+        208,
+        698
+      ],
+      "source_horizontal_anchor": 105.5,
+      "solid_bbox": [
+        69,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        68,
+        6,
+        125,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        68,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/01.png",
+      "sha256": "210a1e7955ea7ccb0c74e3d3c069ed3f4959815143f130ddf8cb18f5ebb1c300",
+      "bytes": 18559,
+      "source_origin_box": [
+        455,
+        11,
+        668,
+        713
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        208,
+        698
+      ],
+      "source_horizontal_anchor": 105.0,
+      "solid_bbox": [
+        69,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        68,
+        6,
+        125,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        68,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/02.png",
+      "sha256": "481874ee79839dabe2ebae19c55115f16ea4fb1b02df78c176d05717d8bb1416",
+      "bytes": 18565,
+      "source_origin_box": [
+        805,
+        11,
+        1018,
+        713
+      ],
+      "source_local_solid_bbox": [
+        5,
+        5,
+        209,
+        698
+      ],
+      "source_horizontal_anchor": 104.5,
+      "solid_bbox": [
+        69,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        68,
+        6,
+        125,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        68,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/03.png",
+      "sha256": "df966e8ee3f8e79be77bf38366206869ad43dee8c9ba62f53593e48e81627bd5",
+      "bytes": 18461,
+      "source_origin_box": [
+        1155,
+        11,
+        1368,
+        713
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        208,
+        698
+      ],
+      "source_horizontal_anchor": 104.5,
+      "solid_bbox": [
+        69,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        68,
+        6,
+        125,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        68,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/04.png",
+      "sha256": "0ed679baecc7b0d1870c4a57bd50bea333e7f8d3a3d3e6a20f0c16821ef1a0c3",
+      "bytes": 18540,
+      "source_origin_box": [
+        1503,
+        11,
+        1718,
+        713
+      ],
+      "source_local_solid_bbox": [
+        5,
+        5,
+        210,
+        698
+      ],
+      "source_horizontal_anchor": 106.5,
+      "solid_bbox": [
+        69,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        68,
+        6,
+        125,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        68,
+        6,
+        67,
+        12
+      ]
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/frames/05.png",
+      "sha256": "c9443243ef3bd80b4031e6cd324f369017c1e4988916ac373f93d66867d26af4",
+      "bytes": 18515,
+      "source_origin_box": [
+        1853,
+        11,
+        2068,
+        713
+      ],
+      "source_local_solid_bbox": [
+        5,
+        5,
+        210,
+        698
+      ],
+      "source_horizontal_anchor": 107.0,
+      "solid_bbox": [
+        68,
+        7,
+        124,
+        195
+      ],
+      "nonzero_bbox": [
+        68,
+        6,
+        125,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        68,
+        6,
+        67,
+        12
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/native-first-frame.png",
+      "sha256": "1060459b3f468e8302fd40d6bb6b3892df95b4351695274c6a714353a722d1dc",
+      "bytes": 18474
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/contact-sheet.png",
+      "sha256": "e77a866ac199eb0da72f2c603ce92fac41681cbf7b76b902627237056bccb963",
+      "bytes": 177584
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/idle-dark.gif",
+      "sha256": "a831ec4a90b2f77a51aade82b36d786a3a896ca4012f38db1d37b45bda99ca4d",
+      "bytes": 48955
+    },
+    {
+      "path": "03_校服绫波丽/P4-A/selected/idle/idle-light.gif",
+      "sha256": "0953007c7ad8e3376e8c728cfb69029e31c6b31d21ea7fd5107af44877784c8f",
+      "bytes": 48664
+    }
+  ]
+}

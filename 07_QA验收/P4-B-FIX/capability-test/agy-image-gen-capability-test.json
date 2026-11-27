@@ -1,0 +1,81 @@
+{
+  "test_date": "2026-11-27",
+  "target_action": "rei-school / waiting (6 frames)",
+  "tool": "Antigravity image-generator subagent (generate_image)",
+  "reference_inputs": [
+    "02_标准化母版/rei-school/master-rgba.png",
+    "03_校服绫波丽/P4-B/originals/waiting/attempt-01/source.png"
+  ],
+  "hatch_pet_available_scripts": [
+    "assemble_extended_atlas.py",
+    "combine_direction_blind_verdicts.py",
+    "compose_atlas.py",
+    "compose_cardinal_anchor_strip.py",
+    "derive_running_left_from_running_right.py",
+    "despill_chroma_edges.py",
+    "extract_cardinal_anchors.py",
+    "extract_strip_frames.py",
+    "inspect_frames.py",
+    "make_contact_sheet.py",
+    "make_direction_blind_qa_sheet.py",
+    "make_direction_qa_sheet.py",
+    "measure_direction_continuity.py",
+    "prepare_pet_run.py",
+    "render_animation_previews.py",
+    "validate_atlas.py",
+    "validate_direction_blind_verdicts.py"
+  ],
+  "capabilities_verified": {
+    "reference_identity_preservation": "PASS (high fidelity to master-rgba.png face, hair, clips, bow, skirt, socks, shoes, chibi proportions)",
+    "multi_pose_action_semantics": "PASS_WITH_LAYOUT_CONSTRAINT (generates coherent sequential poses; 16:9 width is tight for 6 poses in one row, better with 2x3 grid or split strips)",
+    "native_rgba_transparent_output": "FAIL / BLOCKED (generate_image only outputs opaque RGB JPEG; requesting transparency bakes a literal checkerboard)",
+    "3_to_1_strip_aspect_ratio": "UNSUPPORTED (max landscape aspect ratio is 16:9)",
+    "direct_workspace_save": "INDIRECT (saves to artifact dir; main agent copies to workspace with SHA-256 verification)"
+  },
+  "blocking_contract_conflict": "Existing P4-A/P4-B rule requires native-alpha PNG strips passing hatch-pet load_native_alpha_image without chroma-key/matting recovery. Antigravity image-generator strictly outputs opaque RGB JPEG, causing load_native_alpha_image to reject 3/3 outputs.",
+  "proposed_alternative_for_master_decision": "Option A (Recommended if continuing on Antigravity): Generate clean solid-color chroma backdrop (e.g. bright magenta #FF00FF or green #00FF00 that does not appear on Rei blue/white/black/red palettes, using 2x3 or 2x4 grid layout inside 16:9 for generous pose separation), then apply deterministic background-keying + hatch-pet despill/matte QA (similar to P3 master cutout + strict dark/light edge QA & zero halo check). Option B: Authorize an external native-RGBA image generation API/model (e.g. OpenAI gpt-image-1 or dedicated alpha-capable tool) or keep Codex-generated P4-B frames as-is and only authorize Option A/B for P4-C.",
+  "attempts": [
+    {
+      "filename": "rei_school_waiting_agy_test_01_1795784314464.jpg",
+      "path": "07_QA验收/P4-B-FIX/capability-test/rei_school_waiting_agy_test_01_1795784314464.jpg",
+      "format": "JPEG",
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "bytes": 689229,
+      "sha256": "78f6c177970e7e12bedd56b97ae283645604844c82f60445d6a75fa3efc68d16",
+      "hatch_pet_native_alpha_pass": false,
+      "hatch_pet_native_alpha_error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_01_1795784314464.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
+    },
+    {
+      "filename": "rei_school_waiting_agy_test_02_1795784339012.jpg",
+      "path": "07_QA验收/P4-B-FIX/capability-test/rei_school_waiting_agy_test_02_1795784339012.jpg",
+      "format": "JPEG",
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "bytes": 613995,
+      "sha256": "e7da7a9efd5e211942a2c4a9e72954dfc7cff2f045afaa57fcec3aa5ae3caa95",
+      "hatch_pet_native_alpha_pass": false,
+      "hatch_pet_native_alpha_error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_02_1795784339012.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
+    },
+    {
+      "filename": "rei_school_waiting_agy_test_03_1795784361763.jpg",
+      "path": "07_QA验收/P4-B-FIX/capability-test/rei_school_waiting_agy_test_03_1795784361763.jpg",
+      "format": "JPEG",
+      "size": [
+        1376,
+        768
+      ],
+      "mode": "RGB",
+      "bytes": 533394,
+      "sha256": "fa789ea0fdb7c91c5a8adc2d7eae8a8070edc808a575d30a6affb4e1fd42cb0c",
+      "hatch_pet_native_alpha_pass": false,
+      "hatch_pet_native_alpha_error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_03_1795784361763.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
+    }
+  ]
+}

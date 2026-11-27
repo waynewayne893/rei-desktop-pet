@@ -1,0 +1,44 @@
+{
+  "id": "rei-white",
+  "state": "review",
+  "attempt": "attempt-01",
+  "source_path": "04_白色战斗服/P4-B/originals/review/attempt-01/source.png",
+  "sha256": "bfa67dcc7df30b36e4819cf066e31d7e28b58d311dcfa51df020027287bfae61",
+  "native_alpha_pass": true,
+  "status": "STRUCTURE_READY_FOR_VISUAL_REVIEW",
+  "size": [
+    2172,
+    724
+  ],
+  "mode": "RGBA",
+  "alpha_zero": 1009356,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "row_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/row-evidence.json",
+  "contact_path": "04_白色战斗服/P4-B/candidates/attempt-01/review/contact-sheet.png",
+  "min_top_margin": 6,
+  "solid_heights": [
+    188,
+    188,
+    185,
+    186,
+    189,
+    188
+  ],
+  "solid_bottoms": [
+    195,
+    194,
+    194,
+    195,
+    195,
+    195
+  ]
+}

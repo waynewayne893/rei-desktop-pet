@@ -1,0 +1,204 @@
+{
+  "id": "rei-black",
+  "state": "waving",
+  "source": {
+    "path": "05_黑色战斗服/P4-B/originals/waving/attempt-01/source.png",
+    "sha256": "c03589bb17791d2c7de3bad4894677dac90bb69bc78e8fe4d77a2d06545dd94f",
+    "bytes": 1015253,
+    "size": [
+      1920,
+      819
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 1093147
+  },
+  "registered_row_scale_xy": [
+    0.23918575063613232,
+    0.23918575063613232
+  ],
+  "source_ground_y": 805,
+  "boundary_anchor_xy": [
+    96,
+    195
+  ],
+  "matte_alpha_floor": 0,
+  "method": "native-alpha major connected poses, shared isotropic row registration",
+  "frame_duration_ms": [
+    140,
+    140,
+    140,
+    280
+  ],
+  "frames": [
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/00.png",
+      "sha256": "0f78086607cdef1171b67a24510429f8b341859446b6dc35bdbe848733a1ad71",
+      "bytes": 18484,
+      "source_origin_box": [
+        173,
+        14,
+        413,
+        809
+      ],
+      "source_local_solid_bbox": [
+        4,
+        4,
+        236,
+        791
+      ],
+      "source_horizontal_anchor": 130.5,
+      "solid_bbox": [
+        66,
+        7,
+        121,
+        195
+      ],
+      "nonzero_bbox": [
+        65,
+        6,
+        122,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        65,
+        6,
+        70,
+        12
+      ]
+    },
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/01.png",
+      "sha256": "a809b13e861a45a9c5c7f235b6232c97fc888025d33d53e77aedc87d187d5957",
+      "bytes": 19224,
+      "source_origin_box": [
+        589,
+        14,
+        853,
+        810
+      ],
+      "source_local_solid_bbox": [
+        5,
+        5,
+        259,
+        791
+      ],
+      "source_horizontal_anchor": 157.0,
+      "solid_bbox": [
+        60,
+        7,
+        120,
+        195
+      ],
+      "nonzero_bbox": [
+        59,
+        6,
+        121,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        59,
+        6,
+        71,
+        12
+      ]
+    },
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/02.png",
+      "sha256": "0c02a107cb91bd3af0411586733de1ed677b89c732d63bc1dc5f09a24f4211f3",
+      "bytes": 19249,
+      "source_origin_box": [
+        1043,
+        14,
+        1296,
+        809
+      ],
+      "source_local_solid_bbox": [
+        5,
+        5,
+        249,
+        791
+      ],
+      "source_horizontal_anchor": 149.5,
+      "solid_bbox": [
+        62,
+        7,
+        120,
+        195
+      ],
+      "nonzero_bbox": [
+        61,
+        6,
+        120,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        61,
+        6,
+        72,
+        12
+      ]
+    },
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/frames/03.png",
+      "sha256": "a6ea26435f5bebff4132edd5b471fc1cd84c3afec7e8fc6cc7a72a953c49cc0b",
+      "bytes": 18317,
+      "source_origin_box": [
+        1503,
+        14,
+        1741,
+        809
+      ],
+      "source_local_solid_bbox": [
+        4,
+        5,
+        234,
+        791
+      ],
+      "source_horizontal_anchor": 134.0,
+      "solid_bbox": [
+        65,
+        7,
+        120,
+        195
+      ],
+      "nonzero_bbox": [
+        64,
+        6,
+        120,
+        196
+      ],
+      "transparent_margins_ltrb": [
+        64,
+        6,
+        72,
+        12
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/native-first-frame.png",
+      "sha256": "0f78086607cdef1171b67a24510429f8b341859446b6dc35bdbe848733a1ad71",
+      "bytes": 18484
+    },
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/contact-sheet.png",
+      "sha256": "ecb1a2d571cc5343bcc1a8556b9777829bfb6965e7cbea86558e51a43e186fd7",
+      "bytes": 122385
+    },
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/waving-dark.gif",
+      "sha256": "b55661043cf36a28f787fb37da5f61904753a06bebcea36fcc2d4c3c2a495b90",
+      "bytes": 34232
+    },
+    {
+      "path": "05_黑色战斗服/P4-B/candidates/attempt-01/waving/waving-light.gif",
+      "sha256": "c026ff7f7fa313c4f4d9cecc5d3194d76e37b55ce9d21b50fae3301ab3f070fb",
+      "bytes": 34489
+    }
+  ]
+}

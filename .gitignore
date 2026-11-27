@@ -1,0 +1,25 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS & editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+*~
+
+# Local virtual environments & secrets (never commit)
+.venv/
+venv/
+.env
+.env.*
+*.key
+*.pem
+
+# NOTE: All project assets under 00_原始美术母版/ .. 09_项目文档/ (including P4-A/P4-B
+# originals, candidates, deliveries, capability-test evidence, manifests, and QA) are
+# intentionally tracked for full reproducibility and cross-Agent recovery.

@@ -1,0 +1,24 @@
+{
+  "id": "rei-white",
+  "state": "running-right",
+  "attempt": "attempt-01",
+  "path": "04_白色战斗服/P4-A/originals/running-right/attempt-01/source.png",
+  "sha256": "73b7cb3747810ec7fc7f8f751b84a21fed86b8a479e174a106d1c37288dc57d9",
+  "size": [
+    2172,
+    724
+  ],
+  "mode": "RGBA",
+  "alpha_minmax": [
+    0,
+    255
+  ],
+  "alpha_zero": 949954,
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "ok": true
+}

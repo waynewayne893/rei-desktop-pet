@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "project": "rei-desktop-pet",
+  "stage": "P3",
+  "date": "2026-11-27",
+  "stage_recommendation": "PARTIAL",
+  "evidence_state": "静态产物已完成，待主控独立验收和用户确认现存冻结图身份",
+  "previous_stage": "P2 PARTIAL; delivery and engineering baseline accepted by REI-PET-P2-MAIN-REVIEW-01",
+  "source_provenance": {
+    "historic_download_files_recovered": false,
+    "record": "复扫 Windows Downloads 未找到按角色名或同一传入长度匹配的独立下载 PNG。P2 对主控可读同尺寸附件做过字节和像素比较，未发现一致来源。",
+    "proposed_freeze_point": "三份 P2 已登记且与字节备份一致的工作区 PNG，待用户根据 frozen-masters-preview.png 确认身份并批准作为新起点。",
+    "historic_bytes_claimed": false
+  },
+  "assets": [
+    {
+      "id": "rei-school",
+      "name": "校服绫波丽",
+      "frozen_pose": "双手于身前自然交握",
+      "source": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-school-base-v1.0.png",
+        "sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1",
+        "bytes": 1349906,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "backup": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-school-base-v1.0.png",
+        "sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1"
+      },
+      "workspace_baseline_status": "hash-verified P2 frozen candidate, pending user final visual identity confirmation",
+      "prior_download_source": null,
+      "confirmed_negative_space_seeds_x_y_with_area": [
+        [
+          496,
+          1280,
+          1935
+        ]
+      ],
+      "tiny_detached_mask_pixels_removed": 0,
+      "master_opaque_rgb_pixel_identical_to_input": true,
+      "master_pixel_qa": {
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_zero": 1231916,
+        "alpha_partial": 11826,
+        "alpha_full": 329122,
+        "alpha_nonzero_bbox": [
+          286,
+          25,
+          749,
+          1507
+        ],
+        "alpha128_bbox": [
+          287,
+          26,
+          748,
+          1506
+        ],
+        "detached_visible_components_8connected": 0,
+        "nonzero_rgb_at_alpha_zero": 0
+      },
+      "sample_geometry": {
+        "source_alpha128_bbox": [
+          287,
+          26,
+          748,
+          1506
+        ],
+        "source_foot_axis_x": 522.5,
+        "scale_xy": [
+          0.12162162162162163,
+          0.12162162162162163
+        ],
+        "foot_anchor_cell_boundary_xy": [
+          96,
+          195
+        ],
+        "nominal_visible_height_px": 180,
+        "cell_size_px": [
+          192,
+          208
+        ],
+        "filter": "Pillow RGBA Lanczos with uniform floating-point source box, alpha below 8 cleared",
+        "output_alpha128_bbox": [
+          67,
+          15,
+          123,
+          195
+        ],
+        "output_nonzero_alpha_bbox": [
+          67,
+          14,
+          124,
+          196
+        ]
+      },
+      "sample_pixel_qa": {
+        "size_px": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "alpha_zero": 34636,
+        "alpha_partial": 1181,
+        "alpha_full": 4119,
+        "alpha_nonzero_bbox": [
+          67,
+          14,
+          124,
+          196
+        ],
+        "alpha128_bbox": [
+          67,
+          15,
+          123,
+          195
+        ],
+        "detached_visible_components_8connected": 0,
+        "nonzero_rgb_at_alpha_zero": 0
+      },
+      "outputs": {
+        "alpha-mask.png": {
+          "path": "rei-school/alpha-mask.png",
+          "sha256": "e49fd8dd3e305b0707305ed23ae1b9168acdce7eb6efe3ab855c69fa6ca07fe9",
+          "bytes": 14873
+        },
+        "master-rgba.png": {
+          "path": "rei-school/master-rgba.png",
+          "sha256": "38b2db6fabc1daf5ad5b368152a12cc0a92a22a0abb12ce0dafcd588f61e8528",
+          "bytes": 611410
+        },
+        "sample-192x208.png": {
+          "path": "rei-school/sample-192x208.png",
+          "sha256": "6ca374cd0b7e9ba7c3d6983641bece139b9fc9d0510a51475e87c776878cd8de",
+          "bytes": 17512
+        },
+        "preview-dark.png": {
+          "path": "rei-school/preview-dark.png",
+          "sha256": "45cc058e0cd447983764b004a288347ccfd1d050453bbf84aec2e58acc6c76ef",
+          "bytes": 530899
+        },
+        "preview-light.png": {
+          "path": "rei-school/preview-light.png",
+          "sha256": "58706407930bd9c9ba1435c08570e7c6e456b9b32684b0bcee320ba915617b1e",
+          "bytes": 527999
+        },
+        "edge-details.png": {
+          "path": "rei-school/edge-details.png",
+          "sha256": "ccb906a1f7afba90cf79ac3a2d5b9ea814d0432e842822492ea9f60d1173f94a",
+          "bytes": 310427
+        }
+      },
+      "static_qa": {
+        "recommendation": "PASS",
+        "observation": "交握手、白发饰、领结、浅色袜和两只鞋保持。发梢、裙摆及双腿间负空间在明暗底均可辨，未见地面柔影。"
+      }
+    },
+    {
+      "id": "rei-white",
+      "name": "白色战斗服绫波丽",
+      "frozen_pose": "00 驾驶服，双手自然下垂待命",
+      "source": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-white-base-v1.0.png",
+        "sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019",
+        "bytes": 1374491,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "backup": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-white-base-v1.0.png",
+        "sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019"
+      },
+      "workspace_baseline_status": "hash-verified P2 frozen candidate, pending user final visual identity confirmation",
+      "prior_download_source": null,
+      "confirmed_negative_space_seeds_x_y_with_area": [
+        [
+          537,
+          853,
+          52
+        ],
+        [
+          530,
+          1044,
+          518
+        ],
+        [
+          518,
+          1260,
+          6788
+        ],
+        [
+          471,
+          691,
+          1175
+        ]
+      ],
+      "tiny_detached_mask_pixels_removed": 0,
+      "master_opaque_rgb_pixel_identical_to_input": true,
+      "master_pixel_qa": {
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_zero": 1219985,
+        "alpha_partial": 15074,
+        "alpha_full": 337805,
+        "alpha_nonzero_bbox": [
+          284,
+          22,
+          749,
+          1510
+        ],
+        "alpha128_bbox": [
+          285,
+          23,
+          748,
+          1509
+        ],
+        "detached_visible_components_8connected": 0,
+        "nonzero_rgb_at_alpha_zero": 0
+      },
+      "sample_geometry": {
+        "source_alpha128_bbox": [
+          285,
+          23,
+          748,
+          1509
+        ],
+        "source_foot_axis_x": 520,
+        "scale_xy": [
+          0.12113055181695828,
+          0.12113055181695828
+        ],
+        "foot_anchor_cell_boundary_xy": [
+          96,
+          195
+        ],
+        "nominal_visible_height_px": 180,
+        "cell_size_px": [
+          192,
+          208
+        ],
+        "filter": "Pillow RGBA Lanczos with uniform floating-point source box, alpha below 8 cleared",
+        "output_alpha128_bbox": [
+          68,
+          15,
+          124,
+          195
+        ],
+        "output_nonzero_alpha_bbox": [
+          67,
+          14,
+          124,
+          196
+        ]
+      },
+      "sample_pixel_qa": {
+        "size_px": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "alpha_zero": 34439,
+        "alpha_partial": 1542,
+        "alpha_full": 3955,
+        "alpha_nonzero_bbox": [
+          67,
+          14,
+          124,
+          196
+        ],
+        "alpha128_bbox": [
+          68,
+          15,
+          124,
+          195
+        ],
+        "detached_visible_components_8connected": 0,
+        "nonzero_rgb_at_alpha_zero": 0
+      },
+      "outputs": {
+        "alpha-mask.png": {
+          "path": "rei-white/alpha-mask.png",
+          "sha256": "5909d398788d9152824640d8122068bd75eb2348adf8a2a134072b0fbd216919",
+          "bytes": 16504
+        },
+        "master-rgba.png": {
+          "path": "rei-white/master-rgba.png",
+          "sha256": "bcde5e70d0476a1b69e5a5b4d08a911d3eb72ff5df2a295eff4f18b922ed9b63",
+          "bytes": 636349
+        },
+        "sample-192x208.png": {
+          "path": "rei-white/sample-192x208.png",
+          "sha256": "99d6d3adf8317eebd08bbb765fd1d13963d6d23447f52c3f5c6d2b3e67bd6a41",
+          "bytes": 18483
+        },
+        "preview-dark.png": {
+          "path": "rei-white/preview-dark.png",
+          "sha256": "ae6b2d9668d2c2c2c06004c55c34b9cbb90199cafdc26b5c8d508df03cd0ce25",
+          "bytes": 552095
+        },
+        "preview-light.png": {
+          "path": "rei-white/preview-light.png",
+          "sha256": "b51bb85338b6133e47ea71c4042a8f0ed644938d0aee570e494f2c6fefd58ade",
+          "bytes": 549000
+        },
+        "edge-details.png": {
+          "path": "rei-white/edge-details.png",
+          "sha256": "7295a5b2d7f6a38f7bca0dc00f32d4bea2486d158f2cc56e2bbdd757c1227b2f",
+          "bytes": 315942
+        }
+      },
+      "static_qa": {
+        "recommendation": "PARTIAL",
+        "observation": "00、双臂垂放、手套与双靴保持。全身和192×208样本可辨，深色底放大能看见大腿内侧极窄负空间的少量浅色残边。放大和原生尺寸分别记录。"
+      }
+    },
+    {
+      "id": "rei-black",
+      "name": "黑色战斗服绫波丽",
+      "frozen_pose": "Mark.09 驾驶服，人物右手轻扶左臂",
+      "source": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-black-base-v1.0.png",
+        "sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb",
+        "bytes": 1286466,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "backup": {
+        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-black-base-v1.0.png",
+        "sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb"
+      },
+      "workspace_baseline_status": "hash-verified P2 frozen candidate, pending user final visual identity confirmation",
+      "prior_download_source": null,
+      "confirmed_negative_space_seeds_x_y_with_area": [
+        [
+          535,
+          1033,
+          298
+        ],
+        [
+          522,
+          1280,
+          6650
+        ]
+      ],
+      "tiny_detached_mask_pixels_removed": 0,
+      "master_opaque_rgb_pixel_identical_to_input": true,
+      "master_pixel_qa": {
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_zero": 1239274,
+        "alpha_partial": 13388,
+        "alpha_full": 320202,
+        "alpha_nonzero_bbox": [
+          285,
+          23,
+          748,
+          1510
+        ],
+        "alpha128_bbox": [
+          286,
+          24,
+          747,
+          1509
+        ],
+        "detached_visible_components_8connected": 0,
+        "nonzero_rgb_at_alpha_zero": 0
+      },
+      "sample_geometry": {
+        "source_alpha128_bbox": [
+          286,
+          24,
+          747,
+          1509
+        ],
+        "source_foot_axis_x": 521.5,
+        "scale_xy": [
+          0.12121212121212122,
+          0.12121212121212122
+        ],
+        "foot_anchor_cell_boundary_xy": [
+          96,
+          195
+        ],
+        "nominal_visible_height_px": 180,
+        "cell_size_px": [
+          192,
+          208
+        ],
+        "filter": "Pillow RGBA Lanczos with uniform floating-point source box, alpha below 8 cleared",
+        "output_alpha128_bbox": [
+          67,
+          15,
+          123,
+          195
+        ],
+        "output_nonzero_alpha_bbox": [
+          67,
+          14,
+          124,
+          196
+        ]
+      },
+      "sample_pixel_qa": {
+        "size_px": [
+          192,
+          208
+        ],
+        "mode": "RGBA",
+        "alpha_zero": 34757,
+        "alpha_partial": 1375,
+        "alpha_full": 3804,
+        "alpha_nonzero_bbox": [
+          67,
+          14,
+          124,
+          196
+        ],
+        "alpha128_bbox": [
+          67,
+          15,
+          123,
+          195
+        ],
+        "detached_visible_components_8connected": 0,
+        "nonzero_rgb_at_alpha_zero": 0
+      },
+      "outputs": {
+        "alpha-mask.png": {
+          "path": "rei-black/alpha-mask.png",
+          "sha256": "a2dc6445a45e4bf8d20639b998b3bdca10f9c379b46792fe660731ada43c3311",
+          "bytes": 14660
+        },
+        "master-rgba.png": {
+          "path": "rei-black/master-rgba.png",
+          "sha256": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce",
+          "bytes": 581380
+        },
+        "sample-192x208.png": {
+          "path": "rei-black/sample-192x208.png",
+          "sha256": "69f9c681355b6f8b0e0fdf59e2d7d49d689d4d461d95052bb29a1f58cb84db26",
+          "bytes": 16762
+        },
+        "preview-dark.png": {
+          "path": "rei-black/preview-dark.png",
+          "sha256": "2b93298aedb32fb1120d6adb6f8ecb26e5503de401521a7b4c66f28c48648f6e",
+          "bytes": 503195
+        },
+        "preview-light.png": {
+          "path": "rei-black/preview-light.png",
+          "sha256": "d1648ef1aa97fe4a47e6d405809dcf9e0d349cb07622f13b5e94cdd954ee5d03",
+          "bytes": 501264
+        },
+        "edge-details.png": {
+          "path": "rei-black/edge-details.png",
+          "sha256": "5d306ccd9fec167d294772851cae2320f095d92681d10ab90265781a81e8fa4e",
+          "bytes": 287740
+        }
+      },
+      "static_qa": {
+        "recommendation": "PASS",
+        "observation": "09、黑红发饰与右手扶左臂保持。双腿内缘和靴间空隙可辨，暗衣在深底略低对比，浅底轮廓清楚；未通过增亮修改原服装。"
+      }
+    }
+  ],
+  "processing_parameters": {
+    "background_estimation": "Pixelwise linear interpolation across side strip medians x=16:180 and 844:1008, 31-row median filter",
+    "candidate_color_max_channel_residual": 10,
+    "candidate_max_channel_gradient": 6,
+    "gradient_gaussian_sigma_px": 1.1,
+    "sole_gradient_only_from_row": 1400,
+    "candidate_binary_closing_iterations": 2,
+    "candidate_hole_policy": "fill, then restore per-character visually identified negative spaces and local leg corridors",
+    "contour_inset_px": 1.5,
+    "alpha_feather_transition_px": 2.8,
+    "sole_start_y": {
+      "rei-school": 1445,
+      "rei-white": 1450,
+      "rei-black": 1443
+    },
+    "sole_cap": "bottom blue < 150 or red minus blue > 25 from y=1425, max-filtered by 3 columns, plus 2 px",
+    "edge_rgb": "Inside alpha=255 keep source pixels; transition blends toward nearest opaque interior in proportion to 1-alpha; zero RGB at alpha=0",
+    "no_person_redraw": true,
+    "no_nonuniform_scaling": true,
+    "preview_backgrounds": [
+      "#263242",
+      "#f0f3f9"
+    ],
+    "python": "3.14.6"
+  },
+  "comparison_references": {
+    "asuka-school": {
+      "path": "C:\\Users\\86191\\.codex\\pets\\asuka-school\\spritesheet.webp",
+      "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+      "source_cell_row_col": [
+        0,
+        0
+      ],
+      "native_image_bbox_alpha128": [
+        35,
+        5,
+        157,
+        203
+      ]
+    },
+    "asuka-work": {
+      "path": "C:\\Users\\86191\\.codex\\pets\\asuka-work\\spritesheet.webp",
+      "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+      "source_cell_row_col": [
+        0,
+        0
+      ],
+      "native_image_bbox_alpha128": [
+        36,
+        7,
+        156,
+        201
+      ]
+    }
+  },
+  "shared_previews": [
+    {
+      "path": "frozen-masters-preview.png",
+      "sha256": "8c840462a94961fe2f84c5e449ad5b019e723d0a6d049e4307660a2e61477e0a",
+      "bytes": 505531
+    },
+    {
+      "path": "native-size-comparison.png",
+      "sha256": "6a3c0ddf9696d2f907905b58e6aeae50a46aa9a402a449bf73beb65c17e8d937",
+      "bytes": 227113
+    },
+    {
+      "path": "equal-height-comparison.png",
+      "sha256": "3f46f07b65203c404354fe8b9cc170cdb07860d75ee2ac83e34e7894c905665e",
+      "bytes": 109699
+    }
+  ],
+  "recipe": {
+    "path": "build_static_masters.py",
+    "sha256": "66a95049b1047af15e3599472cf4542d7a306388bd42017c8c7a5ba83273bb35",
+    "bytes": 14532
+  }
+}

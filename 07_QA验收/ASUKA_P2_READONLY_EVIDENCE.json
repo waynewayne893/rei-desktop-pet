@@ -1,0 +1,2596 @@
+{
+  "date": "2026-11-27",
+  "asuka_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Codex_Asuka",
+  "installed_root": "C:\\Users\\86191\\.codex\\pets",
+  "rei_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet",
+  "app_package": "OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0",
+  "python": {
+    "python": "3.14.6",
+    "python_path": "D:\\anaconda3\\python.exe",
+    "pillow": "12.3.0",
+    "libwebp": "1.6.0"
+  },
+  "git_before": {
+    "HEAD": "1e52fc5c20b947a2570695f94c968990c32fd025",
+    "branch": "main",
+    "origin": "https://github.com/waynewayne893/asuka-desktop-pet.git",
+    "status": [
+      " M AGENTS.md",
+      " M docs/08-混合双形态最小测试_工作稿.md",
+      " D references/approved_baselines/asuka_school_mode_baseline_v2.png"
+    ],
+    "worktree_diff_sha256": "9a952faa6ae913af0377e5d44a65be422f69a19d0589b173fe884d2c82db868b"
+  },
+  "git_after": {
+    "HEAD": "1e52fc5c20b947a2570695f94c968990c32fd025",
+    "branch": "main",
+    "origin": "https://github.com/waynewayne893/asuka-desktop-pet.git",
+    "status": [
+      " M AGENTS.md",
+      " M docs/08-混合双形态最小测试_工作稿.md",
+      " D references/approved_baselines/asuka_school_mode_baseline_v2.png"
+    ],
+    "worktree_diff_sha256": "9a952faa6ae913af0377e5d44a65be422f69a19d0589b173fe884d2c82db868b"
+  },
+  "isolation": {
+    "distinct_resolved_roots": true,
+    "initial_and_post_initialization_artifact_sha256_match": true,
+    "verified_artifact_paths": 49,
+    "qa_reports_match": 11,
+    "rei_source_pngs_match": 3
+  },
+  "method": {
+    "files": "Pillow load/getbands/alpha histogram and per-cell bbox. SHA-256 of encoded file bytes. Alpha nonzero occupancy uses 192x208 cells.",
+    "asuka_paths": "Keys starting asuka/ are relative to asuka_root; installed/ keys are relative to installed_root.",
+    "validation": "Called bundled validate_atlas.py on exact file paths. --require-v2 for each v2. No JSON output option and python -B; records retain exit and errors. No asset edits.",
+    "runtime": "Static MSIX app.asar inspection by archive member and hash. No desktop playback or restart replay."
+  },
+  "artifacts": {
+    "asuka/work/phase2_20261025/school/decoded/base.png": {
+      "sha256": "72218ba2898770e45c1ef08b1cec03a6cf8ebae53dc1970a1502687cb4f7881f",
+      "bytes": 1814250,
+      "format": "PNG",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent": 927026,
+      "partial": 645838,
+      "opaque": 0,
+      "alpha_bbox": [
+        17,
+        14,
+        1008,
+        1488
+      ]
+    },
+    "asuka/work/phase2_20261025/work/decoded/base.png": {
+      "sha256": "67e1ab7267633ddf3374b27b370ae071e5d5b7460d495502b45d907e2d945635",
+      "bytes": 1860426,
+      "format": "PNG",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent": 935965,
+      "partial": 636899,
+      "opaque": 0,
+      "alpha_bbox": [
+        0,
+        11,
+        1014,
+        1514
+      ]
+    },
+    "asuka/work/phase2_20261025/work/decoded/running.png": {
+      "sha256": "0b179f1a784f63e4639e781ee617277321a3b274a5cdf5d60321f091decd2562",
+      "bytes": 1893035,
+      "format": "PNG",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 785840,
+      "partial": 784634,
+      "opaque": 2054,
+      "alpha_bbox": [
+        26,
+        19,
+        2154,
+        700
+      ]
+    },
+    "asuka/work/phase3_20261025/finish_standard_rows.py": {
+      "sha256": "d99d2afcea27614a9ef635a4cea36fe37b15039b8452875693dcc85743456650",
+      "bytes": 3025
+    },
+    "asuka/work/phase3_20261025/mix_rows_test.py": {
+      "sha256": "b77d3d771376da3959fbbc0aeb7307ca97bb1d743d4db9d3a2fffa7ac79edd53",
+      "bytes": 4912
+    },
+    "asuka/work/phase3_20261025/mixed-test/final/pet.json": {
+      "sha256": "8fd1de1dd21b142947c71da042b8e65465c76bc9cb896ad3ab6ce55fdbbdba04",
+      "bytes": 301
+    },
+    "asuka/work/phase3_20261025/mixed-test/final/spritesheet.webp": {
+      "sha256": "83aba65992452114a6a4156f6ec9655a3869b3a127b6ab0ce8edf15ccc865fcb",
+      "bytes": 1988930,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2668672,
+      "partial": 817121,
+      "opaque": 28575,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        2283
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/render_final_previews.py": {
+      "sha256": "fd4da1f035c75233ccbd578a6eeecd1f604bc04b24fb8e5ce850630a0325e187",
+      "bytes": 4032
+    },
+    "asuka/work/phase3_20261025/school/decoded/base.png": {
+      "sha256": "72218ba2898770e45c1ef08b1cec03a6cf8ebae53dc1970a1502687cb4f7881f",
+      "bytes": 1814250,
+      "format": "PNG",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent": 927026,
+      "partial": 645838,
+      "opaque": 0,
+      "alpha_bbox": [
+        17,
+        14,
+        1008,
+        1488
+      ]
+    },
+    "asuka/work/phase3_20261025/school/decoded/running.png": {
+      "sha256": "88cf82e7229909793db3ad51dff54bd4c7f472b025058662a04178382697a7a6",
+      "bytes": 1519319,
+      "format": "PNG",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 917794,
+      "partial": 653158,
+      "opaque": 1576,
+      "alpha_bbox": [
+        27,
+        23,
+        2154,
+        684
+      ]
+    },
+    "asuka/work/phase3_20261025/school/final/pet.json": {
+      "sha256": "8f22978ed8105d6b6e023377a5d550406fd220f3cdaeb59dbd429393366e7091",
+      "bytes": 248
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-extended-unclean.png": {
+      "sha256": "a1f27db6337bd6f84459e5af56b6efa4724c094ac44af9eca2bf08bae506fff8",
+      "bytes": 2625973,
+      "format": "PNG",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2640525,
+      "partial": 846874,
+      "opaque": 26969,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        2283
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-extended.png": {
+      "sha256": "e6ebd98525af1fc0a01fe1b4e3865d96522a6f27d9682f326f96e38a4781d3ab",
+      "bytes": 2644165,
+      "format": "PNG",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2640525,
+      "partial": 846874,
+      "opaque": 26969,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        2283
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-extended.webp": {
+      "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+      "bytes": 1971788,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2640525,
+      "partial": 846874,
+      "opaque": 26969,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        2283
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-standard.png": {
+      "sha256": "ab3398533daa5c609b8dac2050b4bc379c77edf21d161a18121783e008681aef",
+      "bytes": 2075060,
+      "format": "PNG",
+      "size": [
+        1536,
+        1872
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2196874,
+      "partial": 656996,
+      "opaque": 21522,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        1867
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/school/qa/clean-row-10-v4-matte.py": {
+      "sha256": "9d096f3dbcae8927b12e94229958192241c6eb97118804af80f601ca3d508a8a",
+      "bytes": 2189
+    },
+    "asuka/work/phase3_20261025/school/qa/independent-final-preview.py": {
+      "sha256": "d8ebcdb9851e56ef6b93b868c8e40a43d08be475a877169c09caf5971a50a3d8",
+      "bytes": 1445
+    },
+    "asuka/work/phase3_20261025/school/qa/register-cardinals-v3.py": {
+      "sha256": "a7a98553b099e4771d33466c7f36c4afc4f391a5c15b7fb3b1c38f6a67443cc2",
+      "bytes": 1865
+    },
+    "asuka/work/phase3_20261025/school/qa/rows/running/v4/decoded/running.png": {
+      "sha256": "88cf82e7229909793db3ad51dff54bd4c7f472b025058662a04178382697a7a6",
+      "bytes": 1519319,
+      "format": "PNG",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 917794,
+      "partial": 653158,
+      "opaque": 1576,
+      "alpha_bbox": [
+        27,
+        23,
+        2154,
+        684
+      ]
+    },
+    "asuka/work/phase3_20261025/school/qa/school_remaining.py": {
+      "sha256": "9d38c4bfc732835e4895d2cfdadf8b04677863fcaf0a73d501e1a8c367d61aad",
+      "bytes": 7105
+    },
+    "asuka/work/phase3_20261025/work/decoded/base.png": {
+      "sha256": "67e1ab7267633ddf3374b27b370ae071e5d5b7460d495502b45d907e2d945635",
+      "bytes": 1860426,
+      "format": "PNG",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent": 935965,
+      "partial": 636899,
+      "opaque": 0,
+      "alpha_bbox": [
+        0,
+        11,
+        1014,
+        1514
+      ]
+    },
+    "asuka/work/phase3_20261025/work/decoded/running.png": {
+      "sha256": "0b179f1a784f63e4639e781ee617277321a3b274a5cdf5d60321f091decd2562",
+      "bytes": 1893035,
+      "format": "PNG",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 785840,
+      "partial": 784634,
+      "opaque": 2054,
+      "alpha_bbox": [
+        26,
+        19,
+        2154,
+        700
+      ]
+    },
+    "asuka/work/phase3_20261025/work/final/pet.json": {
+      "sha256": "0dc5f4aa2a1c4accb0e0fc63ba0ca2cc5fa289f5195b0cf0885ae8454a43aa25",
+      "bytes": 258
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-extended-unclean.png": {
+      "sha256": "ca2201d9120feec038756282d68a15be964a7d8024297ce98c97a40d2b33eb0e",
+      "bytes": 2639333,
+      "format": "PNG",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2658006,
+      "partial": 826694,
+      "opaque": 29668,
+      "alpha_bbox": [
+        29,
+        5,
+        1507,
+        2282
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-extended.png": {
+      "sha256": "79e5dbaed45ca6dea874f08eea2dabbd63473bff528cea1dc882ba269a998eaf",
+      "bytes": 2674417,
+      "format": "PNG",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2658006,
+      "partial": 826694,
+      "opaque": 29668,
+      "alpha_bbox": [
+        29,
+        5,
+        1507,
+        2282
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-extended.webp": {
+      "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+      "bytes": 2017070,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2658006,
+      "partial": 826694,
+      "opaque": 29668,
+      "alpha_bbox": [
+        29,
+        5,
+        1507,
+        2282
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-standard.png": {
+      "sha256": "bf760d659b9314cbf908e61017867957d65dde24a556354416fddc78b53f7d5e",
+      "bytes": 2134164,
+      "format": "PNG",
+      "size": [
+        1536,
+        1872
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2186488,
+      "partial": 666206,
+      "opaque": 22698,
+      "alpha_bbox": [
+        29,
+        5,
+        1507,
+        1867
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    "asuka/work/phase3_20261025/work/qa/diagnose-look-matte.py": {
+      "sha256": "6345e76c0c0c30b00b19ff620655d81a3ccfb692a360ff61d712af8d2fe17b5f",
+      "bytes": 892
+    },
+    "asuka/work/phase3_20261025/work/qa/finish_recovered_row.py": {
+      "sha256": "c4590a3096fc9346efd24bd0309b7d17cbd87ecbb447ea9305a5e2641200fda6",
+      "bytes": 1802
+    },
+    "asuka/work/phase3_20261025/work/qa/register-cardinals-recovered-v2.py": {
+      "sha256": "dbebd556f656eae5dbee5f5dfbd6fd83c5ac4df5ce161910080b2ce48df2ff07",
+      "bytes": 1942
+    },
+    "asuka/delivery/asuka-v2_20261026/asuka-school/spritesheet.webp": {
+      "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+      "bytes": 1971788,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2640525,
+      "partial": 846874,
+      "opaque": 26969,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        2283
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/delivery/asuka-v2_20261026/asuka-work/spritesheet.webp": {
+      "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+      "bytes": 2017070,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2658006,
+      "partial": 826694,
+      "opaque": 29668,
+      "alpha_bbox": [
+        29,
+        5,
+        1507,
+        2282
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "asuka/delivery/asuka-v2_20261026/asuka-school/pet.json": {
+      "sha256": "8f22978ed8105d6b6e023377a5d550406fd220f3cdaeb59dbd429393366e7091",
+      "bytes": 248
+    },
+    "asuka/delivery/asuka-v2_20261026/asuka-work/pet.json": {
+      "sha256": "0dc5f4aa2a1c4accb0e0fc63ba0ca2cc5fa289f5195b0cf0885ae8454a43aa25",
+      "bytes": 258
+    },
+    "asuka/A-明日香双形态_v1.0_项目完成说明.md": {
+      "sha256": "b2561b118cedb1aa5187d824e5be62e660902c46383e5f3da7d6c04e8b9468a1",
+      "bytes": 5828
+    },
+    "asuka/docs/05-第二阶段实施与验收_工作稿.md": {
+      "sha256": "ca50e98d235881709ef3472d83f467b2ba5079651a9c324cc66bdb920ea87953",
+      "bytes": 5039
+    },
+    "asuka/docs/06-第三阶段续作状态_工作稿.md": {
+      "sha256": "368a268b1ac3e7632fff3e32104a7b470db4f21f5b443e32efaed7aedecc73e8",
+      "bytes": 5811
+    },
+    "asuka/docs/07-最终接入与验收报告_工作稿.md": {
+      "sha256": "d6d3f03108cdfe91c06f58622412f3b0d92a3c69d72cb111f7c7491a0cde1c90",
+      "bytes": 5695
+    },
+    "asuka/docs/08-混合双形态最小测试_工作稿.md": {
+      "sha256": "574bae9d3107ef8f8b5c51b7a66b2cfb4768c9791c6821399c613040be1b8e7c",
+      "bytes": 4842
+    },
+    "asuka/references/approved_baselines/asuka_white_plugsuit_baseline_v2.png": {
+      "sha256": "91f3ddc8ba6171178f222dc5d5532d4c6b46f750be393b69d91792051b6d7747",
+      "bytes": 1985215,
+      "format": "PNG",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent": 948485,
+      "partial": 624379,
+      "opaque": 0,
+      "alpha_bbox": [
+        0,
+        0,
+        1490,
+        1024
+      ]
+    },
+    "asuka/AGENTS.md": {
+      "sha256": "95d2117f7cb26115d355ba9bc5e22d93768db584b886ea12113eab6be4a7f3de",
+      "bytes": 3265
+    },
+    "asuka/delivery/asuka-v2_20261026/SHA256SUMS.txt": {
+      "sha256": "3bf1f7beb34e76d43b4c116b91d3e099eac481011e7828343313a523e99b97ab",
+      "bytes": 455
+    },
+    "asuka/work/phase3_20261025/mixed-test/qa/runtime-observation.json": {
+      "sha256": "867b4097f1c933cf7c2883f7298804f4e380571e0f5791229f7077e18b02dceb",
+      "bytes": 831
+    },
+    "installed/asuka-mixed-test/pet.json": {
+      "sha256": "8fd1de1dd21b142947c71da042b8e65465c76bc9cb896ad3ab6ce55fdbbdba04",
+      "bytes": 301
+    },
+    "installed/asuka-mixed-test/spritesheet.webp": {
+      "sha256": "83aba65992452114a6a4156f6ec9655a3869b3a127b6ab0ce8edf15ccc865fcb",
+      "bytes": 1988930,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2668672,
+      "partial": 817121,
+      "opaque": 28575,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        2283
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "installed/asuka-school/pet.json": {
+      "sha256": "8f22978ed8105d6b6e023377a5d550406fd220f3cdaeb59dbd429393366e7091",
+      "bytes": 248
+    },
+    "installed/asuka-school/spritesheet.webp": {
+      "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+      "bytes": 1971788,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2640525,
+      "partial": 846874,
+      "opaque": 26969,
+      "alpha_bbox": [
+        31,
+        5,
+        1500,
+        2283
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    "installed/asuka-work/pet.json": {
+      "sha256": "0dc5f4aa2a1c4accb0e0fc63ba0ca2cc5fa289f5195b0cf0885ae8454a43aa25",
+      "bytes": 258
+    },
+    "installed/asuka-work/spritesheet.webp": {
+      "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+      "bytes": 2017070,
+      "format": "WEBP",
+      "size": [
+        1536,
+        2288
+      ],
+      "mode": "RGBA",
+      "bands": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "n_frames": 1,
+      "png_transparency": false,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent": 2658006,
+      "partial": 826694,
+      "opaque": 29668,
+      "alpha_bbox": [
+        29,
+        5,
+        1507,
+        2282
+      ],
+      "occupied_columns_by_row": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    }
+  },
+  "desktop_hatch_pet_validation": {
+    "installed/asuka-mixed-test/spritesheet.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "installed/asuka-school/spritesheet.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "installed/asuka-work/spritesheet.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/delivery/asuka-v2_20261026/asuka-school/spritesheet.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/delivery/asuka-v2_20261026/asuka-work/spritesheet.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/mixed-test/final/spritesheet.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-extended-unclean.png": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "PNG",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-extended.png": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "PNG",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-extended.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/school/final/spritesheet-standard.png": {
+      "require_v2": false,
+      "exit_code": 0,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "width": 1536,
+      "height": 1872,
+      "format": "PNG",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-extended-unclean.png": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "PNG",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-extended.png": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "PNG",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-extended.webp": {
+      "require_v2": true,
+      "exit_code": 1,
+      "ok": false,
+      "errors": [
+        "idle row 0 column 6 is empty or too sparse (0 pixels)"
+      ],
+      "warnings": [],
+      "width": 1536,
+      "height": 2288,
+      "format": "WEBP",
+      "mode": "RGBA",
+      "stderr": null
+    },
+    "asuka/work/phase3_20261025/work/final/spritesheet-standard.png": {
+      "require_v2": false,
+      "exit_code": 0,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "width": 1536,
+      "height": 1872,
+      "format": "PNG",
+      "mode": "RGBA",
+      "stderr": null
+    }
+  },
+  "work_pets_comparison": {
+    "plugin_version": "0.1.6",
+    "input": "installed/asuka-school/spritesheet.webp",
+    "flag": "--require-v2",
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "script_sha256": "cd28f7e3ed4fc7d879239cbf4d4a5ae1fb603f457b14560ef2c8e15899507b6b"
+  },
+  "bundled_skills": [
+    {
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\\app\\resources\\skills\\skills\\.curated\\hatch-pet\\SKILL.md",
+      "sha256": "6e37fd125e01e8ee9b93e46ada18a9fa8fbb4cb86f09b531f0a7ac332482a58a",
+      "bytes": 86519
+    },
+    {
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\\app\\resources\\skills\\skills\\.curated\\hatch-pet\\references\\codex-pet-contract.md",
+      "sha256": "8c6d1557900c44f267003b9097ad1cfb4e4d29e574ae325c0dd0943b71510d72",
+      "bytes": 1340
+    },
+    {
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\\app\\resources\\skills\\skills\\.curated\\hatch-pet\\references\\animation-rows.md",
+      "sha256": "62643046b18de139c9147bebe79a0912c9cb1b629c535ed4189a07c41b10a3e3",
+      "bytes": 2617
+    },
+    {
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\\app\\resources\\skills\\skills\\.curated\\hatch-pet\\scripts\\validate_atlas.py",
+      "sha256": "659f48085d4148f23772342a92c0b55ee890a0ef80964b12d935701973ee6a46",
+      "bytes": 6789
+    },
+    {
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\\app\\resources\\skills\\skills\\.curated\\hatch-pet\\scripts\\render_animation_previews.py",
+      "sha256": "d085a2b63b50876337600815a7ed9e9e7091b71114ce281e113d6971080b5dd0",
+      "bytes": 2625
+    }
+  ],
+  "historical_qa": {
+    "work/phase3_20261025/school/qa/pet-quality.json": {
+      "sha256": "6aac0e7b464a49868ab4ae56271a61583a042fb984927e463f9ce21ae10a6e41",
+      "report_fields": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "look direction 157.5 accepted with a reviewed warning",
+          "look direction 337.5 accepted with a reviewed warning",
+          "157.5->180 diff is a local outlier (2934 pixels vs neighbor average 1600)"
+        ],
+        "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29"
+      }
+    },
+    "work/phase3_20261025/school/qa/service-preflight.json": {
+      "sha256": "9b833aace1129ed23751100fa44ee701fe217c21e9b300449e50ccd7be87a0bb",
+      "report_fields": {
+        "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Action completed."
+            }
+          ],
+          "structuredContent": {
+            "valid": true,
+            "file_size_bytes": 1971788,
+            "mime_type": "image/webp",
+            "width": 1536,
+            "height": 2288,
+            "sprite_version": 2,
+            "cell_width": 192,
+            "cell_height": 208,
+            "frames_per_row": [
+              6,
+              8,
+              8,
+              4,
+              5,
+              8,
+              6,
+              6,
+              6,
+              8,
+              8
+            ],
+            "errors": []
+          },
+          "isError": false
+        }
+      }
+    },
+    "work/phase3_20261025/school/qa/direction-blind-validation.json": {
+      "sha256": "138f84d2ec5effdef1d401e769057b64a63b11cf1c292b8133100835ff0fe1ca",
+      "report_fields": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "horizontal-6 A horizontal axis is ambiguous",
+          "horizontal-7 A horizontal axis is ambiguous",
+          "vertical-4 A vertical axis is ambiguous",
+          "vertical-7 A vertical axis is ambiguous"
+        ],
+        "unconfirmed": []
+      }
+    },
+    "work/phase3_20261025/school/qa/direction-semantics.json": {
+      "sha256": "55f46ddcee5747b1bfeedf51332d3809b2ab4c26238884ac56b9f21416a89d00",
+      "report_fields": {
+        "atlas_sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29"
+      }
+    },
+    "work/phase3_20261025/work/qa/pet-quality.json": {
+      "sha256": "c0606cf75dd6b60850f76ed15220de3e3cccf033b632307d32b3c3be82368827",
+      "report_fields": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "157.5->180 diff is a local outlier (3672 pixels vs neighbor average 1378)",
+          "337.5->000 diff is a local outlier (3895 pixels vs neighbor average 1664)"
+        ],
+        "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049"
+      }
+    },
+    "work/phase3_20261025/work/qa/service-preflight.json": {
+      "sha256": "8f106d9ca274b6fc17423bbe7944a96d75ad1a742f858714ad795d28a7777a18",
+      "report_fields": {
+        "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Action completed."
+            }
+          ],
+          "structuredContent": {
+            "valid": true,
+            "file_size_bytes": 2017070,
+            "mime_type": "image/webp",
+            "width": 1536,
+            "height": 2288,
+            "sprite_version": 2,
+            "cell_width": 192,
+            "cell_height": 208,
+            "frames_per_row": [
+              6,
+              8,
+              8,
+              4,
+              5,
+              8,
+              6,
+              6,
+              6,
+              8,
+              8
+            ],
+            "errors": []
+          },
+          "isError": false
+        }
+      }
+    },
+    "work/phase3_20261025/work/qa/direction-blind-validation.json": {
+      "sha256": "a98b710511dbb078b5626797444ed0d442a5aa2db2f32f842228f9a00fb8dda9",
+      "report_fields": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "horizontal-7 A horizontal axis is ambiguous",
+          "vertical-4 A vertical axis is ambiguous"
+        ],
+        "unconfirmed": []
+      }
+    },
+    "work/phase3_20261025/work/qa/direction-semantics.json": {
+      "sha256": "71c3e6f2046777ea1f74688e735695dbbf122dbd2c400319ef0be1624ad177b9",
+      "report_fields": {
+        "atlas_sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049"
+      }
+    },
+    "work/phase3_20261025/mixed-test/qa/pet-quality.json": {
+      "sha256": "52737e1218344cac093d6e1abaf7f975f7bbb471605ab1a8770f56fc93e67ead",
+      "report_fields": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "look direction 157.5 accepted with a reviewed warning",
+          "look direction 337.5 accepted with a reviewed warning",
+          "157.5->180 diff is a local outlier (2934 pixels vs neighbor average 1600)"
+        ],
+        "sha256": "83aba65992452114a6a4156f6ec9655a3869b3a127b6ab0ce8edf15ccc865fcb"
+      }
+    },
+    "work/phase3_20261025/mixed-test/qa/direction-blind-validation.json": {
+      "sha256": "60c36e3b6a2aa3f01d7fbca6135ab500e561ce1f13fc60328cce474ba9c2d1b9",
+      "report_fields": {
+        "ok": true,
+        "errors": [],
+        "warnings": [
+          "horizontal-6 A horizontal axis is ambiguous",
+          "horizontal-7 A horizontal axis is ambiguous",
+          "vertical-4 A vertical axis is ambiguous",
+          "vertical-7 A vertical axis is ambiguous"
+        ],
+        "unconfirmed": []
+      }
+    },
+    "work/phase3_20261025/mixed-test/qa/direction-semantics.json": {
+      "sha256": "074230f85edc22f860ae02324f2d9772ad2adc42bc705d2dbf864a8c7a3d10f0",
+      "report_fields": {
+        "atlas_sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29"
+      }
+    }
+  },
+  "runtime_members": {
+    ".vite/build/early-bootstrap-7-04ae72fad1d22c3a.js": "0b1bbec1eee31e7ccda2b2e68fbdb5216dba80e8c241a847548b14b44dafb7bc",
+    "webview/assets/async/49792.d8d33ace73.js": "c08e14256566537b430f8c35ea52287e363305711254a1b327b64d1023bf1b0e",
+    "webview/assets/async/268134.7ec32865a9.js": "56060667485f3064d87ff72d60f08197b00cc2efb0c73f0423bc45f3e2f63a02"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "structural_rows": [
+    {
+      "id": "rei-school",
+      "state": "idle",
+      "frames": 6,
+      "gifs": 2,
+      "solid_heights": [
+        188,
+        188,
+        188,
+        188,
+        188,
+        188
+      ],
+      "solid_bottoms": [
+        195,
+        195,
+        195,
+        195,
+        195,
+        195
+      ],
+      "alpha_min_top_margin": 6,
+      "alpha_min_lr_margin": 67,
+      "adjacent_pixel_deltas_including_wrap": [
+        5692,
+        5729,
+        5679,
+        5652,
+        5654,
+        5634
+      ]
+    },
+    {
+      "id": "rei-school",
+      "state": "running-right",
+      "frames": 8,
+      "gifs": 2,
+      "solid_heights": [
+        189,
+        188,
+        188,
+        181,
+        188,
+        187,
+        187,
+        177
+      ],
+      "solid_bottoms": [
+        195,
+        194,
+        194,
+        186,
+        194,
+        194,
+        194,
+        183
+      ],
+      "alpha_min_top_margin": 5,
+      "alpha_min_lr_margin": 52,
+      "adjacent_pixel_deltas_including_wrap": [
+        6338,
+        6213,
+        6775,
+        6563,
+        6452,
+        6215,
+        6809,
+        7220
+      ]
+    },
+    {
+      "id": "rei-black",
+      "state": "idle",
+      "frames": 6,
+      "gifs": 2,
+      "solid_heights": [
+        188,
+        188,
+        188,
+        188,
+        188,
+        188
+      ],
+      "solid_bottoms": [
+        195,
+        195,
+        195,
+        195,
+        195,
+        195
+      ],
+      "alpha_min_top_margin": 6,
+      "alpha_min_lr_margin": 65,
+      "adjacent_pixel_deltas_including_wrap": [
+        5475,
+        5485,
+        5478,
+        5586,
+        5497,
+        5537
+      ]
+    },
+    {
+      "id": "rei-black",
+      "state": "running-right",
+      "frames": 8,
+      "gifs": 2,
+      "solid_heights": [
+        188,
+        181,
+        188,
+        188,
+        188,
+        188,
+        188,
+        188
+      ],
+      "solid_bottoms": [
+        195,
+        188,
+        195,
+        195,
+        195,
+        195,
+        195,
+        195
+      ],
+      "alpha_min_top_margin": 6,
+      "alpha_min_lr_margin": 49,
+      "adjacent_pixel_deltas_including_wrap": [
+        5988,
+        5955,
+        5771,
+        6124,
+        6202,
+        5640,
+        6102,
+        6500
+      ]
+    },
+    {
+      "id": "rei-white",
+      "state": "idle",
+      "frames": 6,
+      "gifs": 2,
+      "solid_heights": [
+        188,
+        189,
+        188,
+        188,
+        188,
+        187
+      ],
+      "solid_bottoms": [
+        195,
+        195,
+        195,
+        195,
+        195,
+        194
+      ],
+      "alpha_min_top_margin": 5,
+      "alpha_min_lr_margin": 60,
+      "adjacent_pixel_deltas_including_wrap": [
+        6597,
+        6551,
+        6457,
+        6448,
+        6349,
+        6429
+      ]
+    },
+    {
+      "id": "rei-white",
+      "state": "running-right",
+      "frames": 8,
+      "gifs": 2,
+      "solid_heights": [
+        187,
+        188,
+        187,
+        178,
+        188,
+        187,
+        188,
+        186
+      ],
+      "solid_bottoms": [
+        193,
+        195,
+        194,
+        183,
+        195,
+        195,
+        194,
+        193
+      ],
+      "alpha_min_top_margin": 4,
+      "alpha_min_lr_margin": 49,
+      "adjacent_pixel_deltas_including_wrap": [
+        6613,
+        6215,
+        6331,
+        6292,
+        6581,
+        5943,
+        6676,
+        6176
+      ]
+    }
+  ],
+  "white_contact_sheet": {
+    "path": "04_白色战斗服/P4-A/P4-A-contact-sheet.png",
+    "sha256": "b6065ac973d18f2a740f40284dab85ed7928cd86e07590b3c8bf0506d49b997f",
+    "bytes": 450100
+  },
+  "white_source_identity_preview": {
+    "path": "07_QA验收/P4-A/continue/white-source-face-and-chest.png",
+    "sha256": "eae8797f4167335c1448e03ef63550e945fc9dd8d516eec7ad80dad5769458d3",
+    "bytes": 267189
+  },
+  "frozen_p3_p3_fix_asuka_and_installation_unchanged": true
+}

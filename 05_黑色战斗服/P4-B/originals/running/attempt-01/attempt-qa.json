@@ -1,0 +1,44 @@
+{
+  "id": "rei-black",
+  "state": "running",
+  "attempt": "attempt-01",
+  "source_path": "05_黑色战斗服/P4-B/originals/running/attempt-01/source.png",
+  "sha256": "6ccc29640f1f21bf650286d29b7f879b01b1fd5df80c4423f22c9cd6aaccbcc8",
+  "native_alpha_pass": true,
+  "status": "STRUCTURE_READY_FOR_VISUAL_REVIEW",
+  "size": [
+    2172,
+    724
+  ],
+  "mode": "RGBA",
+  "alpha_zero": 810444,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "row_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/row-evidence.json",
+  "contact_path": "05_黑色战斗服/P4-B/candidates/attempt-01/running/contact-sheet.png",
+  "min_top_margin": 6,
+  "solid_heights": [
+    188,
+    188,
+    188,
+    188,
+    188,
+    188
+  ],
+  "solid_bottoms": [
+    195,
+    195,
+    195,
+    195,
+    195,
+    195
+  ]
+}

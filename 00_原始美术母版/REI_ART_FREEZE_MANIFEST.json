@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "project": "rei-desktop-pet",
+  "stage": "P2",
+  "review_date": "2026-11-27",
+  "freeze_source": "用户本任务的人工验收和冻结声明，以及主控会话《复用路径开发绫波丽》中用户对三版下载和冻结的确认。主控会话指定的三个文件名与工作区一致。",
+  "identification": "独立打开三张图、核对服装姿态及画布完整性，再解码、哈希和同字节备份",
+  "download_provenance": "Windows Downloads 中按名称、日期模式及文件长度未找到对应独立下载文件。主控聊天的两张同尺寸 RGBA 附件与工作区三图的编码哈希及解码 RGB 均不同。下载前来源仍待补证。",
+  "backup_scope": "Rei 工作区同盘副本，已逐个复算比对，独立恢复归档见 P6",
+  "assets": [
+    {
+      "sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb",
+      "bytes": 1286466,
+      "format": "PNG",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bands": [
+        "R",
+        "G",
+        "B"
+      ],
+      "icc": false,
+      "corners": [
+        [
+          237,
+          240,
+          251
+        ],
+        [
+          237,
+          241,
+          251
+        ],
+        [
+          236,
+          238,
+          250
+        ],
+        [
+          235,
+          238,
+          250
+        ]
+      ],
+      "id": "rei-black",
+      "filename": "rei-black-base-v1.0.png",
+      "source_path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-black-base-v1.0.png",
+      "source_path_basis": "P2 工作区内现存冻结版本，文件名与三项已确认造型视觉吻合",
+      "upstream_download_path": null,
+      "alpha_channel": false,
+      "png_trns": false,
+      "n_frames": 1,
+      "backup_path": "00_原始美术母版/P2_字节备份/rei-black-base-v1.0.png",
+      "backup_sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb",
+      "cutout_required_in_p3": true,
+      "side_by_side_crop_required": false,
+      "character_complete": "可见呆毛、发梢、躯干、手和双鞋，人体外轮廓无画布裁切",
+      "background": "不透明浅冷色缓变背景，脚下有柔和投影",
+      "label": "黑色战斗服绫波丽",
+      "pose": "Mark.09 驾驶服，人物右手轻扶左臂",
+      "visual": "深色服装、红色 09 和黑红发饰，右手轻扶左臂。头顶、垂手及靴尖完整。",
+      "edge": "保留扶臂遮挡、手套指尖、衣身暗部与靴边；浅蓝发丝仍邻接浅色底。"
+    },
+    {
+      "sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1",
+      "bytes": 1349906,
+      "format": "PNG",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bands": [
+        "R",
+        "G",
+        "B"
+      ],
+      "icc": false,
+      "corners": [
+        [
+          233,
+          237,
+          250
+        ],
+        [
+          233,
+          236,
+          250
+        ],
+        [
+          233,
+          234,
+          249
+        ],
+        [
+          233,
+          235,
+          250
+        ]
+      ],
+      "id": "rei-school",
+      "filename": "rei-school-base-v1.0.png",
+      "source_path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-school-base-v1.0.png",
+      "source_path_basis": "P2 工作区内现存冻结版本，文件名与三项已确认造型视觉吻合",
+      "upstream_download_path": null,
+      "alpha_channel": false,
+      "png_trns": false,
+      "n_frames": 1,
+      "backup_path": "00_原始美术母版/P2_字节备份/rei-school-base-v1.0.png",
+      "backup_sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1",
+      "cutout_required_in_p3": true,
+      "side_by_side_crop_required": false,
+      "character_complete": "可见呆毛、发梢、躯干、手和双鞋，人体外轮廓无画布裁切",
+      "background": "不透明浅冷色缓变背景，脚下有柔和投影",
+      "label": "校服绫波丽",
+      "pose": "双手于身前自然交握",
+      "visual": "浅蓝短发、白色发饰、红领结和蓝色裙装，双手前合，鞋尖与头顶完整。单人独立画布，无并排裁切需要。",
+      "edge": "浅冷底与白袖白袜接近。保留发尖、袖缘、交握指形和白袜外缘。"
+    },
+    {
+      "sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019",
+      "bytes": 1374491,
+      "format": "PNG",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bands": [
+        "R",
+        "G",
+        "B"
+      ],
+      "icc": false,
+      "corners": [
+        [
+          234,
+          237,
+          251
+        ],
+        [
+          236,
+          240,
+          251
+        ],
+        [
+          235,
+          236,
+          250
+        ],
+        [
+          233,
+          235,
+          249
+        ]
+      ],
+      "id": "rei-white",
+      "filename": "rei-white-base-v1.0.png",
+      "source_path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-white-base-v1.0.png",
+      "source_path_basis": "P2 工作区内现存冻结版本，文件名与三项已确认造型视觉吻合",
+      "upstream_download_path": null,
+      "alpha_channel": false,
+      "png_trns": false,
+      "n_frames": 1,
+      "backup_path": "00_原始美术母版/P2_字节备份/rei-white-base-v1.0.png",
+      "backup_sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019",
+      "cutout_required_in_p3": true,
+      "side_by_side_crop_required": false,
+      "character_complete": "可见呆毛、发梢、躯干、手和双鞋，人体外轮廓无画布裁切",
+      "background": "不透明浅冷色缓变背景，脚下有柔和投影",
+      "label": "白色战斗服绫波丽",
+      "pose": "00 驾驶服，双手自然下垂待命",
+      "visual": "白主体、深色拼接与橙绿细节，胸前 00，两臂下垂，头顶、指尖与靴尖完整。",
+      "edge": "白服轮廓与浅冷底接近，注意腿间、手指和靴尖边界。"
+    }
+  ]
+}

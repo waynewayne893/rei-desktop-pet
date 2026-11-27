@@ -1,0 +1,134 @@
+{
+  "ok": true,
+  "frames_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01",
+  "states": [
+    "running-right"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6699,
+          "bbox": [
+            56,
+            5,
+            135,
+            203
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6346,
+          "bbox": [
+            67,
+            5,
+            124,
+            203
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6317,
+          "bbox": [
+            64,
+            5,
+            127,
+            203
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7064,
+          "bbox": [
+            54,
+            5,
+            138,
+            203
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6277,
+          "bbox": [
+            61,
+            5,
+            131,
+            203
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6502,
+          "bbox": [
+            65,
+            5,
+            126,
+            203
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6286,
+          "bbox": [
+            65,
+            5,
+            126,
+            203
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6753,
+          "bbox": [
+            55,
+            5,
+            137,
+            203
+          ],
+          "edge_pixels": 0
+        }
+      ]
+    }
+  ]
+}

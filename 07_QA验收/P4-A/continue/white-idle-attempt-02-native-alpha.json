@@ -1,0 +1,24 @@
+{
+  "id": "rei-white",
+  "state": "idle",
+  "attempt": "attempt-02",
+  "path": "04_白色战斗服/P4-A/originals/idle/attempt-02/source.png",
+  "sha256": "a21608225d4a405b63da386ad4b841a757e0e4a1705edfbb7d7d086ce5ad9287",
+  "size": [
+    2172,
+    724
+  ],
+  "mode": "RGBA",
+  "alpha_minmax": [
+    0,
+    255
+  ],
+  "alpha_zero": 752220,
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "ok": true
+}
