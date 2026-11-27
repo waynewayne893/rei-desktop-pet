@@ -1,0 +1,493 @@
+{
+  "task": "REI-PET-CODEX-CLOUD-ART-PILOT",
+  "date": "2026-11-27",
+  "source": {
+    "repository": "waynewayne893/rei-desktop-pet",
+    "branch": "feat/p4b-review-center-v1",
+    "commit": "6fd635a3d83336a4b5445e021a7f0eddfdf39fc6",
+    "inputs": [
+      {
+        "path": "02_标准化母版/rei-school/master-rgba.png",
+        "bytes": 611410,
+        "sha256": "38b2db6fabc1daf5ad5b368152a12cc0a92a22a0abb12ce0dafcd588f61e8528"
+      },
+      {
+        "path": "02_标准化母版/rei-black/master-rgba.png",
+        "bytes": 581380,
+        "sha256": "a19715e0c2e4df83b206f30ee03d6044b0665c911ee85aa31899f118ecad81ce"
+      },
+      {
+        "path": "03_校服绫波丽/P4-B/originals/waiting/attempt-01/source.png",
+        "bytes": 1276504,
+        "sha256": "f19efac284e80c3d2ac242fac507b162a8085ecb458e3de5b89345f6a98abcc7"
+      },
+      {
+        "path": "05_黑色战斗服/P4-B/delivery/spritesheet-standard.png",
+        "bytes": 990796,
+        "sha256": "e7bf03bb0f933a11ec6d3915b924cdf482bb5876368ea48bad6c2119de9ab6c6"
+      },
+      {
+        "path": "09_项目文档/CODEX_PETS_COMPATIBILITY.md",
+        "bytes": 5547,
+        "sha256": "062ac97f90298951a20f9dc56379f3fcf64616c6a99326fe8115516a03a2e66a"
+      },
+      {
+        "path": "09_项目文档/REI_P4_ACTION_SPEC.md",
+        "bytes": 2801,
+        "sha256": "83157c8d5a6cc6f89d56e24bc148ffee42378048e4930bdab7a7e20b9379e02d"
+      },
+      {
+        "path": "09_项目文档/HANDOFF_P4C.md",
+        "bytes": 3338,
+        "sha256": "1e2c32326f2cc706c331eda8cc1ec0308c210d3ac6626853ef7ab42221f42c51"
+      },
+      {
+        "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/00.png",
+        "bytes": 18948,
+        "sha256": "60fae5f8619315c18c9f885fd9665da64fd29f3dca4c475ea1e57571b84333d6"
+      },
+      {
+        "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/01.png",
+        "bytes": 19137,
+        "sha256": "6f2e3a27e2566324ee3c6930d35c93a9ca6091f28c5d9db39c7f5dbce2f0a3a7"
+      },
+      {
+        "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/02.png",
+        "bytes": 19351,
+        "sha256": "c227245353c2ad84fd31e02a78db393fdef34506911cb47f11d410a5fb35921f"
+      },
+      {
+        "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/03.png",
+        "bytes": 19265,
+        "sha256": "2a28e392ba01d0083a26c8f8901814f8bb8235b76cdfe5c886be9f751378edfe"
+      },
+      {
+        "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/04.png",
+        "bytes": 19320,
+        "sha256": "422030aa32515f677e2b812d353f49ebed0bad4043879d153783a4840f426db0"
+      },
+      {
+        "path": "03_校服绫波丽/P4-B/candidates/attempt-01/waiting/frames/05.png",
+        "bytes": 19070,
+        "sha256": "0e12bc4093cd99c483963999ec5ed2096ebf051aecd28bbe24b83d819f78a371"
+      }
+    ]
+  },
+  "registration": {
+    "mode": "RGBA",
+    "size": [
+      192,
+      208
+    ],
+    "height_baseline": 188,
+    "anchor": [
+      96,
+      195
+    ],
+    "raw_alpha_floor": 1,
+    "foreground_threshold": 128
+  },
+  "results": [
+    {
+      "group": "waiting",
+      "attempt": "attempt-01",
+      "structure": "STRUCTURE_PASS",
+      "art_status": "ART_CANDIDATE",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "raw": "raw/waiting-attempt-01.png",
+      "qa": "evidence/waiting-attempt-01-qa.json",
+      "frames": [
+        {
+          "path": "frames/waiting/attempt-01/01.png",
+          "pixel_sha256": "a5db797ad9ae1bdfe3b8bdf4c74b7e56db94dc56da27d800a5d954ca59858618",
+          "height": 187,
+          "foot_anchor": [
+            96.5,
+            194
+          ]
+        },
+        {
+          "path": "frames/waiting/attempt-01/02.png",
+          "pixel_sha256": "69c1874cfc05371ce41e9a1105d711a9e618a5b4148a0c79f04c4bc1479cda7a",
+          "height": 187,
+          "foot_anchor": [
+            96.0,
+            195
+          ]
+        },
+        {
+          "path": "frames/waiting/attempt-01/03.png",
+          "pixel_sha256": "9b80ac2df45d17652eee7ba8f1e7cdabbed1dbfb8b097e617faa1edf02c33973",
+          "height": 187,
+          "foot_anchor": [
+            95.5,
+            194
+          ]
+        },
+        {
+          "path": "frames/waiting/attempt-01/04.png",
+          "pixel_sha256": "d1209c362cee5627b45edc328a266b507be93289f753e1728b084168cc4bc23c",
+          "height": 187,
+          "foot_anchor": [
+            95.5,
+            195
+          ]
+        },
+        {
+          "path": "frames/waiting/attempt-01/05.png",
+          "pixel_sha256": "552ba2dddc270ac3a8e5a9121e0331d0ae32c05f03419ef4a9e992eee9f12d9b",
+          "height": 187,
+          "foot_anchor": [
+            96.5,
+            194
+          ]
+        },
+        {
+          "path": "frames/waiting/attempt-01/06.png",
+          "pixel_sha256": "3239e546c703c5df60d7d55e910ee8846f564bbee8c7189b3af087991999c047",
+          "height": 187,
+          "foot_anchor": [
+            96.5,
+            195
+          ]
+        }
+      ],
+      "alpha_cleanup": {
+        "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+        "threshold_u8": 1,
+        "changed_pixels": 235178,
+        "source_png_sha256": "f68e585c5b73214a41d38585aa394d42fcb0961840bbc6e28b33d3024b232b89",
+        "pre_cleanup_rgba_pixel_sha256": "1dc1d15e82fd0fc577dc047af8e0602d8aa18b3dfa70d73007b22b92dff962bb",
+        "post_cleanup_rgba_pixel_sha256": "56238935ffe9a9e7cd4fc9920e27d33d329c6828584023ac660994ceca17d70b"
+      }
+    },
+    {
+      "group": "directions",
+      "attempt": "attempt-01",
+      "structure": "FAILED",
+      "art_status": null,
+      "review_status": null,
+      "raw": "raw/directions-attempt-01.png",
+      "qa": "evidence/directions-attempt-01-qa.json",
+      "frames": [
+        {
+          "path": "frames/directions/attempt-01/000.png",
+          "pixel_sha256": "63926ff6cb1cc648d4b2ec0f3625dc6e318b7307d380e08b0edcd3ccc710292d",
+          "height": 187,
+          "foot_anchor": [
+            96.5,
+            194
+          ]
+        },
+        {
+          "path": "frames/directions/attempt-01/090.png",
+          "pixel_sha256": "0fc90d3ba791a1edbe2600deb14f229141d49f5a10bdb8646655bc3bab9006c7",
+          "height": 187,
+          "foot_anchor": [
+            95.5,
+            194
+          ]
+        },
+        {
+          "path": "frames/directions/attempt-01/180.png",
+          "pixel_sha256": "f0cc0ebe29e102ed4daabcdbec24a6ff644f4ee604eeeec7c520bea20e7262bb",
+          "height": 187,
+          "foot_anchor": [
+            96.0,
+            195
+          ]
+        },
+        {
+          "path": "frames/directions/attempt-01/270.png",
+          "pixel_sha256": "a24b927592f173f612eaa28fe8b32242361837bb83838a1a7fe1aca898882c5a",
+          "height": 188,
+          "foot_anchor": [
+            96.0,
+            195
+          ]
+        }
+      ],
+      "alpha_cleanup": {
+        "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+        "threshold_u8": 1,
+        "changed_pixels": 17552,
+        "source_png_sha256": "8509571d6fb12f7b00958615e14ac2bf8da176b977c10246ee201f57a379b3bd",
+        "pre_cleanup_rgba_pixel_sha256": "8211c96d7351577607a8c732fee546bd56f311ba737aee257d30763c006ddc2c",
+        "post_cleanup_rgba_pixel_sha256": "fa8232b4456b54299fc16995d02af8dc58192504d0afc2b9b49028fd0b38d510"
+      }
+    },
+    {
+      "group": "directions",
+      "attempt": "attempt-02",
+      "structure": "STRUCTURE_PASS",
+      "art_status": "ART_CANDIDATE",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "raw": "raw/directions-attempt-02.png",
+      "qa": "evidence/directions-attempt-02-qa.json",
+      "frames": [
+        {
+          "path": "frames/directions/attempt-02/000.png",
+          "pixel_sha256": "21848405f2b8ca14f0b8f1a44d9dc75c8f5063813894a7ae9552216f32f85727",
+          "height": 189,
+          "foot_anchor": [
+            96.0,
+            195
+          ]
+        },
+        {
+          "path": "frames/directions/attempt-02/090.png",
+          "pixel_sha256": "d4b41c97099501cc450b256d1e42f4cd20a2422776e68434a3cc67fcd7da9bd5",
+          "height": 189,
+          "foot_anchor": [
+            95.5,
+            195
+          ]
+        },
+        {
+          "path": "frames/directions/attempt-02/180.png",
+          "pixel_sha256": "26df6abd035c93c8333eb8ab525aba8d1a9e53dfb3d844eff570459dc0f52d7b",
+          "height": 188,
+          "foot_anchor": [
+            96.0,
+            195
+          ]
+        },
+        {
+          "path": "frames/directions/attempt-02/270.png",
+          "pixel_sha256": "5a4dcb1074716a1f82e4defabbc9146f10762ff4ce4711ed0bc767ba49d31a14",
+          "height": 188,
+          "foot_anchor": [
+            96.0,
+            196
+          ]
+        }
+      ],
+      "alpha_cleanup": {
+        "rule": "alpha == 1 becomes 0; all RGB bytes and other alpha values are unchanged",
+        "threshold_u8": 1,
+        "changed_pixels": 76705,
+        "source_png_sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a",
+        "pre_cleanup_rgba_pixel_sha256": "c42914f014bc8d7e54e3372b4acb5a414187c7bc7b273368467c4e5ee114ab41",
+        "post_cleanup_rgba_pixel_sha256": "294783697daf72bb55ef5a2b2dd12b9f03465104cbfacec58c8335210e9b5b41"
+      }
+    }
+  ],
+  "selected_frames": 10,
+  "formal_production_frames": 0,
+  "initial_waiting_strict_alpha": {
+    "status": "FAILED",
+    "evidence": "evidence/waiting-attempt-01-strict-alpha-qa.json"
+  },
+  "report": {
+    "path": "CODEX_CLOUD_ART_PILOT_REPORT.md",
+    "bytes": 5666,
+    "sha256": "361d9e70fa52b59f844f8d87344221c50ec7ed02c5e80006542c169f3bf58064"
+  },
+  "assets": [
+    {
+      "path": "ART_PILOT_PERSISTENCE_REPORT.md",
+      "bytes": 2149,
+      "sha256": "8f96b75d82faa84bae5b5204cfbd831c5c5e2282266612b63fd87a337ac5f784"
+    },
+    {
+      "path": "CODEX_CLOUD_CAPABILITY_REPORT.md",
+      "bytes": 4651,
+      "sha256": "27275fdbb5c8ade36b81adfabf12c4c24c686da475cf94d0a8e4e2b737a0a613"
+    },
+    {
+      "path": "REVIEW_CENTER_PILOT_QA_REPORT.md",
+      "bytes": 2069,
+      "sha256": "04f584af2df4bae8da47277b89c24d985babc804ce21882e80a92d72ff849c72"
+    },
+    {
+      "path": "evidence/detached-alpha-components.json",
+      "bytes": 1407,
+      "sha256": "c42b3cadcfc84f3cddb149259ae3bf72e336d4426925092a151fc86ea814a012"
+    },
+    {
+      "path": "evidence/directions-attempt-01-contact.png",
+      "bytes": 159449,
+      "sha256": "108e8a39b17f145e290183b0bc25975ba767dd0926805bf8b0a3fd894a86a4a8"
+    },
+    {
+      "path": "evidence/directions-attempt-01-qa.json",
+      "bytes": 5803,
+      "sha256": "a8a31cd8232e19af685b11612e9ea5293c38e10026c0228aa3f7ce49a11f6232"
+    },
+    {
+      "path": "evidence/directions-attempt-02-contact.png",
+      "bytes": 168667,
+      "sha256": "97fbc92f03c399655d3ff19fb0ee20f3dad809ddcc413f277a379613f443c75a"
+    },
+    {
+      "path": "evidence/directions-attempt-02-face-and-09.png",
+      "bytes": 342558,
+      "sha256": "13681546e9db71465a427fa4a1fe8be84dc5c2f685eb13a6b130a5060715403e"
+    },
+    {
+      "path": "evidence/directions-attempt-02-qa.json",
+      "bytes": 5747,
+      "sha256": "ede1d3416f9b1f5eca95b6a2c78cd6e53e50a691b5b997851701021f3dd2e992"
+    },
+    {
+      "path": "evidence/image-generation-prompts.json",
+      "bytes": 6641,
+      "sha256": "8fe2b3cb9c22f368115efbb394d90138ff66d26c9c2eb4cf0e50508e80209aef"
+    },
+    {
+      "path": "evidence/protected-baseline-verify.json",
+      "bytes": 1281,
+      "sha256": "652ababfef31d3a53fd6db3a39f4e7af1f2376b21d459efd5813121382bcaa22"
+    },
+    {
+      "path": "evidence/waiting-attempt-01-comparison-dark.gif",
+      "bytes": 217132,
+      "sha256": "4886cd280cc6b2d249392a031b9faf367829f8eb6cfb772e466c40b507f6a778"
+    },
+    {
+      "path": "evidence/waiting-attempt-01-comparison-light.gif",
+      "bytes": 215770,
+      "sha256": "4afc9a4939e0e3feee4d3fbc2e404d0c82bc24e1b6e2bf5f6aae50c1ce3e48ac"
+    },
+    {
+      "path": "evidence/waiting-attempt-01-edges.png",
+      "bytes": 375116,
+      "sha256": "d2f4e70e67e692f10d1f45f9b235388cda23f9ca8ba29ddffb1d00890d3122a3"
+    },
+    {
+      "path": "evidence/waiting-attempt-01-hands.png",
+      "bytes": 242567,
+      "sha256": "426cbf4a6e343d40bd8172e91c7c41de6780351ab7c1ddfa4ac508975330a26a"
+    },
+    {
+      "path": "evidence/waiting-attempt-01-preview.png",
+      "bytes": 284247,
+      "sha256": "712ebd0fc50c3e01eff7801654b86844df2da6f3698a09698cd7ab2aa87904cf"
+    },
+    {
+      "path": "evidence/waiting-attempt-01-qa.json",
+      "bytes": 7753,
+      "sha256": "8ad26f2b34f48c4c848711445689ed597f5e61c591bf313461a733db62e453ce"
+    },
+    {
+      "path": "evidence/waiting-attempt-01-strict-alpha-qa.json",
+      "bytes": 7289,
+      "sha256": "1042ebc6e3945755893b3b02450f40208bfbe4401e78688754e0d207c8194bd1"
+    },
+    {
+      "path": "evidence/waiting-loop-metrics.json",
+      "bytes": 446,
+      "sha256": "002fb4ac3e919c6d6b3a01b0a067628d10284a1a3c5f53816970d4e24b27c1ca"
+    },
+    {
+      "path": "frames/directions/attempt-01/000.png",
+      "bytes": 18622,
+      "sha256": "c39a61f3f1506bf11950660121f5ff43ab258ef2a0d5b48b3d2f16a58c96c84d"
+    },
+    {
+      "path": "frames/directions/attempt-01/090.png",
+      "bytes": 18591,
+      "sha256": "9f7309741b16007b255b1891e576dd09ec4f4eb3040f7d9768d3cbef60a2edbf"
+    },
+    {
+      "path": "frames/directions/attempt-01/180.png",
+      "bytes": 18651,
+      "sha256": "a25625b5a0c276482efb7266f4d96995e2664937d937f00caa640a55641ab1e9"
+    },
+    {
+      "path": "frames/directions/attempt-01/270.png",
+      "bytes": 18619,
+      "sha256": "409bacdee5b766030925c804ec0fd09cbc593be9d60217a06288cbcac1491138"
+    },
+    {
+      "path": "frames/directions/attempt-02/000.png",
+      "bytes": 19739,
+      "sha256": "b315906ecff13dfe97402886a0ee4c86fb340b52903748340e22ef37e384873b"
+    },
+    {
+      "path": "frames/directions/attempt-02/090.png",
+      "bytes": 19600,
+      "sha256": "3d18e479d038ba17a46938a1fc46c059ea0d678f174a520d77be1c7035efcba4"
+    },
+    {
+      "path": "frames/directions/attempt-02/180.png",
+      "bytes": 19826,
+      "sha256": "9c4cc7626c6462eaf723ee7f853ba032f0f66169e4bff78181506bf5bc345c9a"
+    },
+    {
+      "path": "frames/directions/attempt-02/270.png",
+      "bytes": 19990,
+      "sha256": "cdd2cdaa480cd1cb85771c875d300a913f870887ff34a526ef2a7d7a571dd3c1"
+    },
+    {
+      "path": "frames/waiting/attempt-01/01.png",
+      "bytes": 20538,
+      "sha256": "5580b4b1749467f7770e39a5dbe2c9e19100431ee5e6b82a84522b015ccb3f56"
+    },
+    {
+      "path": "frames/waiting/attempt-01/02.png",
+      "bytes": 20825,
+      "sha256": "03a03495ca1b4d131b03c8e96d4c8e365db2890c48e1c4dbbaba4b02e148af64"
+    },
+    {
+      "path": "frames/waiting/attempt-01/03.png",
+      "bytes": 21174,
+      "sha256": "71f15dbd0b52d77c8d4a7764638d88449437cee15cb57078e34694645fb59efa"
+    },
+    {
+      "path": "frames/waiting/attempt-01/04.png",
+      "bytes": 21095,
+      "sha256": "368f644cc9430c464c8548f5c365a5c93095a7acee8a16a7c7f48e17e034ef94"
+    },
+    {
+      "path": "frames/waiting/attempt-01/05.png",
+      "bytes": 20927,
+      "sha256": "63f782be6f799df94129ccdc7ba2a297f7a3ad61df083940c0f69a6c608c280b"
+    },
+    {
+      "path": "frames/waiting/attempt-01/06.png",
+      "bytes": 20501,
+      "sha256": "b0dfc778e4e5428001112acb7a08a8e0d7ecd6c3e23b6f10c86714acdf64b2af"
+    },
+    {
+      "path": "pilot_qa.py",
+      "bytes": 10920,
+      "sha256": "c987c16d63cadfe7ddc27528c74cbab2fce2c62a1adab8c404f493a7cf67ec11"
+    },
+    {
+      "path": "raw/directions-attempt-01.png",
+      "bytes": 751518,
+      "sha256": "8509571d6fb12f7b00958615e14ac2bf8da176b977c10246ee201f57a379b3bd"
+    },
+    {
+      "path": "raw/directions-attempt-02.png",
+      "bytes": 715424,
+      "sha256": "5e07e68eaa870e4ff2cf425597ce3e3af599a136624ec24d5651444528471a5a"
+    },
+    {
+      "path": "raw/waiting-attempt-01.png",
+      "bytes": 1373168,
+      "sha256": "f68e585c5b73214a41d38585aa394d42fcb0961840bbc6e28b33d3024b232b89"
+    },
+    {
+      "path": "references/black-inspection.png",
+      "bytes": 81403,
+      "sha256": "ecd87e4b048bb61b3a43649926771578eb9d8709a8d4031908e736e1c62f482f"
+    },
+    {
+      "path": "references/school-inspection.png",
+      "bytes": 85423,
+      "sha256": "5b1e31c093d02c541ffc86353b18ac8f24a5444e3038b3a64dcdd63d164924eb"
+    },
+    {
+      "path": "references/waiting-inspection.png",
+      "bytes": 278754,
+      "sha256": "a292238ba18e90e7a2cfdbc20ac38b499e5b5e9db4256f083969cd240972b9f1"
+    }
+  ],
+  "integrity_note": "SHA256SUMS also covers the manifest. Original PNG hashes match the cloud pilot.",
+  "governance": {
+    "technical_status": "ART_PIPELINE_TECHNICAL_PASS",
+    "visual_status": "PENDING_VISUAL_ACCEPTANCE"
+  }
+}

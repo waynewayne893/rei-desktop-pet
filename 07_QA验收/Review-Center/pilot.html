@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codex Cloud 专项试验 · Rei Review Center</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/pilot.css" />
+  <script defer src="assets/review-data.js"></script>
+  <script defer src="assets/pilot-data.js"></script>
+  <script defer src="assets/pilot.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Codex Cloud 专项试验</h1>
+      <div class="brand-sub">ART_PIPELINE_TECHNICAL_PASS · PENDING_VISUAL_ACCEPTANCE</div>
+    </div>
+    <div class="top-actions">
+      <a class="btn btn-secondary" href="index.html">正式候选验收</a>
+      <label class="btn btn-secondary" for="pilot-import">导入试验 JSON</label>
+      <input type="file" id="pilot-import" accept=".json,application/json" />
+      <button class="btn btn-primary" id="pilot-export" type="button">导出试验 JSON</button>
+    </div>
+  </header>
+  <main class="pilot-main">
+    <div class="governance-banner">
+      这 10 帧仅供专项美术验收。此页的判定独立保存，不影响正式 171 帧统计或图集。
+    </div>
+
+    <section class="card" aria-labelledby="pilot-view-heading">
+      <div class="card-title"><h2 id="pilot-view-heading">试验样本</h2></div>
+      <div class="pilot-controls">
+        <label>样本
+          <select id="pilot-sample">
+            <option value="waiting">校服 waiting · 旧版 / 试验</option>
+            <option value="000">黑服 000° · 向上</option>
+            <option value="090">黑服 090° · 屏幕右</option>
+            <option value="180">黑服 180° · 向下</option>
+            <option value="270">黑服 270° · 屏幕左</option>
+          </select>
+        </label>
+        <div id="pilot-transport" class="pilot-controls">
+          <button class="btn btn-secondary" id="pilot-play" type="button" aria-pressed="false">播放</button>
+          <button class="btn btn-secondary" id="pilot-prev" type="button" aria-label="上一帧">◀</button>
+          <label>帧
+            <select id="pilot-frame">
+              <option value="0">F1</option><option value="1">F2</option><option value="2">F3</option>
+              <option value="3">F4</option><option value="4">F5</option><option value="5">F6</option>
+            </select>
+          </label>
+          <button class="btn btn-secondary" id="pilot-next" type="button" aria-label="下一帧">▶</button>
+          <span class="mono-dim" id="pilot-timing"></span>
+        </div>
+        <label>底色
+          <select id="pilot-background"><option value="light">浅底</option><option value="dark">深底</option><option value="checker">透明格</option></select>
+        </label>
+        <label>局部
+          <select id="pilot-focus">
+            <option value="face">面部与视线</option><option value="chest">09 标识 / 领结</option>
+            <option value="hands">手部与扶臂</option><option value="feet">脚底 / 边缘</option>
+          </select>
+        </label>
+        <label>放大
+          <select id="pilot-zoom"><option value="4">4×</option><option value="6">6×</option><option value="8">8×</option></select>
+        </label>
+      </div>
+      <p class="dim">点击任一全身图可将两侧放大区域同步移到同一位置。</p>
+      <div class="pilot-visuals" id="pilot-visuals" data-background="light">
+        <figure class="pilot-preview" id="pilot-reference">
+          <figcaption>既有 waiting · 对照参考</figcaption>
+          <div class="pilot-pair">
+            <img id="pilot-old" alt="既有 waiting 标准帧" />
+            <canvas id="pilot-old-loupe" width="192" height="192" role="img" aria-label="既有候选局部"></canvas>
+          </div>
+        </figure>
+        <figure class="pilot-preview">
+          <figcaption id="pilot-caption">试验候选</figcaption>
+          <div class="pilot-pair">
+            <img id="pilot-new" alt="试验候选标准帧" />
+            <canvas id="pilot-new-loupe" width="192" height="192" role="img" aria-label="试验候选局部"></canvas>
+          </div>
+        </figure>
+      </div>
+      <div class="pilot-links" id="pilot-links"></div>
+    </section>
+
+    <section class="card" aria-labelledby="pilot-review-heading">
+      <div class="card-title">
+        <h2 id="pilot-review-heading">试验美术判定</h2>
+        <span class="mono-dim" id="pilot-summary"></span>
+      </div>
+      <label class="field-label" for="pilot-status">当前样本状态</label>
+      <select id="pilot-status">
+        <option value="PENDING_HUMAN_REVIEW">PENDING_HUMAN_REVIEW · 待终审</option>
+        <option value="ACCEPTED">ACCEPTED · 人工通过</option>
+        <option value="NEEDS_FIX">NEEDS_FIX · 需修复</option>
+        <option value="REJECTED">REJECTED · 拒收</option>
+      </select>
+      <label class="field-label" for="pilot-comment">备注（自动保存本地草稿）</label>
+      <textarea id="pilot-comment" rows="4" placeholder="记录动作、视线、09 字形或边缘观察"></textarea>
+      <p class="dim" id="pilot-message" role="status" aria-live="polite"></p>
+      <details>
+        <summary>版本与 SHA-256 绑定</summary>
+        <dl class="meta-kv" id="pilot-bindings"></dl>
+      </details>
+    </section>
+  </main>
+</body>
+</html>

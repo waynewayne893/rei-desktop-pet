@@ -159,6 +159,7 @@ body {
 }
 
 /* Buttons & Chips */
+a.btn { text-decoration: none; }
 .btn {
   border: 1px solid var(--border);
   background: var(--bg-elev);

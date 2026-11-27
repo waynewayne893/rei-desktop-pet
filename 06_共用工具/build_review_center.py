@@ -111,6 +111,69 @@ def git_head_sha(root: Path) -> str:
         return "UNKNOWN"
 
 
+def build_pilot_payload(root: Path, offline_media: dict[str, Path], offline: bool) -> dict[str, Any]:
+    pilot_dir = root / "07_QA验收/CODEX-CLOUD-ART-PILOT"
+    manifest = json.loads((pilot_dir / "CODEX_CLOUD_ART_PILOT_MANIFEST.json").read_text(encoding="utf-8"))
+    hashes = {asset["path"]: asset["sha256"] for asset in manifest["assets"]}
+
+    def media(relative: str) -> str:
+        path = pilot_dir / relative
+        if sha256_file(path) != hashes[relative]:
+            raise ValueError(f"Pilot asset hash mismatch: {relative}")
+        packed = f"media/pilot/{relative}"
+        offline_media[packed] = path
+        return packed if offline else f"../CODEX-CLOUD-ART-PILOT/{relative}"
+
+    def source(result: dict[str, Any]) -> dict[str, str]:
+        return {
+            "version": f"codex-cloud-pilot/{result['attempt']}",
+            "sourceSha256": hashes[result["raw"]],
+        }
+
+    def frame(entry: dict[str, Any]) -> dict[str, str]:
+        path = entry["path"]
+        return {"src": media(path), "sha256": hashes[path]}
+
+    selected = {item["group"]: item for item in manifest["results"] if item["structure"] == "STRUCTURE_PASS"}
+    waiting = selected["waiting"]
+    directions = selected["directions"]
+    if len(waiting["frames"]) != 6 or [Path(f["path"]).stem for f in directions["frames"]] != ["000", "090", "180", "270"]:
+        raise ValueError("Pilot must contain six waiting and four cardinal-direction frames")
+    master_path = "02_标准化母版/rei-black/master-rgba.png"
+    master_hash = next(item["sha256"] for item in manifest["source"]["inputs"] if item["path"] == master_path)
+    if sha256_file(root / master_path) != master_hash:
+        raise ValueError("Black pilot reference master hash mismatch")
+    failed = next(item for item in manifest["results"] if item["structure"] == "FAILED")
+
+    return {
+        "frameCount": 10,
+        "blackMaster": {"version": "P3 派生 RGBA 母版", "sha256": master_hash},
+        "samples": [
+            {"id": "waiting", **source(waiting), "frames": [frame(entry) for entry in waiting["frames"]]},
+            *[
+                {"id": Path(entry["path"]).stem, **source(directions), "frames": [frame(entry)]}
+                for entry in directions["frames"]
+            ],
+        ],
+        "links": {
+            "waiting": [
+                {"label": "原始 RGBA 条带", "src": media(waiting["raw"])},
+                {"label": "浅底对比 GIF", "src": media("evidence/waiting-attempt-01-comparison-light.gif")},
+                {"label": "深底对比 GIF", "src": media("evidence/waiting-attempt-01-comparison-dark.gif")},
+                {"label": "明暗底边缘", "src": media("evidence/waiting-attempt-01-edges.png")},
+                {"label": "手部细节", "src": media("evidence/waiting-attempt-01-hands.png")},
+            ],
+            "directions": [
+                {"label": "原始 RGBA 条带", "src": media(directions["raw"])},
+                {"label": "明暗底四方向接触表", "src": media("evidence/directions-attempt-02-contact.png")},
+                {"label": "面部、视线与 09 细节", "src": media("evidence/directions-attempt-02-face-and-09.png")},
+                {"label": "首次失败原图", "src": media(failed["raw"])},
+                {"label": "首次失败检测记录", "src": media(failed["qa"])},
+            ],
+        },
+    }
+
+
 def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
     asset_manifest = json.loads((root / "07_QA验收/REI_P4B_ASSET_MANIFEST.json").read_text(encoding="utf-8"))
     resume_matrix = json.loads((root / "07_QA验收/REI_P4B_RESUME_MATRIX.json").read_text(encoding="utf-8"))
@@ -300,6 +363,12 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
         for st, r, n in ROW_SPECS
     ]
     baseline_commit = git_head_sha(root)
+    # Keep the official baseline revision stable when only review tooling changes.
+    previous_template = root / "07_QA验收/Review-Center/REI_ART_REVIEW_TEMPLATE.json"
+    if previous_template.is_file():
+        previous = json.loads(previous_template.read_text(encoding="utf-8"))
+        if previous.get("manifest_fingerprint") == manifest_fingerprint:
+            baseline_commit = previous["baseline_commit"]
 
     def make_bundle(offline: bool) -> dict[str, Any]:
         return {
@@ -372,6 +441,13 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
     template_path = review_dir / "REI_ART_REVIEW_TEMPLATE.json"
     template_path.write_text(json.dumps(template_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    pilot_repo_data = build_pilot_payload(root, offline_media, offline=False)
+    pilot_offline_data = build_pilot_payload(root, offline_media, offline=True)
+    (assets_dir / "pilot-data.js").write_text(
+        "window.REI_PILOT_DATA = " + json.dumps(pilot_repo_data, ensure_ascii=False, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+
     # Build deterministic self-contained offline ZIP package
     offline_data_js_bytes = (
         "window.REI_REVIEW_DATA = " + json.dumps(offline_bundle, ensure_ascii=False, indent=2) + ";\n"
@@ -380,6 +456,9 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
     zip_path = review_dir / "rei-review-center-v1.0-offline.zip"
     static_files = [
         ("rei-review-center-v1.0/index.html", review_dir / "index.html"),
+        ("rei-review-center-v1.0/pilot.html", review_dir / "pilot.html"),
+        ("rei-review-center-v1.0/assets/pilot.css", assets_dir / "pilot.css"),
+        ("rei-review-center-v1.0/assets/pilot.js", assets_dir / "pilot.js"),
         ("rei-review-center-v1.0/assets/styles.css", assets_dir / "styles.css"),
         ("rei-review-center-v1.0/assets/app.js", assets_dir / "app.js"),
         ("rei-review-center-v1.0/REI_ART_REVIEW_TEMPLATE.json", template_path),
@@ -400,6 +479,8 @@ def build_review_center(root: Path, review_dir: Path) -> dict[str, Any]:
             write_entry(arcname, src.read_bytes())
 
         write_entry("rei-review-center-v1.0/assets/review-data.js", offline_data_js_bytes)
+        pilot_script = "window.REI_PILOT_DATA = " + json.dumps(pilot_offline_data, ensure_ascii=False, indent=2) + ";\n"
+        write_entry("rei-review-center-v1.0/assets/pilot-data.js", pilot_script.encode("utf-8"))
 
         for rel_media in sorted(offline_media.keys()):
             src = offline_media[rel_media]

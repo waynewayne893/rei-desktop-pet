@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "silhouette_iou_first_last": 0.8695,
+    "solid_first_last": [
+      [
+        71,
+        7,
+        127,
+        195
+      ],
+      [
+        68,
+        7,
+        132,
+        195
+      ]
+    ]
+  },
+  "pilot": {
+    "silhouette_iou_first_last": 0.8837,
+    "solid_first_last": [
+      [
+        70,
+        7,
+        126,
+        194
+      ],
+      [
+        67,
+        8,
+        123,
+        195
+      ]
+    ]
+  }
+}

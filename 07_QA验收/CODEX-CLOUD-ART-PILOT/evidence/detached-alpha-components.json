@@ -1,0 +1,91 @@
+{
+  "frames/waiting/attempt-01/01.png": [],
+  "frames/waiting/attempt-01/02.png": [
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    }
+  ],
+  "frames/waiting/attempt-01/03.png": [
+    {
+      "pixels": 3,
+      "max_alpha": 3
+    },
+    {
+      "pixels": 2,
+      "max_alpha": 2
+    },
+    {
+      "pixels": 2,
+      "max_alpha": 1
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    }
+  ],
+  "frames/waiting/attempt-01/04.png": [
+    {
+      "pixels": 2,
+      "max_alpha": 1
+    }
+  ],
+  "frames/waiting/attempt-01/05.png": [],
+  "frames/waiting/attempt-01/06.png": [
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    }
+  ],
+  "frames/directions/attempt-02/000.png": [],
+  "frames/directions/attempt-02/090.png": [
+    {
+      "pixels": 5,
+      "max_alpha": 4
+    }
+  ],
+  "frames/directions/attempt-02/180.png": [
+    {
+      "pixels": 7,
+      "max_alpha": 3
+    }
+  ],
+  "frames/directions/attempt-02/270.png": [
+    {
+      "pixels": 5,
+      "max_alpha": 4
+    },
+    {
+      "pixels": 2,
+      "max_alpha": 3
+    },
+    {
+      "pixels": 1,
+      "max_alpha": 1
+    }
+  ]
+}
