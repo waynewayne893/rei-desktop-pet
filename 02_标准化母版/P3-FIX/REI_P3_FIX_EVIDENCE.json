@@ -8,7 +8,7 @@
     "historical_download_source_missing": true,
     "current_workspace_freeze_confirmation": "PENDING_USER_CONFIRMATION"
   },
-  "source_p3_manifest_sha256": "eb5a5aea56f3d405334d073ef06e25daba98e888a5150e49bfd2e964f6d95d9a",
+  "source_p3_manifest_sha256": "aab28299cf2148b07fd5663fa7b9543e22d71a161dfc15add104ab169c4acd7f",
   "reproducible_recipe": {
     "path": "build_p3_fix.py",
     "sha256": "95426e184e8d849d125557d140668891acb7b45ba6bd7c5759058bccfdf8faf0",

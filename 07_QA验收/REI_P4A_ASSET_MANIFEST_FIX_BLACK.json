@@ -1965,7 +1965,7 @@
       ],
       "alpha_zero": 0,
       "ok": false,
-      "error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_白色战斗服\\P4-A\\originals\\idle\\attempt-01\\source.png has no fully transparent background pixels; preserve the original and request approval for a replacement with transparent_background: true",
+      "error": "<LOCAL_PROJECT_ROOT>\\04_白色战斗服\\P4-A\\originals\\idle\\attempt-01\\source.png has no fully transparent background pixels; preserve the original and request approval for a replacement with transparent_background: true",
       "sha256": "2327a2e1b1ea908d1e90f84ee89b2ccda22e5cb4f9c920241f8c165844183cd4",
       "state": "idle",
       "status": "rejected_by_bundled_native_alpha_loader"
@@ -2119,7 +2119,7 @@
   "geometry_and_files_verified": "Pillow decoded frames and GIF timing; visual contact sheet review; 49 P2 artifacts and 11 historical QA entries rehashed",
   "baseline_manifest": {
     "path": "07_QA验收/REI_P4A_ASSET_MANIFEST.json",
-    "sha256": "f0531fc6e2cad4a491f4b174d51e570648a89d163e7a3222a8811d11b7104b18",
+    "sha256": "ed0f2690a511971ae04d739b108b6021852d78659fedc82431cf1ea9f218d5d5",
     "bytes": 45100
   },
   "decision_basis": "REI-PET-P4A-MAIN-REVIEW-01 + authorized white continuation",
@@ -2142,7 +2142,7 @@
     },
     {
       "path": "07_QA验收/P4-A/continue/protected-28-frame-hashes.json",
-      "sha256": "6fbd0d38f6f6910b223efd702a9274e3a22d6967d6e9ed9374dc36b7a2cd7137",
+      "sha256": "f56440f2fd6e0e0892b8ef938158168d445b8a4afd920406d378f5561bca6452",
       "bytes": 15705
     },
     {
@@ -2183,7 +2183,7 @@
   ],
   "previous_manifest": {
     "path": "07_QA验收/REI_P4A_ASSET_MANIFEST_CONTINUE.json",
-    "sha256": "510dc6cdc26ef88048dc0f65b096e5d313651998e0bcca89c7c2f62033c8f267",
+    "sha256": "66a55c7c6ad2f7dacd307486a225bf746a52744d674b112e716402d4cbebdf97",
     "bytes": 66176
   },
   "rejected_rows": [
@@ -2587,7 +2587,7 @@
     },
     {
       "path": "05_黑色战斗服/P4-A/FIX-BLACK/source-running-right-review.json",
-      "sha256": "724b8d50ef98ebb825c61542232d4e6261eca3dbcc71fd8abc3ff7dabf77aa72",
+      "sha256": "fa5d7c028fad884f726855c66f1a7cfa749ee84cb1b3a267dc4385790bd413dd",
       "bytes": 4054
     },
     {

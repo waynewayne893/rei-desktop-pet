@@ -1335,7 +1335,7 @@
       ],
       "alpha_zero": 0,
       "ok": false,
-      "error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_白色战斗服\\P4-A\\originals\\idle\\attempt-01\\source.png has no fully transparent background pixels; preserve the original and request approval for a replacement with transparent_background: true",
+      "error": "<LOCAL_PROJECT_ROOT>\\04_白色战斗服\\P4-A\\originals\\idle\\attempt-01\\source.png has no fully transparent background pixels; preserve the original and request approval for a replacement with transparent_background: true",
       "sha256": "2327a2e1b1ea908d1e90f84ee89b2ccda22e5cb4f9c920241f8c165844183cd4",
       "state": "idle",
       "status": "rejected_by_bundled_native_alpha_loader"

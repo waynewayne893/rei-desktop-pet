@@ -1,6 +1,6 @@
 {
   "baseline_manifest": "07_QA验收/REI_P4A_ASSET_MANIFEST.json",
-  "baseline_manifest_sha256": "f0531fc6e2cad4a491f4b174d51e570648a89d163e7a3222a8811d11b7104b18",
+  "baseline_manifest_sha256": "ed0f2690a511971ae04d739b108b6021852d78659fedc82431cf1ea9f218d5d5",
   "hashed_frames": [
     {
       "id": "rei-school",

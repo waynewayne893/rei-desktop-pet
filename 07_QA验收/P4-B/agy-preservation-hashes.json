@@ -455,7 +455,7 @@
       },
       "validation": {
         "path": "03_校服绫波丽/P4-B/delivery/spritesheet-standard-validation.json",
-        "sha256": "c5e773445c54f5031ab6f26b7f4a3e4e79f816e15956d2ef5e61e14a4a6c66c7",
+        "sha256": "c7d5c2b6b6669bfc2840ca008c41f5fa5f7488b102d2d98e97e5384dd56bbccb",
         "bytes": 10277
       },
       "validator_exit": 0,
@@ -474,7 +474,7 @@
       },
       "validation": {
         "path": "04_白色战斗服/P4-B/delivery/spritesheet-standard-validation.json",
-        "sha256": "e086801dad45d720e5f56334b9120010585ae77013d723d1c4b36f21c9a89fd5",
+        "sha256": "415cac59fd3b110048365aae9d93a799467b7a1305f6aab6f49f600d90ec7f70",
         "bytes": 10277
       },
       "validator_exit": 0,
@@ -493,7 +493,7 @@
       },
       "validation": {
         "path": "05_黑色战斗服/P4-B/delivery/spritesheet-standard-validation.json",
-        "sha256": "3cba88eab96b67d53a86e1a42cc37af7ba6a0f6a18cfd5ba76e7cb5eaa784284",
+        "sha256": "a6c748b7c33799eba4f970800d4368944b73c89ea2b013ab4e97fefc0b6f89f4",
         "bytes": 10277
       },
       "validator_exit": 0,
