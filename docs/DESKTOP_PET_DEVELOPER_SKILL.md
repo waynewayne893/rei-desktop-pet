@@ -52,17 +52,43 @@ Never invent a second copy of a verified atlas tool when the baseline already ha
 
 ---
 
-## S3 — Generation capability and rights gate / 图像生成能力与权利门禁
+## Art production modes / 美术生产方式
 
-Check available image-generation tools, reference-image control, output format, and whether a true alpha channel is produced. Prefer real generated action strips under a frozen-master constraint. If a Teach a task demonstration is required, state the minimum steps to record. If generation is unavailable, report the concrete blocker; **never fabricate frames**.
+This skill formally supports two art-production modes. External art input is a first-class, supported mode — **not** a temporary exception.
 
-**Rights gate / 权利门禁**（必须遵守）：
+本技能正式支持两种美术生产方式。外部美术资产输入是一等正式模式，不是临时例外。
 
-- This assistant must **not** generate new artwork of copyrighted or third-party characters (including new animation frames of those characters).
-- Those frames must come from the owner’s **own or authorized** production pipeline. The assistant may still normalize, QA, preview, assemble, hash, and document frames the owner provides.
-- Never pass off simple scale, rotation, or other affine warps as real character acting.
-- A cutout of an opaque render must be labelled as such, never as native-alpha generation.
-- Unverified redistribution rights imply private or controlled storage — public visibility is not an open-source or redistribution licence.
+### 1. External art input mode / 外部美术资产输入模式
+
+Formally supported, and the **default** for copyrighted or third-party characters.
+
+An external tool the owner runs (for example Codex image generation) produces the real motion frames. The assistant owns intake, normalization, QA, animated and native-size previews, atlas assembly, delivery packaging, and GitHub persistence. It prepares an intake environment — per-state frame folders, naming rules, `_incoming` drop folders, a QA script, a manual review template, and an intake document — and **waits for frames**. It does not generate new artwork of those characters.
+
+对受版权保护或第三方角色，默认采用此模式：由用户运行的外部工具（例如 Codex 生图）产出真实动作帧；助手负责资产接收、标准化、QA、动画与原生尺寸预览、图集装配、交付打包与 GitHub 持久化。助手先准备接收环境，然后等待交帧。
+
+### 2. Self-generation mode / 自主生图模式
+
+Available **for original characters only**. When tools allow, the assistant may generate motion frames itself, still under the frozen-master constraint and the common frame-source rules in S3.
+
+仅适用于原创角色。在工具能力允许时，助手可自行生成动作帧，仍须遵守已冻结母版约束及 S3 的共同规则。
+
+---
+
+## S3 — Frame source / 帧来源
+
+Select the mode under “Art production modes / 美术生产方式” first. The following rules apply no matter which tool produced the frames:
+
+无论由哪种工具出帧，均须遵守：
+
+- Never pass off simple scale, rotation, or other affine warps as real character acting. / 不得用简单缩放、旋转或其他仿射变换冒充真实人物动作。
+- Record whether each asset has a native alpha channel or is a cutout of an opaque render. A cutout must be labelled as such, never as native-alpha generation. / 必须记录原生透明通道与后期去背的区别，不得把不透明图去背结果称为原生 Alpha 生图。
+- Keep the raw images and the production prompts from whichever tool produced them. / 保留原始生成图片及提示词，不论它们出自何种工具。
+- If a required frame source or tool is unavailable, report the concrete blocker; **never fabricate frames**. / 如存在能力或来源阻塞，报告具体阻塞项，不得伪造生成结果。
+- Unverified redistribution rights imply private or controlled storage — public visibility is not an open-source or redistribution licence. / 未核实再分发权利的资产使用私有或受控存储；公开可见不等于开源或再分发许可。
+
+In self-generation mode, also check available image-generation tools, reference-image control, output format, and whether a true alpha channel is produced. Prefer real generated action strips under a frozen-master constraint. If a Teach a task demonstration is required, state the minimum steps to record.
+
+自主生图模式下，另须检查可用生图工具、参考图控制、输出格式及是否产生真实透明通道；优先生成连续动作条带。如需 Teach a task 演示，应给出最小教学步骤。
 
 ---
 
