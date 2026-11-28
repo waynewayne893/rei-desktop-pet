@@ -57,6 +57,7 @@ flowchart LR
 | [Reproducibility](REPRODUCIBILITY.md) | 资产完整性与标准图集重建 |
 | [Cloud validation](CLOUD_REPRODUCIBILITY_REPORT.md) | 跨平台复算证据 |
 | [Atlas tools](06_共用工具/rei_atlas_tools.py) | 跨平台图集工具 |
+| [Desktop Pet Developer skill](docs/DESKTOP_PET_DEVELOPER_SKILL.md) | 通用桌宠开发流程（可移植技能说明 V1.0） |
 | [Compatibility notes](09_项目文档/CODEX_PETS_COMPATIBILITY.md) | 原生协议验证边界 |
 | [P4-D candidate status](https://github.com/waynewayne893/rei-desktop-pet/blob/58e9fe1aff810dd4e64b4605f4f29b32c6b24b14/PROJECT_STATUS.md) | 独立分支候选装配与离线 QA 记录 |
 | [Agent guidelines](AGENTS.md) / [Handoff](HANDOFF.md) | 工程保护及接续入口 |
