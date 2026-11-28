@@ -20,7 +20,7 @@
 | Codex Desktop 版本 | `26.1120.6357.0` |
 | 原生校验器路径 | `C:\Program Files\WindowsApps\OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0\app\resources\skills\skills\.curated\hatch-pet\scripts\validate_atlas.py` |
 | Python / Pillow / libwebp | `Python 3.14.6` / `Pillow 12.3.0` / `libwebp 1.6.0` |
-| 独立临时 Git 克隆目录 | `%TEMP%\rei-compat-win-git`（原本地开发目录 `D:\HuaweiMoveData\Users\86191\Desktop\Rei Desktop Pet` 全程未改动） |
+| 独立临时 Git 克隆目录 | `%TEMP%\rei-compat-win-git`（原本地开发目录 `<LOCAL_PROJECT_ROOT>` 全程未改动） |
 | 独立临时解包测试目录 | `%TEMP%\rei-compat-download` |
 
 ---
@@ -105,7 +105,7 @@
 | `asuka-mixed-test/pet.json` | `301` | `8fd1de1dd21b142947c71da042b8e65465c76bc9cb896ad3ab6ce55fdbbdba04` | `8fd1de1dd21b142947c71da042b8e65465c76bc9cb896ad3ab6ce55fdbbdba04` | **UNCHANGED** |
 | `asuka-mixed-test/spritesheet.webp` | `1,988,930` | `83aba65992452114a6a4156f6ec9655a3869b3a127b6ab0ce8edf15ccc865fcb` | `83aba65992452114a6a4156f6ec9655a3869b3a127b6ab0ce8edf15ccc865fcb` | **UNCHANGED** |
 
-- **原本地开发工程完整性**：`D:\HuaweiMoveData\Users\86191\Desktop\Rei Desktop Pet` 全程未改动（`main...origin/main`，工作树干净）。
+- **原本地开发工程完整性**：`<LOCAL_PROJECT_ROOT>` 全程未改动（`main...origin/main`，工作树干净）。
 
 ---
 

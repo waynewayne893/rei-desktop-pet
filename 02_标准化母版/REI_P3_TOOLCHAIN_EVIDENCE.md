@@ -63,7 +63,7 @@ used = column_index < frame_count or (
 
 ## P3 只读复跑
 
-用 Python 3.14.6 调用安装目录内 `validate_atlas.py <现有 asuka-school WebP> --require-v2`。输入为 `C:\Users\86191\.codex\pets\asuka-school\spritesheet.webp`，SHA-256 `51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29`。
+用 Python 3.14.6 调用安装目录内 `validate_atlas.py <现有 asuka-school WebP> --require-v2`。输入为 `C:\Users\<用户名>\.codex\pets\asuka-school\spritesheet.webp`，SHA-256 `51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29`。
 
 - 进程退出码 `1`，`ok=false`。
 - 唯一错误 `idle row 0 column 6 is empty or too sparse (0 pixels)`，警告为空。

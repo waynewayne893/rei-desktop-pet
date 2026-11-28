@@ -3,7 +3,7 @@
 > **重要门禁声明**：
 > 1. 本测试包 `rei-compat-test` 为 **P4-COMPAT 临时兼容性预验证包**，仅使用已有校服绫波丽 57 帧 + 16 个明确方向标识的临时测试格 + `(0,6)` 中性参考格，**不是正式 P4-C / P4-D / P5 发布版本**；临时方向素材**严禁**计入正式 P4-C 产物。
 > 2. **实际本地安装需由用户明确另行批准后方可执行**；在批准安装前，可先在任意临时下载目录执行第 2 节的只读校验。
-> 3. 全程**严禁修改或覆盖** `C:\Users\<user>\.codex\pets\` 下已存在的 3 套明日香宠物（`asuka-school`、`asuka-work`、`asuka-mixed-test`）及原本地工程 `D:\HuaweiMoveData\Users\86191\Desktop\Codex_Asuka`。
+> 3. 全程**严禁修改或覆盖** `C:\Users\<user>\.codex\pets\` 下已存在的 3 套明日香宠物（`asuka-school`、`asuka-work`、`asuka-mixed-test`）及原本地工程 `<LOCAL_ASUKA_ROOT>`。
 
 ---
 

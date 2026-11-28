@@ -395,7 +395,7 @@
     }
   ],
   "asuka_repo": {
-    "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Codex_Asuka",
+    "path": "<LOCAL_ASUKA_ROOT>",
     "HEAD": "1e52fc5c20b947a2570695f94c968990c32fd025",
     "baseline_HEAD": "1e52fc5c20b947a2570695f94c968990c32fd025",
     "worktree_diff_sha256": "9a952faa6ae913af0377e5d44a65be422f69a19d0589b173fe884d2c82db868b",

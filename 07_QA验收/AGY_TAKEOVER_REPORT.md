@@ -2,7 +2,7 @@
 
 **阶段状态：`PARTIAL_PENDING_ART_REVIEW`（结构与离线 QA 全部通过，171/171 帧与三套标准图集已交付，等待用户与 ChatGPT 主控人工美术验收）。**
 
-本报告记录 Google Antigravity 接管 `D:\HuaweiMoveData\Users\86191\Desktop\Rei Desktop Pet` P4-B 断点续作的全量只读审计、工具链核验、资产复用、三套标准图集装配及保护哈希证据。已有 Codex 交付文档与历史资产全部原样保留，未发生任何覆盖或修改。
+本报告记录 Google Antigravity 接管 `<LOCAL_PROJECT_ROOT>` P4-B 断点续作的全量只读审计、工具链核验、资产复用、三套标准图集装配及保护哈希证据。已有 Codex 交付文档与历史资产全部原样保留，未发生任何覆盖或修改。
 
 ---
 
@@ -70,8 +70,8 @@
 - **三套冻结母版与 P2 字节备份**：3/3 一致（`all_frozen_masters_unchanged: true`）。
 - **三套 P3 / P3-FIX 派生 RGBA 母版**：3/3 一致（`all_derived_masters_unchanged: true`）。
 - **P4-A 受保护 42 帧**：42/42 一致（`all_42_p4a_frames_unchanged: true`），旧黑服 `running-right` 拒收文件原样保留且未进入图集。
-- **明日香历史参考工程 (`D:\HuaweiMoveData\Users\86191\Desktop\Codex_Asuka`)**：`HEAD` 仍为 `1e52fc5c20b947a2570695f94c968990c32fd025`，`git diff --binary HEAD` SHA-256 仍为 `9a952faa6ae913af0377e5d44a65be422f69a19d0589b173fe884d2c82db868b`，与 P2 基线完全一致（`asuka_repo_unchanged: true`）。
-- **已安装本地宠物 (`C:\Users\86191\.codex\pets`)**：`asuka-school`、`asuka-work`、`asuka-mixed-test` 的 `pet.json` 与 `spritesheet.webp` 全部哈希一致（`installed_pets_unchanged: true`）。
+- **明日香历史参考工程 (`<LOCAL_ASUKA_ROOT>`)**：`HEAD` 仍为 `1e52fc5c20b947a2570695f94c968990c32fd025`，`git diff --binary HEAD` SHA-256 仍为 `9a952faa6ae913af0377e5d44a65be422f69a19d0589b173fe884d2c82db868b`，与 P2 基线完全一致（`asuka_repo_unchanged: true`）。
+- **已安装本地宠物 (`C:\Users\<用户名>\.codex\pets`)**：`asuka-school`、`asuka-work`、`asuka-mixed-test` 的 `pet.json` 与 `spritesheet.webp` 全部哈希一致（`installed_pets_unchanged: true`）。
 
 ---
 

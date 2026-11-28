@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "frames_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames",
+  "frames_root": "<LOCAL_PROJECT_ROOT>\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames",
   "states": [
     "idle"
   ],
@@ -18,7 +18,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\00.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6546,
@@ -32,7 +32,7 @@
         },
         {
           "index": 1,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\01.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6475,
@@ -46,7 +46,7 @@
         },
         {
           "index": 2,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\02.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6577,
@@ -60,7 +60,7 @@
         },
         {
           "index": 3,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\03.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6521,
@@ -74,7 +74,7 @@
         },
         {
           "index": 4,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\04.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6604,
@@ -88,7 +88,7 @@
         },
         {
           "index": 5,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\05.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\05_\u9ed1\u8272\u6218\u6597\u670d\\P4-A\\review-frames\\idle\\05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6577,

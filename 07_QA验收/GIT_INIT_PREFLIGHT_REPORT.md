@@ -3,7 +3,7 @@
 **预审结论：`PREFLIGHT_PASS`（所有安全、体积、完整性、隔离与恢复依赖检查通过；当前尚未执行 `git commit` 与 `git push`，严格等待用户明确批准）。**
 
 - **审计日期**：2026-11-27
-- **本地工作区**：`D:\HuaweiMoveData\Users\86191\Desktop\Rei Desktop Pet`
+- **本地工作区**：`<LOCAL_PROJECT_ROOT>`
 - **当前阶段声明**：`P4-B PARTIAL`（结构与离线 QA 全部通过，人工美术验收待完成；**非正式发布版本**）
 
 ---
@@ -60,7 +60,7 @@
 | OpenAI / Google / AWS / GitHub Token (`sk-`, `AIza`, `ghp_`, `gho_`, `github_pat_`, `AKIA`, `Bearer `) | **0** | 无任何 API Key 或访问凭据 |
 | 私钥块 (`-----BEGIN ... PRIVATE KEY-----`) | **0** | 无私钥文件或内嵌私钥 |
 | 邮箱地址 | **0** | 仓库正文无明文个人邮箱（Git 作者使用 GitHub noreply 邮箱 `202406038+waynewayne893@users.noreply.github.com`） |
-| 本地绝对路径审计记录（非凭据，**须知情确认**） | 若干审计文本 | 历史 P2/P3/P4 与接管 JSON/MD 审计证据中包含本机 Windows 路径字符串（如 `D:\HuaweiMoveData\Users\86191\...`、`C:\Users\86191\.codex\pets`、`Codex_Asuka`），用于证明路径隔离与文件来源；因目标仓库已核验为 **`PRIVATE`** 且不含凭据，风险可控。如用户希望脱敏，可在首次提交前指示处理。 |
+| 本地绝对路径审计记录（非凭据，**须知情确认**） | 若干审计文本 | 历史 P2/P3/P4 与接管 JSON/MD 审计证据中包含本机 Windows 路径字符串（如 `<LOCAL_USER_PATH>\...`、`C:\Users\<用户名>\.codex\pets`、`Codex_Asuka`），用于证明路径隔离与文件来源；因目标仓库已核验为 **`PRIVATE`** 且不含凭据，风险可控。如用户希望脱敏，可在首次提交前指示处理。 |
 
 ---
 

@@ -18,7 +18,7 @@
   "assets_unchanged_source_and_p3": {
     "rei-school": {
       "original_source": {
-        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-school-base-v1.0.png",
+        "path": "<LOCAL_PROJECT_ROOT>\\00_原始美术母版\\rei-school-base-v1.0.png",
         "sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1",
         "bytes": 1349906,
         "size_px": [
@@ -28,7 +28,7 @@
         "mode": "RGB"
       },
       "source_backup": {
-        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-school-base-v1.0.png",
+        "path": "<LOCAL_PROJECT_ROOT>\\00_原始美术母版\\P2_字节备份\\rei-school-base-v1.0.png",
         "sha256": "68d79674728e46b1bbff62070b9e57c79ad6e3b9f70354a344539b26511b0bc1"
       },
       "p3_master_before": {
@@ -49,7 +49,7 @@
     },
     "rei-white": {
       "original_source": {
-        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-white-base-v1.0.png",
+        "path": "<LOCAL_PROJECT_ROOT>\\00_原始美术母版\\rei-white-base-v1.0.png",
         "sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019",
         "bytes": 1374491,
         "size_px": [
@@ -59,7 +59,7 @@
         "mode": "RGB"
       },
       "source_backup": {
-        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-white-base-v1.0.png",
+        "path": "<LOCAL_PROJECT_ROOT>\\00_原始美术母版\\P2_字节备份\\rei-white-base-v1.0.png",
         "sha256": "ec683e7185e0399494a1f5be1ff6de74f7187c22999bc72b7daded626b179019"
       },
       "p3_master_before": {
@@ -80,7 +80,7 @@
     },
     "rei-black": {
       "original_source": {
-        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\rei-black-base-v1.0.png",
+        "path": "<LOCAL_PROJECT_ROOT>\\00_原始美术母版\\rei-black-base-v1.0.png",
         "sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb",
         "bytes": 1286466,
         "size_px": [
@@ -90,7 +90,7 @@
         "mode": "RGB"
       },
       "source_backup": {
-        "path": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\00_原始美术母版\\P2_字节备份\\rei-black-base-v1.0.png",
+        "path": "<LOCAL_PROJECT_ROOT>\\00_原始美术母版\\P2_字节备份\\rei-black-base-v1.0.png",
         "sha256": "be5907538ecbade28ed82ba8236c5fd461b119f5ef928a1289d7488429aed7cb"
       },
       "p3_master_before": {
@@ -1073,7 +1073,7 @@
   },
   "installed_asuka_native_comparison": {
     "asuka-school": {
-      "path": "C:\\Users\\86191\\.codex\\pets\\asuka-school\\spritesheet.webp",
+      "path": "C:\\Users\\<用户名>\\.codex\\pets\\asuka-school\\spritesheet.webp",
       "sha256": "51ecce0097b08e17308cbc90bb4dbf8c7353cabb90e33caf970b8d9a8fe80c29",
       "source_cell_row_col": [
         0,
@@ -1118,7 +1118,7 @@
       }
     },
     "asuka-work": {
-      "path": "C:\\Users\\86191\\.codex\\pets\\asuka-work\\spritesheet.webp",
+      "path": "C:\\Users\\<用户名>\\.codex\\pets\\asuka-work\\spritesheet.webp",
       "sha256": "0d4024945ca4d5f757eff9afa6c0eb9f1892eadb93f8fdef5ae317c23de45049",
       "source_cell_row_col": [
         0,

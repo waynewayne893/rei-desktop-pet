@@ -5,7 +5,7 @@
   "date": "2026-11-27",
   "executor": "Google Antigravity",
   "os": "Windows-11-10.0.22000-SP0",
-  "workspace_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet",
+  "workspace_root": "<LOCAL_PROJECT_ROOT>",
   "environment_modified": false,
   "dependencies_installed": false,
   "python": {

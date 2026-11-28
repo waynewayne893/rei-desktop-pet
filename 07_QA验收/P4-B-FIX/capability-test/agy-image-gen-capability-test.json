@@ -47,7 +47,7 @@
       "bytes": 689229,
       "sha256": "78f6c177970e7e12bedd56b97ae283645604844c82f60445d6a75fa3efc68d16",
       "hatch_pet_native_alpha_pass": false,
-      "hatch_pet_native_alpha_error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_01_1795784314464.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
+      "hatch_pet_native_alpha_error": "<LOCAL_PROJECT_ROOT>\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_01_1795784314464.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
     },
     {
       "filename": "rei_school_waiting_agy_test_02_1795784339012.jpg",
@@ -61,7 +61,7 @@
       "bytes": 613995,
       "sha256": "e7da7a9efd5e211942a2c4a9e72954dfc7cff2f045afaa57fcec3aa5ae3caa95",
       "hatch_pet_native_alpha_pass": false,
-      "hatch_pet_native_alpha_error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_02_1795784339012.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
+      "hatch_pet_native_alpha_error": "<LOCAL_PROJECT_ROOT>\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_02_1795784339012.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
     },
     {
       "filename": "rei_school_waiting_agy_test_03_1795784361763.jpg",
@@ -75,7 +75,7 @@
       "bytes": 533394,
       "sha256": "fa789ea0fdb7c91c5a8adc2d7eae8a8070edc808a575d30a6affb4e1fd42cb0c",
       "hatch_pet_native_alpha_pass": false,
-      "hatch_pet_native_alpha_error": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_03_1795784361763.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
+      "hatch_pet_native_alpha_error": "<LOCAL_PROJECT_ROOT>\\07_QA验收\\P4-B-FIX\\capability-test\\rei_school_waiting_agy_test_03_1795784361763.jpg has no encoded alpha channel; preserve the original and request approval for a replacement with transparent_background: true"
     }
   ]
 }

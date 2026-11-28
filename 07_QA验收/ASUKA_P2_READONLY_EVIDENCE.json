@@ -1,8 +1,8 @@
 {
   "date": "2026-11-27",
-  "asuka_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Codex_Asuka",
-  "installed_root": "C:\\Users\\86191\\.codex\\pets",
-  "rei_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet",
+  "asuka_root": "<LOCAL_ASUKA_ROOT>",
+  "installed_root": "C:\\Users\\<用户名>\\.codex\\pets",
+  "rei_root": "<LOCAL_PROJECT_ROOT>",
   "app_package": "OpenAI.Codex_26.1120.6357.0_x64__2p2nqsd0c76g0",
   "python": {
     "python": "3.14.6",

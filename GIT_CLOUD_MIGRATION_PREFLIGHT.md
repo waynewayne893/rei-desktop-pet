@@ -4,7 +4,7 @@
 
 - **审计日期**：2026-11-27
 - **架构路线**：Local-first → **GitHub-first + Cloud Execution**
-- **本地来源**：`D:\HuaweiMoveData\Users\86191\Desktop\Rei Desktop Pet`（保留为历史备份与 P5 本地安装环境，未删除任何历史文件）
+- **本地来源**：`<LOCAL_PROJECT_ROOT>`（保留为历史备份与 P5 本地安装环境，未删除任何历史文件）
 - **目标私有仓库**：`https://github.com/waynewayne893/rei-desktop-pet.git`（已只读核验：`visibility=PRIVATE`、`isPrivate=true`、`isEmpty=true`、未重复创建）
 - **当前真实阶段**：`P4-B PARTIAL`（171 帧标准候选齐备，人工美术验收未全部完成；**非正式 `v1.0.0`**）
 - **当前 Git 状态**：本地已 `git init -b main` 并绑定唯一 `origin`；**0 次 Commit、0 次 Push**
@@ -42,7 +42,7 @@
 - `__pycache__/`、`*.py[cod]`、`$py.class`：Python 运行期字节码缓存，不可移植且无版本价值。
 - `.DS_Store`、`Thumbs.db`、`desktop.ini`、`*.tmp`、`*.bak`、`*.swp`、`*~`：OS/编辑器临时文件。
 - `.venv/`、`venv/`、`.env`、`.env.*`、`*.key`、`*.pem`：本地虚拟环境与敏感密钥隔离保护。
-- **未纳入本仓库的外部目录**：`D:\HuaweiMoveData\Users\86191\Desktop\Codex_Asuka`（只读参考，严禁纳入或修改）、`C:\Users\86191\.codex\pets`（本机已安装宠物）、`C:\Program Files\WindowsApps\OpenAI.Codex_*`（专有受限软件，见第 7 节）。
+- **未纳入本仓库的外部目录**：`<LOCAL_ASUKA_ROOT>`（只读参考，严禁纳入或修改）、`C:\Users\<用户名>\.codex\pets`（本机已安装宠物）、`C:\Program Files\WindowsApps\OpenAI.Codex_*`（专有受限软件，见第 7 节）。
 
 ---
 
@@ -52,7 +52,7 @@
 | --- | :---: | --- |
 | 凭据与密钥 (`sk-`, `AIza`, `ghp_`, `gho_`, `github_pat_`, `AKIA`, `Bearer`, `PRIVATE KEY`) | **0 命中** | 全库文本/JSON/MD/Python 零凭据泄露 |
 | 邮箱地址 | **0 命中** | 正文零明文个人邮箱；Git 作者配置为 GitHub noreply 邮箱 |
-| 隐私路径字符串（**请用户知情确认**） | 少量历史审计文本 | P2/P3/P4 历史 JSON/MD 审计证据中含有 Windows 本地路径（含用户名 `86191` 及 `Codex_Asuka` / `.codex\pets` 审计路径），用于留痕隔离与来源追溯；因目标仓库已核验为 **`PRIVATE`** 且无任何凭据，保留原字节不破坏历史哈希 |
+| 隐私路径字符串（**请用户知情确认**） | 少量历史审计文本 | P2/P3/P4 历史 JSON/MD 审计证据中含有 Windows 本地路径（含用户名 `<用户名>` 及 `Codex_Asuka` / `.codex\pets` 审计路径），用于留痕隔离与来源追溯；因目标仓库已核验为 **`PRIVATE`** 且无任何凭据，保留原字节不破坏历史哈希 |
 | 版权 / IP 提示 | **仅限私有仓库** | 角色造型基于 EVA 绫波丽二次创作，属于个人非公开桌面宠物工程；本仓库**必须永久保持 `PRIVATE`**，严禁公开或二次分发 |
 | 无关资产 | **0** | 全部 600 个文件均为 Rei Desktop Pet 合法工程资产、证据或入口文档 |
 

@@ -4,7 +4,7 @@
 
 ## T1｜原工程和现有安装
 
-- 原工程 `D:\HuaweiMoveData\Users\86191\Desktop\Codex_Asuka`，分支 `main`，HEAD `1e52fc5c20b947a2570695f94c968990c32fd025`，本地 origin `https://github.com/waynewayne893/asuka-desktop-pet.git`。
+- 原工程 `<LOCAL_ASUKA_ROOT>`，分支 `main`，HEAD `1e52fc5c20b947a2570695f94c968990c32fd025`，本地 origin `https://github.com/waynewayne893/asuka-desktop-pet.git`。
 - 开工及初始化后 Git 状态相同。预存修改为 `AGENTS.md` 与 `docs/08-混合双形态最小测试_工作稿.md`，预存删除为 `references/approved_baselines/asuka_school_mode_baseline_v2.png`。HEAD 中仍可只读取得该 PNG，2,272,395 字节，SHA-256 `3f3062bc338ac9c9fbb7bbb319b1b7abdab5f8d756dd469ab6838963cbd42524`。两次 `git diff --binary HEAD` 输出哈希相同，详见证据 JSON。
 - `work/` 被原仓库忽略，`git ls-files work` 无条目。现场脚本、逐帧、QA 和未清边图依赖本机工作目录。以该仓库的 Git 提交单独恢复，无法重建全套制作现场。
 - `A-明日香双形态_v1.0_项目完成说明.md` 是结项汇总。较具体的历史证据见 `docs/07-最终接入与验收报告_工作稿.md`、各形态 `qa/` 和混合版 `mixed-test/qa/runtime-observation.json`。两只独立包曾由用户确认可选可播放。混合包曾由用户观察一次约 20.3 秒普通任务，范围限这次体验。历史校服和战斗服 QA 均有通过记录，另留有注视过渡和盲检歧义警告。
@@ -22,7 +22,7 @@
 | `delivery/asuka-v2_20261026/{asuka-school,asuka-work}/spritesheet.webp` | 静态 WebP，1536×2288，RGBA | 两套各 73 格，逐一等同其最终图集与本机安装副本 |
 | `work/phase3_20261025/mixed-test/final/spritesheet.webp` | 静态 WebP，1536×2288，RGBA | 73 格，等同本机混合测试安装副本 |
 
-本机安装根为 `C:\Users\86191\.codex\pets`。枚举到 `asuka-school`、`asuka-work`、`asuka-mixed-test` 三只本地包。每个目录均含 `pet.json` 与 `spritesheet.webp`，清单版本为 2。各清单也与对应交付或混合最终版逐字节一致。原交付包 `SHA256SUMS.txt` 的 5 项全部复算匹配。
+本机安装根为 `C:\Users\<用户名>\.codex\pets`。枚举到 `asuka-school`、`asuka-work`、`asuka-mixed-test` 三只本地包。每个目录均含 `pet.json` 与 `spritesheet.webp`，清单版本为 2。各清单也与对应交付或混合最终版逐字节一致。原交付包 `SHA256SUMS.txt` 的 5 项全部复算匹配。
 
 ## T2｜当前兼容性
 
@@ -36,7 +36,7 @@
 
 ## T4–T6｜复用、隔离与后续
 
-复用决策见 [矩阵](../01_设计规范/ASUKA_REUSE_MATRIX.md)。Rei 根目录为 `D:\HuaweiMoveData\Users\86191\Desktop\Rei Desktop Pet`，十个分区均已就绪。Rei、Asuka 与安装目录解析为三个独立路径，母版目录和备份目录为普通目录。两次检查的 49 个原工程及安装路径、11 个历史 QA 报告、3 个工作区源图和 Git 状态一致。范围为所列文件与 Git 工作区快照。纯工具输入来自原路径读取。
+复用决策见 [矩阵](../01_设计规范/ASUKA_REUSE_MATRIX.md)。Rei 根目录为 `<LOCAL_PROJECT_ROOT>`，十个分区均已就绪。Rei、Asuka 与安装目录解析为三个独立路径，母版目录和备份目录为普通目录。两次检查的 49 个原工程及安装路径、11 个历史 QA 报告、3 个工作区源图和 Git 状态一致。范围为所列文件与 Git 工作区快照。纯工具输入来自原路径读取。
 
 - [√] T1 原工程、历史运行记录、安装包及哈希审计
 - [√] T2 当前规格、现有资产和打包校验差异复核

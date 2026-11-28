@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "frames_root": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01",
+  "frames_root": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01",
   "states": [
     "running-right"
   ],
@@ -18,7 +18,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\00.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6699,
@@ -32,7 +32,7 @@
         },
         {
           "index": 1,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\01.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6346,
@@ -46,7 +46,7 @@
         },
         {
           "index": 2,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\02.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6317,
@@ -60,7 +60,7 @@
         },
         {
           "index": 3,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\03.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7064,
@@ -74,7 +74,7 @@
         },
         {
           "index": 4,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\04.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6277,
@@ -88,7 +88,7 @@
         },
         {
           "index": 5,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\05.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6502,
@@ -102,7 +102,7 @@
         },
         {
           "index": 6,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\06.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6286,
@@ -116,7 +116,7 @@
         },
         {
           "index": 7,
-          "file": "D:\\HuaweiMoveData\\Users\\86191\\Desktop\\Rei Desktop Pet\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\07.png",
+          "file": "<LOCAL_PROJECT_ROOT>\\04_\u767d\u8272\u6218\u6597\u670d\\P4-A\\review-running-right-attempt-01\\running-right\\07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6753,
